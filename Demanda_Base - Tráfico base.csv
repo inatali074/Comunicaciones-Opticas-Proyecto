@@ -1,0 +1,518 @@
+Region,Origen,Destino,Cantidad de Enlaces,Velocidad [Gbps],Ruta
+Norte,Mendoza,San Juan,1,200,Mendoza - San Juan
+Norte,Mendoza,San Jose de Jachal,1,200,Mendoza - San Juan - San Jose de Jachal
+Norte,Mendoza,Patquia,1,200,Mendoza - San Juan - San Jose de Jachal - Patquia
+Norte,Mendoza,Chilecito,1,200,Mendoza - San Juan - San Jose de Jachal - Patquia - Chilecito
+Norte,Mendoza,Belen,1,200,Mendoza - San Juan - San Jose de Jachal - Patquia - Chilecito - Belen
+Norte,Mendoza,Santa Maria,1,200,Mendoza - San Juan - San Jose de Jachal - Patquia - Chilecito - Belen - Santa Maria
+Norte,San Jose de Jachal,San Miguel de Tucumán,1,200,San Jose de Jachal - Patquia - Chilecito - Belen - Santa Maria - San Miguel de Tucuman
+Norte,Patquia,San Miguel de Tucumán,1,200,Patquia - Chilecito - Belen - Santa Maria - San Miguel de Tucuman
+Norte,Chilecito,San Miguel de Tucumán,1,200,Chilecito - Belen - Santa Maria - San Miguel de Tucuman
+Norte,Belen,San Miguel de Tucumán,1,200,Belen - Santa Maria - San Miguel de Tucuman
+Norte,Santa Maria,San Miguel de Tucumán,1,200,Santa Maria - San Miguel de Tucuman
+Norte,San Juan,San Jose de Jachal,4,100,San Juan - San Jose de Jachal
+Norte,San Jose de Jachal,Patquia,4,100,San Jose de Jachal - Patquia
+Norte,Patquia,Chilecito,4,100,Patquia - Chilecito
+Norte,Chilecito,Belen,4,100,Chilecito - Belen
+Norte,Belen,Santa Maria,4,100,Belen - Santa Maria
+Norte,Santa Maria,San Miguel de Tucumán,4,100,Santa Maria - San Miguel de Tucuman
+Norte,Mendoza,Villa Tulumaya,1,200,Mendoza - Villa Tulumaya
+Norte,Mendoza,Media Agua,1,200,Mendoza - Villa Tulumaya - Media Agua
+Norte,Mendoza,San Juan,1,200,Mendoza - Villa Tulumaya - Media Agua - San Juan
+Norte,Mendoza,Serrezuela,1,200,Mendoza - Villa Tulumaya - Media Agua - San Juan - Serrezuela
+Norte,Mendoza,La Falda,1,200,Mendoza - Villa Tulumaya - Media Agua - San Juan - Serrezuela - La Falda
+Norte,Villa Tulumaya,Cordoba,1,200,Villa Tulumaya - Media Agua - San Juan - Serrezuela - La Falda - Cordoba
+Norte,Media Agua,Cordoba,1,200,Media Agua - San Juan - Serrezuela - La Falda- Cordoba
+Norte,San Juan,Cordoba,1,200,San Juan - Serrezuela - La Falda- Cordoba
+Norte,Serrezuela,Cordoba,1,200,Serrezuela - La Falda - Cordoba
+Norte,La Falda,Cordoba,1,200,La Falda - Cordoba
+Norte,Mendoza,Villa Tulumaya,4,100,Mendoza - Villa Tulumaya
+Norte,Villa Tulumaya,Media Agua,4,100,Villa Tulumaya - Media Agua
+Norte,Media Agua,San Juan,4,100,Media Agua - San Juan
+Norte,San Juan,Serrezuela,4,100,San Juan - Serrezuela
+Norte,Serrezuela,La Falda,4,100,Serrezuela - La Falda
+Norte,La Falda,Cordoba,4,100,La Falda - Cordoba
+Norte,Tucuman,Concepcion,1,200,Tucuman - Concepcion
+Norte,Tucuman,Catamarca,1,200,Tucuman - Concepcion - Catamarca
+Norte,Tucuman,La Rioja,1,200,Tucuman - Concepcion - Catamarca - La Rioja
+Norte,Tucuman,Patquia,1,200,Tucuman - Concepcion - Catamarca - La Rioja - Patquia
+Norte,Concepcion,Cordoba,1,200,Concepcion - Catamarca - La Rioja - Cordoba
+Norte,Catamarca,Cordoba,1,200,Catamarca - La Rioja - Cordoba
+Norte,La Rioja,Cordoba,1,200,La Rioja - Cordoba
+Norte,Patquia,Cordoba,1,200,Patquia - Cordoba
+Norte,Serrezuela,Cordoba,1,200,Serrezuela - Cordoba
+Norte,Tucuman,Concepcion,4,100,Tucuman - Concepcion
+Norte,Concepcion,Catamarca,4,100,Concepcion - Catamarca
+Norte,Catamarca,La Rioja,4,100,Catamarca- La Rioja
+Norte,La Rioja,Patquia,4,100,La Rioja - Patquia 
+Norte,Patquia,Serrezuela,4,100,Patquia - Serrezuela
+Norte,Serrezuela,Cordoba,4,100,Serrezuela - Cordoba
+Norte,Tucuman,Santiago del Estero,1,200,Tucuman - Santiago del Estero
+Norte,Tucuman,Frias,1,200,Tucuman - Santiago del Estero - Frias
+Norte,Tucuman,Dean Funes,1,200,Tucuman - Santiago del Estero - Frias - Dean Funes
+Norte,Tucuman,Jesus Maria,1,200,Tucuman - Santiago del Estero - Frias - Dean Funes - Jesus Maria
+Norte,Tucuman,Cordoba,1,200,Tucuman - Santiago del Estero - Frias - Dean Funes - Jesus Maria - Cordoba
+Norte,Santiago del Estero,Cordoba,1,200,Santiago del Estero - Frias - Dean Funes - Jesus Maria - Cordoba
+Norte,Frias,Cordoba,1,200,Frias - Dean Funes - Jesus Maria - Cordoba
+Norte,Dean Funes,Cordoba,1,200,Dean Funes - Jesus Maria - Cordoba
+Norte,Jesus Maria,Cordoba,1,200,Jesus Maria - Cordoba
+Norte,Tucuman,Santiago del Estero,4,100,Tucuman - Santiago del Estero
+Norte,Santiago del Estero,Frias,4,100,Santiago del Estero - Frias
+Norte,Frias,Dean Funes,4,100,Frias - Dean Funes
+Norte,Dean Funes,Jesus Maria,4,100,Dean Funes- Jesus Maria
+Norte,Jesus Maria,Cordoba,4,100,Jesus Maria - Cordoba
+Norte,San Miguel de Tucuman,Santa Maria,1,200,San Miguel de Tucuman - Santa Maria
+Norte,San Miguel de Tucuman,San Antonio de los Cobres,1,200,San Miguel de Tucuman - Santa Maria - San Antonio de los Cobres
+Norte,San Miguel de Tucuman,La Quiaca,1,200,San Miguel de Tucuman - Santa Maria - San Antonio de los Cobres - La Quiaca
+Norte,San Miguel de Tucuman,Humahuaca,1,200,San Miguel de Tucuman - Santa Maria - San Antonio de los Cobres - La Quiaca - Humahuaca
+Norte,San Antonio de los Cobres,San Salvador de Jujuy,1,200,San Antonio de los Cobres - La Quiaca - Humahuaca - San Salvador de Jujuy
+Norte,La Quiaca,San Salvador de Jujuy,1,200,La Quiaca - Humahuaca - San Salvador de Jujuy
+Norte,Humahuaca,San Salvador de Jujuy,1,200,Humahuaca - San Salvador de Jujuy
+Norte,Santa Maria,San Antonio de los Cobres,4,100,Santa Maria - San Antonio de los Cobres
+Norte,San Antonio de los Cobres,La Quiaca,4,100,San Antonio de los Cobres- La Quiaca
+Norte,La Quiaca,Humahuaca,4,100,La Quiaca - Humahuaca
+Norte,Humahuaca,San Salvador de Jujuy,4,100,Humahuaca - San Salvador de Jujuy
+Norte,Tucuman,San Jose de Metan,1,200,Tucuman - San Jose de Metan
+Norte,Tucuman,Salta,1,200,Tucuman - San Jose de Metan - Salta
+Norte,San Jose de Metan,Jujuy,1,200,San Jose de Metan - Salta - Jujuy
+Norte,Salta,Jujuy,1,200,Salta - Jujuy
+Norte,Tucuman,San Jose de Metan,4,100,Tucuman - San Jose de Metan
+Norte,San Jose de Metan,Salta,4,100,San Jose de Metan - Salta
+Norte,Salta,Jujuy,1,100,Salta - Jujuy
+Norte,San Salvador de Jujuy,San Jose de Metan,1,200,San Salvador de Jujuy - San Jose de Metan
+Norte,San Salvador de Jujuy,Saenz Peña,1,200,San Salvador de Jujuy - San Jose de Metan - Saenz Peña
+Norte,Saenz Peña,Resistencia,1,200,Saenz Peña - Resistencia
+Norte,San Jose de Metan,Saenz Peña,4,100,San Jose de Metan - Saenz Peña
+Norte,Saenz Peña,Resistencia,4,100,Saenz Peña - Resistencia
+Norte,San Salvador de Jujuy,San Pedro,1,200,San Salvador de Jujuy - San Pedro
+Norte,San Salvador de Jujuy,San Martin,1,200,San Salvador de Jujuy - San Pedro - San Martin
+Norte,San Salvador de Jujuy,Embarcacion,1,200,San Salvador de Jujuy - San Pedro - San Martin - Embarcacion
+Norte,San Salvador de Jujuy,Juan Page,1,200,San Salvador de Jujuy - San Pedro - San Martin - Embarcacion - Juan Page
+Norte,San Salvador de Jujuy,Las Lomitas,1,200,San Salvador de Jujuy - San Pedro - San Martin - Embarcacion - Juan Page - Las Lomitas
+Norte,San Salvador de Jujuy,Formosa,1,200,San Salvador de Jujuy - San Pedro - San Martin - Embarcacion - Juan Page - Las Lomitas - Formosa
+Norte,San Pedro,Resistencia,1,200,San Pedro - San Martin - Embarcacion - Juan Page - Las Lomitas - Formosa - Resistencia
+Norte,San Martin,Resistencia,1,200,San Martin - Embarcacion - Juan Page - Las Lomitas - Formosa - Resistencia
+Norte,Embarcacion,Resistencia,1,200,Embarcacion - Juan Page - Las Lomitas - Formosa - Resistencia
+Norte,Juan Page,Resistencia,1,200,Juan Page - Las Lomitas - Formosa - Resistencia
+Norte,Las Lomitas,Resistencia,1,200,Las Lomitas - Formosa - Resistencia
+Norte,Formosa,Resistencia,1,200,Formosa - Resistencia
+Norte,San Salvador de Jujuy,San Pedro,4,100,San Salvador de Jujuy - San Pedro
+Norte,San Pedro,San Martin,4,100,San Pedro - San Martin
+Norte,San Martin,Embarcacion,4,100,San Martin - Embarcacion 
+Norte,Embarcacion,Juan Page,4,100,Embarcacion - Juan Page
+Norte,Juan Page,Las Lomitas,4,100,Juan Page - Las Lomitas
+Norte,Las Lomitas,Formosa,4,100,Las Lomitas - Formosa
+Norte,Formosa,Resistencia,4,100,Formosa - Resistencia
+Norte,Tucuman,Santiago del Estero,1,200,Tucuman - Santiago del Estero
+Norte,Tucuman,Añatuya,1,200,Tucuman - Santiago del Estero - Añatuya
+Norte,Añatuya,Santa Fe,1,200,Añatuya - Tostado - Rafaela - Santa Fe
+Norte,Tostado,Santa Fe,1,200,Tostado - Rafaela - Santa Fe
+Norte,Santiago del Estero,Añatuya,4,100,Santiago del Estero - Añatuya
+Norte,Añatuya,Tostado,4,100,Añatuya - Tostado
+Norte,Cordoba,Arroyito,4,100,Cordoba - Arroyito
+Norte,Arroyito,San Francisco,4,100,Arroyito - San Francisco
+Norte,San Francisco,Rafaela,4,100,San Francisco - Rafaela
+Norte,Rafaela,Santa Fe,4,100,Rafaela - Santa Fe
+Norte,Cordoba,Arroyito,1,200,Cordoba - Arroyito
+Norte,Arroyito,Santa Fe,1,200,Arroyito - San Francisco - Rafaela - Santa Fe
+Norte,Cordoba,San Francisco,1,200,Cordoba - Arroyito - San Francisco
+Norte,San Francisco,Santa Fe,1,200,San Francisco - Rafaela - Santa Fe
+Norte,Cordoba,Rafaela,1,200,Cordoba - Arroyito - San Francisco - Rafaela
+Norte,Rafaela,Santa Fe,1,200,Rafaela - Santa Fe
+Norte,Rafaela,Sunchales,4,100,Rafaela - Sunchales
+Norte,Sunchales,Ceres,4,100,Sunchales - Ceres
+Norte,Ceres,Tostado,4,100,Ceres - Tostado
+Norte,Tostado,Vera,4,100,Tostado - Vera
+Norte,Vera,Resistencia,4,100,Vera - Resistencia
+Norte,Santa Fe,Rafaela,1,200,Santa Fe - Rafaela
+Norte,Santa Fe,Sunchales,1,200,Santa Fe - Rafaela - Sunchales
+Norte,Sunchales,Resistencia,1,200,Sunchales - Ceres - Tostado - Vera - Resistencia
+Norte,Santa Fe,Ceres,1,200,Santa Fe - Rafaela - Sunchales - Ceres
+Norte,Ceres,Resistencia,1,200,Ceres - Tostado - Vera - Resistencia
+Norte,Santa Fe,Tostado,1,200,Santa Fe - Rafaela - Sunchales - Ceres - Tostado
+Norte,Tostado,Resistencia,1,200,Tostado - Vera - Resistencia
+Norte,Santa Fe,Vera,1,200,Santa Fe - Rafaela - Sunchales - Ceres - Tostado - Vera
+Norte,Vera,Resistencia,1,200,Vera - Resistencia
+Norte,Resistencia,Corrientes,4,100,Resistencia - Corrientes
+Norte,Corrientes,Ituzaingo,4,100,Corrientes - Ituzaingo
+Norte,Ituzaingo,Posadas,4,100,Ituzaingo - Posadas
+Norte,Resistencia,Ituzaingo,1,200,Resistencia - Corrientes - Ituzaingo
+Norte,Ituzaingo,Posadas,1,200,Ituzaingo - Posadas
+Norte,Posadas,San Jose,1,200,Posadas - San Jose
+Norte,Posadas,Paso de los Libres,1,200,Posadas - San Jose - Paso de los Libres
+Norte,San Jose,Santa Fe,1,200,San Jose - Paso de los Libres - Concordia - Parana - Santa Fe
+Norte,Paso de los Libres,Santa Fe,1,200,Paso de los Libres - Concordia - Parana - Santa Fe
+Norte,Concordia,Santa Fe,1,200,Concordia - Parana - Santa Fe
+Norte,Posadas,San Jose,4,100,Posadas - San Jose
+Norte,San Jose,Paso de los Libres,4,100,San Jose - Paso de los Libres
+Norte,Paso de los Libres,Concordia,4,100,Paso de los Libres - Concordia
+Norte,Benavidez,Concepcion del Uruguay,1,200,Benavidez - Campana - Concepcion del Uruguay
+Norte,Benavidez,Concordia,1,200,Benavidez - Campana - Concepcion del Uruguay - Concordia
+Norte,Concepcion del Uruguay,Santa Fe,1,200,Concepcion del Uruguay - Concordia - Parana - Santa Fe
+Norte,Concordia,Santa Fe,1,200,Concordia - Parana - Santa Fe
+Norte,Campana,Concepcion del Uruguay,4,100,Campana - Concepcion del Uruguay
+Norte,Concepcion del Uruguay,Concordia,4,100,Concepcion del Uruguay - Concordia
+Norte,Benavidez,Campana,1,200,Benavidez - Campana
+Norte,Benavidez,Baradero,1,200,Benavidez - Campana - Baradero
+Norte,Benavidez,San Nicolas,1,200,Benavidez - Campana - Baradero - San Nicolas
+Norte,Campana,Rosario,1,200,Campana - Baradero - San Nicolas - Rosario
+Norte,Baradero,Rosario,1,200,Baradero - San Nicolas - Rosario
+Norte,San Nicolas,Rosario,1,200,San Nicolas - Rosario
+Norte,Benavidez,Campana,4,100,Benavidez - Campana
+Norte,Campana,Baradero,4,100,Campana - Baradero
+Norte,Baradero,San Nicolas,4,100,Baradero - San Nicolas
+Norte,San Nicolas,Rosario,4,100,San Nicolas - Rosario
+Norte,Rosario,San Fabian,1,200,Rosario - San Fabian
+Norte,San Fabian,Santa Fe,1,200,San Fabian - Santa Fe
+Norte,Rosario,San Fabian,4,100,Rosario - San Fabian
+Norte,San Fabian,Santa Fe,4,100,San Fabian - Santa Fe
+Norte,Santa Fe,Parana,1,200,Santa Fe - Parana
+Norte,Santa Fe,La Paz,1,200,Santa Fe - Parana - La Paz
+Norte,Santa Fe,Goya,1,200,Santa Fe - Parana - La Paz - Goya
+Norte,Santa Fe,Bellavista,1,200,Santa Fe - Parana - La Paz - Goya - Bellavista
+Norte,Santa Fe,Corrientes,1,200,Santa Fe - Parana - La Paz - Goya - Bellavista - Corrientes
+Norte,Parana,Resistencia,1,200,Parana - La Paz - Goya - Bellavista - Corrientes - Resistencia
+Norte,La Paz,Resistencia,1,200,La Paz - Goya - Bellavista - Corrientes - Resistencia
+Norte,Goya,Resistencia,1,200,Goya - Bellavista - Corrientes - Resistencia
+Norte,Bellavista,Resistencia,1,200,Bellavista - Corrientes - Resistencia
+Norte,Corrientes,Resistencia,1,200,Corrientes - Resistencia
+Norte,Santa Fe,Parana,4,100,Santa Fe - Parana
+Norte,Parana,La Paz,4,100,Parana - La Paz
+Norte,La Paz,Goya,4,100,La Paz - Goya
+Norte,Goya,Bellavista,4,100,Goya - Bellavista
+Norte,Bellavista,Corrientes,4,100,Bellavista - Corrientes
+Norte,Posadas,Jardin America,1,200,Posadas - Jardin America
+Norte,Posadas,Puerto Iguazu,1,200,Posadas - Jardin America - Puerto Iguazu
+Norte,Jardin America,Puerto Iguazu,1,200,Jardin America - Puerto Iguazu
+Norte,Posadas,Jardin America,4,100,Posadas - Jardin America
+Norte,Jardin America,Puerto Iguazu,4,100,Jardin America - Puerto Iguazu
+Norte,Posadas,Puerto Iguazu,1,200,Posadas - San Jose - Aristobulo del valle - Puerto Iguazu
+Norte,Posadas,San Jose,1,200,Posadas - San Jose
+Norte,San Jose,Aristobulo del Valle,1,200,San Jose - Aristobulo del valle
+Norte,Aristobulo del Valle,Puerto Iguazu,1,200,Aristobulo del valle - Puerto Iguazu
+Norte,Posadas,San Jose,4,100,Posadas - San Jose
+Norte,San Jose,Aristobulo del Valle,4,100,San Jose - Aristobulo del Valle
+Norte,Aristobulo del Valle,Puerto Iguazu,4,100,Aristobulo del Valle - Puerto Iguazu
+Norte,Clorinda,Formosa,1,200,Clorinda - Formosa - Resistencia
+Norte,Clorinda,Resistencia,4,100,Clorinda - Formosa
+Norte,San Salvador de Jujuy,Salvador Mazza,1,200,San Salvador de Jujuy - Embarcacion - Salvador Mazza
+Norte,San Salvador de Jujuy,Embarcacion,1,200,San Salvador de Jujuy - Embarcacion
+Norte,Embarcacion,Salvador Mazza,4,100,Embarcacion - Salvador Mazza
+Norte,Benavidez,Rosario,1,400,Benavidez - Zarate - San Pedro - San Nicolas de los Arroyos - Rosario
+Norte,Rosario,Resistencia,1,400,Rosario - San Fabian - Santa Fe - Parana - La Paz - Goya - Bellavista - Corrientes - Resistencia
+Norte,Benavidez,Zarate,2,300,Benavidez - Zarate
+Norte,Benavidez,San Nicolas de los Arroyos,1,300,Benavidez - Zarate - San Pedro - San Nicolas de los Arroyos
+Norte,Zarate,San Pedro,1,300,Zarate - San Pedro
+Norte,Zarate,Rosario,1,300,Zarate - San Pedro - San Nicolas de los Arroyos - Rosario
+Norte,San Pedro,Rosario,1,300,San Pedro - San Nicolas de los Arroyos - Rosario
+Norte,San Nicolas,Rosario,1,300,San Nicolas de los Arroyos - Rosario
+Norte,Rosario,San Fabian,1,300,Rosario - San Fabian
+Norte,Rosario,Santa Fe,1,300,Rosario - San Fabian - Santa Fe
+Norte,San Fabian,Santa Fe,1,300,San Fabian - Santa Fe
+Norte,Santa Fe,La Paz,1,300,Santa Fe - Parana - La Paz
+Norte,Santa Fe,Parana,1,300,Santa Fe - Parana
+Norte,Parana,Goya,1,300,Parana - La Paz - Goya
+Norte,Goya,Resistencia,1,300,Goya - Bellavista - Corrientes - Resistencia
+Norte,La Paz,Bellavista,1,300,La Paz - Goya - Bellavista
+Norte,Bellavista,Corrientes,1,300,Bellavista - Corrientes
+Norte,Corrientes,Resistencia,1,300,Corrientes - Resistencia
+Norte,Benavidez,Santa Fe,2,300,Benavidez - Zarate - San Pedro - San Nicolas de los Arroyos - Rosario - San Fabian - Santa Fe
+Centro,Cordoba,V. Mercedes,1,200,Cordoba - V. Mercedes
+Centro,Rufino ,Lujan,1,200,Rufino - Lujan
+Centro,Lujan,Chacabuco,1,200,Lujan - Chacabuco 
+Centro,Lujan,Junin,1,200,Lujan - Chacabuco - Junin 
+Centro,Lujan,Vedia,1,200,Lujan - Chacabuco - Junin - Vedia 
+Centro,Lujan,Rufino,1,200,Lujan - Chacabuco - Junin - Vedia - Rufino 
+Centro,Lujan,Pehuajo,1,200,Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo 
+Centro,Lujan,Bolivar,1,200,Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar 
+Centro,Lujan,Olavarria,1,200,Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria 
+Centro,Lujan,Azul,1,200,Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul 
+Centro,Lujan,Tandil,1,200,Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil
+Centro,Chacabuco,Abasto,1,200,Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil
+Centro,Junin,Abasto,1,200,Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil
+Centro,Vedia,Abasto,1,200,Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil
+Centro,Rufino,Abasto,1,200,Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto
+Centro,Pehuajo,Abasto,1,200,Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto
+Centro,Bolivar,Abasto,1,200,Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto
+Centro,Olavarria,Abasto,1,200,Olavarria - Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto
+Centro,Azul,Abasto,1,200,Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto
+Centro,Tandil,Abasto,1,200,Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto
+Centro,Lujan,Chacabuco,4,100,Lujan - Chacabuco 
+Centro,Chacabuco,Junin,4,100,Chacabuco - Junin 
+Centro,Junin,Vedia,4,100, Junin - Vedia 
+Centro,Vedia,Rufino,4,100,Vedia - Rufino 
+Centro,Rufino,Pehuajo,4,100,Rufino - Pehuajo 
+Centro,Pehuajo,Bolivar,4,100,Pehuajo - Bolivar 
+Centro,Bolivar,Olavarria,4,100,Bolivar - Olavarria 
+Centro,Olavarria,Azul,4,100,Olavarria - Azul 
+Centro,Azul,Tandil,4,100,Azul - Tandil
+Centro,Tandil,Mar del Plata,4,100,Tandil - Mar del Plata 
+Centro,Lujan,Mercedes,1,200,Lujan - Mercedes 
+Centro,Lujan,Chivilcoy,1,200,Lujan - Mercedes - Chivilcoy 
+Centro,Lujan,Bragado,1,200,Lujan - Mercedes - Chivilcoy - Bragado 
+Centro,Lujan,9 De Julio ,1,200,Lujan - Mercedes - Chivilcoy - Bragado - 9 De Julio
+Centro,Mercedes,Abasto,1,200,Mercedes - Chivilcoy - Bragado - 9 De Julio - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Pinamar - Las Toninas - Abasto
+Centro,Chivilcoy,Abasto,1,200,Chivilcoy - Bragado - 9 De Julio - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Pinamar - Las Toninas - Abasto
+Centro,Bragado,Abasto,1,200,Bragado - 9 De Julio - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Pinamar - Las Toninas - Abasto
+Centro,9 De Julio ,Abasto,1,200,9 De Julio - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Pinamar - Las Toninas - Abasto
+Centro,Lujan,Mercedes,4,100,Lujan - Mercedes 
+Centro,Mercedes,Chivilcoy,4,100,Mercedes - Chivilcoy 
+Centro,Chivilcoy,Bragado,4,100,Chivilcoy - Bragado 
+Centro,Bragado,9 De Julio ,4,100,Bragado - 9 De Julio
+Centro,9 De Julio ,Pehuajo,4,100,9 De Julio - Pehuajo
+Centro,Benavidez,Azopardo,1,200,Benavidez - Azopardo -
+Centro,Benavidez,La Plata,1,200,Benavidez - Azopardo - La Plata 
+Centro,Azopardo,Abasto,1,200,Azopardo - La Plata - Abasto
+Centro,La Plata,Abasto,1,200,La Plata - Abasto
+Centro,Benavidez,Azopardo,4,100,Benavidez - Azopardo -
+Centro,Azopardo,La Plata,4,100,Azopardo - La Plata 
+Centro,La Plata,Abasto,4,100,La Plata - Abasto
+Centro,Abasto,Las Toninas,1,200,Abasto - Las Toninas
+Centro,Abasto,Pinamar,1,200,Abasto - Las Toninas - Pinamar 
+Centro,Abasto,Mar Del Plata,1,200,Abasto - Las Toninas - Pinamar - Mar Del Plata 
+Centro,Abasto,Tres Arroyos,1,200,Abasto - Las Toninas - Pinamar - Mar Del Plata - Tres Arroyos 
+Centro,Las Toninas,Bahia Blanca,1,200,Las Toninas - Pinamar - Mar Del Plata - Tres Arroyos - Bahia Blanca
+Centro,Pinamar,Bahia Blanca,1,200,Pinamar - Mar Del Plata - Tres Arroyos - Bahia Blanca
+Centro,Mar Del Plata,Bahia Blanca,1,200,Mar Del Plata - Tres Arroyos - Bahia Blanca
+Centro,Tres Arroyos,Bahia Blanca,1,200,Tres Arroyos - Bahia Blanca
+Centro,Abasto,Las Toninas,4,100,Abasto - Las Toninas
+Centro,Las Toninas,Pinamar,4,100,Las Toninas - Pinamar 
+Centro,Pinamar,Mar Del Plata,4,100,Pinamar - Mar Del Plata 
+Centro,Mar Del Plata,Tres Arroyos,4,100,Mar Del Plata - Tres Arroyos 
+Centro,Tres Arroyos,Bahia Blanca,4,100,Tres Arroyos - Bahia Blanca
+Centro,Abasto,Chascomus,1,200,Abasto -Chascomus 
+Centro,Abasto,Dolores,1,200,Abasto -Chascomus -  Dolores 
+Centro,Abasto,Las Armas,1,200,Abasto -Chascomus -  Dolores -  Las Armas 
+Centro,Chascomus,Bahia Blanca,1,200,Chascomus -  Dolores -  Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca
+Centro,Dolores,Bahia Blanca,1,200,Dolores -  Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca
+Centro,Las Armas,Bahia Blanca,1,200,Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca
+Centro,Abasto,Chascomus,4,100,Abasto -Chascomus 
+Centro,Chascomus,Dolores,4,100,Chascomus -  Dolores 
+Centro,Dolores,Las Armas,4,100,Dolores -  Las Armas 
+Centro,Las Armas,Mar Del Plata,4,100,Las Armas - Mar Del Plata 
+Centro,Lujan,Benavidez,1,200,Lujan - Benavidez
+Centro,Lujan,Benavidez,4,100,Lujan - Benavidez
+Centro,Bahia Blanca,Algarrobo,4,200,Bahia Blanca - Algarrobo 
+Centro,Bahia Blanca,Rio Colorado,1,200,Bahia Blanca - Algarrobo - Rio Colorado 
+Centro,Bahia Blanca,Peru,1,200,Bahia Blanca - Algarrobo - Rio Colorado - Peru 
+Centro,Bahia Blanca,Santa Rosa,1,200,Bahia Blanca - Algarrobo - Rio Colorado - Peru - Santa Rosa 
+Centro,Bahia Blanca,Winifreda,1,200,Bahia Blanca - Algarrobo - Rio Colorado - Peru - Santa Rosa - Winifreda 
+Centro,Bahia Blanca,Victorica,1,200,Bahia Blanca - Algarrobo - Rio Colorado - Peru - Santa Rosa - Winifreda - Victorica 
+Centro,Bahia Blanca,Santa Isabel,1,200,Bahia Blanca - Algarrobo - Rio Colorado - Peru - Santa Rosa - Winifreda - Victorica - Santa Isabel 
+Centro,Algarrobo,Mendoza,1,200,Algarrobo - Rio Colorado - Peru - Santa Rosa - Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza
+Centro,Rio Colorado,Mendoza,1,200,Rio Colorado - Peru - Santa Rosa - Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza
+Centro,Peru,Mendoza,1,200,Peru - Santa Rosa - Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza
+Centro,Santa Rosa,Mendoza,1,200,Santa Rosa - Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza
+Centro,Winifreda,Mendoza,1,200,Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza
+Centro,Victorica,Mendoza,1,200,Victorica - Santa Isabel - San Rafael - Mendoza
+Centro,Santa Isabel,Mendoza,1,200,Santa Isabel - San Rafael - Mendoza
+Centro,Bahia Blanca,Algarrobo,4,100,Bahia Blanca - Algarrobo 
+Centro,Algarrobo,Rio Colorado,4,100,Algarrobo - Rio Colorado 
+Centro,Rio Colorado,Peru,4,100,Rio Colorado - Peru 
+Centro,Peru,Santa Rosa,4,100,Peru - Santa Rosa 
+Centro,Santa Rosa,Winifreda,4,100,Santa Rosa - Winifreda 
+Centro,Winifreda,Victorica,4,100,Winifreda - Victorica 
+Centro,Victorica,Santa Isabel,4,100,Victorica - Santa Isabel 
+Centro,Bahia Blanca,Trenque Lauquen,1,200,Bahia Blanca - Rio Colorado - Santa Rosa - Trenque Lauquen
+Centro,Trenque Lauquen,Lujan,1,200,Trenque Lauquen - Pehuajo - Lujan
+Centro,Santa Rosa,Trenque Lauquen,4,100,Santa Rosa - Trenque Lauquen
+Centro,Trenque Lauquen,Pehuajo,4,100,Trenque Lauquen - Pehuajo
+Centro,Santa Isabel,Gral. Alvear,1,200,Santa Isabel - Gral. Alvear
+Centro,Santa Isabel,San Rafael,1,200,Santa Isabel - Gral. Alvear - San Rafael
+Centro,Santa Isabel,Tunuyan,1,200,Santa Isabel - Gral. Alvear - San Rafael - Tunuyan 
+Centro,Gral. Alvear,Mendoza,1,200,Gral. Alvear - San Rafael - Tunuyan - Mendoza
+Centro,San Rafael,Mendoza,1,200,San Rafael - Tunuyan - Mendoza
+Centro,Tunuyan,Mendoza,1,200,Tunuyan - Mendoza
+Centro,Santa Isabel,Gral. Alvear,4,100,Santa Isabel - Gral. Alvear
+Centro,Gral. Alvear,San Rafael,4,100,Gral. Alvear - San Rafael
+Centro,San Rafael,Tunuyan,4,100,San Rafael - Tunuyan
+Centro,Tunuyan,Mendoza,4,100,Tunuyan - Mendoza
+Centro,Lujan,Cañuelas,1,200,Lujan - Cañuelas
+Centro,Cañuelas,Abasto,1,200,Cañuelas - Abasto
+Centro,Lujan,Cañuelas,4,100,Lujan - Cañuelas
+Centro,Cañuelas,Abasto,4,100,Cañuelas - Abasto
+Centro,Benavidez,San Antonio de Areco,1,200,Benavidez - San Antonio de Areco 
+Centro,Benavidez,Arrecifes,1,200,Benavidez - San Antonio de Areco - Arrecifes 
+Centro,Benavidez,Pergamino,1,200,Benavidez - San Antonio de Areco - Arrecifes - Pergamino 
+Centro,San Antonio de Areco,Rosario,1,200,San Antonio de Areco - Arrecifes - Pergamino - Rosario
+Centro,Arrecifes,Rosario,1,200,Arrecifes - Pergamino - Rosario
+Centro,Pergamino,Rosario,1,200,Pergamino - Rosario
+Centro,Benavidez,San Antonio de Areco,4,100,Benavidez - San Antonio de Areco 
+Centro,San Antonio de Areco,Arrecifes,4,100,San Antonio de Areco - Arrecifes
+Centro,Arrecifes,Pergamino,4,100,Arrecifes - Pergamino
+Centro,Pergamino,Rosario,4,100,Pergamino - Rosario
+Centro,Rosario,Cañada de Gomez,1,200,Rosario - Cañada de Gomez 
+Centro,Rosario,Leones,1,200,Rosario - Cañada de Gomez - Leones
+Centro,Rosario,Villa Maria,1,200,Rosario - Cañada de Gomez - Leones - Villa Maria 
+Centro,Rosario,Manfredi,1,200,Rosario - Cañada de Gomez - Leones - Villa Maria - Manfredi 
+Centro,Cañada de Gomez,Cordoba,1,200,Cañada de Gomez - Leones - Villa Maria - Manfredi - Cordoba
+Centro,Leones,Cordoba,1,200,Leones - Villa Maria - Manfredi - Cordoba
+Centro,Villa Maria,Cordoba,1,200,Villa Maria - Manfredi - Cordoba
+Centro,Manfredi,Cordoba,1,200,Manfredi - Cordoba
+Centro,Rosario,Cañada de Gomez,4,100,Rosario - Cañada de Gomez 
+Centro,Cañada de Gomez,Leones,4,100,Cañada de Gomez - Leones 
+Centro,Leones,Villa Maria,4,100,Leones - Villa Maria
+Centro,Villa Maria,Manfredi,4,100,Villa Maria - Manfredi 
+Centro,Manfredi,Cordoba,4,100,Rosario - Cañada de Gomez 
+Centro,Cordoba,Corralito,1,200,Cordoba - Corralito 
+Centro,Cordoba,Hernando,1,200,Cordoba - Corralito - Hernando 
+Centro,Cordoba,Chucul,1,200,Cordoba - Corralito - Hernando - Chucul 
+Centro,Cordoba,V. Mercedes,1,200,Cordoba - Corralito - Hernando - Chucul - V. Mercedes 
+Centro,Cordoba,San Luis,1,200,Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis 
+Centro,Cordoba,Santa Rosa,1,200,Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa 
+Centro,Corralito,Mendoza,1,200,Corralito - Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa - Mendoza
+Centro,Hernando,Mendoza,1,200,Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa - Mendoza
+Centro,Chucul,Mendoza,1,200,Chucul - V. Mercedes - San Luis - Santa Rosa - Mendoza
+Centro,V. Mercedes,Mendoza,1,200,V. Mercedes - San Luis - Santa Rosa - Mendoza
+Centro,San Luis,Mendoza,1,200,San Luis - Santa Rosa - Mendoza
+Centro,Santa Rosa,Mendoza,1,200,Santa Rosa - Mendoza
+Centro,Cordoba,Corralito,4,100,Cordoba - Corralito 
+Centro,Corralito,Hernando,4,100,Corralito - Hernando 
+Centro,Hernando,Chucul,4,100,Hernando - Chucul 
+Centro,Chucul,V. Mercedes,4,100,Chucul - V. Mercedes 
+Centro,V. Mercedes,San Luis,4,100,V. Mercedes - San Luis 
+Centro,San Luis,Santa Rosa,4,100,San Luis - Santa Rosa 
+Centro,Santa Rosa,Mendoza,4,100,Santa Rosa - Mendoza
+Centro,Benavidez,Mendoza,1,400,Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario - Cañada de Gomez - San Marcos - Villa Maria - Manfredi - Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa - Mendoza
+Centro,Cordoba ,V. Mercedes,1,300,Cordoba - Corralito - Hernando - Chucul - V. Mercedes
+Centro,V. Mercedes,San Luis,1,300,V. Mercedes - San Luis
+Centro,San Luis,Santa Rosa,1,300,San Luis - La Paz - Santa Rosa
+Centro,Santa Rosa,Mendoza,1,300,Santa Rosa - Mendoza
+Centro,Mendoza,Tunuyan,1,300,Mendoza - Tunuyan
+Centro,Tunuyan,San Rafael,1,300,Tunuyan - San Rafael
+Centro,Abasto,Marcos Paz,1,300,Abasto - Marcos Paz
+Centro,Marcos Paz,Benavidez,1,300,Marcos Paz - Benavidez
+Centro,Benavidez,Exaltacion de la Cruz,1,300,Benavidez - Exaltacion de la Cruz
+Centro,Exaltacion de la Cruz,Arrecifes,1,300,Exaltacion de la Cruz - Arrecifes
+Centro,Arrecifes,Pergamino,1,300,Arrecifes - Pergamino
+Centro,Pergamino,Rosario,1,300,Pergamino - Rosario
+Centro,Rosario,Cañada de Gomez,1,300,Rosario - Cañada de Gomez
+Centro,Cañada de Gomez,San Marcos,1,300,Cañada de Gomez - San Marcos
+Centro,San Marcos,Villa Maria,1,300,San Marcos - Villa Maria
+Centro,Villa Maria,Manfredi,1,300,Villa Maria - Manfredi
+Centro,Manfredi,Cordoba ,1,300,Manfredi - Cordoba 
+Centro,Cordoba ,Corralito,1,300,Cordoba  - Corralito
+Centro,Corralito,Hernando,1,300,Corralito - Hernando
+Centro,Hernando,Chucul,1,300,Hernando - Chucul
+Centro,Chucul,Mendoza,1,300,Chucul - V. Mercedes - San Luis - La Paz -  Santa Rosa - Mendoza
+Centro,Rosario,Cordoba ,1,300,Rosario - Cañada de Gomez - San Marcos - Villa Maria - Manfredi - Cordoba 
+Centro,Cordoba ,Mendoza,1,300,Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - Mendoza
+Centro,Benavidez,Mendoza,2,300,Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario - Cañada de Gomez - San Marcos - Villa Maria - Manfredi -  Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - La Paz -  Santa Rosa - Mendoza
+Centro,Benavidez,Cordoba ,3,300,Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario - Cañada de Gomez - San Marcos - Villa Maria - Manfredi -  Cordoba
+Centro,Benavidez,Rosario,3,300,Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario
+Sur,Rio Gallegos,San Sebastian,1,200,Rio Gallegos - Estacion Cullen - San Sebastian
+Sur,San Sebastian,Usuahia,1,200,San Sebastian - Rio Grande - Tolhuin - Usuahia
+Sur,Rio Gallegos,Estacion Cullen,1,200,Rio Gallegos - Estacion Cullen 
+Sur,Estacion Cullen,Rio Grande,1,200,Estacion Cullen - San Sebastian - Rio Grande
+Sur,Rio Grande,Tolhuin,1,200,Rio Grande - Tolhuin
+Sur,Rio Gallegos,Piedrabuena,4,100,Rio Gallegos - Piedrabuena
+Sur,Piedrabuena,San Julian,4,100,Piedrabuena - San Julian
+Sur,San Julian,Jaramillo,4,100,San Julian - Jaramillo
+Sur,Jaramillo,Caleta Olivia,4,100,Jaramillo - Caleta Olivia
+Sur,Rio Gallegos,Piedrabuena,1,200,Rio Gallegos - Piedrabuena
+Sur,Piedrabuena,San Julian,1,200,Piedrabuena - San Julian
+Sur,San Julian,Jaramillo,1,200,San Julian - Jaramillo
+Sur,Jaramillo,Caleta Olivia,1,200,Jaramillo - Caleta Olivia
+Sur,Rio Gallegos,Esperanza,4,100,Rio Gallegos - Esperanza
+Sur,Esperanza,El Calafate,4,100,Esperanza - El Calafate
+Sur,El Calafate,Tres Lagos,4,100,El Calafate - Tres Lagos
+Sur,Tres Lagos,Gobernador Gregores,4,100,Tres Lagos - Gobernador Gregores
+Sur,Gobernador Gregores,Bajo Caracoles,4,100,Gobernador Gregores - Bajo Caracoles
+Sur,Bajo Caracoles,Perito Moreno,4,100,Bajo Caracoles - Perito Moreno
+Sur,Perito Moreno,Colonia Las Heras,4,100,Perito Moreno - Colonia Las Heras
+Sur,Colonia Las Heras,Pico Truncado,4,100,Colonia Las Heras - Pico Truncado
+Sur,Pico Truncado,Caleta Olivia,4,100,Pico Truncado - Caleta Olivia
+Sur,Rio Gallegos,Esperanza,1,200,Rio Gallegos - Esperanza
+Sur,Esperanza,El Calafate,1,200,Esperanza - El Calafate
+Sur,El Calafate,Tres Lagos,1,200,El Calafate - Tres Lagos
+Sur,Tres Lagos,Gobernador Gregores,1,200,Tres Lagos - Gobernador Gregores
+Sur,Gobernador Gregores,Bajo Caracoles,1,200,Gobernador Gregores - Bajo Caracoles
+Sur,Bajo Caracoles,Perito Moreno,1,200,Bajo Caracoles - Perito Moreno
+Sur,Perito Moreno,Colonia Las Heras,1,200,Perito Moreno - Colonia Las Heras
+Sur,Colonia Las Heras,Pico Truncado,1,200,Colonia Las Heras - Pico Truncado
+Sur,Pico Truncado,Caleta Olivia,1,200,Pico Truncado - Caleta Olivia
+Sur,Dina Huapi,Bariloche,4,100,Dina Huapi - Bariloche
+Sur,Bariloche,El Foyel,4,100,Bariloche - El Foyel
+Sur,El Foyel,Epuyen,4,100,El Foyel - Epuyen
+Sur,Epuyen,Esquel,4,100,Epuyen - Esquel
+Sur,Esquel,Tecka,4,100,Esquel - Tecka
+Sur,Tecka,J. de San Martin,4,100,Tecka - J. de San Martin
+Sur,J. de San Martin,Alto Rio Senguer,4,100,J. de San Martin - Alto Rio Senguer
+Sur,Alto Rio Senguer,Rio Mayo,4,100,Alto Rio Senguer - Rio Mayo
+Sur,Rio Mayo,Perito Moreno,4,100,Rio Mayo - Perito Moreno
+Sur,Neuquen,Dina Huapi,1,200,Neuquen - Dina Huapi
+Sur,Dina Huapi,Bariloche,1,200,Dina Huapi - Bariloche
+Sur,Bariloche,El Foyel,1,200,Bariloche - El Foyel
+Sur,El Foyel,Epuyen,1,200,El Foyel - Epuyen
+Sur,Epuyen,Esquel,1,200,Epuyen - Esquel
+Sur,Esquel,Tecka,1,200,Esquel - Tecka
+Sur,Tecka,J. de San Martin,1,200,Tecka - J. de San Martin
+Sur,J. de San Martin,Alto Rio Senguer,1,200,J. de San Martin - Alto Rio Senguer
+Sur,Alto Rio Senguer,Rio Mayo,1,200,Alto Rio Senguer - Rio Mayo
+Sur,Rio Mayo,Perito Moreno,1,200,Rio Mayo - Perito Moreno
+Sur,Perito Moreno,Caleta Olivia,1,200,Perito Moreno - Pico Truncado - Caleta Olivia
+Sur,Bahia Blanca,Viedma,4,100,Bahia Blanca - Viedma
+Sur,Viedma,San Antonio Oeste,4,100,Viedma - San Antonio Oeste
+Sur,San Antonio Oeste,Sierra Grande,4,100,San Antonio Oeste - Sierra Grande
+Sur,Sierra Grande,Puerto Madryn,4,100,Sierra Grande - Puerto Madryn
+Sur,Puerto Madryn,Trelew,4,100,Puerto Madryn - Trelew
+Sur,Trelew,Rawson,4,100,Trelew - Rawson
+Sur,Rawson,Comodoro Rivadavia,4,100,Rawson - Comodoro Rivadavia
+Sur,Comodoro Rivadavia,Caleta Olivia,4,100,Comodoro Rivadavia - Caleta Olivia
+Sur,Bahia Blanca,Viedma,1,200,Bahia Blanca - Viedma
+Sur,Viedma,Caleta Olivia,1,200,Viedma - San Antonio Oeste - Sierra Grande - Puerto Madryn - Trelew - Rawson - Comodoro Rivadavia - Caleta Olivia
+Sur,Bahia Blanca,San Antonio Oeste,1,200,Bahia Blanca - Viedma - San Antonio Oeste
+Sur,San Antonio Oeste,Sierra Grande,1,200,San Antonio Oeste - Sierra Grande
+Sur,Sierra Grande,Puerto Madryn,1,200,Sierra Grande - Puerto Madryn
+Sur,Puerto Madryn,Trelew,1,200,Puerto Madryn - Trelew
+Sur,Trelew,Rawson,1,200,Trelew - Rawson
+Sur,Rawson,Comodoro Rivadavia,1,200,Rawson - Comodoro Rivadavia
+Sur,Comodoro Rivadavia,Caleta Olivia,1,200,Comodoro Rivadavia - Caleta Olivia
+Sur,Neuquen,Arroyito,4,100,Neuquen - Arroyito
+Sur,Arroyito,Picun Leufu,4,100,Arroyito - Picun Leufu
+Sur,Picun Leufu,Piedra del Aguila,4,100,Picun Leufu - Piedra del Aguila
+Sur,Piedra del Aguila,Dina Huapi,4,100,Piedra del Aguila - Dina Huapi
+Sur,Dina Huapi,Aguada Cecilio,4,100,Dina Huapi - Aguada Cecilio
+Sur,Aguada Cecilio,San Antonio Oeste,4,100,Aguada Cecilio - San Antonio Oeste
+Sur,Neuquen,Dina Huapi,1,200,Neuquen - Arroyito - Picun Leufu - Piedra del Aguila - Dina Huapi
+Sur,Dina Huapi,Aguada Cecilio,1,200,Dina Huapi - Aguada Cecilio
+Sur,Aguada Cecilio,San Antonio Oeste,1,200,Aguada Cecilio - San Antonio Oeste
+Sur,San Antonio Oeste,Bahia Blanca,1,200,San Antonio Oeste - Viedma - Bahia Blanca
+Sur,Neuquen,Arroyito,1,200,Neuquen - Arroyito
+Sur,Arroyito,Picun Leufu,1,200,Arroyito - Picun Leufu
+Sur,Picun Leufu,Piedra del Aguila,1,200,Picun Leufu - Piedra del Aguila
+Sur,Piedra del Aguila,Bahia Blanca,1,200,Piedra del Aguila - Dina Huapi - Aguada Cecilio - San Antonio Oeste - Viedma - Bahia Blanca
+Sur,Neuquen,General Roca,4,100,Neuquen - General Roca
+Sur,General Roca,Choele Choel,4,100,General Roca - Choele Choel
+Sur,Choele Choel,Rio Colorado,4,100,Choele Choel - Rio Colorado
+Sur,Rio Colorado,General Conesa,4,100,Rio Colorado - General Conesa
+Sur,General Conesa,San Antonio Oeste,4,100,General Conesa - San Antonio Oeste
+Sur,Neuquen,General Roca,1,200,Neuquen - General Roca
+Sur,General Roca,Choele Choel,1,200,General Roca - Choele Choel
+Sur,Choele Choel,Rio Colorado,1,200,Choele Choel - Rio Colorado
+Sur,Rio Colorado,General Conesa,1,200,Rio Colorado - General Conesa
+Sur,General Conesa,Bahia Blanca,1,200,General Conesa - San Antonio Oeste - Viedma - Bahia Blanca
+Sur,Neuquen,Sargento Vidal,4,100,Neuquen - Sargento Vidal
+Sur,Sargento Vidal,Catriel,4,100,Sargento Vidal - Catriel
+Sur,Catriel,Santa Isabel,4,100,Catriel - Santa Isabel
+Sur,Neuquen,Sargento Vidal,1,200,Neuquen - Sargento Vidal
+Sur,Sargento Vidal,Catriel,1,200,Sargento Vidal - Catriel
+Sur,Catriel,Santa Isabel,1,200,Catriel - Santa Isabel
+Sur,Santa Isabel,San Rafael,1,200,Santa Isabel - San Rafael
+Sur,Dina Huapi,Villa La Angostura,4,100,Dina Huapi - Villa La Angostura
+Sur,Villa La Angostura,San Martin de los Andes,4,100,Villa La Angostura - San Martin de los Andes
+Sur,San Martin de los Andes,Junin de los Andes,4,100,San Martin de los Andes - Junin de los Andes
+Sur,Junin de los Andes,Zapala,4,100,Junin de los Andes - Zapala
+Sur,Zapala,Chos Malal,4,100,Zapala - Chos Malal
+Sur,Chos Malal,Buta Ranquil,4,100,Chos Malal - Buta Ranquil
+Sur,Buta Ranquil,Malargue,4,100,Buta Ranquil - Malargue
+Sur,Malargue,San Rafael,4,100,Malargue - San Rafael
+Sur,Neuquen,Dina Huapi,1,200,Neuquen - Arroyito - Picun Leufu - Piedra del Aguila - Dina Huapi
+Sur,Dina Huapi,Villa La Angostura,1,200,Dina Huapi - Villa La Angostura
+Sur,Villa La Angostura,San Martin de los Andes,1,200,Villa La Angostura - San Martin de los Andes
+Sur,San Martin de los Andes,Junin de los Andes,1,200,San Martin de los Andes - Junin de los Andes
+Sur,Junin de los Andes,Zapala,1,200,Junin de los Andes - Zapala
+Sur,Zapala,Chos Malal,1,200,Zapala - Chos Malal
+Sur,Chos Malal,Buta Ranquil,1,200,Chos Malal - Buta Ranquil
+Sur,Buta Ranquil,Malargue,1,200,Buta Ranquil - Malargue
+Sur,Malargue,San Rafael,1,200,Malargue - San Rafael

@@ -1,0 +1,518 @@
+Region,Origen,Destino,Cantidad de Enlaces,Velocidad [Gbps],Ruta,Distancia_km,OSNR_ASE_dB,GSNR_NLI_dB,GSNR_Total_dB,Factible,Umbral_OSNR_dB,Factible_Sin_Margen,Factible_Umbral_Menos_2.5
+Norte,Mendoza,San Juan,1,200,Mendoza - San Juan,237.0,25.33,17.56,16.86,NO,21.5,NO,NO
+Norte,Mendoza,San Jose de Jachal,1,200,Mendoza - San Juan - San Jose de Jachal,396.0,23.53,32.31,22.86,NO,21.5,SI,SI
+Norte,Mendoza,Patquia,1,200,Mendoza - San Juan - San Jose de Jachal - Patquia,629.0,14.8,55.65,14.78,NO,21.5,NO,NO
+Norte,Mendoza,Chilecito,1,200,Mendoza - San Juan - San Jose de Jachal - Patquia - Chilecito,793.0,14.37,26.89,14.11,NO,21.5,NO,NO
+Norte,Mendoza,Belen,1,200,Mendoza - San Juan - San Jose de Jachal - Patquia - Chilecito - Belen,1009.01,14.2,27.37,13.98,NO,21.5,NO,NO
+Norte,Mendoza,Santa Maria,1,200,Mendoza - San Juan - San Jose de Jachal - Patquia - Chilecito - Belen - Santa Maria,1179.01,14.08,17.19,12.34,NO,21.5,NO,NO
+Norte,San Jose de Jachal,San Miguel de Tucumán,1,200,San Jose de Jachal - Patquia - Chilecito - Belen - Santa Maria - San Miguel de Tucuman,968.01,14.43,23.7,13.93,NO,21.5,NO,NO
+Norte,Patquia,San Miguel de Tucumán,1,200,Patquia - Chilecito - Belen - Santa Maria - San Miguel de Tucuman,735.01,21.31,24.4,19.51,NO,21.5,NO,SI
+Norte,Chilecito,San Miguel de Tucumán,1,200,Chilecito - Belen - Santa Maria - San Miguel de Tucuman,571.01,24.06,25.29,21.52,NO,21.5,SI,SI
+Norte,Belen,San Miguel de Tucumán,1,200,Belen - Santa Maria - San Miguel de Tucuman,355.0,26.05,27.11,23.38,NO,21.5,SI,SI
+Norte,Santa Maria,San Miguel de Tucumán,1,200,Santa Maria - San Miguel de Tucuman,185.0,28.65,30.06,26.0,SI,21.5,SI,SI
+Norte,San Juan,San Jose de Jachal,4,100,San Juan - San Jose de Jachal,159.0,28.24,37.03,27.31,SI,12.8,SI,SI
+Norte,San Jose de Jachal,Patquia,4,100,San Jose de Jachal - Patquia,233.0,15.43,61.84,15.4,SI,12.8,SI,SI
+Norte,Patquia,Chilecito,4,100,Patquia - Chilecito,164.0,24.6,33.86,23.94,SI,12.8,SI,SI
+Norte,Chilecito,Belen,4,100,Chilecito - Belen,216.01,28.42,33.69,26.93,SI,12.8,SI,SI
+Norte,Belen,Santa Maria,4,100,Belen - Santa Maria,170.0,29.51,24.61,23.24,SI,12.8,SI,SI
+Norte,Santa Maria,San Miguel de Tucumán,4,100,Santa Maria - San Miguel de Tucuman,185.0,28.65,30.06,26.0,SI,12.8,SI,SI
+Norte,Mendoza,Villa Tulumaya,1,200,Mendoza - Villa Tulumaya,45.0,31.88,33.94,29.17,SI,21.5,SI,SI
+Norte,Mendoza,Media Agua,1,200,Mendoza - Villa Tulumaya - Media Agua,145.0,26.52,42.62,26.12,SI,21.5,SI,SI
+Norte,Mendoza,San Juan,1,200,Mendoza - Villa Tulumaya - Media Agua - San Juan,237.0,25.33,17.56,16.86,NO,21.5,NO,NO
+Norte,Mendoza,Serrezuela,1,200,Mendoza - Villa Tulumaya - Media Agua - San Juan - Serrezuela,628.0,22.42,37.25,22.17,NO,21.5,SI,SI
+Norte,Mendoza,La Falda,1,200,Mendoza - Villa Tulumaya - Media Agua - San Juan - Serrezuela - La Falda,773.0,21.64,34.15,21.31,NO,21.5,NO,SI
+Norte,Villa Tulumaya,Cordoba,1,200,Villa Tulumaya - Media Agua - San Juan - Serrezuela - La Falda - Cordoba,813.0,21.38,35.11,21.11,NO,21.5,NO,SI
+Norte,Media Agua,Cordoba,1,200,Media Agua - San Juan - Serrezuela - La Falda- Cordoba,713.0,22.44,35.54,22.12,NO,21.5,SI,SI
+Norte,San Juan,Cordoba,1,200,San Juan - Serrezuela - La Falda- Cordoba,621.0,23.01,36.41,22.69,NO,21.5,SI,SI
+Norte,Serrezuela,Cordoba,1,200,Serrezuela - La Falda - Cordoba,230.0,26.56,40.68,26.11,SI,21.5,SI,SI
+Norte,La Falda,Cordoba,1,200,La Falda - Cordoba,85.0,29.68,45.4,28.99,SI,21.5,SI,SI
+Norte,Mendoza,Villa Tulumaya,4,100,Mendoza - Villa Tulumaya,45.0,31.88,33.94,29.17,SI,12.8,SI,SI
+Norte,Villa Tulumaya,Media Agua,4,100,Villa Tulumaya - Media Agua,100.0,28.01,45.35,27.53,SI,12.8,SI,SI
+Norte,Media Agua,San Juan,4,100,Media Agua - San Juan,92.0,31.52,20.72,20.3,SI,12.8,SI,SI
+Norte,San Juan,Serrezuela,4,100,San Juan - Serrezuela,391.0,25.54,39.65,25.14,SI,12.8,SI,SI
+Norte,Serrezuela,La Falda,4,100,Serrezuela - La Falda,145.0,29.46,41.46,28.66,SI,12.8,SI,SI
+Norte,La Falda,Cordoba,4,100,La Falda - Cordoba,85.0,29.68,45.4,28.99,SI,12.8,SI,SI
+Norte,Tucuman,Concepcion,1,200,Tucuman - Concepcion,80.0,29.78,45.63,29.07,SI,21.5,SI,SI
+Norte,Tucuman,Catamarca,1,200,Tucuman - Concepcion - Catamarca,237.8,26.1,31.4,24.77,SI,21.5,SI,SI
+Norte,Tucuman,La Rioja,1,200,Tucuman - Concepcion - Catamarca - La Rioja,423.2,22.55,39.7,22.35,NO,21.5,SI,SI
+Norte,Tucuman,Patquia,1,200,Tucuman - Concepcion - Catamarca - La Rioja - Patquia,503.2,21.8,37.9,21.59,NO,21.5,SI,SI
+Norte,Concepcion,Cordoba,1,200,Concepcion - Catamarca - La Rioja - Cordoba,767.71,1.34,82.88,1.34,NO,21.5,NO,NO
+Norte,Catamarca,Cordoba,1,200,Catamarca - La Rioja - Cordoba,609.91,1.34,84.28,1.34,NO,21.5,NO,NO
+Norte,La Rioja,Cordoba,1,200,La Rioja - Cordoba,424.51,1.36,86.48,1.36,NO,21.5,NO,NO
+Norte,Patquia,Cordoba,1,200,Patquia - Cordoba,374.09,12.36,64.43,12.35,NO,21.5,NO,NO
+Norte,Serrezuela,Cordoba,1,200,Serrezuela - Cordoba,230.0,26.56,40.68,26.11,SI,21.5,SI,SI
+Norte,Tucuman,Concepcion,4,100,Tucuman - Concepcion,80.0,29.78,45.63,29.07,SI,12.8,SI,SI
+Norte,Concepcion,Catamarca,4,100,Concepcion - Catamarca,157.8,28.53,33.22,26.91,SI,12.8,SI,SI
+Norte,Catamarca,La Rioja,4,100,Catamarca- La Rioja,185.4,25.08,43.59,24.81,SI,12.8,SI,SI
+Norte,La Rioja,Patquia,4,100,La Rioja - Patquia ,80.0,29.78,45.63,29.07,SI,12.8,SI,SI
+Norte,Patquia,Serrezuela,4,100,Patquia - Serrezuela,226.3,20.5,49.94,20.42,SI,12.8,SI,SI
+Norte,Serrezuela,Cordoba,4,100,Serrezuela - Cordoba,230.0,26.56,40.68,26.11,SI,12.8,SI,SI
+Norte,Tucuman,Santiago del Estero,1,200,Tucuman - Santiago del Estero,193.0,26.19,43.35,25.84,SI,21.5,SI,SI
+Norte,Tucuman,Frias,1,200,Tucuman - Santiago del Estero - Frias,365.0,23.6,38.37,23.31,NO,21.5,SI,SI
+Norte,Tucuman,Dean Funes,1,200,Tucuman - Santiago del Estero - Frias - Dean Funes,592.0,22.24,36.97,21.99,NO,21.5,SI,SI
+Norte,Tucuman,Jesus Maria,1,200,Tucuman - Santiago del Estero - Frias - Dean Funes - Jesus Maria,677.0,21.52,36.38,21.29,NO,21.5,NO,SI
+Norte,Tucuman,Cordoba,1,200,Tucuman - Santiago del Estero - Frias - Dean Funes - Jesus Maria - Cordoba,731.0,21.12,27.5,20.15,NO,21.5,NO,SI
+Norte,Santiago del Estero,Cordoba,1,200,Santiago del Estero - Frias - Dean Funes - Jesus Maria - Cordoba,538.0,22.73,28.62,21.64,NO,21.5,SI,SI
+Norte,Frias,Cordoba,1,200,Frias - Dean Funes - Jesus Maria - Cordoba,366.0,24.73,30.1,23.47,NO,21.5,SI,SI
+Norte,Dean Funes,Cordoba,1,200,Dean Funes - Jesus Maria - Cordoba,139.0,27.53,34.14,26.36,SI,21.5,SI,SI
+Norte,Jesus Maria,Cordoba,1,200,Jesus Maria - Cordoba,54.0,31.61,37.31,29.85,SI,21.5,SI,SI
+Norte,Tucuman,Santiago del Estero,4,100,Tucuman - Santiago del Estero,193.0,26.19,43.35,25.84,SI,12.8,SI,SI
+Norte,Santiago del Estero,Frias,4,100,Santiago del Estero - Frias,172.0,27.07,41.41,26.59,SI,12.8,SI,SI
+Norte,Frias,Dean Funes,4,100,Frias - Dean Funes,227.0,27.96,40.68,27.34,SI,12.8,SI,SI
+Norte,Dean Funes,Jesus Maria,4,100,Dean Funes- Jesus Maria,85.0,29.68,45.4,28.99,SI,12.8,SI,SI
+Norte,Jesus Maria,Cordoba,4,100,Jesus Maria - Cordoba,54.0,31.61,37.31,29.85,SI,12.8,SI,SI
+Norte,San Miguel de Tucuman,Santa Maria,1,200,San Miguel de Tucuman - Santa Maria,185.0,30.88,30.06,27.07,SI,21.5,SI,SI
+Norte,San Miguel de Tucuman,San Antonio de los Cobres,1,200,San Miguel de Tucuman - Santa Maria - San Antonio de los Cobres,530.9,23.1,39.6,22.87,NO,21.5,SI,SI
+Norte,San Miguel de Tucuman,La Quiaca,1,200,San Miguel de Tucuman - Santa Maria - San Antonio de los Cobres - La Quiaca,838.7,19.36,37.92,19.24,NO,21.5,NO,SI
+Norte,San Miguel de Tucuman,Humahuaca,1,200,San Miguel de Tucuman - Santa Maria - San Antonio de los Cobres - La Quiaca - Humahuaca,980.7,18.92,34.65,18.75,NO,21.5,NO,NO
+Norte,San Antonio de los Cobres,San Salvador de Jujuy,1,200,San Antonio de los Cobres - La Quiaca - Humahuaca - San Salvador de Jujuy,577.8,20.64,2.55,2.49,NO,21.5,NO,NO
+Norte,La Quiaca,San Salvador de Jujuy,1,200,La Quiaca - Humahuaca - San Salvador de Jujuy,270.0,27.14,4.75,4.72,NO,21.5,NO,NO
+Norte,Humahuaca,San Salvador de Jujuy,1,200,Humahuaca - San Salvador de Jujuy,128.0,31.56,7.17,7.15,NO,21.5,NO,NO
+Norte,Santa Maria,San Antonio de los Cobres,4,100,Santa Maria - San Antonio de los Cobres,345.9,23.9,41.93,23.67,SI,12.8,SI,SI
+Norte,San Antonio de los Cobres,La Quiaca,4,100,San Antonio de los Cobres- La Quiaca,307.8,21.74,43.05,21.6,SI,12.8,SI,SI
+Norte,La Quiaca,Humahuaca,4,100,La Quiaca - Humahuaca,142.0,29.09,42.44,28.39,SI,12.8,SI,SI
+Norte,Humahuaca,San Salvador de Jujuy,4,100,Humahuaca - San Salvador de Jujuy,128.0,31.56,7.17,7.15,NO,12.8,NO,NO
+Norte,Tucuman,San Jose de Metan,1,200,Tucuman - San Jose de Metan,181.0,27.49,27.54,24.31,SI,21.5,SI,SI
+Norte,Tucuman,Salta,1,200,Tucuman - San Jose de Metan - Salta,332.0,25.55,25.33,22.31,NO,21.5,SI,SI
+Norte,San Jose de Metan,Jujuy,1,200,San Jose de Metan - Salta - Jujuy,285.0,26.75,32.22,25.42,SI,21.5,SI,SI
+Norte,Salta,Jujuy,1,200,Salta - Jujuy,134.0,29.56,35.16,28.04,SI,21.5,SI,SI
+Norte,Tucuman,San Jose de Metan,4,100,Tucuman - San Jose de Metan,181.0,27.49,27.54,24.31,SI,12.8,SI,SI
+Norte,San Jose de Metan,Salta,4,100,San Jose de Metan - Salta,151.0,29.98,29.32,26.32,SI,12.8,SI,SI
+Norte,Salta,Jujuy,1,100,Salta - Jujuy,134.0,29.56,35.16,28.04,SI,12.8,SI,SI
+Norte,San Salvador de Jujuy,San Jose de Metan,1,200,San Salvador de Jujuy - San Jose de Metan,285.0,24.87,26.22,22.37,NO,21.5,SI,SI
+Norte,San Salvador de Jujuy,Saenz Peña,1,200,San Salvador de Jujuy - San Jose de Metan - Saenz Peña,854.0,21.9,29.91,21.17,NO,21.5,NO,SI
+Norte,Saenz Peña,Resistencia,1,200,Saenz Peña - Resistencia,177.0,26.92,40.22,26.41,SI,21.5,SI,SI
+Norte,San Jose de Metan,Saenz Peña,4,100,San Jose de Metan - Saenz Peña,569.0,24.94,31.8,23.95,SI,12.8,SI,SI
+Norte,Saenz Peña,Resistencia,4,100,Saenz Peña - Resistencia,177.0,26.92,40.22,26.41,SI,12.8,SI,SI
+Norte,San Salvador de Jujuy,San Pedro,1,200,San Salvador de Jujuy - San Pedro,70.0,30.85,43.5,29.89,SI,21.5,SI,SI
+Norte,San Salvador de Jujuy,San Martin,1,200,San Salvador de Jujuy - San Pedro - San Martin,126.0,28.17,34.97,26.99,SI,21.5,SI,SI
+Norte,San Salvador de Jujuy,Embarcacion,1,200,San Salvador de Jujuy - San Pedro - San Martin - Embarcacion,237.0,25.59,19.33,18.36,NO,21.5,NO,NO
+Norte,San Salvador de Jujuy,Juan Page,1,200,San Salvador de Jujuy - San Pedro - San Martin - Embarcacion - Juan Page,437.0,24.2,27.32,22.36,NO,21.5,SI,SI
+Norte,San Salvador de Jujuy,Las Lomitas,1,200,San Salvador de Jujuy - San Pedro - San Martin - Embarcacion - Juan Page - Las Lomitas,666.0,22.85,32.48,22.28,NO,21.5,SI,SI
+Norte,San Salvador de Jujuy,Formosa,1,200,San Salvador de Jujuy - San Pedro - San Martin - Embarcacion - Juan Page - Las Lomitas - Formosa,1005.0,21.97,21.47,18.65,NO,21.5,NO,NO
+Norte,San Pedro,Resistencia,1,200,San Pedro - San Martin - Embarcacion - Juan Page - Las Lomitas - Formosa - Resistencia,1156.0,21.53,32.5,21.1,NO,21.5,NO,SI
+Norte,San Martin,Resistencia,1,200,San Martin - Embarcacion - Juan Page - Las Lomitas - Formosa - Resistencia,1100.0,21.98,32.76,21.54,NO,21.5,SI,SI
+Norte,Embarcacion,Resistencia,1,200,Embarcacion - Juan Page - Las Lomitas - Formosa - Resistencia,989.0,22.93,33.25,22.42,NO,21.5,SI,SI
+Norte,Juan Page,Resistencia,1,200,Juan Page - Las Lomitas - Formosa - Resistencia,789.0,23.92,34.28,23.38,NO,21.5,SI,SI
+Norte,Las Lomitas,Resistencia,1,200,Las Lomitas - Formosa - Resistencia,560.0,25.74,35.68,25.09,SI,21.5,SI,SI
+Norte,Formosa,Resistencia,1,200,Formosa - Resistencia,221.0,28.2,39.9,27.51,SI,21.5,SI,SI
+Norte,San Salvador de Jujuy,San Pedro,4,100,San Salvador de Jujuy - San Pedro,70.0,30.85,43.5,29.89,SI,12.8,SI,SI
+Norte,San Pedro,San Martin,4,100,San Pedro - San Martin,56.0,31.54,38.08,29.93,SI,12.8,SI,SI
+Norte,San Martin,Embarcacion,4,100,San Martin - Embarcacion ,111.0,29.08,22.73,21.72,SI,12.8,SI,SI
+Norte,Embarcacion,Juan Page,4,100,Embarcacion - Juan Page,200.0,29.83,30.78,26.92,SI,12.8,SI,SI
+Norte,Juan Page,Las Lomitas,4,100,Juan Page - Las Lomitas,229.0,28.56,37.49,27.62,SI,12.8,SI,SI
+Norte,Las Lomitas,Formosa,4,100,Las Lomitas - Formosa,339.0,29.38,26.14,24.27,SI,12.8,SI,SI
+Norte,Formosa,Resistencia,4,100,Formosa - Resistencia,221.0,28.2,39.9,27.51,SI,12.8,SI,SI
+Norte,Tucuman,Santiago del Estero,1,200,Tucuman - Santiago del Estero,193.0,26.19,43.35,25.84,SI,21.5,SI,SI
+Norte,Tucuman,Añatuya,1,200,Tucuman - Santiago del Estero - Añatuya,390.6,20.89,43.53,20.79,NO,21.5,NO,SI
+Norte,Añatuya,Santa Fe,1,200,Añatuya - Tostado - Rafaela - Santa Fe,591.0,22.2,27.53,21.0,NO,21.5,NO,SI
+Norte,Tostado,Santa Fe,1,200,Tostado - Rafaela - Santa Fe,423.0,23.81,28.76,22.48,NO,21.5,SI,SI
+Norte,Santiago del Estero,Añatuya,4,100,Santiago del Estero - Añatuya,197.6,22.41,46.75,22.28,SI,12.8,SI,SI
+Norte,Añatuya,Tostado,4,100,Añatuya - Tostado,168.0,27.29,43.61,26.84,SI,12.8,SI,SI
+Norte,Cordoba,Arroyito,4,100,Cordoba - Arroyito,146.0,28.98,37.89,28.0,SI,12.8,SI,SI
+Norte,Arroyito,San Francisco,4,100,Arroyito - San Francisco,100.0,28.01,45.35,27.53,SI,12.8,SI,SI
+Norte,San Francisco,Rafaela,4,100,San Francisco - Rafaela,87.0,29.49,45.39,28.82,SI,12.8,SI,SI
+Norte,Rafaela,Santa Fe,4,100,Rafaela - Santa Fe,125.0,30.29,33.58,28.15,SI,12.8,SI,SI
+Norte,Cordoba,Arroyito,1,200,Cordoba - Arroyito,146.0,28.98,37.89,28.0,SI,21.5,SI,SI
+Norte,Arroyito,Santa Fe,1,200,Arroyito - San Francisco - Rafaela - Santa Fe,312.0,24.39,30.46,23.28,NO,21.5,SI,SI
+Norte,Cordoba,San Francisco,1,200,Cordoba - Arroyito - San Francisco,246.0,25.46,40.68,25.1,SI,21.5,SI,SI
+Norte,San Francisco,Santa Fe,1,200,San Francisco - Rafaela - Santa Fe,212.0,26.86,31.75,25.4,SI,21.5,SI,SI
+Norte,Cordoba,Rafaela,1,200,Cordoba - Arroyito - San Francisco - Rafaela,333.0,24.01,39.41,23.73,SI,21.5,SI,SI
+Norte,Rafaela,Santa Fe,1,200,Rafaela - Santa Fe,125.0,30.29,33.58,28.15,SI,21.5,SI,SI
+Norte,Rafaela,Sunchales,4,100,Rafaela - Sunchales,50.0,31.74,35.8,29.62,SI,12.8,SI,SI
+Norte,Sunchales,Ceres,4,100,Sunchales - Ceres,163.0,28.0,41.42,27.41,SI,12.8,SI,SI
+Norte,Ceres,Tostado,4,100,Ceres - Tostado,85.0,29.68,45.4,28.99,SI,12.8,SI,SI
+Norte,Tostado,Vera,4,100,Tostado - Vera,207.0,27.76,28.86,25.04,SI,12.8,SI,SI
+Norte,Vera,Resistencia,4,100,Vera - Resistencia,327.0,26.19,32.85,25.11,SI,12.8,SI,SI
+Norte,Santa Fe,Rafaela,1,200,Santa Fe - Rafaela,125.0,30.92,33.58,28.52,SI,21.5,SI,SI
+Norte,Santa Fe,Sunchales,1,200,Santa Fe - Rafaela - Sunchales,175.0,28.3,30.89,26.1,SI,21.5,SI,SI
+Norte,Sunchales,Resistencia,1,200,Sunchales - Ceres - Tostado - Vera - Resistencia,782.0,21.71,28.9,20.87,NO,21.5,NO,SI
+Norte,Santa Fe,Ceres,1,200,Santa Fe - Rafaela - Sunchales - Ceres,338.0,25.14,37.58,24.69,SI,21.5,SI,SI
+Norte,Ceres,Resistencia,1,200,Ceres - Tostado - Vera - Resistencia,619.0,22.88,29.89,21.98,NO,21.5,SI,SI
+Norte,Santa Fe,Tostado,1,200,Santa Fe - Rafaela - Sunchales - Ceres - Tostado,423.0,23.83,37.76,23.5,NO,21.5,SI,SI
+Norte,Tostado,Resistencia,1,200,Tostado - Vera - Resistencia,534.0,23.89,30.49,22.89,NO,21.5,SI,SI
+Norte,Santa Fe,Vera,1,200,Santa Fe - Rafaela - Sunchales - Ceres - Tostado - Vera,630.0,22.35,24.03,20.03,NO,21.5,NO,SI
+Norte,Vera,Resistencia,1,200,Vera - Resistencia,327.0,26.19,32.85,25.11,SI,21.5,SI,SI
+Norte,Resistencia,Corrientes,4,100,Resistencia - Corrientes,22.0,32.24,26.23,25.03,SI,12.8,SI,SI
+Norte,Corrientes,Ituzaingo,4,100,Corrientes - Ituzaingo,249.0,26.93,37.88,26.29,SI,12.8,SI,SI
+Norte,Ituzaingo,Posadas,4,100,Ituzaingo - Posadas,95.0,28.63,45.36,28.07,SI,12.8,SI,SI
+Norte,Resistencia,Ituzaingo,1,200,Resistencia - Corrientes - Ituzaingo,271.0,25.81,37.05,25.25,SI,21.5,SI,SI
+Norte,Ituzaingo,Posadas,1,200,Ituzaingo - Posadas,95.0,28.63,45.36,28.07,SI,21.5,SI,SI
+Norte,Posadas,San Jose,1,200,Posadas - San Jose,53.0,31.64,36.93,29.81,SI,21.5,SI,SI
+Norte,Posadas,Paso de los Libres,1,200,Posadas - San Jose - Paso de los Libres,395.0,28.23,9.26,9.2,NO,21.5,NO,NO
+Norte,San Jose,Santa Fe,1,200,San Jose - Paso de los Libres - Concordia - Parana - Santa Fe,989.0,21.34,20.49,17.84,NO,21.5,NO,NO
+Norte,Paso de los Libres,Santa Fe,1,200,Paso de los Libres - Concordia - Parana - Santa Fe,647.0,21.85,22.45,19.08,NO,21.5,NO,SI
+Norte,Concordia,Santa Fe,1,200,Concordia - Parana - Santa Fe,382.0,24.23,24.54,21.28,NO,21.5,NO,SI
+Norte,Posadas,San Jose,4,100,Posadas - San Jose,53.0,31.64,36.93,29.81,SI,12.8,SI,SI
+Norte,San Jose,Paso de los Libres,4,100,San Jose - Paso de los Libres,342.0,30.86,10.08,10.03,NO,12.8,NO,NO
+Norte,Paso de los Libres,Concordia,4,100,Paso de los Libres - Concordia,265.0,25.61,42.62,25.28,SI,12.8,SI,SI
+Norte,Benavidez,Concepcion del Uruguay,1,200,Benavidez - Campana - Concepcion del Uruguay,355.0,23.91,40.95,23.67,SI,21.5,SI,SI
+Norte,Benavidez,Concordia,1,200,Benavidez - Campana - Concepcion del Uruguay - Concordia,517.0,22.51,36.34,22.22,NO,21.5,SI,SI
+Norte,Concepcion del Uruguay,Santa Fe,1,200,Concepcion del Uruguay - Concordia - Parana - Santa Fe,544.0,22.74,23.05,19.82,NO,21.5,NO,SI
+Norte,Concordia,Santa Fe,1,200,Concordia - Parana - Santa Fe,382.0,24.23,24.54,21.28,NO,21.5,NO,SI
+Norte,Campana,Concepcion del Uruguay,4,100,Campana - Concepcion del Uruguay,275.0,25.1,42.05,24.8,SI,12.8,SI,SI
+Norte,Concepcion del Uruguay,Concordia,4,100,Concepcion del Uruguay - Concordia,162.0,28.09,41.42,27.49,SI,12.8,SI,SI
+Norte,Benavidez,Campana,1,200,Benavidez - Campana,80.0,30.13,45.42,29.36,SI,21.5,SI,SI
+Norte,Benavidez,Baradero,1,200,Benavidez - Campana - Baradero,160.0,26.29,38.42,25.77,SI,21.5,SI,SI
+Norte,Benavidez,San Nicolas,1,200,Benavidez - Campana - Baradero - San Nicolas,270.0,24.12,39.2,23.82,SI,21.5,SI,SI
+Norte,Campana,Rosario,1,200,Campana - Baradero - San Nicolas - Rosario,271.0,24.1,39.2,23.8,SI,21.5,SI,SI
+Norte,Baradero,Rosario,1,200,Baradero - San Nicolas - Rosario,191.0,26.0,40.96,25.61,SI,21.5,SI,SI
+Norte,San Nicolas,Rosario,1,200,San Nicolas - Rosario,81.0,30.04,45.42,29.29,SI,21.5,SI,SI
+Norte,Benavidez,Campana,4,100,Benavidez - Campana,80.0,30.13,45.42,29.36,SI,12.8,SI,SI
+Norte,Campana,Baradero,4,100,Campana - Baradero,80.0,28.61,40.76,27.91,SI,12.8,SI,SI
+Norte,Baradero,San Nicolas,4,100,Baradero - San Nicolas,110.0,28.18,42.89,27.62,SI,12.8,SI,SI
+Norte,San Nicolas,Rosario,4,100,San Nicolas - Rosario,81.0,30.04,45.42,29.29,SI,12.8,SI,SI
+Norte,Rosario,San Fabian,1,200,Rosario - San Fabian,125.0,24.24,45.32,24.03,SI,21.5,SI,SI
+Norte,San Fabian,Santa Fe,1,200,San Fabian - Santa Fe,80.0,30.13,45.42,29.36,SI,21.5,SI,SI
+Norte,Rosario,San Fabian,4,100,Rosario - San Fabian,125.0,24.24,45.32,24.03,SI,12.8,SI,SI
+Norte,San Fabian,Santa Fe,4,100,San Fabian - Santa Fe,80.0,30.13,45.42,29.36,SI,12.8,SI,SI
+Norte,Santa Fe,Parana,1,200,Santa Fe - Parana,40.0,31.99,32.12,28.52,SI,21.5,SI,SI
+Norte,Santa Fe,La Paz,1,200,Santa Fe - Parana - La Paz,222.0,25.35,35.5,24.74,SI,21.5,SI,SI
+Norte,Santa Fe,Goya,1,200,Santa Fe - Parana - La Paz - Goya,435.0,21.44,39.55,21.28,NO,21.5,NO,SI
+Norte,Santa Fe,Bellavista,1,200,Santa Fe - Parana - La Paz - Goya - Bellavista,526.0,20.75,37.73,20.59,NO,21.5,NO,SI
+Norte,Santa Fe,Corrientes,1,200,Santa Fe - Parana - La Paz - Goya - Bellavista - Corrientes,684.0,20.05,34.67,19.84,NO,21.5,NO,SI
+Norte,Parana,Resistencia,1,200,Parana - La Paz - Goya - Bellavista - Corrientes - Resistencia,666.0,20.07,15.39,14.1,NO,21.5,NO,NO
+Norte,La Paz,Resistencia,1,200,La Paz - Goya - Bellavista - Corrientes - Resistencia,484.0,21.22,16.69,15.36,NO,21.5,NO,NO
+Norte,Goya,Resistencia,1,200,Goya - Bellavista - Corrientes - Resistencia,271.0,24.82,18.63,17.65,NO,21.5,NO,NO
+Norte,Bellavista,Resistencia,1,200,Bellavista - Corrientes - Resistencia,180.0,26.85,20.05,19.17,NO,21.5,NO,SI
+Norte,Corrientes,Resistencia,1,200,Corrientes - Resistencia,22.0,32.24,26.23,25.03,SI,21.5,SI,SI
+Norte,Santa Fe,Parana,4,100,Santa Fe - Parana,40.0,31.99,32.12,28.52,SI,12.8,SI,SI
+Norte,Parana,La Paz,4,100,Parana - La Paz,182.0,26.41,37.06,25.78,SI,12.8,SI,SI
+Norte,La Paz,Goya,4,100,La Paz - Goya,213.0,23.71,43.34,23.51,SI,12.8,SI,SI
+Norte,Goya,Bellavista,4,100,Goya - Bellavista,91.0,29.08,45.38,28.46,SI,12.8,SI,SI
+Norte,Bellavista,Corrientes,4,100,Bellavista - Corrientes,158.0,28.34,40.64,27.67,SI,12.8,SI,SI
+Norte,Posadas,Jardin America,1,200,Posadas - Jardin America,104.0,31.8,25.66,24.51,SI,21.5,SI,SI
+Norte,Posadas,Puerto Iguazu,1,200,Posadas - Jardin America - Puerto Iguazu,284.0,26.47,17.9,17.3,NO,21.5,NO,NO
+Norte,Jardin America,Puerto Iguazu,1,200,Jardin America - Puerto Iguazu,180.0,27.98,19.99,19.29,NO,21.5,NO,SI
+Norte,Posadas,Jardin America,4,100,Posadas - Jardin America,104.0,31.8,25.66,24.51,SI,12.8,SI,SI
+Norte,Jardin America,Puerto Iguazu,4,100,Jardin America - Puerto Iguazu,180.0,27.98,19.99,19.29,SI,12.8,SI,SI
+Norte,Posadas,Puerto Iguazu,1,200,Posadas - San Jose - Aristobulo del valle - Puerto Iguazu,407.5,19.71,46.23,19.63,NO,21.5,NO,SI
+Norte,Posadas,San Jose,1,200,Posadas - San Jose,53.0,31.64,36.93,29.81,SI,21.5,SI,SI
+Norte,San Jose,Aristobulo del Valle,1,200,San Jose - Aristobulo del valle,143.9,28.48,37.69,27.57,SI,21.5,SI,SI
+Norte,Aristobulo del Valle,Puerto Iguazu,1,200,Aristobulo del valle - Puerto Iguazu,210.6,20.66,50.14,20.57,NO,21.5,NO,SI
+Norte,Posadas,San Jose,4,100,Posadas - San Jose,53.0,31.64,36.93,29.81,SI,12.8,SI,SI
+Norte,San Jose,Aristobulo del Valle,4,100,San Jose - Aristobulo del Valle,143.9,28.48,37.69,27.57,SI,12.8,SI,SI
+Norte,Aristobulo del Valle,Puerto Iguazu,4,100,Aristobulo del Valle - Puerto Iguazu,210.6,20.66,50.14,20.57,SI,12.8,SI,SI
+Norte,Clorinda,Formosa,1,200,Clorinda - Formosa - Resistencia,357.0,24.82,37.86,24.42,SI,21.5,SI,SI
+Norte,Clorinda,Resistencia,4,100,Clorinda - Formosa,136.0,27.49,29.99,25.31,SI,12.8,SI,SI
+Norte,San Salvador de Jujuy,Salvador Mazza,1,200,San Salvador de Jujuy - Embarcacion - Salvador Mazza,381.0,24.4,10.32,10.15,NO,21.5,NO,NO
+Norte,San Salvador de Jujuy,Embarcacion,1,200,San Salvador de Jujuy - Embarcacion,237.0,25.59,19.33,18.36,NO,21.5,NO,NO
+Norte,Embarcacion,Salvador Mazza,4,100,Embarcacion - Salvador Mazza,144.0,30.61,14.51,14.39,NO,12.8,SI,SI
+Norte,Benavidez,Rosario,1,400,Benavidez - Zarate - San Pedro - San Nicolas de los Arroyos - Rosario,351.0,23.13,38.27,22.87,NO,25.0,NO,SI
+Norte,Rosario,Resistencia,1,400,Rosario - San Fabian - Santa Fe - Parana - La Paz - Goya - Bellavista - Corrientes - Resistencia,911.0,18.18,14.0,12.59,NO,25.0,NO,NO
+Norte,Benavidez,Zarate,2,300,Benavidez - Zarate,93.0,28.07,19.09,18.52,NO,21.5,NO,NO
+Norte,Benavidez,San Nicolas de los Arroyos,1,300,Benavidez - Zarate - San Pedro - San Nicolas de los Arroyos,270.0,24.12,39.2,23.82,SI,21.5,SI,SI
+Norte,Zarate,San Pedro,1,300,Zarate - San Pedro,101.0,28.52,26.53,24.22,SI,21.5,SI,SI
+Norte,Zarate,Rosario,1,300,Zarate - San Pedro - San Nicolas de los Arroyos - Rosario,258.0,24.81,39.66,24.48,SI,21.5,SI,SI
+Norte,San Pedro,Rosario,1,300,San Pedro - San Nicolas de los Arroyos - Rosario,157.0,27.23,42.42,26.76,SI,21.5,SI,SI
+Norte,San Nicolas,Rosario,1,300,San Nicolas de los Arroyos - Rosario,81.0,30.04,45.42,29.29,SI,21.5,SI,SI
+Norte,Rosario,San Fabian,1,300,Rosario - San Fabian,125.0,24.24,45.32,24.03,SI,21.5,SI,SI
+Norte,Rosario,Santa Fe,1,300,Rosario - San Fabian - Santa Fe,205.0,23.24,42.36,23.05,NO,21.5,SI,SI
+Norte,San Fabian,Santa Fe,1,300,San Fabian - Santa Fe,80.0,30.13,45.42,29.36,SI,21.5,SI,SI
+Norte,Santa Fe,La Paz,1,300,Santa Fe - Parana - La Paz,222.0,25.35,35.5,24.74,SI,21.5,SI,SI
+Norte,Santa Fe,Parana,1,300,Santa Fe - Parana,40.0,31.99,32.12,28.52,SI,21.5,SI,SI
+Norte,Parana,Goya,1,300,Parana - La Paz - Goya,395.0,21.84,40.39,21.68,NO,21.5,SI,SI
+Norte,Goya,Resistencia,1,300,Goya - Bellavista - Corrientes - Resistencia,271.0,24.82,18.63,17.65,NO,21.5,NO,NO
+Norte,La Paz,Bellavista,1,300,La Paz - Goya - Bellavista,304.0,22.6,40.59,22.41,NO,21.5,SI,SI
+Norte,Bellavista,Corrientes,1,300,Bellavista - Corrientes,158.0,28.34,40.64,27.67,SI,21.5,SI,SI
+Norte,Corrientes,Resistencia,1,300,Corrientes - Resistencia,22.0,32.24,26.23,25.03,SI,21.5,SI,SI
+Norte,Benavidez,Santa Fe,2,300,Benavidez - Zarate - San Pedro - San Nicolas de los Arroyos - Rosario - San Fabian - Santa Fe,556.0,20.18,36.84,20.02,NO,21.5,NO,SI
+Centro,Cordoba,V. Mercedes,1,200,Cordoba - V. Mercedes,452.0,21.84,39.63,21.67,NO,21.5,SI,SI
+Centro,Rufino ,Lujan,1,200,Rufino - Lujan,412.0,15.34,55.69,15.31,NO,21.5,NO,NO
+Centro,Lujan,Chacabuco,1,200,Lujan - Chacabuco ,153.0,29.15,29.54,26.05,SI,21.5,SI,SI
+Centro,Lujan,Junin,1,200,Lujan - Chacabuco - Junin ,208.0,27.15,34.25,26.09,SI,21.5,SI,SI
+Centro,Lujan,Vedia,1,200,Lujan - Chacabuco - Junin - Vedia ,278.0,25.54,39.25,25.12,SI,21.5,SI,SI
+Centro,Lujan,Rufino,1,200,Lujan - Chacabuco - Junin - Vedia - Rufino ,353.0,24.27,38.83,23.94,SI,21.5,SI,SI
+Centro,Lujan,Pehuajo,1,200,Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo ,587.0,23.07,20.85,18.76,NO,21.5,NO,NO
+Centro,Lujan,Bolivar,1,200,Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar ,674.0,22.08,36.31,21.81,NO,21.5,SI,SI
+Centro,Lujan,Olavarria,1,200,Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria ,781.0,19.33,39.6,19.23,NO,21.5,NO,SI
+Centro,Lujan,Azul,1,200,Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul ,836.0,19.04,33.25,18.82,NO,21.5,NO,NO
+Centro,Lujan,Tandil,1,200,Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil,941.0,18.33,35.14,18.19,NO,21.5,NO,NO
+Centro,Chacabuco,Abasto,1,200,Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil,788.0,18.7,35.92,18.57,NO,21.5,NO,NO
+Centro,Junin,Abasto,1,200,Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil,733.0,18.94,36.39,18.81,NO,21.5,NO,NO
+Centro,Vedia,Abasto,1,200,Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil,663.0,19.24,36.93,19.11,NO,21.5,NO,SI
+Centro,Rufino,Abasto,1,200,Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto,1152.0,16.28,34.65,16.19,NO,21.5,NO,NO
+Centro,Pehuajo,Abasto,1,200,Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto,918.0,16.5,35.74,16.42,NO,21.5,NO,NO
+Centro,Bolivar,Abasto,1,200,Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto,831.0,16.76,36.21,16.68,NO,21.5,NO,NO
+Centro,Olavarria,Abasto,1,200,Olavarria - Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto,724.0,18.06,36.65,17.96,NO,21.5,NO,NO
+Centro,Azul,Abasto,1,200,Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto,669.0,18.29,37.11,18.19,NO,21.5,NO,NO
+Centro,Tandil,Abasto,1,200,Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto,564.0,19.0,37.78,18.89,NO,21.5,NO,NO
+Centro,Lujan,Chacabuco,4,100,Lujan - Chacabuco ,153.0,29.15,29.54,26.05,SI,12.8,SI,SI
+Centro,Chacabuco,Junin,4,100,Chacabuco - Junin ,55.0,31.47,38.97,30.01,SI,12.8,SI,SI
+Centro,Junin,Vedia,4,100, Junin - Vedia ,70.0,30.62,45.1,29.76,SI,12.8,SI,SI
+Centro,Vedia,Rufino,4,100,Vedia - Rufino ,75.0,30.23,45.66,29.45,SI,12.8,SI,SI
+Centro,Rufino,Pehuajo,4,100,Rufino - Pehuajo ,234.0,29.24,25.21,23.6,SI,12.8,SI,SI
+Centro,Pehuajo,Bolivar,4,100,Pehuajo - Bolivar ,87.0,28.98,45.63,28.39,SI,12.8,SI,SI
+Centro,Bolivar,Olavarria,4,100,Bolivar - Olavarria ,107.0,22.62,50.08,22.49,SI,12.8,SI,SI
+Centro,Olavarria,Azul,4,100,Olavarria - Azul ,55.0,30.89,44.29,29.96,SI,12.8,SI,SI
+Centro,Azul,Tandil,4,100,Azul - Tandil,105.0,26.52,45.58,26.17,SI,12.8,SI,SI
+Centro,Tandil,Mar del Plata,4,100,Tandil - Mar del Plata ,179.0,25.34,43.24,25.04,SI,12.8,SI,SI
+Centro,Lujan,Mercedes,1,200,Lujan - Mercedes ,36.0,32.03,31.56,28.29,SI,21.5,SI,SI
+Centro,Lujan,Chivilcoy,1,200,Lujan - Mercedes - Chivilcoy ,106.0,27.91,43.26,27.39,SI,21.5,SI,SI
+Centro,Lujan,Bragado,1,200,Lujan - Mercedes - Chivilcoy - Bragado ,170.0,26.03,41.1,25.64,SI,21.5,SI,SI
+Centro,Lujan,9 De Julio ,1,200,Lujan - Mercedes - Chivilcoy - Bragado - 9 De Julio,231.0,24.79,38.46,24.41,SI,21.5,SI,SI
+Centro,Mercedes,Abasto,1,200,Mercedes - Chivilcoy - Bragado - 9 De Julio - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Pinamar - Las Toninas - Abasto,1365.0,16.8,24.28,16.06,NO,21.5,NO,NO
+Centro,Chivilcoy,Abasto,1,200,Chivilcoy - Bragado - 9 De Julio - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Pinamar - Las Toninas - Abasto,1295.0,17.01,24.51,16.27,NO,21.5,NO,NO
+Centro,Bragado,Abasto,1,200,Bragado - 9 De Julio - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Pinamar - Las Toninas - Abasto,1231.0,17.21,24.76,16.47,NO,21.5,NO,NO
+Centro,9 De Julio ,Abasto,1,200,9 De Julio - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Pinamar - Las Toninas - Abasto,1170.0,17.4,25.01,16.67,NO,21.5,NO,NO
+Centro,Lujan,Mercedes,4,100,Lujan - Mercedes ,36.0,32.03,31.56,28.29,SI,12.8,SI,SI
+Centro,Mercedes,Chivilcoy,4,100,Mercedes - Chivilcoy ,70.0,30.04,46.1,29.31,SI,12.8,SI,SI
+Centro,Chivilcoy,Bragado,4,100,Chivilcoy - Bragado ,64.0,30.58,45.79,29.75,SI,12.8,SI,SI
+Centro,Bragado,9 De Julio ,4,100,Bragado - 9 De Julio,61.0,30.81,44.44,29.89,SI,12.8,SI,SI
+Centro,9 De Julio ,Pehuajo,4,100,9 De Julio - Pehuajo,111.0,30.63,35.7,28.88,SI,12.8,SI,SI
+Centro,Benavidez,Azopardo,1,200,Benavidez - Azopardo -,75.6,30.18,45.66,29.41,SI,21.5,SI,SI
+Centro,Benavidez,La Plata,1,200,Benavidez - Azopardo - La Plata ,138.9,27.58,39.28,26.94,SI,21.5,SI,SI
+Centro,Azopardo,Abasto,1,200,Azopardo - La Plata - Abasto,93.3,28.53,27.36,24.69,SI,21.5,SI,SI
+Centro,La Plata,Abasto,1,200,La Plata - Abasto,30.0,32.08,31.08,28.07,SI,21.5,SI,SI
+Centro,Benavidez,Azopardo,4,100,Benavidez - Azopardo -,75.6,30.18,45.66,29.41,SI,12.8,SI,SI
+Centro,Azopardo,La Plata,4,100,Azopardo - La Plata ,63.3,31.05,42.35,29.99,SI,12.8,SI,SI
+Centro,La Plata,Abasto,4,100,La Plata - Abasto,30.0,32.08,31.08,28.07,SI,12.8,SI,SI
+Centro,Abasto,Las Toninas,1,200,Abasto - Las Toninas,308.0,28.62,30.18,26.03,SI,21.5,SI,SI
+Centro,Abasto,Pinamar,1,200,Abasto - Las Toninas - Pinamar ,393.0,25.41,38.4,24.98,SI,21.5,SI,SI
+Centro,Abasto,Mar Del Plata,1,200,Abasto - Las Toninas - Pinamar - Mar Del Plata ,526.0,23.04,26.78,21.41,NO,21.5,NO,SI
+Centro,Abasto,Tres Arroyos,1,200,Abasto - Las Toninas - Pinamar - Mar Del Plata - Tres Arroyos ,876.0,16.86,43.89,16.82,NO,21.5,NO,NO
+Centro,Las Toninas,Bahia Blanca,1,200,Las Toninas - Pinamar - Mar Del Plata - Tres Arroyos - Bahia Blanca,795.0,15.99,28.8,15.75,NO,21.5,NO,NO
+Centro,Pinamar,Bahia Blanca,1,200,Pinamar - Mar Del Plata - Tres Arroyos - Bahia Blanca,710.0,16.26,29.3,16.02,NO,21.5,NO,NO
+Centro,Mar Del Plata,Bahia Blanca,1,200,Mar Del Plata - Tres Arroyos - Bahia Blanca,577.0,16.66,30.43,16.45,NO,21.5,NO,NO
+Centro,Tres Arroyos,Bahia Blanca,1,200,Tres Arroyos - Bahia Blanca,227.0,22.28,34.18,21.9,NO,21.5,SI,SI
+Centro,Abasto,Las Toninas,4,100,Abasto - Las Toninas,308.0,28.62,30.18,26.03,SI,12.8,SI,SI
+Centro,Las Toninas,Pinamar,4,100,Las Toninas - Pinamar ,85.0,28.23,46.04,27.73,SI,12.8,SI,SI
+Centro,Pinamar,Mar Del Plata,4,100,Pinamar - Mar Del Plata ,133.0,26.8,32.89,25.59,SI,12.8,SI,SI
+Centro,Mar Del Plata,Tres Arroyos,4,100,Mar Del Plata - Tres Arroyos ,350.0,18.06,48.8,18.01,SI,12.8,SI,SI
+Centro,Tres Arroyos,Bahia Blanca,4,100,Tres Arroyos - Bahia Blanca,227.0,22.28,34.18,21.9,SI,12.8,SI,SI
+Centro,Abasto,Chascomus,1,200,Abasto -Chascomus ,71.0,29.26,46.46,28.65,SI,21.5,SI,SI
+Centro,Abasto,Dolores,1,200,Abasto -Chascomus -  Dolores ,168.0,23.46,43.41,23.27,NO,21.5,SI,SI
+Centro,Abasto,Las Armas,1,200,Abasto -Chascomus -  Dolores -  Las Armas ,268.0,20.78,41.84,20.67,NO,21.5,NO,SI
+Centro,Chascomus,Bahia Blanca,1,200,Chascomus -  Dolores -  Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca,891.0,15.26,28.47,15.04,NO,21.5,NO,NO
+Centro,Dolores,Bahia Blanca,1,200,Dolores -  Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca,794.0,15.78,28.89,15.54,NO,21.5,NO,NO
+Centro,Las Armas,Bahia Blanca,1,200,Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca,694.0,16.46,29.36,16.21,NO,21.5,NO,NO
+Centro,Abasto,Chascomus,4,100,Abasto -Chascomus ,71.0,29.26,46.46,28.65,SI,12.8,SI,SI
+Centro,Chascomus,Dolores,4,100,Chascomus -  Dolores ,97.0,24.79,46.39,24.56,SI,12.8,SI,SI
+Centro,Dolores,Las Armas,4,100,Dolores -  Las Armas ,100.0,24.16,46.59,23.96,SI,12.8,SI,SI
+Centro,Las Armas,Mar Del Plata,4,100,Las Armas - Mar Del Plata ,117.0,29.83,38.28,28.71,SI,12.8,SI,SI
+Centro,Lujan,Benavidez,1,200,Lujan - Benavidez,60.0,31.21,41.23,30.04,SI,21.5,SI,SI
+Centro,Lujan,Benavidez,4,100,Lujan - Benavidez,60.0,31.21,41.23,30.04,SI,12.8,SI,SI
+Centro,Bahia Blanca,Algarrobo,4,200,Bahia Blanca - Algarrobo ,96.0,31.59,24.34,23.43,NO,21.5,SI,SI
+Centro,Bahia Blanca,Rio Colorado,1,200,Bahia Blanca - Algarrobo - Rio Colorado ,190.0,28.73,20.59,19.91,NO,21.5,NO,SI
+Centro,Bahia Blanca,Peru,1,200,Bahia Blanca - Algarrobo - Rio Colorado - Peru ,374.6,23.36,37.56,23.05,NO,21.5,SI,SI
+Centro,Bahia Blanca,Santa Rosa,1,200,Bahia Blanca - Algarrobo - Rio Colorado - Peru - Santa Rosa ,520.4,22.41,31.08,21.76,NO,21.5,SI,SI
+Centro,Bahia Blanca,Winifreda,1,200,Bahia Blanca - Algarrobo - Rio Colorado - Peru - Santa Rosa - Winifreda ,584.4,21.85,33.76,21.48,NO,21.5,NO,SI
+Centro,Bahia Blanca,Victorica,1,200,Bahia Blanca - Algarrobo - Rio Colorado - Peru - Santa Rosa - Winifreda - Victorica ,693.4,21.41,22.71,18.95,NO,21.5,NO,NO
+Centro,Bahia Blanca,Santa Isabel,1,200,Bahia Blanca - Algarrobo - Rio Colorado - Peru - Santa Rosa - Winifreda - Victorica - Santa Isabel ,843.4,20.8,19.36,16.97,NO,21.5,NO,NO
+Centro,Algarrobo,Mendoza,1,200,Algarrobo - Rio Colorado - Peru - Santa Rosa - Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza,1319.4,18.36,33.66,18.19,NO,21.5,NO,NO
+Centro,Rio Colorado,Mendoza,1,200,Rio Colorado - Peru - Santa Rosa - Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza,1225.4,18.56,34.16,18.39,NO,21.5,NO,NO
+Centro,Peru,Mendoza,1,200,Peru - Santa Rosa - Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza,1040.8,19.72,34.49,19.52,NO,21.5,NO,SI
+Centro,Santa Rosa,Mendoza,1,200,Santa Rosa - Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza,895.0,20.2,35.19,20.0,NO,21.5,NO,SI
+Centro,Winifreda,Mendoza,1,200,Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza,831.0,20.58,35.59,20.37,NO,21.5,NO,SI
+Centro,Victorica,Mendoza,1,200,Victorica - Santa Isabel - San Rafael - Mendoza,722.0,20.94,36.46,20.74,NO,21.5,NO,SI
+Centro,Santa Isabel,Mendoza,1,200,Santa Isabel - San Rafael - Mendoza,572.0,21.57,37.22,21.36,NO,21.5,NO,SI
+Centro,Bahia Blanca,Algarrobo,4,100,Bahia Blanca - Algarrobo ,96.0,31.59,24.34,23.43,SI,12.8,SI,SI
+Centro,Algarrobo,Rio Colorado,4,100,Algarrobo - Rio Colorado ,94.0,31.9,23.72,22.96,SI,12.8,SI,SI
+Centro,Rio Colorado,Peru,4,100,Rio Colorado - Peru ,184.6,24.84,44.07,24.59,SI,12.8,SI,SI
+Centro,Peru,Santa Rosa,4,100,Peru - Santa Rosa ,145.8,29.51,36.33,28.21,SI,12.8,SI,SI
+Centro,Santa Rosa,Winifreda,4,100,Santa Rosa - Winifreda ,64.0,31.01,42.63,29.98,SI,12.8,SI,SI
+Centro,Winifreda,Victorica,4,100,Winifreda - Victorica ,109.0,31.55,29.78,27.19,SI,12.8,SI,SI
+Centro,Victorica,Santa Isabel,4,100,Victorica - Santa Isabel ,150.0,29.62,28.4,25.69,SI,12.8,SI,SI
+Centro,Bahia Blanca,Trenque Lauquen,1,200,Bahia Blanca - Rio Colorado - Santa Rosa - Trenque Lauquen,674.4,21.41,36.93,21.2,NO,21.5,NO,SI
+Centro,Trenque Lauquen,Lujan,1,200,Trenque Lauquen - Pehuajo - Lujan,736.0,14.62,52.42,14.6,NO,21.5,NO,NO
+Centro,Santa Rosa,Trenque Lauquen,4,100,Santa Rosa - Trenque Lauquen,154.0,28.28,43.24,27.72,SI,12.8,SI,SI
+Centro,Trenque Lauquen,Pehuajo,4,100,Trenque Lauquen - Pehuajo,90.0,30.86,22.17,21.52,SI,12.8,SI,SI
+Centro,Santa Isabel,Gral. Alvear,1,200,Santa Isabel - Gral. Alvear,211.0,27.77,38.36,27.04,SI,21.5,SI,SI
+Centro,Santa Isabel,San Rafael,1,200,Santa Isabel - Gral. Alvear - San Rafael,311.0,24.51,39.68,24.19,SI,21.5,SI,SI
+Centro,Santa Isabel,Tunuyan,1,200,Santa Isabel - Gral. Alvear - San Rafael - Tunuyan ,476.0,22.74,38.9,22.51,NO,21.5,SI,SI
+Centro,Gral. Alvear,Mendoza,1,200,Gral. Alvear - San Rafael - Tunuyan - Mendoza,361.0,22.76,39.6,22.55,NO,21.5,SI,SI
+Centro,San Rafael,Mendoza,1,200,San Rafael - Tunuyan - Mendoza,261.0,24.66,40.86,24.36,SI,21.5,SI,SI
+Centro,Tunuyan,Mendoza,1,200,Tunuyan - Mendoza,96.0,27.85,45.6,27.38,SI,21.5,SI,SI
+Centro,Santa Isabel,Gral. Alvear,4,100,Santa Isabel - Gral. Alvear,211.0,27.77,38.36,27.04,SI,12.8,SI,SI
+Centro,Gral. Alvear,San Rafael,4,100,Gral. Alvear - San Rafael,100.0,27.28,45.59,26.87,SI,12.8,SI,SI
+Centro,San Rafael,Tunuyan,4,100,San Rafael - Tunuyan,165.0,27.5,43.64,27.03,SI,12.8,SI,SI
+Centro,Tunuyan,Mendoza,4,100,Tunuyan - Mendoza,96.0,27.85,45.6,27.38,SI,12.8,SI,SI
+Centro,Lujan,Cañuelas,1,200,Lujan - Cañuelas,70.0,30.58,45.32,29.74,SI,21.5,SI,SI
+Centro,Cañuelas,Abasto,1,200,Cañuelas - Abasto,80.0,29.73,45.66,29.03,SI,21.5,SI,SI
+Centro,Lujan,Cañuelas,4,100,Lujan - Cañuelas,70.0,30.58,45.32,29.74,SI,12.8,SI,SI
+Centro,Cañuelas,Abasto,4,100,Cañuelas - Abasto,80.0,29.73,45.66,29.03,SI,12.8,SI,SI
+Centro,Benavidez,San Antonio de Areco,1,200,Benavidez - San Antonio de Areco ,93.0,28.25,45.61,27.74,SI,21.5,SI,SI
+Centro,Benavidez,Arrecifes,1,200,Benavidez - San Antonio de Areco - Arrecifes ,161.0,26.3,41.42,25.89,SI,21.5,SI,SI
+Centro,Benavidez,Pergamino,1,200,Benavidez - San Antonio de Areco - Arrecifes - Pergamino ,251.0,24.3,40.88,24.03,SI,21.5,SI,SI
+Centro,San Antonio de Areco,Rosario,1,200,San Antonio de Areco - Arrecifes - Pergamino - Rosario,250.0,24.35,40.89,24.08,SI,21.5,SI,SI
+Centro,Arrecifes,Rosario,1,200,Arrecifes - Pergamino - Rosario,182.0,25.49,42.6,25.17,SI,21.5,SI,SI
+Centro,Pergamino,Rosario,1,200,Pergamino - Rosario,92.0,28.38,45.61,27.85,SI,21.5,SI,SI
+Centro,Benavidez,San Antonio de Areco,4,100,Benavidez - San Antonio de Areco ,93.0,28.25,45.61,27.74,SI,12.8,SI,SI
+Centro,San Antonio de Areco,Arrecifes,4,100,San Antonio de Areco - Arrecifes,68.0,30.73,44.5,29.83,SI,12.8,SI,SI
+Centro,Arrecifes,Pergamino,4,100,Arrecifes - Pergamino,90.0,28.63,45.62,28.07,SI,12.8,SI,SI
+Centro,Pergamino,Rosario,4,100,Pergamino - Rosario,92.0,28.38,45.61,27.85,SI,12.8,SI,SI
+Centro,Rosario,Cañada de Gomez,1,200,Rosario - Cañada de Gomez ,90.0,28.63,45.62,28.07,SI,21.5,SI,SI
+Centro,Rosario,Leones,1,200,Rosario - Cañada de Gomez - Leones,198.0,24.14,42.59,23.9,SI,21.5,SI,SI
+Centro,Rosario,Villa Maria,1,200,Rosario - Cañada de Gomez - Leones - Villa Maria ,308.0,22.62,39.83,22.41,NO,21.5,SI,SI
+Centro,Rosario,Manfredi,1,200,Rosario - Cañada de Gomez - Leones - Villa Maria - Manfredi ,403.0,21.51,38.81,21.33,NO,21.5,NO,SI
+Centro,Cañada de Gomez,Cordoba,1,200,Cañada de Gomez - Leones - Villa Maria - Manfredi - Cordoba,413.0,21.21,38.81,21.05,NO,21.5,NO,SI
+Centro,Leones,Cordoba,1,200,Leones - Villa Maria - Manfredi - Cordoba,305.0,22.94,39.83,22.72,NO,21.5,SI,SI
+Centro,Villa Maria,Cordoba,1,200,Villa Maria - Manfredi - Cordoba,195.0,24.61,42.59,24.35,SI,21.5,SI,SI
+Centro,Manfredi,Cordoba,1,200,Manfredi - Cordoba,100.0,27.28,45.59,26.87,SI,21.5,SI,SI
+Centro,Rosario,Cañada de Gomez,4,100,Rosario - Cañada de Gomez ,90.0,28.63,45.62,28.07,SI,12.8,SI,SI
+Centro,Cañada de Gomez,Leones,4,100,Cañada de Gomez - Leones ,108.0,26.04,45.58,25.73,SI,12.8,SI,SI
+Centro,Leones,Villa Maria,4,100,Leones - Villa Maria,110.0,27.91,43.11,27.39,SI,12.8,SI,SI
+Centro,Villa Maria,Manfredi,4,100,Villa Maria - Manfredi ,95.0,27.98,45.6,27.5,SI,12.8,SI,SI
+Centro,Manfredi,Cordoba,4,100,Rosario - Cañada de Gomez ,90.0,28.63,45.62,28.07,SI,12.8,SI,SI
+Centro,Cordoba,Corralito,1,200,Cordoba - Corralito ,85.0,29.21,45.64,28.58,SI,21.5,SI,SI
+Centro,Cordoba,Hernando,1,200,Cordoba - Corralito - Hernando ,180.0,25.54,42.61,25.22,SI,21.5,SI,SI
+Centro,Cordoba,Chucul,1,200,Cordoba - Corralito - Hernando - Chucul ,268.0,23.88,40.85,23.64,SI,21.5,SI,SI
+Centro,Cordoba,V. Mercedes,1,200,Cordoba - Corralito - Hernando - Chucul - V. Mercedes ,452.0,21.84,39.63,21.67,NO,21.5,SI,SI
+Centro,Cordoba,San Luis,1,200,Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis ,539.0,21.08,37.84,20.9,NO,21.5,NO,SI
+Centro,Cordoba,Santa Rosa,1,200,Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa ,734.0,19.65,37.58,19.51,NO,21.5,NO,SI
+Centro,Corralito,Mendoza,1,200,Corralito - Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa - Mendoza,759.0,19.09,36.58,18.96,NO,21.5,NO,NO
+Centro,Hernando,Mendoza,1,200,Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa - Mendoza,664.0,19.69,37.16,19.55,NO,21.5,NO,SI
+Centro,Chucul,Mendoza,1,200,Chucul - V. Mercedes - San Luis - Santa Rosa - Mendoza,576.0,20.25,37.82,20.1,NO,21.5,NO,SI
+Centro,V. Mercedes,Mendoza,1,200,V. Mercedes - San Luis - Santa Rosa - Mendoza,392.0,21.56,39.58,21.39,NO,21.5,NO,SI
+Centro,San Luis,Mendoza,1,200,San Luis - Santa Rosa - Mendoza,305.0,22.42,40.82,22.24,NO,21.5,SI,SI
+Centro,Santa Rosa,Mendoza,1,200,Santa Rosa - Mendoza,110.0,25.72,45.58,25.42,SI,21.5,SI,SI
+Centro,Cordoba,Corralito,4,100,Cordoba - Corralito ,85.0,29.21,45.64,28.58,SI,12.8,SI,SI
+Centro,Corralito,Hernando,4,100,Corralito - Hernando ,95.0,27.98,45.6,27.5,SI,12.8,SI,SI
+Centro,Hernando,Chucul,4,100,Hernando - Chucul ,88.0,28.87,45.62,28.29,SI,12.8,SI,SI
+Centro,Chucul,V. Mercedes,4,100,Chucul - V. Mercedes ,184.0,26.1,43.6,25.76,SI,12.8,SI,SI
+Centro,V. Mercedes,San Luis,4,100,V. Mercedes - San Luis ,87.0,28.98,45.63,28.39,SI,12.8,SI,SI
+Centro,San Luis,Santa Rosa,4,100,San Luis - Santa Rosa ,195.0,25.16,43.59,24.88,SI,12.8,SI,SI
+Centro,Santa Rosa,Mendoza,4,100,Santa Rosa - Mendoza,110.0,25.72,45.58,25.42,SI,12.8,SI,SI
+Centro,Benavidez,Mendoza,1,400,Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario - Cañada de Gomez - San Marcos - Villa Maria - Manfredi - Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa - Mendoza,1622.0,15.75,32.92,15.64,NO,25.0,NO,NO
+Centro,Cordoba ,V. Mercedes,1,300,Cordoba - Corralito - Hernando - Chucul - V. Mercedes,452.0,21.84,39.63,21.67,NO,21.5,SI,SI
+Centro,V. Mercedes,San Luis,1,300,V. Mercedes - San Luis,87.0,28.98,45.63,28.39,SI,21.5,SI,SI
+Centro,San Luis,Santa Rosa,1,300,San Luis - La Paz - Santa Rosa,195.0,25.16,43.59,24.88,SI,21.5,SI,SI
+Centro,Santa Rosa,Mendoza,1,300,Santa Rosa - Mendoza,110.0,25.72,45.58,25.42,SI,21.5,SI,SI
+Centro,Mendoza,Tunuyan,1,300,Mendoza - Tunuyan,96.0,27.85,45.6,27.38,SI,21.5,SI,SI
+Centro,Tunuyan,San Rafael,1,300,Tunuyan - San Rafael,165.0,27.41,43.64,26.95,SI,21.5,SI,SI
+Centro,Abasto,Marcos Paz,1,300,Abasto - Marcos Paz,88.0,28.87,45.62,28.29,SI,21.5,SI,SI
+Centro,Marcos Paz,Benavidez,1,300,Marcos Paz - Benavidez,85.0,29.21,45.64,28.58,SI,21.5,SI,SI
+Centro,Benavidez,Exaltacion de la Cruz,1,300,Benavidez - Exaltacion de la Cruz,45.0,31.82,35.0,29.46,SI,21.5,SI,SI
+Centro,Exaltacion de la Cruz,Arrecifes,1,300,Exaltacion de la Cruz - Arrecifes,48.0,31.73,36.18,29.7,SI,21.5,SI,SI
+Centro,Arrecifes,Pergamino,1,300,Arrecifes - Pergamino,90.0,28.63,45.62,28.07,SI,21.5,SI,SI
+Centro,Pergamino,Rosario,1,300,Pergamino - Rosario,92.0,28.38,45.61,27.85,SI,21.5,SI,SI
+Centro,Rosario,Cañada de Gomez,1,300,Rosario - Cañada de Gomez,90.0,28.63,45.62,28.07,SI,21.5,SI,SI
+Centro,Cañada de Gomez,San Marcos,1,300,Cañada de Gomez - San Marcos,140.9,25.08,26.87,22.74,NO,21.5,SI,SI
+Centro,San Marcos,Villa Maria,1,300,San Marcos - Villa Maria,77.1,30.0,45.67,29.26,SI,21.5,SI,SI
+Centro,Villa Maria,Manfredi,1,300,Villa Maria - Manfredi,95.0,27.98,45.6,27.5,SI,21.5,SI,SI
+Centro,Manfredi,Cordoba ,1,300,Manfredi - Cordoba ,100.0,27.28,45.59,26.87,SI,21.5,SI,SI
+Centro,Cordoba ,Corralito,1,300,Cordoba  - Corralito,85.0,29.21,45.64,28.58,SI,21.5,SI,SI
+Centro,Corralito,Hernando,1,300,Corralito - Hernando,95.0,27.98,45.6,27.5,SI,21.5,SI,SI
+Centro,Hernando,Chucul,1,300,Hernando - Chucul,88.0,28.87,45.62,28.29,SI,21.5,SI,SI
+Centro,Chucul,Mendoza,1,300,Chucul - V. Mercedes - San Luis - La Paz -  Santa Rosa - Mendoza,576.0,20.25,37.82,20.1,NO,21.5,NO,SI
+Centro,Rosario,Cordoba ,1,300,Rosario - Cañada de Gomez - San Marcos - Villa Maria - Manfredi - Cordoba ,503.0,20.49,37.98,20.34,NO,21.5,NO,SI
+Centro,Cordoba ,Mendoza,1,300,Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - Mendoza,844.0,18.69,36.07,18.56,NO,21.5,NO,NO
+Centro,Benavidez,Mendoza,2,300,Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario - Cañada de Gomez - San Marcos - Villa Maria - Manfredi -  Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - La Paz -  Santa Rosa - Mendoza,1622.0,15.75,32.92,15.64,NO,21.5,NO,NO
+Centro,Benavidez,Cordoba ,3,300,Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario - Cañada de Gomez - San Marcos - Villa Maria - Manfredi -  Cordoba,778.0,18.83,35.79,18.69,NO,21.5,NO,NO
+Centro,Benavidez,Rosario,3,300,Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario,275.0,23.81,39.81,23.55,SI,21.5,SI,SI
+Sur,Rio Gallegos,San Sebastian,1,200,Rio Gallegos - Estacion Cullen - San Sebastian,278.0,21.25,41.33,21.12,NO,21.5,NO,SI
+Sur,San Sebastian,Usuahia,1,200,San Sebastian - Rio Grande - Tolhuin - Usuahia,285.0,20.83,41.33,20.71,NO,21.5,NO,SI
+Sur,Rio Gallegos,Estacion Cullen,1,200,Rio Gallegos - Estacion Cullen ,193.0,22.27,44.78,22.13,NO,21.5,SI,SI
+Sur,Estacion Cullen,Rio Grande,1,200,Estacion Cullen - San Sebastian - Rio Grande,160.0,25.64,43.12,25.32,SI,21.5,SI,SI
+Sur,Rio Grande,Tolhuin,1,200,Rio Grande - Tolhuin,107.0,24.12,46.37,23.92,SI,21.5,SI,SI
+Sur,Rio Gallegos,Piedrabuena,4,100,Rio Gallegos - Piedrabuena,240.0,24.93,43.36,24.66,SI,12.8,SI,SI
+Sur,Piedrabuena,San Julian,4,100,Piedrabuena - San Julian,124.0,30.33,30.44,27.01,SI,12.8,SI,SI
+Sur,San Julian,Jaramillo,4,100,San Julian - Jaramillo,288.0,25.02,43.14,24.75,SI,12.8,SI,SI
+Sur,Jaramillo,Caleta Olivia,4,100,Jaramillo - Caleta Olivia,25.0,32.16,29.22,27.07,SI,12.8,SI,SI
+Sur,Rio Gallegos,Piedrabuena,1,200,Rio Gallegos - Piedrabuena,240.0,24.93,43.36,24.66,SI,21.5,SI,SI
+Sur,Piedrabuena,San Julian,1,200,Piedrabuena - San Julian,124.0,30.33,30.44,27.01,SI,21.5,SI,SI
+Sur,San Julian,Jaramillo,1,200,San Julian - Jaramillo,288.0,25.02,43.14,24.75,SI,21.5,SI,SI
+Sur,Jaramillo,Caleta Olivia,1,200,Jaramillo - Caleta Olivia,25.0,32.16,29.22,27.07,SI,21.5,SI,SI
+Sur,Rio Gallegos,Esperanza,4,100,Rio Gallegos - Esperanza,142.0,26.7,38.19,26.11,SI,12.8,SI,SI
+Sur,Esperanza,El Calafate,4,100,Esperanza - El Calafate,163.0,25.49,44.12,25.19,SI,12.8,SI,SI
+Sur,El Calafate,Tres Lagos,4,100,El Calafate - Tres Lagos,163.0,24.04,40.96,23.78,SI,12.8,SI,SI
+Sur,Tres Lagos,Gobernador Gregores,4,100,Tres Lagos - Gobernador Gregores,162.0,25.17,40.34,24.83,SI,12.8,SI,SI
+Sur,Gobernador Gregores,Bajo Caracoles,4,100,Gobernador Gregores - Bajo Caracoles,211.0,21.12,45.77,21.02,SI,12.8,SI,SI
+Sur,Bajo Caracoles,Perito Moreno,4,100,Bajo Caracoles - Perito Moreno,130.0,27.02,33.15,25.8,SI,12.8,SI,SI
+Sur,Perito Moreno,Colonia Las Heras,4,100,Perito Moreno - Colonia Las Heras,172.0,25.18,44.1,24.91,SI,12.8,SI,SI
+Sur,Colonia Las Heras,Pico Truncado,4,100,Colonia Las Heras - Pico Truncado,85.0,28.03,46.11,27.55,SI,12.8,SI,SI
+Sur,Pico Truncado,Caleta Olivia,4,100,Pico Truncado - Caleta Olivia,60.0,30.82,44.45,29.9,SI,12.8,SI,SI
+Sur,Rio Gallegos,Esperanza,1,200,Rio Gallegos - Esperanza,142.0,26.7,38.19,26.11,SI,21.5,SI,SI
+Sur,Esperanza,El Calafate,1,200,Esperanza - El Calafate,163.0,25.49,44.12,25.19,SI,21.5,SI,SI
+Sur,El Calafate,Tres Lagos,1,200,El Calafate - Tres Lagos,163.0,24.04,40.96,23.78,SI,21.5,SI,SI
+Sur,Tres Lagos,Gobernador Gregores,1,200,Tres Lagos - Gobernador Gregores,162.0,25.17,40.34,24.83,SI,21.5,SI,SI
+Sur,Gobernador Gregores,Bajo Caracoles,1,200,Gobernador Gregores - Bajo Caracoles,211.0,21.12,45.77,21.02,NO,21.5,NO,SI
+Sur,Bajo Caracoles,Perito Moreno,1,200,Bajo Caracoles - Perito Moreno,130.0,27.02,33.15,25.8,SI,21.5,SI,SI
+Sur,Perito Moreno,Colonia Las Heras,1,200,Perito Moreno - Colonia Las Heras,172.0,25.18,44.1,24.91,SI,21.5,SI,SI
+Sur,Colonia Las Heras,Pico Truncado,1,200,Colonia Las Heras - Pico Truncado,85.0,28.03,46.11,27.55,SI,21.5,SI,SI
+Sur,Pico Truncado,Caleta Olivia,1,200,Pico Truncado - Caleta Olivia,60.0,30.82,44.45,29.9,SI,21.5,SI,SI
+Sur,Dina Huapi,Bariloche,4,100,Dina Huapi - Bariloche,20.0,32.23,27.41,25.9,SI,12.8,SI,SI
+Sur,Bariloche,El Foyel,4,100,Bariloche - El Foyel,78.0,29.01,46.13,28.42,SI,12.8,SI,SI
+Sur,El Foyel,Epuyen,4,100,El Foyel - Epuyen,95.0,26.39,46.09,26.06,SI,12.8,SI,SI
+Sur,Epuyen,Esquel,4,100,Epuyen - Esquel,110.0,23.51,47.77,23.34,SI,12.8,SI,SI
+Sur,Esquel,Tecka,4,100,Esquel - Tecka,100.0,25.48,46.08,25.21,SI,12.8,SI,SI
+Sur,Tecka,J. de San Martin,4,100,Tecka - J. de San Martin,100.0,25.48,46.08,25.21,SI,12.8,SI,SI
+Sur,J. de San Martin,Alto Rio Senguer,4,100,J. de San Martin - Alto Rio Senguer,148.0,27.09,43.76,26.67,SI,12.8,SI,SI
+Sur,Alto Rio Senguer,Rio Mayo,4,100,Alto Rio Senguer - Rio Mayo,100.0,25.48,46.08,25.21,SI,12.8,SI,SI
+Sur,Rio Mayo,Perito Moreno,4,100,Rio Mayo - Perito Moreno,110.0,23.51,47.77,23.34,SI,12.8,SI,SI
+Sur,Neuquen,Dina Huapi,1,200,Neuquen - Dina Huapi,438.0,20.98,23.69,19.06,NO,21.5,NO,SI
+Sur,Dina Huapi,Bariloche,1,200,Dina Huapi - Bariloche,20.0,32.23,27.41,25.9,SI,21.5,SI,SI
+Sur,Bariloche,El Foyel,1,200,Bariloche - El Foyel,78.0,29.01,46.13,28.42,SI,21.5,SI,SI
+Sur,El Foyel,Epuyen,1,200,El Foyel - Epuyen,95.0,26.39,46.09,26.06,SI,21.5,SI,SI
+Sur,Epuyen,Esquel,1,200,Epuyen - Esquel,110.0,23.51,47.77,23.34,NO,21.5,SI,SI
+Sur,Esquel,Tecka,1,200,Esquel - Tecka,100.0,25.48,46.08,25.21,SI,21.5,SI,SI
+Sur,Tecka,J. de San Martin,1,200,Tecka - J. de San Martin,100.0,25.48,46.08,25.21,SI,21.5,SI,SI
+Sur,J. de San Martin,Alto Rio Senguer,1,200,J. de San Martin - Alto Rio Senguer,148.0,27.09,43.76,26.67,SI,21.5,SI,SI
+Sur,Alto Rio Senguer,Rio Mayo,1,200,Alto Rio Senguer - Rio Mayo,100.0,25.48,46.08,25.21,SI,21.5,SI,SI
+Sur,Rio Mayo,Perito Moreno,1,200,Rio Mayo - Perito Moreno,110.0,23.51,47.77,23.34,NO,21.5,SI,SI
+Sur,Perito Moreno,Caleta Olivia,1,200,Perito Moreno - Pico Truncado - Caleta Olivia,317.0,22.65,38.32,22.41,NO,21.5,SI,SI
+Sur,Bahia Blanca,Viedma,4,100,Bahia Blanca - Viedma,304.0,24.87,38.53,24.49,SI,12.8,SI,SI
+Sur,Viedma,San Antonio Oeste,4,100,Viedma - San Antonio Oeste,194.0,30.24,26.85,24.99,SI,12.8,SI,SI
+Sur,San Antonio Oeste,Sierra Grande,4,100,San Antonio Oeste - Sierra Grande,128.0,30.17,25.21,23.83,SI,12.8,SI,SI
+Sur,Sierra Grande,Puerto Madryn,4,100,Sierra Grande - Puerto Madryn,149.0,27.33,37.26,26.58,SI,12.8,SI,SI
+Sur,Puerto Madryn,Trelew,4,100,Puerto Madryn - Trelew,69.0,30.04,46.18,29.3,SI,12.8,SI,SI
+Sur,Trelew,Rawson,4,100,Trelew - Rawson,22.0,32.2,28.11,26.37,SI,12.8,SI,SI
+Sur,Rawson,Comodoro Rivadavia,4,100,Rawson - Comodoro Rivadavia,376.0,19.88,22.31,17.87,SI,12.8,SI,SI
+Sur,Comodoro Rivadavia,Caleta Olivia,4,100,Comodoro Rivadavia - Caleta Olivia,84.0,28.18,46.11,27.69,SI,12.8,SI,SI
+Sur,Bahia Blanca,Viedma,1,200,Bahia Blanca - Viedma,304.0,24.87,38.53,24.49,SI,21.5,SI,SI
+Sur,Viedma,Caleta Olivia,1,200,Viedma - San Antonio Oeste - Sierra Grande - Puerto Madryn - Trelew - Rawson - Comodoro Rivadavia - Caleta Olivia,1022.0,17.65,34.78,17.53,NO,21.5,NO,NO
+Sur,Bahia Blanca,San Antonio Oeste,1,200,Bahia Blanca - Viedma - San Antonio Oeste,498.0,23.77,23.0,20.28,NO,21.5,NO,SI
+Sur,San Antonio Oeste,Sierra Grande,1,200,San Antonio Oeste - Sierra Grande,128.0,30.17,25.21,23.83,SI,21.5,SI,SI
+Sur,Sierra Grande,Puerto Madryn,1,200,Sierra Grande - Puerto Madryn,149.0,27.33,37.26,26.58,SI,21.5,SI,SI
+Sur,Puerto Madryn,Trelew,1,200,Puerto Madryn - Trelew,69.0,30.04,46.18,29.3,SI,21.5,SI,SI
+Sur,Trelew,Rawson,1,200,Trelew - Rawson,22.0,32.2,28.11,26.37,SI,21.5,SI,SI
+Sur,Rawson,Comodoro Rivadavia,1,200,Rawson - Comodoro Rivadavia,376.0,19.88,22.31,17.87,NO,21.5,NO,NO
+Sur,Comodoro Rivadavia,Caleta Olivia,1,200,Comodoro Rivadavia - Caleta Olivia,84.0,28.18,46.11,27.69,SI,21.5,SI,SI
+Sur,Neuquen,Arroyito,4,100,Neuquen - Arroyito,54.0,31.21,41.7,30.08,SI,12.8,SI,SI
+Sur,Arroyito,Picun Leufu,4,100,Arroyito - Picun Leufu,84.0,28.18,46.11,27.69,SI,12.8,SI,SI
+Sur,Picun Leufu,Piedra del Aguila,4,100,Picun Leufu - Piedra del Aguila,100.0,25.48,46.08,25.21,SI,12.8,SI,SI
+Sur,Piedra del Aguila,Dina Huapi,4,100,Piedra del Aguila - Dina Huapi,200.0,25.41,26.84,22.92,SI,12.8,SI,SI
+Sur,Dina Huapi,Aguada Cecilio,4,100,Dina Huapi - Aguada Cecilio,592.0,18.99,43.96,18.92,SI,12.8,SI,SI
+Sur,Aguada Cecilio,San Antonio Oeste,4,100,Aguada Cecilio - San Antonio Oeste,90.0,27.24,46.1,26.84,SI,12.8,SI,SI
+Sur,Neuquen,Dina Huapi,1,200,Neuquen - Arroyito - Picun Leufu - Piedra del Aguila - Dina Huapi,438.0,20.98,23.69,19.06,NO,21.5,NO,SI
+Sur,Dina Huapi,Aguada Cecilio,1,200,Dina Huapi - Aguada Cecilio,592.0,18.99,43.96,18.92,NO,21.5,NO,NO
+Sur,Aguada Cecilio,San Antonio Oeste,1,200,Aguada Cecilio - San Antonio Oeste,90.0,27.24,46.1,26.84,SI,21.5,SI,SI
+Sur,San Antonio Oeste,Bahia Blanca,1,200,San Antonio Oeste - Viedma - Bahia Blanca,498.0,21.82,36.22,21.57,NO,21.5,SI,SI
+Sur,Neuquen,Arroyito,1,200,Neuquen - Arroyito,54.0,31.21,41.7,30.08,SI,21.5,SI,SI
+Sur,Arroyito,Picun Leufu,1,200,Arroyito - Picun Leufu,84.0,28.18,46.11,27.69,SI,21.5,SI,SI
+Sur,Picun Leufu,Piedra del Aguila,1,200,Picun Leufu - Piedra del Aguila,100.0,25.48,46.08,25.21,SI,21.5,SI,SI
+Sur,Piedra del Aguila,Bahia Blanca,1,200,Piedra del Aguila - Dina Huapi - Aguada Cecilio - San Antonio Oeste - Viedma - Bahia Blanca,1380.0,16.21,32.07,16.07,NO,21.5,NO,NO
+Sur,Neuquen,General Roca,4,100,Neuquen - General Roca,51.0,31.13,42.7,30.08,SI,12.8,SI,SI
+Sur,General Roca,Choele Choel,4,100,General Roca - Choele Choel,188.0,21.95,45.46,21.82,SI,12.8,SI,SI
+Sur,Choele Choel,Rio Colorado,4,100,Choele Choel - Rio Colorado,147.0,12.42,71.42,12.41,NO,12.8,NO,SI
+Sur,Rio Colorado,General Conesa,4,100,Rio Colorado - General Conesa,156.0,26.93,44.12,26.52,SI,12.8,SI,SI
+Sur,General Conesa,San Antonio Oeste,4,100,General Conesa - San Antonio Oeste,98.0,25.85,46.09,25.55,SI,12.8,SI,SI
+Sur,Neuquen,General Roca,1,200,Neuquen - General Roca,51.0,31.13,42.7,30.08,SI,21.5,SI,SI
+Sur,General Roca,Choele Choel,1,200,General Roca - Choele Choel,188.0,21.95,45.46,21.82,NO,21.5,SI,SI
+Sur,Choele Choel,Rio Colorado,1,200,Choele Choel - Rio Colorado,147.0,12.42,71.42,12.41,NO,21.5,NO,NO
+Sur,Rio Colorado,General Conesa,1,200,Rio Colorado - General Conesa,156.0,26.93,44.12,26.52,SI,21.5,SI,SI
+Sur,General Conesa,Bahia Blanca,1,200,General Conesa - San Antonio Oeste - Viedma - Bahia Blanca,596.0,20.37,35.62,20.17,NO,21.5,NO,SI
+Sur,Neuquen,Sargento Vidal,4,100,Neuquen - Sargento Vidal,35.0,31.97,33.28,28.98,SI,12.8,SI,SI
+Sur,Sargento Vidal,Catriel,4,100,Sargento Vidal - Catriel,102.0,25.1,46.08,24.85,SI,12.8,SI,SI
+Sur,Catriel,Santa Isabel,4,100,Catriel - Santa Isabel,240.0,21.64,31.24,21.1,SI,12.8,SI,SI
+Sur,Neuquen,Sargento Vidal,1,200,Neuquen - Sargento Vidal,35.0,31.97,33.28,28.98,SI,21.5,SI,SI
+Sur,Sargento Vidal,Catriel,1,200,Sargento Vidal - Catriel,102.0,25.1,46.08,24.85,SI,21.5,SI,SI
+Sur,Catriel,Santa Isabel,1,200,Catriel - Santa Isabel,240.0,21.64,31.24,21.1,NO,21.5,NO,SI
+Sur,Santa Isabel,San Rafael,1,200,Santa Isabel - San Rafael,311.0,24.51,39.68,24.19,SI,21.5,SI,SI
+Sur,Dina Huapi,Villa La Angostura,4,100,Dina Huapi - Villa La Angostura,74.0,28.7,46.51,28.16,SI,12.8,SI,SI
+Sur,Villa La Angostura,San Martin de los Andes,4,100,Villa La Angostura - San Martin de los Andes,110.0,21.53,52.55,21.43,SI,12.8,SI,SI
+Sur,San Martin de los Andes,Junin de los Andes,4,100,San Martin de los Andes - Junin de los Andes,61.0,30.31,46.58,29.54,SI,12.8,SI,SI
+Sur,Junin de los Andes,Zapala,4,100,Junin de los Andes - Zapala,202.0,19.17,50.55,19.11,SI,12.8,SI,SI
+Sur,Zapala,Chos Malal,4,100,Zapala - Chos Malal,255.0,22.17,43.71,22.03,SI,12.8,SI,SI
+Sur,Chos Malal,Buta Ranquil,4,100,Chos Malal - Buta Ranquil,92.0,25.51,46.47,25.24,SI,12.8,SI,SI
+Sur,Buta Ranquil,Malargue,4,100,Buta Ranquil - Malargue,244.0,20.08,49.84,20.01,SI,12.8,SI,SI
+Sur,Malargue,San Rafael,4,100,Malargue - San Rafael,191.0,24.26,31.34,23.33,SI,12.8,SI,SI
+Sur,Neuquen,Dina Huapi,1,200,Neuquen - Arroyito - Picun Leufu - Piedra del Aguila - Dina Huapi,438.0,20.98,23.69,19.06,NO,21.5,NO,SI
+Sur,Dina Huapi,Villa La Angostura,1,200,Dina Huapi - Villa La Angostura,74.0,28.7,46.51,28.16,SI,21.5,SI,SI
+Sur,Villa La Angostura,San Martin de los Andes,1,200,Villa La Angostura - San Martin de los Andes,110.0,21.53,52.55,21.43,NO,21.5,NO,SI
+Sur,San Martin de los Andes,Junin de los Andes,1,200,San Martin de los Andes - Junin de los Andes,61.0,30.31,46.58,29.54,SI,21.5,SI,SI
+Sur,Junin de los Andes,Zapala,1,200,Junin de los Andes - Zapala,202.0,19.17,50.55,19.11,NO,21.5,NO,SI
+Sur,Zapala,Chos Malal,1,200,Zapala - Chos Malal,255.0,22.17,43.71,22.03,NO,21.5,SI,SI
+Sur,Chos Malal,Buta Ranquil,1,200,Chos Malal - Buta Ranquil,92.0,25.51,46.47,25.24,SI,21.5,SI,SI
+Sur,Buta Ranquil,Malargue,1,200,Buta Ranquil - Malargue,244.0,20.08,49.84,20.01,NO,21.5,NO,SI
+Sur,Malargue,San Rafael,1,200,Malargue - San Rafael,191.0,24.26,31.34,23.33,NO,21.5,SI,SI
