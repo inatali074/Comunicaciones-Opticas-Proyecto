@@ -285,3 +285,23 @@ $$
 La caída dramática del margen de OSNR se debe a la atenuación y figura de ruido (5.5 dB) acumulada en los 12 amplificadores del recorrido. Adicionalmente, el acumulado de PDL (4.65 dB) producto de atravesar 7 ROADMs introduce una severa penalidad extra que no está sumada en la fórmula analítica simplificada de GSNR del script, por lo que el rendimiento real sería incluso peor que los 22.84 dB calculados. 
 
 Se requeriría operar este enlace a **200 Gbps** (cuyo umbral mínimo sin margen es mucho más tolerante) o instalar amplificación Raman para mitigar el alto ruido térmico inyectado por los preamplificadores.
+
+---
+
+## 9. Presupuesto de Potencia (Nodo a Nodo)
+
+La potencia de salida objetivo (`target_pch_out`) configurada en todos los ROADMs es de **-20 dBm**. Para salir de cada ROADM hacia la fibra, el script fuerza empíricamente una ganancia de **18 dB** en los amplificadores Booster, inyectando de forma constante **-2 dBm** a cada tramo de fibra de la Ruta Norte.
+Al llegar al siguiente nodo, los preamplificadores intentan compensar la atenuación del tramo anterior, pero están limitados físicamente a un rango de ganancia de entre 15 dB (mínimo) y 25 dB (máximo).
+
+| Origen | Ganancia Booster | Atenuación Tramo (Fibra) | Destino (Siguiente Nodo) | $P_{in}$ al Preamp dest. | Ganancia Preamp | $P_{out}$ del Preamp |
+|--------|------------------|--------------------------|--------------------------|--------------------------|-----------------|----------------------|
+| ROADM Benavídez | 18.00 dB | -16.50 dB (80 km) | ROADM Campana | -18.50 dBm | 16.50 dB | -2.00 dBm |
+| ROADM Campana | 18.00 dB | -3.10 dB (13 km) | ROADM Zárate | -5.10 dBm | 15.00 dB (mín) | +9.90 dBm |
+| ROADM Zárate | 18.00 dB | -13.90 dB (67 km) | ROADM Baradero | -15.90 dBm | 15.00 dB (mín) | -0.90 dBm |
+| ROADM Baradero | 18.00 dB | -7.30 dB (34 km) | ROADM San Pedro | -9.30 dBm | 15.00 dB (mín) | +5.70 dBm |
+| ROADM San Pedro | 18.00 dB | -15.70 dB (76 km) | ROADM San Nicolás| -17.70 dBm | 15.70 dB | -2.00 dBm |
+| ROADM S. Nicolás| 18.00 dB | -16.70 dB (81 km) | ROADM Rosario | -18.70 dBm | 16.70 dB | -2.00 dBm |
+
+*Nota:* Después del $P_{out}$ del Preamp de destino, la señal ingresa al ROADM de esa ciudad, donde el hardware interno (WSS) se encarga de atenuar y ecualizar el canal automáticamente para llevarlo de vuelta al target exacto de **-20 dBm**. Una vez en -20 dBm, se inyecta al siguiente Booster repitiendo el ciclo.
+
+**Nota técnica de Clipping Mínimo:** Se observa que en tramos cortos como Campana → Zárate (13 km) o Baradero → San Pedro (34 km) la fibra pierde muy poca potencia. El Preamp de destino recibe la señal con potencias relativamente altas (ej. -5.10 dBm en Zárate). Como el límite mínimo de diseño del EDFA en el script es de 15 dB de ganancia, el amplificador inevitablemente "clipea" su ganancia hacia arriba y entrega una potencia muy alta (+9.90 dBm), delegando la carga de atenuar todo ese exceso al WSS del ROADM para volver a los -20 dBm objetivos.
