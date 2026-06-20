@@ -10,10 +10,10 @@ def load_json(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         return json.load(f)
 
-# Archivos
-NETWORK_FILE = 'network_mashe.json'
-EQUIPMENT_FILE = 'equipament_real_marcos_corregido.json'
-DEMANDAS_FILE = 'Demanda_Base - Tráfico base.csv'
+# Archivos con fallback a la carpeta Consigna/
+NETWORK_FILE = 'network_mashe.json' if os.path.exists('network_mashe.json') else 'Consigna/network_mashe.json'
+EQUIPMENT_FILE = 'equipament_real_marcos_corregido.json' if os.path.exists('equipament_real_marcos_corregido.json') else 'Consigna/equipament_real_marcos_corregido.json'
+DEMANDAS_FILE = 'Demanda_Base - Tráfico base.csv' if os.path.exists('Demanda_Base - Tráfico base.csv') else 'Consigna/Demanda_Base - Tráfico base.csv'
 RESULTADOS_FILE = 'resultados_gsnr_demandas_base.csv'
 
 network_data = load_json(NETWORK_FILE)
@@ -341,7 +341,7 @@ def main():
          open(RESULTADOS_FILE, 'w', encoding='utf-8', newline='') as out_csv:
         
         reader = csv.DictReader(f)
-        fieldnames = reader.fieldnames + ["Distancia_km", "OSNR_ASE_dB", "GSNR_NLI_dB", "GSNR_Total_dB", "Factible", "Umbral_OSNR_dB", "Factible_Sin_Margen", "Factible_Umbral_Menos_2.5"]
+        fieldnames = ["Region", "Origen", "Destino", "Cantidad de Enlaces", "Velocidad [Gbps]", "Ruta", "Distancia_km", "GSNR_Total_dB", "Umbral_OSNR_dB", "Factible"]
         writer = csv.DictWriter(out_csv, fieldnames=fieldnames)
         writer.writeheader()
         
@@ -383,7 +383,8 @@ def main():
                         "Factible_Umbral_Menos_2.5": "ERROR"
                     })
                 
-                writer.writerow(row)
+                output_row = {field: row.get(field, "") for field in fieldnames}
+                writer.writerow(output_row)
                 count += 1
                 
         print(f"\n[INFO] Se procesaron {total_rutas} rutas totales. {exitosas} pudieron ser calculadas exitosamente. Revisá el archivo {RESULTADOS_FILE}")
