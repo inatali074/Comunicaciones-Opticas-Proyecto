@@ -1,26 +1,31 @@
 # Contexto del Proyecto: Comunicaciones Ópticas 2026
 
-**Estado Actual:** Proyecto analizado, documentado y subido a GitHub (repositorio público `inatali074/Comunicaciones-Opticas-Proyecto`). 
+**Estado Actual:** Proyecto analizado físicamente, documentado exhaustivamente y todos los cambios subidos al repositorio público en GitHub (`inatali074/Comunicaciones-Opticas-Proyecto`).
 
-## 1. Archivos y Documentación Generada
-* **`Analisis_Benavidez_Rosario.md`**: Se realizó un análisis profundo de viabilidad del enlace Benavídez → Rosario siguiendo la "Ruta Norte" (351 km, 6 tramos). Se adaptó estrictamente al formato solicitado por la cátedra (basado en el archivo de referencia de Santa Fe → Sunchales). El análisis incluye:
-  * Presupuesto de potencia y uso de ROADMs (-20 dBm target).
-  * Ecuaciones de OSNR (Ruido ASE de los 12 EDFAs).
-  * Ecuaciones de GSNR (considerando efectos NLI).
-  * Cálculo y verificación de Dispersión Cromática (CD), PMD y PDL.
-  * **Conclusión:** El enlace a 400G (DP-16QAM) es **no factible** con los parámetros actuales (GSNR = 22.84 dB vs Umbral = 27.0 dB) debido a las penalizaciones por ruido térmico en los 6 tramos y el exceso de PDL al cruzar 7 ROADMs.
-* **`README.md`**: Creado en base al archivo de consignas (`¿Qué hacer_ Opticas 2026.pdf`), estructura de forma profesional los objetivos del TP (upgrade a 400G, generación de topología corregida, modelado matemático de OSNR/GSNR y posterior análisis de RWA/RSA con los Grupos 2 y 3).
-* **Git/GitHub**: Se inicializó el control de versiones, configurando el gestor de credenciales localmente para permitir subidas automáticas al repositorio `main` sin solicitar *Personal Access Tokens* interactivos. 
+## 1. Documentación Física y Teórica (COMPLETADA)
+Se completó el modelado de enlace y presupuesto de ruidos (CD, PMD, PDL, ASE, NLI) con una misma plantilla profesional estructurada paso a paso:
 
-## 2. Parámetros Técnicos y Suposiciones Clave
-* **Transceptor a 400G:** Requiere OSNR de 25.0 dB + 2 dB de margen de sistema (Umbral 27.0 dB).
-* **Equipos Activos:** Boosters seteados empíricamente a 18 dB y Preamplificadores variables compensando la pérdida del tramo (mínimo 15 dB). Todos los EDFAs asumen NF=5.5 dB por limitación del script evaluador.
-* **Fibra Óptica:** Atenuación de 0.2 dB/km + 0.5 dB adicionales por conectores. Coeficiente de dispersión 18.0 ps/(nm*km).
-* **Capacidad Máxima Práctica:** Determinamos que bajo este modelo, la distancia máxima viable para alcanzar 27 dB de GSNR está en el orden de los **150 a 160 km** continuos sin regeneración.
+* **`Analisis_Benavidez_Rosario.md`:** 
+  * Se agregó el **Presupuesto de Potencia (Nodo a Nodo)**.
+  * Se detalló la participación de los **7 ROADMs** (extremos + intermedios) que resetean la potencia a -20 dBm, y el uso consecuente de Boosters a +18 dB.
+  * Se agregó una nota técnica sobre el "Clipping hacia arriba" en los tramos cortos, ya que los preamps tienen una ganancia mínima de 15 dB.
+  * **Conclusión:** 400G no es factible por caída de GSNR producto de atenuaciones y un alto PDL por cruzar tantos ROADMs.
 
-## 3. Próximos Pasos (Pendientes)
-El contexto queda listo para continuar con:
-* Análisis RWA/RSA sobre las 200 demandas del archivo `demandas_refefo.csv`.
-* Desarrollo de la lógica de asignación de espectro para el Grupo 2 (camino más corto) o Grupo 3 (mejor GSNR).
-* Simulación de los métodos de asignación: Aleatorio, First-Fit y Mixed Integer Linear Programming (PuLP-CBC).
-* Cálculo de métricas finales: probabilidad de bloqueo, fragmentación, y carga de la red.
+* **`Analisis_DinaHuapi_AguadaCecilio.md` (NUEVO):** 
+  * Enlace de 592 km y 7 tramos con amplificadores repetidores (ILAs) y **sólo 2 ROADMs** (sin ROADMs intermedios).
+  * **Conclusión y Comparativa:** A **100 Gbps es factible** (GSNR 18.92 dB > Umbral 14.8 dB). A **200 Gbps falla** (Umbral exige mínimo 23.5 dB) debido a que las modulaciones más densas (ej. 16QAM) son más sensibles al ruido térmico del primer salto largo.
+
+## 2. Parámetros y Reglas de la Red (Entendidas)
+* **Equipos Activos:** 
+  * El ROADM saca la señal limpia a `-20 dBm`.
+  * El Booster levanta siempre `18 dB`.
+  * El Preamp/ILA intenta compensar la atenuación del tramo previo, limitándose entre `15 dB` y `25 dB`. (Se entendió perfectamente el efecto de "saturación" de ganancia).
+* **GNPy Scripting:** Se analizó a detalle el funcionamiento de `Agrega_demandas_a_planilla_v3.py`. Entendemos que su función es generar 1000 iteraciones usando el algoritmo K-Shortest Paths (penalizando caminos usados), aislar rutas, mandarlas a GNPy (`transmission_main_example`), validar el GSNR, ubicar regeneradores automáticos si no llega a destino, y guardar un volcado "One-Hot Encoding" de los nodos en `demandas_refefo.csv`.
+
+## 3. Próximos Pasos (En lo que nos vamos a enfocar ahora)
+El modelado físico está listo y el set de datos (`demandas_refefo.csv` con 200 demandas) está preparado. El objetivo ahora es entrar a la capa lógica:
+* **Desarrollo de RWA/RSA (Ruteo y Asignación de Espectro):**
+  * Sobre la grilla de 304 slots Flexi-Grid (3800 GHz).
+  * Decidir sobre la lógica de enrutamiento (Grupo 2 - Shortest Path, o Grupo 3 - Mejor GSNR).
+  * Programar y comparar los 3 métodos de asignación estipulados: **Aleatorio, First-Fit y MILP (PuLP-CBC)**.
+  * Obtener métricas de QoS: Probabilidad de bloqueo, fragmentación espectral y carga de red.
