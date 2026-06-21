@@ -40,20 +40,27 @@ En el archivo `analisis_pablo_punto5.md` se detallaron los siguientes hallazgos 
 
 *First-Fit compacta el espectro de manera sobresaliente y casi instantánea en comparación con un MILP truncado.*
 
-### C. Resultados Comparativos de la Asignación (Demandas REFEFO - 200 Demandas Adicionales)
-Se ejecutaron simulaciones de asignación incremental sobre el espectro ocupado por el tráfico base, con los siguientes resultados:
+### C. Mejora en la Lógica de Selección: Ruteo basado en Mejor GSNR y Flexi-Grid
+En base a la consigna oficial, se validó y actualizó la lógica de selección de K-paths en todos los scripts de asignación REFEFO.
+1.  **Validación Flexi-Grid:** Se comprobó que el cálculo de slots es dinámico según la capacidad requerida (slots de 12.5 GHz), asignando 4 slots (50 GHz) para 100G/200G y 6 slots (75 GHz) para 300G/400G, cumpliendo de forma estricta con el paradigma Flexi-Grid.
+2.  **Ordenamiento por GSNR:** Los tres scripts de asignación ahora evalúan los 5 caminos generados priorizando aquel que tenga la mejor señal óptica base (`sort_values("GSNR_Direct", ascending=False)`), dejando de lado la prioridad por distancia más corta.
+3.  **Impacto Físico en la Red (Ej. Mendoza → Río Gallegos):** Al priorizar GSNR, el algoritmo automáticamente descartó la ruta costera (K=1) a favor de la ruta andina de 25 saltos (K=4), demostrando que el enrutamiento ahora es 100% "Quality of Transmission (QoT) aware".
+
+### D. Resultados Actualizados de la Asignación (Demandas REFEFO - 200 Demandas)
+Se ejecutaron simulaciones de asignación incremental priorizando GSNR, con los siguientes resultados:
 *   **Aleatorio (`asignacion_refefo_aleatorio.py`):**
     *   $S_{max}$ final: 304.
-    *   **2 demandas bloqueadas (1.00% de bloqueo)** debido a la fragmentación espectral.
-    *   Tiempo de ejecución: ~1.54s.
+    *   **4 demandas bloqueadas (2.00% de bloqueo)**. La fragmentación aumentó levemente al esparcir la carga en rutas más largas.
+    *   Tiempo de ejecución: ~3.7s.
 *   **First-Fit (`asignacion_refefo_firstfit.py`):**
-    *   $S_{max}$ final: **208** (incrementó de 96 a 208).
+    *   $S_{max}$ final: **188** (Mejoró respecto a la ejecución sin prioridad GSNR que daba 208).
     *   **0 demandas bloqueadas (0.00% de bloqueo)**.
     *   Tiempo de ejecución: <1.0s.
 *   **MILP (`asignacion_refefo_pulp.py`):**
-    *   Con un límite de 120s, el solver no halló ninguna solución entera factible (CBC retornó `Not Solved`).
-    *   **200 demandas bloqueadas (100.00% de bloqueo)**, cumpliendo con la regla conservadora definida en el modelo.
-    *   *Propuesta de Mejora:* Implementar una inicialización en caliente (Warm Start) inyectando la solución de First-Fit como base.
+    *   Con un límite de 120s, el solver no halló ninguna solución entera factible de forma nativa (100.00% de bloqueo aparente por timeout).
+    *   *Propuesta de Mejora:* Implementar una inicialización en caliente (Warm Start) inyectando la matriz perfecta generada por First-Fit como solución inicial.
+
+> **Nota Git:** Estos últimos cambios (scripting, actualización de CSVs, y análisis detallado de la ruta K=4 de Mendoza) fueron consolidados en el repositorio bajo la nueva rama **`Grupo_3`**.
 
 ---
 
