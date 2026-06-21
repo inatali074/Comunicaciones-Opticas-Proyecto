@@ -198,7 +198,7 @@ def main():
     start_time = time.time()
 
     for iter_id in iteraciones:
-        df_iter = df_refefo[df_refefo["Iteración"] == iter_id].sort_values("K_Path")
+        df_iter = df_refefo[df_refefo["Iteración"] == iter_id].sort_values("GSNR_Direct", ascending=False)
         source = df_iter.iloc[0]["Source"]
         destination = df_iter.iloc[0]["Destination"]
         gbps = df_iter.iloc[0]["Gbps"]

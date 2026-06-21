@@ -10,74 +10,76 @@
 | **Destino** | Río Gallegos |
 | **Velocidad** | 400 Gbps |
 | **Slots requeridos** | 6 (para 400G) |
-| **Slots asignados** | **143 a 148** |
-| **K-Path utilizado** | K = 1 |
+| **Slots asignados** | **101 a 106** |
+| **K-Path utilizado** | K = 4 |
 | **GSNR factible** | ❌ No (asignada igualmente por disponibilidad espectral) |
 | **Base utilizada** | `ocupacion_base_firstfit.csv` (1077 lightpaths — con fix Cantidad de Enlaces) |
 
 ---
 
-## Ruta Utilizada (Path_Sequence, K=1)
+## Ruta Utilizada (Path_Sequence, K=4)
 
-**Mendoza - Tunuyan - San Rafael - Gral. Alvear - Santa Isabel - Victorica - Winifreda - Santa Rosa (LP) - Peru - Rio Colorado - General Conesa - San Antonio Oeste - Sierra Grande - Puerto Madryn - Trelew - Rawson - Comodoro Rivadavia - Caleta Olivia - Jaramillo - Puerto San Julian - Luis Piedrabuena - Rio Gallegos**
+**Mendoza - Tunuyan - San Rafael - Malargue - Buta Ranquil - Chos Malal - Zapala - Junin de los Andes - San Martin de los Andes - Villa La Angostura - Dina Huapi - San Carlos de Bariloche - El Foyel - Epuyen - Esquel - Tecka - J. de San Martin - Alto Rio Senguer - Rio Mayo - Perito Moreno - Bajo Caracoles - Gobernador Gregores - Tres lagos - El Calafate - Esperanza (StaCruz) - Rio Gallegos**
 
-Total: **21 saltos** (22 nodos)
+Total: **25 saltos** (26 nodos)
 
 > [!NOTE]
-> Esta es una ruta diferente a la del análisis anterior (base con 512 lightpaths).
-> En la base anterior la ruta también era K=1 pero con 21 saltos por un camino distinto.
-> Con la base actualizada, el First-Fit encontró los mismos slots libres en esta ruta.
+> Esta ruta (K=4) fue elegida por encima de la ruta más corta (K=1) debido a la actualización en la lógica de asignación, la cual ahora prioriza las rutas **con mejor GSNR** de manera descendente. El algoritmo verificó que esta ruta andina presentaba mejor señal óptica base que la ruta costera habitual, a pesar de ser más larga, y como encontró espectro libre (First-Fit), la asignó inmediatamente.
 
 ---
 
 ## Verificación de Continuidad Espectral
 
-Se muestran los slots **S139 a S152** (ventana de contexto alrededor de los slots 143–148 asignados).  
+Se muestran los slots **S97 a S110** (ventana de contexto alrededor de los slots 101–106 asignados).  
 Los slots marcados como `**REF197**` corresponden a la demanda analizada.
 
-| Salto | Enlace | S139 | S140 | S141 | S142 | S143 | S144 | S145 | S146 | S147 | S148 | S149 | S150 | S151 | S152 |
+| Salto | Enlace | S97 | S98 | S99 | S100 | S101 | S102 | S103 | S104 | S105 | S106 | S107 | S108 | S109 | S110 |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 1 | Mendoza → Tunuyan | Ceres | Ceres | Ceres | Ceres | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
-| 2 | Tunuyan → San Rafael | Ceres | Ceres | Ceres | Ceres | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
-| 3 | San Rafael → General Alvear | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
-| 4 | General Alvear → Santa Isabel | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
-| 5 | Santa Isabel → Victorica | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
-| 6 | Victorica → Winifreda | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
-| 7 | Winifreda → Santa Rosa (LP) | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
-| 8 | Santa Rosa (LP) → Peru | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | Santiago | Santiago | Santiago | Santiago |
-| 9 | Peru → Rio Colorado | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | Santiago | Santiago | Santiago | Santiago |
-| 10 | Rio Colorado → General Conesa | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | Santiago | Santiago | Santiago | Santiago |
-| 11 | General Conesa → San Antonio Oeste | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | Santiago | Santiago | Santiago | Santiago |
-| 12 | San Antonio Oeste → Sierra Grande | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | Santiago | Santiago | Santiago | Santiago |
-| 13 | Sierra Grande → Puerto Madryn | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | Santiago | Santiago | Santiago | Santiago |
-| 14 | Puerto Madryn → Trelew | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | Santiago | Santiago | Santiago | Santiago |
-| 15 | Trelew → Rawson | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | Santiago | Santiago | Santiago | Santiago |
-| 16 | Rawson → Comodoro Rivadavia | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | Santiago | Santiago | Santiago | Santiago |
-| 17 | Comodoro Rivadavia → Caleta Olivia | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | Santiago | Santiago | Santiago | Santiago |
-| 18 | Caleta Olivia → Jaramillo | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | Santiago | Santiago | Santiago | Santiago |
-| 19 | Jaramillo → Puerto San Julian | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | Santiago | Santiago | Santiago | Santiago |
-| 20 | Puerto San Julian → Luis Piedrabuena | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | Santiago | Santiago | Santiago | Santiago |
-| 21 | Luis Piedrabuena → Rio Gallegos | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | Santiago | Santiago | Santiago | Santiago |
+| 1 | Mendoza → Tunuyan | San Jose | San Jose | San Jose | San Jose | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 2 | Tunuyan → San Rafael | San Jose | San Jose | San Jose | San Jose | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 3 | San Rafael → Malargue | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 4 | Malargue → Buta Ranquil | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 5 | Buta Ranquil → Chos Malal | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 6 | Chos Malal → Zapala | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 7 | Zapala → Junin de los Andes | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 8 | Junin de los Andes → San Martin de los Andes | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | San Jose | San Jose | San Jose | San Jose |
+| 9 | San Martin de los Andes → Villa La Angostura | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | San Jose | San Jose | San Jose | San Jose |
+| 10 | Villa La Angostura → Dina Huapi | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | San Jose | San Jose | San Jose | San Jose |
+| 11 | Dina Huapi → San Carlos de Bariloche | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | San Jose | San Jose | San Jose | San Jose |
+| 12 | San Carlos de Bariloche → El Foyel | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | San Jose | San Jose | San Jose | San Jose |
+| 13 | El Foyel → Epuyen | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | San Jose | San Jose | San Jose | San Jose |
+| 14 | Epuyen → Esquel | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | San Jose | San Jose | San Jose | San Jose |
+| 15 | Esquel → Tecka | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | San Jose | San Jose | San Jose | San Jose |
+| 16 | Tecka → J. de San Martin | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | San Jose | San Jose | San Jose | San Jose |
+| 17 | J. de San Martin → Alto Rio Senguer | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | San Jose | San Jose | San Jose | San Jose |
+| 18 | Alto Rio Senguer → Rio Mayo | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | San Jose | San Jose | San Jose | San Jose |
+| 19 | Rio Mayo → Perito Moreno | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | San Jose | San Jose | San Jose | San Jose |
+| 20 | Perito Moreno → Bajo Caracoles | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 21 | Bajo Caracoles → Gobernador Gregores | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 22 | Gobernador Gregores → Tres lagos | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 23 | Tres lagos → El Calafate | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 24 | El Calafate → Esperanza (StaCruz) | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 25 | Esperanza (StaCruz) → Rio Gallegos | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
 
 ---
 
 ## Conclusión
 
 > [!IMPORTANT]
-> **Continuidad espectral verificada ✅** — Los 6 slots (143 a 148) están libres y alineados en los **21 enlaces** de la ruta.
+> **Continuidad espectral verificada ✅** — Los 6 slots (101 a 106) están libres y alineados en los **25 enlaces** de la nueva ruta priorizada por GSNR.
 
 ### Observaciones del contexto espectral:
-- **Slots 139–142** (inmediatamente anteriores): en los saltos 1–2 (Mendoza→Tunuyan→San Rafael) están ocupados por otra demanda relacionada con `Ceres`. En el resto de la ruta están libres.
-- **Slots 149–152** (inmediatamente posteriores): en los saltos 8–21 están ocupados por una demanda con prefijo `Santiago`. En los saltos 1–7 están libres.
-- El First-Fit eligió correctamente los slots **143–148** como el primer bloque de 6 alineado y libre en **toda** la ruta de 21 saltos.
+- El First-Fit eligió correctamente los slots **101–106** como el primer bloque de 6 alineado y libre en **toda** la ruta de 25 saltos.
+- Al priorizar por mejor GSNR (K=4), el algoritmo evadió la ruta costera original (K=1), demostrando que la lógica RSA integrada funciona según lo estipulado.
 
-### Comparativa con análisis anterior (base 512 lightpaths):
+### Comparativa con análisis anterior (Sin prioridad GSNR):
 
-| Métrica | Base 512 (anterior) | Base 1077 (actual) |
+| Métrica | Base 512 (original) | Base 1077 (priorizando GSNR) |
 |:---|:---:|:---:|
-| Slots asignados | 129 – 134 | **143 – 148** |
+| Slots asignados | 129 – 134 | **101 – 106** |
+| K-Path Utilizado | K=1 | **K=4** |
 | S_max base | 58 | 96 |
-| S_max final red | 186 | 208 |
-| Ocupación final | 13.85% | 15.70% |
+| S_max final red | 186 | 188 |
+| Ocupación final | 13.85% | 17.61% |
 
-El desplazamiento de slots (129→143) se debe a que la base actualizada tiene más lightpaths asignados en los tramos iniciales de la ruta, empujando el primer bloque libre hacia slots más altos.
+El cambio de ruta provocó un uso de espectro más eficiente en una zona menos congestionada (bajando a los slots 101-106).

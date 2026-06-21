@@ -10,22 +10,22 @@
 | **Destino** | Río Gallegos |
 | **Velocidad** | 400 Gbps |
 | **Slots requeridos** | 6 (para 400G) |
-| **Slots asignados** | **111 a 116** |
-| **K-Path utilizado** | K = 1 |
+| **Slots asignados** | **262 a 267** |
+| **K-Path utilizado** | K = 4 |
 | **GSNR factible** | ❌ No (asignada igualmente por disponibilidad espectral) |
 | **Semilla aleatoria** | 42 |
 | **Base utilizada** | `ocupacion_base_random.csv` (1077 lightpaths — con fix Cantidad de Enlaces) |
 
 ---
 
-## Ruta Utilizada (Path_Sequence, K=1)
+## Ruta Utilizada (Path_Sequence, K=4)
 
-**Mendoza - Tunuyan - San Rafael - Gral. Alvear - Santa Isabel - Victorica - Winifreda - Santa Rosa (LP) - Peru - Rio Colorado - General Conesa - San Antonio Oeste - Sierra Grande - Puerto Madryn - Trelew - Rawson - Comodoro Rivadavia - Caleta Olivia - Jaramillo - Puerto San Julian - Luis Piedrabuena - Rio Gallegos**
+**Mendoza - Tunuyan - San Rafael - Malargue - Buta Ranquil - Chos Malal - Zapala - Junin de los Andes - San Martin de los Andes - Villa La Angostura - Dina Huapi - San Carlos de Bariloche - El Foyel - Epuyen - Esquel - Tecka - J. de San Martin - Alto Rio Senguer - Rio Mayo - Perito Moreno - Bajo Caracoles - Gobernador Gregores - Tres lagos - El Calafate - Esperanza (StaCruz) - Rio Gallegos**
 
-Total: **21 saltos** (22 nodos)
+Total: **25 saltos** (26 nodos)
 
 > [!NOTE]
-> La ruta es idéntica a la del método First-Fit (mismo K=1). La diferencia está en la posición espectral elegida: el aleatorio elige al azar entre todas las posiciones válidas, mientras que First-Fit toma siempre la primera disponible.
+> La ruta es idéntica a la del método First-Fit (mismo K=4, priorizado por mejor GSNR). La diferencia está en la posición espectral elegida: el aleatorio elige al azar entre todas las posiciones válidas, en este caso desplazándose hasta la banda alta del espectro (slots 260+).
 
 ---
 
@@ -34,65 +34,67 @@ Total: **21 saltos** (22 nodos)
 | Métrica | Valor |
 |:---|:---|
 | **Demandas REFEFO totales** | 200 |
-| **Asignadas con éxito** | 198 |
-| **Bloqueadas** | **2** |
-| **Prob. de bloqueo** | **1.00%** |
+| **Asignadas con éxito** | 196 |
+| **Bloqueadas** | **4** |
+| **Prob. de bloqueo** | **2.00%** |
 | **S_max base** | 304 |
 | **S_max final** | 304 |
-| **Ocupación final** | 15.49% |
-| **Tiempo de ejecución** | 1.55 seg |
+| **Ocupación final** | 16.44% |
+| **Tiempo de ejecución** | ~3.77 seg |
 
 > [!IMPORTANT]
-> A diferencia del First-Fit (0% bloqueo), el método aleatorio bloqueó **2 demandas** (iter 175: Tres lagos → Ituzaingo, 300G). Esto ilustra la mayor fragmentación espectral del método aleatorio con una base densa.
+> A diferencia del First-Fit (0% bloqueo), el método aleatorio bloqueó **4 demandas**. Esto ilustra claramente la mayor fragmentación espectral del método aleatorio con una base densa.
 
 ---
 
 ## Verificación de Continuidad Espectral
 
-Se muestran los slots **S107 a S120** (ventana de contexto alrededor de los slots 111–116 asignados).
+Se muestran los slots **S258 a S271** (ventana de contexto alrededor de los slots 262–267 asignados).
 
-| Salto | Enlace | S107 | S108 | S109 | S110 | S111 | S112 | S113 | S114 | S115 | S116 | S117 | S118 | S119 | S120 |
+| Salto | Enlace | S258 | S259 | S260 | S261 | S262 | S263 | S264 | S265 | S266 | S267 | S268 | S269 | S270 | S271 |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 1 | Mendoza → Tunuyan | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
-| 2 | Tunuyan → San Rafael | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
-| 3 | San Rafael → General Alvear | San Rafa | San Rafa | San Rafa | San Rafa | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
-| 4 | General Alvear → Santa Isabel | San Rafa | San Rafa | San Rafa | San Rafa | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
-| 5 | Santa Isabel → Victorica | San Rafa | San Rafa | San Rafa | San Rafa | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
-| 6 | Victorica → Winifreda | San Rafa | San Rafa | San Rafa | San Rafa | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
-| 7 | Winifreda → Santa Rosa (LP) | San Rafa | San Rafa | San Rafa | San Rafa | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
-| 8 | Santa Rosa (LP) → Peru | San Rafa | San Rafa | San Rafa | San Rafa | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | Cañada D | Cañada D | Cañada D |
-| 9 | Peru → Rio Colorado | San Rafa | San Rafa | San Rafa | San Rafa | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | Cañada D | Cañada D | Cañada D |
-| 10 | Rio Colorado → General Conesa | General | General | General | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | Cañada D | Cañada D | Cañada D |
-| 11 | General Conesa → San Antonio Oeste | General | General | General | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | Cañada D | Cañada D | Cañada D |
-| 12 | San Antonio Oeste → Sierra Grande | General | General | General | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | Cañada D | Cañada D | Cañada D |
-| 13 | Sierra Grande → Puerto Madryn | General | General | General | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | Cañada D | Cañada D | Cañada D |
-| 14 | Puerto Madryn → Trelew | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | Cañada D | Cañada D | Cañada D |
-| 15 | Trelew → Rawson | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | Cañada D | Cañada D | Cañada D |
-| 16 | Rawson → Comodoro Rivadavia | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
-| 17 | Comodoro Rivadavia → Caleta Olivia | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
-| 18 | Caleta Olivia → Jaramillo | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
-| 19 | Jaramillo → Puerto San Julian | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
-| 20 | Puerto San Julian → Luis Piedrabuena | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
-| 21 | Luis Piedrabuena → Rio Gallegos | Luis Pie | Luis Pie | Luis Pie | Luis Pie | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 1 | Mendoza → Tunuyan | San Jose | San Jose | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 2 | Tunuyan → San Rafael | San Jose | San Jose | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 3 | San Rafael → Malargue | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 4 | Malargue → Buta Ranquil | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 5 | Buta Ranquil → Chos Malal | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 6 | Chos Malal → Zapala | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 7 | Zapala → Junin de los Andes | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 8 | Junin de los Andes → San Martin de los Andes | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 9 | San Martin de los Andes → Villa La Angostura | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 10 | Villa La Angostura → Dina Huapi | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 11 | Dina Huapi → San Carlos de Bariloche | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 12 | San Carlos de Bariloche → El Foyel | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 13 | El Foyel → Epuyen | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 14 | Epuyen → Esquel | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 15 | Esquel → Tecka | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 16 | Tecka → J. de San Martin | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | Tecka | Tecka | Tecka | Tecka |
+| 17 | J. de San Martin → Alto Rio Senguer | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 18 | Alto Rio Senguer → Rio Mayo | Alto Rio | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 19 | Rio Mayo → Perito Moreno | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 20 | Perito Moreno → Bajo Caracoles | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 21 | Bajo Caracoles → Gobernador Gregores | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 22 | Gobernador Gregores → Tres lagos | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 23 | Tres lagos → El Calafate | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 24 | El Calafate → Esperanza (StaCruz) | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
+| 25 | Esperanza (StaCruz) → Rio Gallegos | libre | libre | libre | libre | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | **REF197** | libre | libre | libre | libre |
 
 ---
 
 ## Conclusión
 
 > [!IMPORTANT]
-> **Continuidad espectral verificada ✅** — Los 6 slots (111 a 116) están libres y alineados en los **21 enlaces** de la ruta.
+> **Continuidad espectral verificada ✅** — Los 6 slots (262 a 267) están libres y alineados en los **25 enlaces** de la ruta K=4.
 
 ### Observaciones del contexto espectral:
-- **Slots 107–110** (anteriores): parcialmente ocupados por demandas como `San Rafael...` (saltos 3–9) y `General Conesa...` (saltos 10–13) y `Luis Piedrabuena...` (salto 21).
-- **Slots 117–120** (posteriores): ocupados por `Cañada De Gómez...` en saltos 8–15.
-- El algoritmo aleatorio eligió la posición 111 aleatoriamente (semilla 42) entre todas las ventanas de 6 slots libres simultáneamente en los 21 enlaces.
+- El algoritmo aleatorio eligió la posición 262 aleatoriamente (semilla 42) entre todas las ventanas de 6 slots libres simultáneamente en los 25 enlaces.
 
 ### Comparativa entre los tres métodos (demanda iter 197, Mendoza → Río Gallegos):
 
 | Métrica | First-Fit | Aleatorio | MILP |
 |:---|:---:|:---:|:---:|
-| **Resultado iter 197** | ✅ ASIGNADA | ✅ ASIGNADA | ❌ BLOQUEADA |
-| Slots asignados | 143 – 148 | **111 – 116** | — |
-| S_max base | 96 | 304 | 136 |
-| Prob. bloqueo REFEFO | 0.00% | **1.00%** | **100.00%** |
-| S_max final red | 208 | 304 | 136 |
+| **Resultado iter 197** | ✅ ASIGNADA | ✅ ASIGNADA | (No ejecutado) |
+| Slots asignados | 101 – 106 | **262 – 267** | — |
+| K-Path Utilizado | K=4 | **K=4** | — |
+| Prob. bloqueo REFEFO | 0.00% | **2.00%** | — |
+| S_max final red | 188 | 304 | — |

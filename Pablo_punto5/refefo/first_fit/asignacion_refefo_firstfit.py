@@ -251,8 +251,8 @@ def main():
     print("-" * 70)
 
     for iter_id in iteraciones:
-        # Obtener todas las filas de esta iteración, ordenadas por K_Path
-        df_iter = df_refefo[df_refefo["Iteración"] == iter_id].sort_values("K_Path")
+        # Obtener todas las filas de esta iteración, ordenadas por mejor GSNR
+        df_iter = df_refefo[df_refefo["Iteración"] == iter_id].sort_values("GSNR_Direct", ascending=False)
 
         # Datos de la demanda (comunes a todos los K-paths)
         source = df_iter.iloc[0]["Source"]
