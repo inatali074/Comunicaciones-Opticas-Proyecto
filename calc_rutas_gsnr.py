@@ -10,10 +10,10 @@ def load_json(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         return json.load(f)
 
-# Archivos
-NETWORK_FILE = 'network_mashe.json'
-EQUIPMENT_FILE = 'equipament_real_marcos_corregido.json'
-DEMANDAS_FILE = 'Demanda_Base - Tráfico base.csv'
+# Archivos con fallback a la carpeta Consigna/
+NETWORK_FILE = 'network_mashe.json' if os.path.exists('network_mashe.json') else 'Consigna/network_mashe.json'
+EQUIPMENT_FILE = 'equipament_real_marcos_corregido.json' if os.path.exists('equipament_real_marcos_corregido.json') else 'Consigna/equipament_real_marcos_corregido.json'
+DEMANDAS_FILE = 'Demanda_Base - Tráfico base.csv' if os.path.exists('Demanda_Base - Tráfico base.csv') else 'Consigna/Demanda_Base - Tráfico base.csv'
 RESULTADOS_FILE = 'resultados_gsnr_demandas_base.csv'
 
 network_data = load_json(NETWORK_FILE)
@@ -73,7 +73,7 @@ f_min = si_eq.get("f_min", 191.35e12)
 f_max = si_eq.get("f_max", 196.10e12)
 spacing = si_eq.get("spacing", 100e9)
 N_ch = int((f_max - f_min) / spacing)
-sys_margins = si_eq.get("sys_margins", 2.0)
+sys_margins = 0.0
 B_ref = 12.5e9
 const_ase = 10 * math.log10(6.626e-34 * 193.5e12 * B_ref * 1e3)
 
@@ -197,11 +197,10 @@ def calcular_ruta(ciudades, velocidad_gbps):
     
     lambda_ = 1550e-9
     c = 299792458
-    beta2 = (lambda_**2 / (2 * math.pi * c)) * (D_ps_nm_km * 1e-3)
-    P_tx_w = 10**(target_pch_out/10) * 1e-3 # Asumimos P_tx inicial al salir del ROADM/Booster (esto se ajustará tras el booster)
+    beta2 = (lambda_**2 / (2 * math.pi * c)) * dispersion_si
     
     # Acumuladores de NLI
-    L_effs = []
+    inv_gsnr_nli = 0.0
     N_s = 0
     total_length = 0.0
     
@@ -219,7 +218,6 @@ def calcular_ruta(ciudades, velocidad_gbps):
                 uid_lower = node['uid'].lower()
                 if "booster" in uid_lower:
                     gain = 18.0  # Rango BA: 8 ~ 18 dB, seteamos el máximo típico de salida
-                    # print(f"  [INFO] EDFA Booster sin ganancia ({node['uid']}). Asignando {gain} dB (según datasheet OA1825/1835 BA).")
                 else:
                     # Para Preamp o In-Line (LA), el rango es 15 ~ 25 dB.
                     # Idealmente compensa la pérdida del span anterior, si no asume un valor medio.
@@ -230,38 +228,45 @@ def calcular_ruta(ciudades, velocidad_gbps):
                         if prev_node["type"] == "Fiber":
                             p_length = prev_node.get("length", prev_node.get("params", {}).get("length", 0))
                             p_loss_coef = prev_node.get("loss_coef", prev_node.get("params", {}).get("loss_coef", 0.2))
-                            last_loss = p_length * p_loss_coef
+                            last_loss = p_length * p_loss_coef + 0.5
                     
-                    # Clampeamos la pérdida al rango del equipo (15 a 25 dB)
-                    gain = max(15.0, min(25.0, last_loss))
-                    # print(f"  [INFO] EDFA Preamp/LA sin ganancia ({node['uid']}). Asignando {gain:.1f} dB (rango 15-25 dB compensando span).")
+                    gain = last_loss # Compensa exactamente la pérdida anterior (con padding implícito)
             
             # Buscar la variedad para sacar NF
-            variety = node.get("type_variety", "")
             nf = 5.5 # Valor realista de operación (alineado con GNPy)
-            # if variety in edfa_dict:
-            #     nf = edfa_dict[variety].get("nf_max", 10.0)
             
             osnr_i = p_in_current - nf - const_ase
             osnri_inv_sum += 10**(-osnr_i/10)
             
             p_in_current += gain # P_out del amplificador
             
-            # Si es el primer booster, seteamos P_tx para el NLI
-            P_tx_w = 10**(p_in_current/10) * 1e-3
-            
         elif t == "Fiber":
             length = node.get("length", node.get("params", {}).get("length", 0))
             loss_coef = node.get("loss_coef", node.get("params", {}).get("loss_coef", 0.2))
             alpha_lin = (loss_coef * math.log(10)) / 10
             
+            # La potencia de entrada (launch power) a esta fibra es p_in_current (en Watts)
+            P_launch_w = 10**(p_in_current/10) * 1e-3
+            
             if length > 0 and alpha_lin > 0:
                 L_eff = (1 - math.exp(-alpha_lin * length)) / alpha_lin
-                L_effs.append(L_eff)
+                L_eff_m = L_eff * 1000.0
                 N_s += 1
                 total_length += length
                 
-            loss = (length * loss_coef) + 0.5 # Sumar 0.5 dB extra por conectores (GNPy: 0.25 in, 0.25 out)
+                # Calcular contribución NLI de este span
+                try:
+                    argument_log = math.pi**2 * beta2 * L_eff_m * (N_ch**2) * (baud_rate**2)
+                    log_term = math.log(abs(argument_log))
+                    denominator = math.pi * beta2 * (baud_rate**3)
+                    gamma_m = gamma_1_W_km * 1e-3
+                    front_term_span = ((2/3)**3) * (gamma_m**2) * L_eff_m * (P_launch_w**2)
+                    inv_gsnr_nli_span = front_term_span * (log_term / denominator) * B_ref
+                    inv_gsnr_nli += inv_gsnr_nli_span
+                except Exception as e:
+                    pass
+                
+            loss = (length * loss_coef) + 0.5 # Sumar 0.5 dB extra por conectores
             p_in_current -= loss
             
         elif t == "Roadm":
@@ -273,22 +278,8 @@ def calcular_ruta(ciudades, velocidad_gbps):
         
     # Calculos finales
     osnr_ase_db = -10 * math.log10(osnri_inv_sum) if osnri_inv_sum > 0 else float('inf')
+    gsnr_nli_db = -10 * math.log10(inv_gsnr_nli) if inv_gsnr_nli > 0 else float('inf')
     
-    L_eff_avg = sum(L_effs) / len(L_effs)
-    
-    # NLI math
-    try:
-        argument_log = math.pi**2 * beta2 * L_eff_avg * (N_ch**2) * (baud_rate**2)
-        log_term = math.log(abs(argument_log))
-        denominator = math.pi * beta2 * (baud_rate**3)
-        front_term = ((2/3)**3) * N_s * (gamma_1_W_km**2) * L_eff_avg * (P_tx_w**2)
-        inv_gsnr_nli = front_term * (log_term / denominator) * B_ref
-        gsnr_nli_db = -10 * math.log10(inv_gsnr_nli)
-    except Exception as e:
-        print(f"  Error calculando NLI: {e}")
-        gsnr_nli_db = float('inf')
-        inv_gsnr_nli = 0
-        
     inv_gsnr_red = osnri_inv_sum + inv_gsnr_nli
     gsnr_red_db = -10 * math.log10(inv_gsnr_red) if inv_gsnr_red > 0 else float('inf')
     
@@ -341,7 +332,7 @@ def main():
          open(RESULTADOS_FILE, 'w', encoding='utf-8', newline='') as out_csv:
         
         reader = csv.DictReader(f)
-        fieldnames = reader.fieldnames + ["Distancia_km", "OSNR_ASE_dB", "GSNR_NLI_dB", "GSNR_Total_dB", "Factible", "Umbral_OSNR_dB", "Factible_Sin_Margen", "Factible_Umbral_Menos_2.5"]
+        fieldnames = ["Region", "Origen", "Destino", "Cantidad de Enlaces", "Velocidad [Gbps]", "Ruta", "Distancia_km", "GSNR_Total_dB", "Umbral_OSNR_dB", "Factible"]
         writer = csv.DictWriter(out_csv, fieldnames=fieldnames)
         writer.writeheader()
         
@@ -383,7 +374,8 @@ def main():
                         "Factible_Umbral_Menos_2.5": "ERROR"
                     })
                 
-                writer.writerow(row)
+                output_row = {field: row.get(field, "") for field in fieldnames}
+                writer.writerow(output_row)
                 count += 1
                 
         print(f"\n[INFO] Se procesaron {total_rutas} rutas totales. {exitosas} pudieron ser calculadas exitosamente. Revisá el archivo {RESULTADOS_FILE}")
