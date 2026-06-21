@@ -1,0 +1,64 @@
+digraph G {
+    rankdir=LR;
+    splines=true;
+    nodesep=1.0;
+    ranksep=1.5;
+
+    // Estilo de los nodos
+    node [shape=box, style="rounded,filled", fillcolor="white", color="#2c3e50", fontname="Helvetica", penwidth=2];
+    edge [fontname="Helvetica", fontsize=10];
+
+    // Nodos principales
+    Cordoba [shape=Msquare, fillcolor="#f1c40f", style="filled,bold", fontsize=16, label="ROADM CÓRDOBA\n(Grado 8)"];
+    
+    // Nodos Físicos Vecinos (Primer Salto)
+    node [fillcolor="#ecf0f1", color="#bdc3c7"];
+    Arroyito; Corralito; Manfredi; JesusMaria [label="Jesús María"]; 
+    LaFalda [label="La Falda"]; Serrezuela; LaRioja [label="La Rioja"]; 
+    Patquia [label="Patquía"]; VMercedes [label="V. Mercedes"];
+
+    // Nodos Lejanos (Para ilustrar Bypass)
+    node [fillcolor="#e8f8f5", color="#1abc9c", style="dashed,filled"];
+    Benavidez [label="Benavídez\n(Bs. As.)"];
+    Mendoza [label="Mendoza\n(Cuyo)"];
+    Norte [label="Norte Argentino\n(Tucumán / Sgo)"];
+    Litoral [label="Litoral\n(Rosario / SF)"];
+
+    // Enlaces Físicos (Fibra Negra Oscura)
+    edge [color="#34495e", style=solid, penwidth=1.5, dir=none];
+    Cordoba -> Arroyito [label=" 28 slots "];
+    Cordoba -> Corralito [label=" 76 slots "];
+    Cordoba -> Manfredi [label=" 64 slots "];
+    Cordoba -> JesusMaria [label=" 36 slots "];
+    Cordoba -> LaFalda [label=" 36 slots "];
+    Cordoba -> Serrezuela [label=" 20 slots "];
+    Cordoba -> LaRioja [label=" 12 slots "];
+    Cordoba -> Patquia [label=" 4 slots "];
+    Cordoba -> VMercedes [label=" 4 slots "];
+
+    // Conexiones lógicas a lejanos (Físicas simplificadas)
+    edge [style=dotted, penwidth=1, color="#7f8c8d"];
+    Benavidez -> Rosario -> Manfredi;
+    Corralito -> VMercedes -> SanLuis -> Mendoza;
+    Norte -> JesusMaria;
+    Arroyito -> SanFrancisco -> Litoral;
+
+    // TRÁFICO LÓGICO (Lightpaths)
+    // 1. Tráfico Express / Bypass (Atraviesa Córdoba)
+    edge [color="#e74c3c", style=solid, penwidth=4, dir=forward, constraint=false];
+    Benavidez -> Mendoza [label="TRÁFICO EXPRESS REFEFO\n55 Canales / 13.9 Tbps\n(Penalidad ROADM: -0.4 dB)", fontcolor="#c0392b"];
+
+    // 2. Tráfico Entrante (Drop en Córdoba)
+    edge [color="#2980b9", style=solid, penwidth=2.5, dir=forward, constraint=false];
+    Norte -> Cordoba [label="Drop Local\n(Req. 3R: 35%)", fontcolor="#2980b9"];
+    Benavidez -> Cordoba;
+
+    // 3. Tráfico Saliente (Add en Córdoba)
+    edge [color="#27ae60", style=solid, penwidth=2.5, dir=forward, constraint=false];
+    Cordoba -> Litoral [label="Add Local\n(Req. 3R: 20%)", fontcolor="#27ae60"];
+    Cordoba -> Mendoza;
+
+    // Agrupación para layout
+    { rank=source; Benavidez; Norte }
+    { rank=sink; Mendoza; Litoral }
+}
