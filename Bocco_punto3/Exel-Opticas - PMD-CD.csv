@@ -1,0 +1,43 @@
+Longitud de onda,Coeficiente DC (ps/(nm.km),Coeficiente DCF (ps/(nm.km),Conpensasion Transiver ps/nm,,,,Longitud de onda,Coeficiente DC (ps/(nm.km)
+@ 1550 nm,17.985,-17,12000,,,,"@ 1534.8 nm - 195,4 THz",17.09
+Tramo,Distancia (km),Dispersión tramo (ps/nm),Dispersión acumulada (ps/nm),,,Distancia (km),Dispersión tramo,Dispersión acumulada (ps/nm)
+Benavidez-Exaltacion de la cruz,45,809.325,809.325,,,45,769.05,769.05
+Exaltacion de la cruz-Arrecife,48,863.28,1672.605,,,48,820.32,1589.37
+Arrecife-Pergamino,90,1618.65,3291.255,,,90,1538.1,3127.47
+Pergamino-Rosario,92,1654.62,4945.875,,,92,1572.28,4699.75
+Rosario-Cañada de Gomez,90,1618.65,6564.525,,,90,1538.1,6237.85
+Cañanda de Gomez-Leones,108,1942.38,8506.905,,,108,1845.72,8083.57
+Leones-San Marcos,32.9,591.7065,9098.6115,,,32.9,562.261,8645.831
+San Marcos-Villa Maria,77.1,1386.6435,10485.255,,,77.1,1317.639,9963.47
+Villa Maria-Manfredi,95,1708.575,12193.83,,,95,1623.55,11587.02
+Manfredi-Cordoba,100,1798.5,13992.33,,,100,1709,13296.02
+Cordoba-Corralito,85,1528.725,15521.055,,,85,1452.65,14748.67
+Corralito-Hernando,95,1708.575,17229.63,,,95,1623.55,16372.22
+Hernando-Chucul,88,1582.68,18812.31,,,88,1503.92,17876.14
+Chucul-V.Mercedes,184,3309.24,22121.55,,,184,3144.56,21020.7
+V.Mercedes-San Luis,87,1564.695,23686.245,,,87,1486.83,1486.83
+San Luis-Santa Rosa (Mza),195,3507.075,27193.32,,,195,3332.55,4819.38
+Santa Rosa (Mza)-Mendoza,110,1978.35,29171.67,,,110,1879.9,6699.28
+Compensación necesaria (ps/(nm.km)),-1010.098235,,17171.67,,,311.8070588,,-5300.72
+,,,,,,,,
+Cálculo PMD,0.04,Coediciente PMD,,,,,Longitud de onda,Coeficiente DC (ps/(nm.km)
+Tramo,Distancia (km),Dispersión (ps),,,,,@ 1565 nm - 191.7 THz,18.848
+Benavidez-Exaltacion de la cruz,45,0.2683281573,,,,Distancia (km),Dispersión tramo,Dispersión acumulada (ps/nm)
+Exaltacion de la cruz-Arrecife,48,0.2771281292,,,,45,848.16,848.16
+Arrecife-Pergamino,90,0.3794733192,,,,48,904.704,1752.864
+Pergamino-Rosario,92,0.3836665219,,,,90,1696.32,3449.184
+Rosario-Cañada de Gomez,90,0.3794733192,,,,92,1734.016,5183.2
+Cañanda de Gomez-Leones,108,0.4156921938,,,,90,1696.32,6879.52
+Leones-San Marcos,32.9,0.2294340864,,,,108,2035.584,8915.104
+San Marcos-Villa Maria,77.1,0.3512264227,,,,32.9,620.0992,9535.2032
+Villa Maria-Manfredi,95,0.3898717738,,,,77.1,1453.1808,10988.384
+Manfredi-Cordoba,100,0.4,,,,95,1790.56,12778.944
+Cordoba-Corralito,85,0.3687817783,,,,100,1884.8,14663.744
+Corralito-Hernando,95,0.3898717738,,,,85,1602.08,16265.824
+Hernando-Chucul,88,0.3752332608,,,,95,1790.56,18056.384
+Chucul-V.Mercedes,184,0.5425863987,,,,88,1658.624,19715.008
+V.Mercedes-San Luis,87,0.3730951621,,,,184,3468.032,23183.04
+San Luis-Santa Rosa (Mza),195,0.5585696018,,,,87,1639.776,1639.776
+Santa Rosa (Mza)-Mendoza,110,0.4195235393,,,,195,3675.36,5315.136
+Ensanchamiento del pulso por PMD,,1.610962445,,,,110,2073.28,7388.416
+,,,,,,271.2696471,,-4611.584
