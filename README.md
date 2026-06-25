@@ -14,25 +14,27 @@ Contiene los archivos principales de ejecución global y datos base:
 *   `Demanda_Base - Tráfico base.csv`: Matriz de tráfico base con las 512 demandas originales.
 *   `resultados_gsnr_demandas_base.csv`: Salida generada por el cálculo analítico.
 
-### 2. `Bocco_punto3/` - Análisis Teórico y Físico
-Estudios analíticos y simulaciones físicas comparativas:
-*   **Validación contra GNPy:** Documentación (`analisis_comparativo_gnpy.md`) y planillas Excel calibrando el modelo teórico versus el motor profesional de GNPy.
-*   **Rutas Críticas:** Análisis profundo tramo a tramo de los enlaces más exigentes: *Dina Huapi → Aguada Cecilio* (592 km) y *Benavídez → Mendoza* (1622 km), donde se evalúa CD (Dispersión Cromática), PMD y GSNR.
+### 2. `Excel_detallado/` - Análisis Teórico y Físico Detallado
+Estudios analíticos y planillas de cálculo de performance física:
+*   **Planillas de Enlaces:** `Excel_Calc_Detallado.xlsx` con los cálculos físicos detallados de los enlaces analizados.
+*   **Ancho de Banda:** Carpeta `BW/` con el análisis y documentación del cálculo de ancho de banda (`calculo_ancho_banda.md`).
 
 ### 3. `Regeneracion/` - Módulo de Regeneración de Señal Óptica (OEO)
 Algoritmo dinámico para salvaguardar enlaces no factibles:
 *   `Regenerador.py`: Emplea un algoritmo "Greedy" de retroceso que utiliza simulaciones iterativas de la API de GNPy para determinar el ROADM óptimo donde ubicar regeneradores 3R en caso de que la GSNR acumulada caiga por debajo del umbral del transceptor.
+*   `Regen_bajada.py`: Script alternativo de regeneración que evalúa alternativas bajando la velocidad de transmisión.
 
-### 4. `Pablo_punto5/` - Ruteo y Asignación de Espectro (RSA)
+### 4. `RSA/` - Ruteo y Asignación de Espectro (RWA/RSA)
 Resolución del problema de asignación espectral sobre grilla flexible (Flexi-Grid, 304 slots):
 *   Modularizado en dos escenarios: Tráfico **base** (512 demandas) y tráfico extra de ampliación **REFEFO** (200 demandas adicionales).
-*   Se comparan tres enfoques algorítmicos:
-    1.  **First-Fit:** Algoritmo heurístico rápido y altamente eficiente en la compactación de espectro.
-    2.  **Aleatorio (Random):** Asignación básica sin optimización para contrastar resultados.
-    3.  **MILP (PuLP-CBC):** Modelo de optimización matemática lineal entera para hallar soluciones exactas al bloqueo espectral.
-*   Incluye el script de tráfico dinámico (`generador_demandas_refefo.py`) adaptado con rutas portables.
+*   Se comparan tres enfoques algorítmicos (First-Fit, Aleatorio y MILP con PuLP-CBC) incluyendo versiones mejoradas `_V2` para optimización de espectro.
+*   Contiene el reporte general (`analisis_pablo_punto5.md`) y el script de tráfico dinámico (`generador_demandas_refefo.py`) adaptado con rutas portables.
 
-### 5. `Consigna/` e `Equipos/`
+### 5. `Analisis_Nodo_Cordoba/` - Análisis del Nodo Córdoba
+Estudio integral del comportamiento físico y lógico del Nodo Córdoba:
+*   Contiene scripts de graficación (`graficos_nodo_cordoba.py`), esquemas lógicos (`esquema_cordoba.dot`, `esquema_logico_cordoba.png`) y análisis detallado de la ocupación espectral y tráfico de la zona norte.
+
+### 6. `Consigna/` e `Equipos/`
 Archivos estáticos de configuración y referencias técnicas:
 *   `Consigna/`: Json topológicos (`network_mashe.json`), diccionarios de equipos calibrados (`equipament_real_marcos_corregido.json`) y pdfs originarios de la cátedra.
 *   `Equipos/`: Hojas de datos (Datasheets) de los componentes de hardware reales que modelan la simulación (Fibra SMF-28, Plataforma ROADM D7000, Transceptores Juniper 400G).

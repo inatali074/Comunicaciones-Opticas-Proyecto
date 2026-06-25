@@ -1,0 +1,231 @@
+======================================================================
+  REPORTE: ASIGNACIÓN DE DEMANDAS REFEFO CON FIRST-FIT
+======================================================================
+
+Estado base: /home/nacho/Escritorio/Comunicaciones Opticas/trabajo final/Main/TpOpticas/Pablo_punto5/base/first_fit/ocupacion_base_firstfit.csv
+Demandas:    /home/nacho/Escritorio/Comunicaciones Opticas/trabajo final/Main/TpOpticas/Pablo_punto5/refefo/demandas_refefo.csv
+
+--- ESTADO BASE ---
+  Enlaces:          236
+  Slots ocupados:   7074 / 71744
+  Ocupación:        9.86%
+  S_max:            96
+
+--- RESULTADOS REFEFO ---
+  Demandas REFEFO totales:        200
+  Demandas asignadas con éxito:   200
+  Demandas bloqueadas:            0
+  Probabilidad de bloqueo:        0.00%
+
+--- ESTADO FINAL DE LA RED ---
+  Enlaces:          449
+  Slots ocupados:   24032 / 136496
+  Ocupación:        17.61%
+  S_max:            188
+
+  Δ Slots ocupados: +16958
+  Δ S_max:          96 → 188
+
+--- DETALLE POR DEMANDA ---
+ Iter | Source                    | Destination               |  Gbps | Resultado                           | K_Path
+-------------------------------------------------------------------------------------------------------------------
+    1 | Gobernador Gregores       | Santa Rosa (LP)           |   100 | ASIGNADA                            |      2
+    2 | Cap Juan Page             | La Paz                    |   200 | ASIGNADA                            |      1
+    3 | San Pedro Jujuy           | Puerto Madryn             |   400 | ASIGNADA [no-fact]                  |      5
+    4 | Pehuajo                   | Bolivar                   |   400 | ASIGNADA                            |      1
+    5 | Frias                     | V. Mercedes               |   100 | ASIGNADA                            |      1
+    6 | Presidencia Roque Saenz Peña | Posadas                   |   100 | ASIGNADA                            |      1
+    7 | Jaramillo                 | San Antonio de los Cobres |   300 | ASIGNADA [no-fact]                  |      5
+    8 | Posadas                   | San Carlos de Bariloche   |   300 | ASIGNADA [no-fact]                  |      3
+    9 | Winifreda                 | J. de San Martin          |   400 | ASIGNADA [no-fact]                  |      5
+   10 | San Miguel de Tucuman     | Rio Colorado              |   300 | ASIGNADA [no-fact]                  |      2
+   11 | El Calafate               | Esperanza (StaCruz)       |   200 | ASIGNADA                            |      1
+   12 | Baradero                  | Catriel                   |   200 | ASIGNADA [no-fact]                  |      3
+   13 | Cap Juan Page             | Salta                     |   200 | ASIGNADA                            |      1
+   14 | Bahia Blanca              | La Plata                  |   200 | ASIGNADA [no-fact]                  |      4
+   15 | Rio Gallegos              | Las Toninas               |   200 | ASIGNADA [no-fact]                  |      5
+   16 | Manfredi                  | Chilecito                 |   100 | ASIGNADA                            |      4
+   17 | San Nicolas de los Arroyos | Vera                      |   100 | ASIGNADA                            |      1
+   18 | La Quiaca                 | General Roca              |   300 | ASIGNADA [no-fact]                  |      3
+   19 | Rio Mayo                  | Corralito                 |   200 | ASIGNADA [no-fact]                  |      1
+   20 | Winifreda                 | Serrezuela                |   200 | ASIGNADA [no-fact]                  |      1
+   21 | Bolivar                   | Rio Grande                |   200 | ASIGNADA [no-fact]                  |      2
+   22 | Leones                    | San Pedro BsAs            |   100 | ASIGNADA                            |      1
+   23 | Puerto Madryn             | Aristobulo del Valle      |   100 | ASIGNADA                            |      5
+   24 | Hernando                  | Buta Ranquil              |   400 | ASIGNADA [no-fact]                  |      1
+   25 | General Roca              | Goya                      |   200 | ASIGNADA [no-fact]                  |      2
+   26 | Rio Mayo                  | Campana                   |   300 | ASIGNADA [no-fact]                  |      2
+   27 | San Antonio Oeste         | San Jose de Metan         |   100 | ASIGNADA                            |      2
+   28 | Zapala                    | Ceres                     |   100 | ASIGNADA                            |      1
+   29 | Picun Leufu               | Rio Gallegos              |   200 | ASIGNADA [no-fact]                  |      1
+   30 | Tostado                   | Mercedes                  |   100 | ASIGNADA                            |      1
+   31 | Aristobulo del Valle      | Clorinda                  |   200 | ASIGNADA                            |      1
+   32 | Humahuaca                 | Puerto Iguazu             |   400 | ASIGNADA [no-fact]                  |      1
+   33 | Santa Maria               | Las Toninas               |   100 | ASIGNADA                            |      4
+   34 | Usuahia                   | San Pedro Jujuy           |   200 | ASIGNADA [no-fact]                  |      5
+   35 | Perito Moreno             | Mercedes                  |   200 | ASIGNADA [no-fact]                  |      5
+   36 | La Rioja                  | San Luis                  |   400 | ASIGNADA [no-fact]                  |      4
+   37 | San Antonio de los Cobres | Choele Choel              |   400 | ASIGNADA [no-fact]                  |      5
+   38 | Dean Funes                | Corralito                 |   200 | ASIGNADA                            |      1
+   39 | Winifreda                 | San Jose de Jachal        |   100 | ASIGNADA                            |      1
+   40 | Epuyen                    | Chascomus                 |   200 | ASIGNADA [no-fact]                  |      1
+   41 | Vera                      | El Calafate               |   200 | ASIGNADA [no-fact]                  |      5
+   42 | Rio Gallegos              | Vera                      |   200 | ASIGNADA [no-fact]                  |      5
+   43 | Cañuelas                  | Cordoba                   |   400 | ASIGNADA                            |      1
+   44 | Esquel                    | Zarate                    |   100 | ASIGNADA                            |      3
+   45 | San Jose de Metan         | Bahia Blanca              |   200 | ASIGNADA [no-fact]                  |      1
+   46 | Santa Isabel              | Salta                     |   100 | ASIGNADA                            |      4
+   47 | San Antonio De Areco      | Exaltacion de la Cruz     |   200 | ASIGNADA                            |      1
+   48 | Santiago del Estero       | Goya                      |   100 | ASIGNADA                            |      2
+   49 | Bajo Caracoles            | Jardin America            |   400 | ASIGNADA [no-fact]                  |      3
+   50 | San Rafael                | Bahia Blanca              |   300 | ASIGNADA [no-fact]                  |      5
+   51 | Chascomus                 | Victorica                 |   200 | ASIGNADA                            |      5
+   52 | Las Lomitas               | Cordoba                   |   400 | ASIGNADA [no-fact]                  |      1
+   53 | Leones                    | Usuahia                   |   200 | ASIGNADA [no-fact]                  |      5
+   54 | Posadas                   | San Salvador de Jujuy     |   100 | ASIGNADA                            |      1
+   55 | Concepcion del Uruguay    | Zarate                    |   200 | ASIGNADA                            |      1
+   56 | La Plata                  | San Carlos de Bariloche   |   100 | ASIGNADA                            |      1
+   57 | Tostado                   | Caleta Olivia             |   300 | ASIGNADA [no-fact]                  |      5
+   58 | El Condor                 | Picun Leufu               |   100 | ASIGNADA                            |      1
+   59 | General Conesa            | Paso de Los Libres        |   400 | ASIGNADA [no-fact]                  |      2
+   60 | San Martin de los Andes   | Tostado                   |   200 | ASIGNADA [no-fact]                  |      1
+   61 | Chacabuco                 | Esquel                    |   200 | ASIGNADA [no-fact]                  |      2
+   62 | San Jose de Metan         | Paso de Los Libres        |   100 | ASIGNADA                            |      1
+   63 | Chacabuco                 | Sunchales                 |   400 | ASIGNADA [no-fact]                  |      1
+   64 | Caleta Olivia             | Exaltacion de la Cruz     |   400 | ASIGNADA [no-fact]                  |      5
+   65 | El Foyel                  | Lib Gral San Martin       |   400 | ASIGNADA [no-fact]                  |      4
+   66 | Salvador Mazza            | Ceres                     |   400 | ASIGNADA [no-fact]                  |      1
+   67 | Bahia Blanca              | Epuyen                    |   300 | ASIGNADA [no-fact]                  |      1
+   68 | Corrientes                | Puerto Madryn             |   200 | ASIGNADA [no-fact]                  |      3
+   69 | Sunchales                 | Colonia Las Heras         |   100 | ASIGNADA                            |      5
+   70 | El Calafate               | Usuahia                   |   200 | ASIGNADA                            |      1
+   71 | San Jose de Jachal        | Jaramillo                 |   300 | ASIGNADA [no-fact]                  |      4
+   72 | Tres Arroyos              | Pinamar                   |   300 | ASIGNADA [no-fact]                  |      1
+   73 | Catamarca                 | La Plata                  |   200 | ASIGNADA                            |      4
+   74 | Resistencia               | Salvador Mazza            |   200 | ASIGNADA                            |      1
+   75 | Dina Huapi                | Clorinda                  |   400 | ASIGNADA [no-fact]                  |      5
+   76 | La Rioja                  | Presidencia Roque Saenz Peña |   300 | ASIGNADA                            |      1
+   77 | Arroyito                  | San Salvador de Jujuy     |   300 | ASIGNADA                            |      4
+   78 | Chilecito                 | V. Mercedes               |   200 | ASIGNADA                            |      5
+   79 | Luis Piedrabuena          | Salvador Mazza            |   400 | ASIGNADA [no-fact]                  |      4
+   80 | Epuyen                    | Lib Gral San Martin       |   300 | ASIGNADA                            |      4
+   81 | Jardin America            | Chivilcoy                 |   100 | ASIGNADA                            |      1
+   82 | Santiago del Estero       | Vera                      |   300 | ASIGNADA                            |      3
+   83 | San Carlos de Bariloche   | Vera                      |   300 | ASIGNADA [no-fact]                  |      1
+   84 | San Jose de Jachal        | Gobernador Gregores       |   300 | ASIGNADA                            |      4
+   85 | Puerto San Julian         | San Nicolas de los Arroyos |   200 | ASIGNADA [no-fact]                  |      5
+   86 | Resistencia               | El Foyel                  |   300 | ASIGNADA [no-fact]                  |      2
+   87 | Perito Moreno             | Caleta Olivia             |   200 | ASIGNADA                            |      1
+   88 | Peru                      | Chivilcoy                 |   300 | ASIGNADA                            |      1
+   89 | Formosa                   | Patquia                   |   300 | ASIGNADA                            |      1
+   90 | Dean Funes                | Choromoro                 |   100 | ASIGNADA                            |      1
+   91 | Bolivar                   | Marcos Paz                |   200 | ASIGNADA                            |      3
+   92 | El Calafate               | Estacion Cullen           |   200 | ASIGNADA                            |      1
+   93 | Luis Piedrabuena          | San Marcos                |   300 | ASIGNADA [no-fact]                  |      3
+   94 | Santa Maria               | CABA                      |   400 | ASIGNADA [no-fact]                  |      4
+   95 | Luis Piedrabuena          | Chacabuco                 |   300 | ASIGNADA [no-fact]                  |      2
+   96 | Chascomus                 | San Carlos de Bariloche   |   400 | ASIGNADA [no-fact]                  |      1
+   97 | Winifreda                 | Epuyen                    |   400 | ASIGNADA [no-fact]                  |      5
+   98 | Arroyito (Nqn)            | Paso de Los Libres        |   400 | ASIGNADA [no-fact]                  |      3
+   99 | Estacion Cullen           | Rio Grande                |   400 | ASIGNADA                            |      1
+  100 | Campana                   | San Fabian                |   200 | ASIGNADA                            |      3
+  101 | Salvador Mazza            | Catriel                   |   300 | ASIGNADA [no-fact]                  |      5
+  102 | Patquia                   | San Salvador de Jujuy     |   100 | ASIGNADA                            |      1
+  103 | Victorica                 | Perito Moreno             |   200 | ASIGNADA [no-fact]                  |      1
+  104 | Buta Ranquil              | Marcos Paz                |   400 | ASIGNADA [no-fact]                  |      3
+  105 | Zapala                    | Bajo Caracoles            |   100 | ASIGNADA                            |      1
+  106 | Perito Moreno             | Dolores                   |   100 | ASIGNADA                            |      1
+  107 | Viedma                    | Leones                    |   100 | ASIGNADA                            |      5
+  108 | Rio Mayo                  | Bolivar                   |   200 | ASIGNADA [no-fact]                  |      2
+  109 | Tunuyan                   | Santa Fe                  |   200 | ASIGNADA                            |      1
+  110 | San Martin de los Andes   | Peru                      |   100 | ASIGNADA                            |      2
+  111 | El Condor                 | Clorinda                  |   400 | ASIGNADA [no-fact]                  |      3
+  112 | Victorica                 | Baradero                  |   200 | ASIGNADA                            |      5
+  113 | Embarcacion               | Baradero                  |   100 | ASIGNADA                            |      1
+  114 | Cañada De Gomez           | Rawson                    |   200 | ASIGNADA [no-fact]                  |      3
+  115 | Patquia                   | San Salvador de Jujuy     |   300 | ASIGNADA                            |      1
+  116 | Azul                      | San Martin de los Andes   |   200 | ASIGNADA [no-fact]                  |      1
+  117 | Cap Juan Page             | Exaltacion de la Cruz     |   400 | ASIGNADA [no-fact]                  |      5
+  118 | Neuquen                   | Picun Leufu               |   200 | ASIGNADA                            |      1
+  119 | Azul                      | Tres lagos                |   400 | ASIGNADA [no-fact]                  |      5
+  120 | Colonia Las Heras         | Gobernador Gregores       |   200 | ASIGNADA                            |      2
+  121 | Zarate                    | San Marcos                |   400 | ASIGNADA                            |      1
+  122 | San Jose de Metan         | General Roca              |   300 | ASIGNADA [no-fact]                  |      5
+  123 | Pico Truncado             | Chacabuco                 |   400 | ASIGNADA [no-fact]                  |      2
+  124 | Chacabuco                 | Embarcacion               |   200 | ASIGNADA                            |      1
+  125 | La Quiaca                 | Concordia                 |   300 | ASIGNADA                            |      2
+  126 | Rufino                    | Sargento Vidal            |   100 | ASIGNADA                            |      1
+  127 | Rio Mayo                  | Buta Ranquil              |   100 | ASIGNADA                            |      1
+  128 | CABA                      | Tres Arroyos              |   100 | ASIGNADA                            |      1
+  129 | San Martin de los Andes   | Victorica                 |   100 | ASIGNADA                            |      1
+  130 | San Sebastian             | Chucul                    |   300 | ASIGNADA [no-fact]                  |      4
+  131 | Junin de los Andes        | Comodoro Rivadavia        |   400 | ASIGNADA [no-fact]                  |      1
+  132 | Jesus Maria               | Jardin America            |   200 | ASIGNADA                            |      1
+  133 | Jardin America            | Chascomus                 |   400 | ASIGNADA [no-fact]                  |      1
+  134 | Leones                    | Santiago del Estero       |   400 | ASIGNADA                            |      1
+  135 | Benavidez                 | General Roca              |   300 | ASIGNADA [no-fact]                  |      3
+  136 | San Fabian                | San Luis                  |   300 | ASIGNADA                            |      1
+  137 | Tecka                     | Arrecifes                 |   400 | ASIGNADA [no-fact]                  |      2
+  138 | Añatuya                   | Leones                    |   200 | ASIGNADA                            |      1
+  139 | Vera                      | Chascomus                 |   200 | ASIGNADA                            |      1
+  140 | San Carlos de Bariloche   | Arrecifes                 |   100 | ASIGNADA                            |      3
+  141 | Olavarria                 | Chivilcoy                 |   300 | ASIGNADA                            |      1
+  142 | Rosario                   | Formosa                   |   100 | ASIGNADA                            |      1
+  143 | Abasto                    | Chivilcoy                 |   400 | ASIGNADA                            |      1
+  144 | Tecka                     | Rio Gallegos              |   200 | ASIGNADA                            |      3
+  145 | Aguada Cecilio            | Ceres                     |   200 | ASIGNADA [no-fact]                  |      3
+  146 | Tres Arroyos              | Las Armas                 |   300 | ASIGNADA [no-fact]                  |      1
+  147 | Hernando                  | Humahuaca                 |   200 | ASIGNADA                            |      4
+  148 | Chucul                    | Caleta Olivia             |   400 | ASIGNADA [no-fact]                  |      2
+  149 | Lib Gral San Martin       | Mercedes                  |   300 | ASIGNADA [no-fact]                  |      1
+  150 | Concepcion                | San Jose                  |   400 | ASIGNADA [no-fact]                  |      1
+  151 | Choele Choel              | Las Lomitas               |   400 | ASIGNADA [no-fact]                  |      5
+  152 | Gobernador Gregores       | Bolivar                   |   200 | ASIGNADA [no-fact]                  |      2
+  153 | Jesus Maria               | 9 De Julio                |   100 | ASIGNADA                            |      1
+  154 | Parana                    | Corralito                 |   300 | ASIGNADA                            |      1
+  155 | El Foyel                  | Salta                     |   200 | ASIGNADA [no-fact]                  |      4
+  156 | Cordoba                   | Posadas                   |   400 | ASIGNADA [no-fact]                  |      2
+  157 | San Nicolas de los Arroyos | Las Lomitas               |   100 | ASIGNADA                            |      1
+  158 | San Juan                  | Jaramillo                 |   100 | ASIGNADA                            |      5
+  159 | Santa Isabel              | Rosario                   |   200 | ASIGNADA                            |      2
+  160 | Tandil                    | Gral. Alvear              |   400 | ASIGNADA [no-fact]                  |      1
+  161 | Peru                      | Belen                     |   200 | ASIGNADA [no-fact]                  |      3
+  162 | San Nicolas de los Arroyos | Leones                    |   400 | ASIGNADA                            |      1
+  163 | Chacabuco                 | Marcos Paz                |   300 | ASIGNADA                            |      1
+  164 | Catamarca                 | Buta Ranquil              |   300 | ASIGNADA [no-fact]                  |      5
+  165 | Santa Rosa (Mza)          | Parana                    |   300 | ASIGNADA                            |      1
+  166 | Patquia                   | San Francisco             |   100 | ASIGNADA                            |      4
+  167 | Arrecifes                 | Corralito                 |   100 | ASIGNADA                            |      1
+  168 | General Roca              | Puerto Madryn             |   300 | ASIGNADA [no-fact]                  |      2
+  169 | San Jose de Jachal        | San Antonio Oeste         |   200 | ASIGNADA [no-fact]                  |      1
+  170 | Pico Truncado             | Winifreda                 |   200 | ASIGNADA [no-fact]                  |      2
+  171 | Luis Piedrabuena          | Trenque Lauquen           |   100 | ASIGNADA                            |      3
+  172 | Esquel                    | General Roca              |   300 | ASIGNADA                            |      1
+  173 | Catriel                   | Rio Mayo                  |   300 | ASIGNADA                            |      1
+  174 | Corrientes                | Santa Fe                  |   300 | ASIGNADA                            |      2
+  175 | Tres lagos                | Ituzaingo                 |   300 | ASIGNADA [no-fact]                  |      3
+  176 | Junin de los Andes        | Lib Gral San Martin       |   100 | ASIGNADA                            |      5
+  177 | La Falda                  | La Paz                    |   200 | ASIGNADA                            |      1
+  178 | Arrecifes                 | Sunchales                 |   200 | ASIGNADA                            |      1
+  179 | Exaltacion de la Cruz     | Bolivar                   |   200 | ASIGNADA                            |      3
+  180 | San Francisco             | V. Mercedes               |   300 | ASIGNADA                            |      1
+  181 | Santa Fe                  | Bolivar                   |   200 | ASIGNADA                            |      2
+  182 | San Marcos                | San Carlos de Bariloche   |   400 | ASIGNADA [no-fact]                  |      3
+  183 | San Sebastian             | CABA                      |   200 | ASIGNADA [no-fact]                  |      5
+  184 | Mercedes                  | San Pedro BsAs            |   300 | ASIGNADA                            |      1
+  185 | Colonia Las Heras         | Santa Rosa (Mza)          |   100 | ASIGNADA                            |      1
+  186 | Pinamar                   | 9 De Julio                |   100 | ASIGNADA                            |      2
+  187 | Tostado                   | Parana                    |   100 | ASIGNADA                            |      1
+  188 | Arrecifes                 | San Juan                  |   400 | ASIGNADA [no-fact]                  |      2
+  189 | La Falda                  | Embarcacion               |   200 | ASIGNADA [no-fact]                  |      3
+  190 | Colonia Las Heras         | Trelew                    |   400 | ASIGNADA [no-fact]                  |      1
+  191 | Ceres                     | Epuyen                    |   100 | ASIGNADA                            |      1
+  192 | Bragado                   | Lib Gral San Martin       |   400 | ASIGNADA [no-fact]                  |      1
+  193 | Resistencia               | Campana                   |   400 | ASIGNADA [no-fact]                  |      1
+  194 | Esperanza (StaCruz)       | Epuyen                    |   300 | ASIGNADA                            |      1
+  195 | Puerto San Julian         | San Rafael                |   100 | ASIGNADA                            |      2
+  196 | San Marcos                | La Plata                  |   200 | ASIGNADA                            |      1
+  197 | Mendoza                   | Rio Gallegos              |   400 | ASIGNADA [no-fact]                  |      4
+  198 | Santiago del Estero       | El Condor                 |   300 | ASIGNADA [no-fact]                  |      3
+  199 | Ceres                     | V. Mercedes               |   100 | ASIGNADA                            |      1
+  200 | Jaramillo                 | Tres lagos                |   200 | ASIGNADA                            |      2

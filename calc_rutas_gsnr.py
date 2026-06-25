@@ -110,10 +110,53 @@ def bfs_shortest_path(start, end):
                 queue.append(new_path)
     return None
 
+def calcular_umbral_dinamico(velocidad_gbps, p_rx):
+    if p_rx is None:
+        return osnr_req_dict.get(str(int(float(velocidad_gbps))), 23.5)
+    
+    vel = int(float(velocidad_gbps))
+    
+    # 400G: 23.5 dB @ -14 dBm y 25.0 dB @ -16 dBm
+    if vel == 400:
+        if p_rx >= -14.0:
+            return 23.5
+        elif p_rx <= -16.0:
+            return 25.0
+        else:
+            return 23.5 + 1.5 * (-14.0 - p_rx) / 2.0
+            
+    # 300G: 20.5 dB @ -16 dBm y 21.5 dB @ -20 dBm
+    elif vel == 300:
+        if p_rx >= -16.0:
+            return 20.5
+        elif p_rx <= -20.0:
+            return 21.5
+        else:
+            return 20.5 + 1.0 * (-16.0 - p_rx) / 4.0
+            
+    # 200G: 20.5 dB @ -16 dBm y 21.5 dB @ -18 dBm
+    elif vel == 200:
+        if p_rx >= -16.0:
+            return 20.5
+        elif p_rx <= -18.0:
+            return 21.5
+        else:
+            return 20.5 + 1.0 * (-16.0 - p_rx) / 2.0
+            
+    # 100G: 11.8 dB @ -20 dBm y 12.8 dB @ -25 dBm
+    elif vel == 100:
+        if p_rx >= -20.0:
+            return 11.8
+        elif p_rx <= -25.0:
+            return 12.8
+        else:
+            return 11.8 + 1.0 * (-20.0 - p_rx) / 5.0
+            
+    return osnr_req_dict.get(str(vel), 23.5)
+
 def calcular_ruta(ciudades, velocidad_gbps):
     print(f"\nCalculando ruta: {' -> '.join(ciudades)} a {velocidad_gbps} Gbps")
     vel_key = str(int(float(velocidad_gbps)))
-    osnr_req = osnr_req_dict.get(vel_key, 23.5)
     
     # 1. Mapear ciudades a nodos ROADM
     nodos_ruta = []
@@ -203,10 +246,15 @@ def calcular_ruta(ciudades, velocidad_gbps):
     inv_gsnr_nli = 0.0
     N_s = 0
     total_length = 0.0
+    p_received = None
     
     for i in range(len(camino_completo)):
         node = elements[camino_completo[i]]
         t = node["type"]
+        
+        # Guardar la potencia justo antes de procesar el ROADM final
+        if i == len(camino_completo) - 1:
+            p_received = p_in_current
         
         if t == "Edfa":
             # Calcular ganancia y NF
@@ -277,6 +325,8 @@ def calcular_ruta(ciudades, velocidad_gbps):
         return
         
     # Calculos finales
+    osnr_req = calcular_umbral_dinamico(velocidad_gbps, p_received)
+    
     osnr_ase_db = -10 * math.log10(osnri_inv_sum) if osnri_inv_sum > 0 else float('inf')
     gsnr_nli_db = -10 * math.log10(inv_gsnr_nli) if inv_gsnr_nli > 0 else float('inf')
     
@@ -291,34 +341,25 @@ def calcular_ruta(ciudades, velocidad_gbps):
     print(f"    OSNR ASE: {osnr_ase_db:.2f} dB")
     print(f"    GSNR NLI: {gsnr_nli_db:.2f} dB")
     print(f"    GSNR Total (inc. Tx): {gsnr_total_db:.2f} dB")
-    print(f"    Umbral (OSNR_req + Margen): {osnr_req + sys_margins:.2f} dB")
+    if p_received is not None:
+        print(f"    Potencia Recibida: {p_received:.2f} dBm")
+    print(f"    Umbral OSNR Requerido: {osnr_req:.2f} dB")
     
-    if gsnr_total_db >= (osnr_req + sys_margins):
+    if gsnr_total_db >= osnr_req:
         print("    -> FACTIBLE ✓")
         factible = "SI"
     else:
         print("    -> NO FACTIBLE ✗")
         factible = "NO"
         
-    if gsnr_total_db >= osnr_req:
-        factible_sin_margen = "SI"
-    else:
-        factible_sin_margen = "NO"
-
-    if gsnr_total_db >= (osnr_req - 2.5):
-        factible_umbral_menos_2_5 = "SI"
-    else:
-        factible_umbral_menos_2_5 = "NO"
-        
     return {
         "Distancia_km": round(total_length, 2),
         "OSNR_ASE_dB": round(osnr_ase_db, 2),
         "GSNR_NLI_dB": round(gsnr_nli_db, 2),
         "GSNR_Total_dB": round(gsnr_total_db, 2),
-        "Factible": factible,
+        "Potencia_Recibida_dBm": round(p_received, 2) if p_received is not None else None,
         "Umbral_OSNR_dB": round(osnr_req, 2),
-        "Factible_Sin_Margen": factible_sin_margen,
-        "Factible_Umbral_Menos_2.5": factible_umbral_menos_2_5
+        "Factible": factible
     }
 
 def main():
@@ -332,7 +373,7 @@ def main():
          open(RESULTADOS_FILE, 'w', encoding='utf-8', newline='') as out_csv:
         
         reader = csv.DictReader(f)
-        fieldnames = ["Region", "Origen", "Destino", "Cantidad de Enlaces", "Velocidad [Gbps]", "Ruta", "Distancia_km", "GSNR_Total_dB", "Umbral_OSNR_dB", "Factible"]
+        fieldnames = ["Region", "Origen", "Destino", "Cantidad de Enlaces", "Velocidad [Gbps]", "Ruta", "Distancia_km", "GSNR_Total_dB", "Potencia_Recibida_dBm", "Umbral_OSNR_dB", "Factible"]
         writer = csv.DictWriter(out_csv, fieldnames=fieldnames)
         writer.writeheader()
         
@@ -368,10 +409,9 @@ def main():
                         "OSNR_ASE_dB": "ERROR",
                         "GSNR_NLI_dB": "ERROR",
                         "GSNR_Total_dB": "ERROR",
-                        "Factible": "ERROR",
+                        "Potencia_Recibida_dBm": "ERROR",
                         "Umbral_OSNR_dB": "ERROR",
-                        "Factible_Sin_Margen": "ERROR",
-                        "Factible_Umbral_Menos_2.5": "ERROR"
+                        "Factible": "ERROR"
                     })
                 
                 output_row = {field: row.get(field, "") for field in fieldnames}
