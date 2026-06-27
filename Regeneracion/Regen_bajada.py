@@ -304,11 +304,19 @@ def main():
     
     # Inicializar columnas nuevas
     df_regen["Necesito Bajada"] = "NO"
-    df_regen["Factible con bajada"] = "SI"
+    df_regen["Factible con bajada"] = "NO"
     df_regen["Velocidad_Ajustada [Gbps]"] = df_regen["Velocidad [Gbps]"]
     df_regen["GSNR_Total_dB_Ajustada"] = df_regen["GSNR_Total_dB"]
     df_regen["Umbral_OSNR_dB_Ajustada"] = df_regen["Umbral_OSNR_dB"]
     
+    import re
+    # Actualizar GSNR_Total_dB_Ajustada para los casos que ya eran factibles con regeneración en Fase 2
+    for idx, row in df_regen.iterrows():
+        if row["Reg_Factible"] == "SI":
+            matches = re.findall(r'\((\d+\.\d+)\s*dB\)', str(row["Ruta_Regenerada"]))
+            if matches:
+                df_regen.at[idx, "GSNR_Total_dB_Ajustada"] = float(matches[-1])
+                
     # Procesamos solo las filas que requirieron regeneración originalmente
     # o las que terminaron en Reg_Factible == "NO"
     filas_no_factibles = df_regen[df_regen["Reg_Factible"] == "NO"]
@@ -438,7 +446,7 @@ def main():
         target_osnr = calcular_umbral_dinamico(orig_speed, p_rx)
         reg_count, reg_nodes, reg_gsnrs, reg_ok = optimize_regeneration(full_path, target_osnr, all_elements, all_connections)
         
-        if reg_ok:
+        if reg_ok and reg_count <= 4:
             # Era un caso skipped por el bug de software. Ahora funciona con la velocidad original!
             print(f"  [✓] Enlace corregido: {origen} -> {destino} es FACTIBLE con regeneración a velocidad original ({int(orig_speed)}G).")
             df_regen.at[idx, "Reg_Factible"] = "SI"
@@ -474,9 +482,9 @@ def main():
             
             # No necesita bajada
             df_regen.at[idx, "Necesito Bajada"] = "NO"
-            df_regen.at[idx, "Factible con bajada"] = "SI"
+            df_regen.at[idx, "Factible con bajada"] = "NO"
             df_regen.at[idx, "Velocidad_Ajustada [Gbps]"] = orig_speed
-            df_regen.at[idx, "GSNR_Total_dB_Ajustada"] = row["GSNR_Total_dB"]
+            df_regen.at[idx, "GSNR_Total_dB_Ajustada"] = reg_gsnrs[-1] if len(reg_gsnrs) > 0 else row["GSNR_Total_dB"]
             df_regen.at[idx, "Umbral_OSNR_dB_Ajustada"] = target_osnr
         else:
             # Enlace realmente no factible. Procedemos con la bajada de velocidad
@@ -497,25 +505,35 @@ def main():
                 
             found_feasible = False
             for speed in speeds[curr_idx+1:]:
-                print(f"      Evaluando a {int(speed)} Gbps...")
+                print(f"      Evaluando a {int(speed)} Gbps sin regeneración...")
                 target_osnr_lower = calcular_umbral_dinamico(speed, p_rx)
-                reg_count_l, reg_nodes_l, reg_gsnrs_l, reg_ok_l = optimize_regeneration(full_path, target_osnr_lower, all_elements, all_connections)
                 
-                if reg_ok_l:
-                    print(f"      -> ¡Factible a {int(speed)} Gbps con {reg_count_l} regeneradores!")
+                # Para la bajada de velocidad, no se permite regeneración (0 regeneradores).
+                # Comprobamos si el GSNR directo de extremo a extremo es suficiente para la velocidad menor.
+                direct_gsnr = float(row["GSNR_Total_dB"])
+                if direct_gsnr >= target_osnr_lower:
+                    print(f"      -> ¡Factible a {int(speed)} Gbps sin regeneradores!")
                     df_regen.at[idx, "Factible con bajada"] = "SI"
                     df_regen.at[idx, "Velocidad_Ajustada [Gbps]"] = speed
-                    df_regen.at[idx, "GSNR_Total_dB_Ajustada"] = row["GSNR_Total_dB"]
+                    df_regen.at[idx, "GSNR_Total_dB_Ajustada"] = direct_gsnr
                     df_regen.at[idx, "Umbral_OSNR_dB_Ajustada"] = target_osnr_lower
+                    
+                    df_regen.at[idx, "Reg_Count"] = 0
+                    df_regen.at[idx, "Nodos_Regeneradores"] = ""
+                    df_regen.at[idx, "Ruta_Regenerada"] = ""
+                    
                     found_feasible = True
                     break
             
             if not found_feasible:
-                print(f"      -> [!] No es factible a ninguna velocidad permitida.")
+                print(f"      -> [!] No es factible a ninguna velocidad permitida de forma directa sin regeneradores.")
                 df_regen.at[idx, "Factible con bajada"] = "NO"
-                df_regen.at[idx, "Velocidad_Ajustada [Gbps]"] = 100.0 # Velocidad mínima
+                df_regen.at[idx, "Velocidad_Ajustada [Gbps]"] = 100.0
                 df_regen.at[idx, "GSNR_Total_dB_Ajustada"] = row["GSNR_Total_dB"]
                 df_regen.at[idx, "Umbral_OSNR_dB_Ajustada"] = calcular_umbral_dinamico(100.0, p_rx)
+                df_regen.at[idx, "Reg_Count"] = 0
+                df_regen.at[idx, "Nodos_Regeneradores"] = ""
+                df_regen.at[idx, "Ruta_Regenerada"] = ""
 
     print(f"[5/5] Escribiendo el archivo formateado en {OUTPUT_CSV}...")
     headers = [

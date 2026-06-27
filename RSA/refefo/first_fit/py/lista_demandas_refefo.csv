@@ -1,0 +1,713 @@
+ID_Demanda,Origen,Destino,Cantidad de Enlaces,Velocidad [Gbps],Ruta
+D1,Mendoza,San Juan,1,200,Mendoza - San Juan
+D2,Mendoza,San Jose de Jachal,1,200,Mendoza - San Juan - San Jose de Jachal
+D3,Mendoza,Patquia,1,200,Mendoza - San Juan - San Jose de Jachal - Patquia
+D4,Mendoza,Chilecito,1,200,Mendoza - San Juan - San Jose de Jachal - Patquia - Chilecito
+D5,Mendoza,Belen,1,200,Mendoza - San Juan - San Jose de Jachal - Patquia - Chilecito - Belen
+D6,Mendoza,Santa Maria,1,200,Mendoza - San Juan - San Jose de Jachal - Patquia - Chilecito - Belen - Santa Maria
+D7,San Jose de Jachal,San Miguel de Tucumán,1,200,San Jose de Jachal - Patquia - Chilecito - Belen - Santa Maria - San Miguel de Tucuman
+D8,Patquia,San Miguel de Tucumán,1,200,Patquia - Chilecito - Belen - Santa Maria - San Miguel de Tucuman
+D9,Chilecito,San Miguel de Tucumán,1,200,Chilecito - Belen - Santa Maria - San Miguel de Tucuman
+D10,Belen,San Miguel de Tucumán,1,200,Belen - Santa Maria - San Miguel de Tucuman
+D11,Santa Maria,San Miguel de Tucumán,1,200,Santa Maria - San Miguel de Tucuman
+D12,San Juan,San Jose de Jachal,4,100,San Juan - San Jose de Jachal
+D13,San Jose de Jachal,Patquia,4,100,San Jose de Jachal - Patquia
+D14,Patquia,Chilecito,4,100,Patquia - Chilecito
+D15,Chilecito,Belen,4,100,Chilecito - Belen
+D16,Belen,Santa Maria,4,100,Belen - Santa Maria
+D17,Santa Maria,San Miguel de Tucumán,4,100,Santa Maria - San Miguel de Tucuman
+D18,Mendoza,Villa Tulumaya,1,200,Mendoza - Villa Tulumaya
+D19,Mendoza,Media Agua,1,200,Mendoza - Villa Tulumaya - Media Agua
+D20,Mendoza,San Juan,1,200,Mendoza - Villa Tulumaya - Media Agua - San Juan
+D21,Mendoza,Serrezuela,1,200,Mendoza - Villa Tulumaya - Media Agua - San Juan - Serrezuela
+D22,Mendoza,La Falda,1,200,Mendoza - Villa Tulumaya - Media Agua - San Juan - Serrezuela - La Falda
+D23,Villa Tulumaya,Cordoba,1,200,Villa Tulumaya - Media Agua - San Juan - Serrezuela - La Falda - Cordoba
+D24,Media Agua,Cordoba,1,200,Media Agua - San Juan - Serrezuela - La Falda - Cordoba
+D25,San Juan,Cordoba,1,200,San Juan - Serrezuela - La Falda - Cordoba
+D26,Serrezuela,Cordoba,1,200,Serrezuela - La Falda - Cordoba
+D27,La Falda,Cordoba,1,200,La Falda - Cordoba
+D28,Mendoza,Villa Tulumaya,4,100,Mendoza - Villa Tulumaya
+D29,Villa Tulumaya,Media Agua,4,100,Villa Tulumaya - Media Agua
+D30,Media Agua,San Juan,4,100,Media Agua - San Juan
+D31,San Juan,Serrezuela,4,100,San Juan - Serrezuela
+D32,Serrezuela,La Falda,4,100,Serrezuela - La Falda
+D33,La Falda,Cordoba,4,100,La Falda - Cordoba
+D34,Tucuman,Concepcion,1,200,Tucuman - Concepcion
+D35,Tucuman,Catamarca,1,200,Tucuman - Concepcion - Catamarca
+D36,Tucuman,La Rioja,1,200,Tucuman - Concepcion - Catamarca - La Rioja
+D37,Tucuman,Patquia,1,200,Tucuman - Concepcion - Catamarca - La Rioja - Patquia
+D38,Concepcion,Cordoba,1,200,Concepcion - Catamarca - La Rioja - Cordoba
+D39,Catamarca,Cordoba,1,200,Catamarca - La Rioja - Cordoba
+D40,La Rioja,Cordoba,1,200,La Rioja - Cordoba
+D41,Patquia,Cordoba,1,200,Patquia - Cordoba
+D42,Serrezuela,Cordoba,1,200,Serrezuela - Cordoba
+D43,Tucuman,Concepcion,4,100,Tucuman - Concepcion
+D44,Concepcion,Catamarca,4,100,Concepcion - Catamarca
+D45,Catamarca,La Rioja,4,100,Catamarca - La Rioja
+D46,La Rioja,Patquia,4,100,La Rioja - Patquia
+D47,Patquia,Serrezuela,4,100,Patquia - Serrezuela
+D48,Serrezuela,Cordoba,4,100,Serrezuela - Cordoba
+D49,Tucuman,Santiago del Estero,1,200,Tucuman - Santiago del Estero
+D50,Tucuman,Frias,1,200,Tucuman - Santiago del Estero - Frias
+D51,Tucuman,Dean Funes,1,200,Tucuman - Santiago del Estero - Frias - Dean Funes
+D52,Tucuman,Jesus Maria,1,200,Tucuman - Santiago del Estero - Frias - Dean Funes - Jesus Maria
+D53,Tucuman,Cordoba,1,200,Tucuman - Santiago del Estero - Frias - Dean Funes - Jesus Maria - Cordoba
+D54,Santiago del Estero,Cordoba,1,200,Santiago del Estero - Frias - Dean Funes - Jesus Maria - Cordoba
+D55,Frias,Cordoba,1,200,Frias - Dean Funes - Jesus Maria - Cordoba
+D56,Dean Funes,Cordoba,1,200,Dean Funes - Jesus Maria - Cordoba
+D57,Jesus Maria,Cordoba,1,200,Jesus Maria - Cordoba
+D58,Tucuman,Santiago del Estero,4,100,Tucuman - Santiago del Estero
+D59,Santiago del Estero,Frias,4,100,Santiago del Estero - Frias
+D60,Frias,Dean Funes,4,100,Frias - Dean Funes
+D61,Dean Funes,Jesus Maria,4,100,Dean Funes - Jesus Maria
+D62,Jesus Maria,Cordoba,4,100,Jesus Maria - Cordoba
+D63,San Miguel de Tucuman,Santa Maria,1,200,San Miguel de Tucuman - Santa Maria
+D64,San Miguel de Tucuman,San Antonio de los Cobres,1,200,San Miguel de Tucuman - Santa Maria - San Antonio de los Cobres
+D65,San Miguel de Tucuman,La Quiaca,1,200,San Miguel de Tucuman - Santa Maria - San Antonio de los Cobres - La Quiaca
+D66,San Miguel de Tucuman,Humahuaca,1,200,San Miguel de Tucuman - Santa Maria - San Antonio de los Cobres - La Quiaca - Humahuaca
+D67,San Antonio de los Cobres,San Salvador de Jujuy,1,200,San Antonio de los Cobres - La Quiaca - Humahuaca - San Salvador de Jujuy
+D68,La Quiaca,San Salvador de Jujuy,1,200,La Quiaca - Humahuaca - San Salvador de Jujuy
+D69,Humahuaca,San Salvador de Jujuy,1,200,Humahuaca - San Salvador de Jujuy
+D70,Santa Maria,San Antonio de los Cobres,4,100,Santa Maria - San Antonio de los Cobres
+D71,San Antonio de los Cobres,La Quiaca,4,100,San Antonio de los Cobres - La Quiaca
+D72,La Quiaca,Humahuaca,4,100,La Quiaca - Humahuaca
+D73,Humahuaca,San Salvador de Jujuy,4,100,Humahuaca - San Salvador de Jujuy
+D74,Tucuman,San Jose de Metan,1,200,Tucuman - San Jose de Metan
+D75,Tucuman,Salta,1,200,Tucuman - San Jose de Metan - Salta
+D76,San Jose de Metan,Jujuy,1,200,San Jose de Metan - Salta - Jujuy
+D77,Salta,Jujuy,1,200,Salta - Jujuy
+D78,Tucuman,San Jose de Metan,4,100,Tucuman - San Jose de Metan
+D79,San Jose de Metan,Salta,4,100,San Jose de Metan - Salta
+D80,Salta,Jujuy,1,100,Salta - Jujuy
+D81,San Salvador de Jujuy,San Jose de Metan,1,200,San Salvador de Jujuy - San Jose de Metan
+D82,San Salvador de Jujuy,Saenz Peña,1,200,San Salvador de Jujuy - San Jose de Metan - Saenz Peña
+D83,Saenz Peña,Resistencia,1,200,Saenz Peña - Resistencia
+D84,San Jose de Metan,Saenz Peña,4,100,San Jose de Metan - Saenz Peña
+D85,Saenz Peña,Resistencia,4,100,Saenz Peña - Resistencia
+D86,San Salvador de Jujuy,San Pedro,1,200,San Salvador de Jujuy - San Pedro
+D87,San Salvador de Jujuy,San Martin,1,200,San Salvador de Jujuy - San Pedro - San Martin
+D88,San Salvador de Jujuy,Embarcacion,1,200,San Salvador de Jujuy - San Pedro - San Martin - Embarcacion
+D89,San Salvador de Jujuy,Juan Page,1,200,San Salvador de Jujuy - San Pedro - San Martin - Embarcacion - Juan Page
+D90,San Salvador de Jujuy,Las Lomitas,1,200,San Salvador de Jujuy - San Pedro - San Martin - Embarcacion - Juan Page - Las Lomitas
+D91,San Salvador de Jujuy,Formosa,1,200,San Salvador de Jujuy - San Pedro - San Martin - Embarcacion - Juan Page - Las Lomitas - Formosa
+D92,San Pedro,Resistencia,1,200,San Pedro - San Martin - Embarcacion - Juan Page - Las Lomitas - Formosa - Resistencia
+D93,San Martin,Resistencia,1,200,San Martin - Embarcacion - Juan Page - Las Lomitas - Formosa - Resistencia
+D94,Embarcacion,Resistencia,1,200,Embarcacion - Juan Page - Las Lomitas - Formosa - Resistencia
+D95,Juan Page,Resistencia,1,200,Juan Page - Las Lomitas - Formosa - Resistencia
+D96,Las Lomitas,Resistencia,1,200,Las Lomitas - Formosa - Resistencia
+D97,Formosa,Resistencia,1,200,Formosa - Resistencia
+D98,San Salvador de Jujuy,San Pedro,4,100,San Salvador de Jujuy - San Pedro
+D99,San Pedro,San Martin,4,100,San Pedro - San Martin
+D100,San Martin,Embarcacion,4,100,San Martin - Embarcacion
+D101,Embarcacion,Juan Page,4,100,Embarcacion - Juan Page
+D102,Juan Page,Las Lomitas,4,100,Juan Page - Las Lomitas
+D103,Las Lomitas,Formosa,4,100,Las Lomitas - Formosa
+D104,Formosa,Resistencia,4,100,Formosa - Resistencia
+D105,Tucuman,Añatuya,1,200,Tucuman - Santiago del Estero - Añatuya
+D106,Añatuya,Santa Fe,1,200,Añatuya - Tostado - Rafaela - Santa Fe
+D107,Tostado,Santa Fe,1,200,Tostado - Rafaela - Santa Fe
+D108,Santiago del Estero,Añatuya,4,100,Santiago del Estero - Añatuya
+D109,Añatuya,Tostado,4,100,Añatuya - Tostado
+D110,Cordoba,Arroyito,4,100,Cordoba - Arroyito
+D111,Arroyito,San Francisco,4,100,Arroyito - San Francisco
+D112,San Francisco,Rafaela,4,100,San Francisco - Rafaela
+D113,Rafaela,Santa Fe,4,100,Rafaela - Santa Fe
+D114,Cordoba,Arroyito,1,200,Cordoba - Arroyito
+D115,Arroyito,Santa Fe,1,200,Arroyito - San Francisco - Rafaela - Santa Fe
+D116,Cordoba,San Francisco,1,200,Cordoba - Arroyito - San Francisco
+D117,San Francisco,Santa Fe,1,200,San Francisco - Rafaela - Santa Fe
+D118,Cordoba,Rafaela,1,200,Cordoba - Arroyito - San Francisco - Rafaela
+D119,Rafaela,Santa Fe,1,200,Rafaela - Santa Fe
+D120,Rafaela,Sunchales,4,100,Rafaela - Sunchales
+D121,Sunchales,Ceres,4,100,Sunchales - Ceres
+D122,Ceres,Tostado,4,100,Ceres - Tostado
+D123,Tostado,Vera,4,100,Tostado - Vera
+D124,Vera,Resistencia,4,100,Vera - Resistencia
+D125,Santa Fe,Rafaela,1,200,Santa Fe - Rafaela
+D126,Santa Fe,Sunchales,1,200,Santa Fe - Rafaela - Sunchales
+D127,Sunchales,Resistencia,1,200,Sunchales - Ceres - Tostado - Vera - Resistencia
+D128,Santa Fe,Ceres,1,200,Santa Fe - Rafaela - Sunchales - Ceres
+D129,Ceres,Resistencia,1,200,Ceres - Tostado - Vera - Resistencia
+D130,Santa Fe,Tostado,1,200,Santa Fe - Rafaela - Sunchales - Ceres - Tostado
+D131,Tostado,Resistencia,1,200,Tostado - Vera - Resistencia
+D132,Santa Fe,Vera,1,200,Santa Fe - Rafaela - Sunchales - Ceres - Tostado - Vera
+D133,Vera,Resistencia,1,200,Vera - Resistencia
+D134,Resistencia,Corrientes,4,100,Resistencia - Corrientes
+D135,Corrientes,Ituzaingo,4,100,Corrientes - Ituzaingo
+D136,Ituzaingo,Posadas,4,100,Ituzaingo - Posadas
+D137,Resistencia,Ituzaingo,1,200,Resistencia - Corrientes - Ituzaingo
+D138,Ituzaingo,Posadas,1,200,Ituzaingo - Posadas
+D139,Posadas,San Jose,1,200,Posadas - San Jose
+D140,Posadas,Paso de los Libres,1,200,Posadas - San Jose - Paso de los Libres
+D141,San Jose,Santa Fe,1,200,San Jose - Paso de los Libres - Concordia - Parana - Santa Fe
+D142,Paso de los Libres,Santa Fe,1,200,Paso de los Libres - Concordia - Parana - Santa Fe
+D143,Concordia,Santa Fe,1,200,Concordia - Parana - Santa Fe
+D144,Posadas,San Jose,4,100,Posadas - San Jose
+D145,San Jose,Paso de los Libres,4,100,San Jose - Paso de los Libres
+D146,Paso de los Libres,Concordia,4,100,Paso de los Libres - Concordia
+D147,Benavidez,Concepcion del Uruguay,1,200,Benavidez - Campana - Concepcion del Uruguay
+D148,Benavidez,Concordia,1,200,Benavidez - Campana - Concepcion del Uruguay - Concordia
+D149,Concepcion del Uruguay,Santa Fe,1,200,Concepcion del Uruguay - Concordia - Parana - Santa Fe
+D150,Campana,Concepcion del Uruguay,4,100,Campana - Concepcion del Uruguay
+D151,Concepcion del Uruguay,Concordia,4,100,Concepcion del Uruguay - Concordia
+D152,Benavidez,Campana,1,200,Benavidez - Campana
+D153,Benavidez,Baradero,1,200,Benavidez - Campana - Baradero
+D154,Benavidez,San Nicolas,1,200,Benavidez - Campana - Baradero - San Nicolas
+D155,Campana,Rosario,1,200,Campana - Baradero - San Nicolas - Rosario
+D156,Baradero,Rosario,1,200,Baradero - San Nicolas - Rosario
+D157,San Nicolas,Rosario,1,200,San Nicolas - Rosario
+D158,Benavidez,Campana,4,100,Benavidez - Campana
+D159,Campana,Baradero,4,100,Campana - Baradero
+D160,Baradero,San Nicolas,4,100,Baradero - San Nicolas
+D161,San Nicolas,Rosario,4,100,San Nicolas - Rosario
+D162,Rosario,San Fabian,1,200,Rosario - San Fabian
+D163,San Fabian,Santa Fe,1,200,San Fabian - Santa Fe
+D164,Rosario,San Fabian,4,100,Rosario - San Fabian
+D165,San Fabian,Santa Fe,4,100,San Fabian - Santa Fe
+D166,Santa Fe,Parana,1,200,Santa Fe - Parana
+D167,Santa Fe,La Paz,1,200,Santa Fe - Parana - La Paz
+D168,Santa Fe,Goya,1,200,Santa Fe - Parana - La Paz - Goya
+D169,Santa Fe,Bellavista,1,200,Santa Fe - Parana - La Paz - Goya - Bellavista
+D170,Santa Fe,Corrientes,1,200,Santa Fe - Parana - La Paz - Goya - Bellavista - Corrientes
+D171,Parana,Resistencia,1,200,Parana - La Paz - Goya - Bellavista - Corrientes - Resistencia
+D172,La Paz,Resistencia,1,200,La Paz - Goya - Bellavista - Corrientes - Resistencia
+D173,Goya,Resistencia,1,200,Goya - Bellavista - Corrientes - Resistencia
+D174,Bellavista,Resistencia,1,200,Bellavista - Corrientes - Resistencia
+D175,Corrientes,Resistencia,1,200,Corrientes - Resistencia
+D176,Santa Fe,Parana,4,100,Santa Fe - Parana
+D177,Parana,La Paz,4,100,Parana - La Paz
+D178,La Paz,Goya,4,100,La Paz - Goya
+D179,Goya,Bellavista,4,100,Goya - Bellavista
+D180,Bellavista,Corrientes,4,100,Bellavista - Corrientes
+D181,Posadas,Jardin America,1,200,Posadas - Jardin America
+D182,Posadas,Puerto Iguazu,1,200,Posadas - Jardin America - Puerto Iguazu
+D183,Jardin America,Puerto Iguazu,1,200,Jardin America - Puerto Iguazu
+D184,Posadas,Jardin America,4,100,Posadas - Jardin America
+D185,Jardin America,Puerto Iguazu,4,100,Jardin America - Puerto Iguazu
+D186,Posadas,Puerto Iguazu,1,200,Posadas - San Jose - Aristobulo del valle - Puerto Iguazu
+D187,San Jose,Aristobulo del Valle,1,200,San Jose - Aristobulo del valle
+D188,Aristobulo del Valle,Puerto Iguazu,1,200,Aristobulo del valle - Puerto Iguazu
+D189,San Jose,Aristobulo del Valle,4,100,San Jose - Aristobulo del Valle
+D190,Aristobulo del Valle,Puerto Iguazu,4,100,Aristobulo del Valle - Puerto Iguazu
+D191,Clorinda,Formosa,1,200,Clorinda - Formosa - Resistencia
+D192,Clorinda,Resistencia,4,100,Clorinda - Formosa
+D193,San Salvador de Jujuy,Salvador Mazza,1,200,San Salvador de Jujuy - Embarcacion - Salvador Mazza
+D194,San Salvador de Jujuy,Embarcacion,1,200,San Salvador de Jujuy - Embarcacion
+D195,Embarcacion,Salvador Mazza,4,100,Embarcacion - Salvador Mazza
+D196,Benavidez,Rosario,1,400,Benavidez - Zarate - San Pedro - San Nicolas de los Arroyos - Rosario
+D197,Rosario,Resistencia,1,400,Rosario - San Fabian - Santa Fe - Parana - La Paz - Goya - Bellavista - Corrientes - Resistencia
+D198,Benavidez,Zarate,2,300,Benavidez - Zarate
+D199,Benavidez,San Nicolas de los Arroyos,1,300,Benavidez - Zarate - San Pedro - San Nicolas de los Arroyos
+D200,Zarate,San Pedro,1,300,Zarate - San Pedro
+D201,Zarate,Rosario,1,300,Zarate - San Pedro - San Nicolas de los Arroyos - Rosario
+D202,San Pedro,Rosario,1,300,San Pedro - San Nicolas de los Arroyos - Rosario
+D203,San Nicolas,Rosario,1,300,San Nicolas de los Arroyos - Rosario
+D204,Rosario,San Fabian,1,300,Rosario - San Fabian
+D205,Rosario,Santa Fe,1,300,Rosario - San Fabian - Santa Fe
+D206,San Fabian,Santa Fe,1,300,San Fabian - Santa Fe
+D207,Santa Fe,La Paz,1,300,Santa Fe - Parana - La Paz
+D208,Santa Fe,Parana,1,300,Santa Fe - Parana
+D209,Parana,Goya,1,300,Parana - La Paz - Goya
+D210,Goya,Resistencia,1,300,Goya - Bellavista - Corrientes - Resistencia
+D211,La Paz,Bellavista,1,300,La Paz - Goya - Bellavista
+D212,Bellavista,Corrientes,1,300,Bellavista - Corrientes
+D213,Corrientes,Resistencia,1,300,Corrientes - Resistencia
+D214,Benavidez,Santa Fe,2,300,Benavidez - Zarate - San Pedro - San Nicolas de los Arroyos - Rosario - San Fabian - Santa Fe
+D215,Cordoba,V. Mercedes,1,200,Cordoba - V. Mercedes
+D216,Rufino,Lujan,1,200,Rufino - Lujan
+D217,Lujan,Chacabuco,1,200,Lujan - Chacabuco
+D218,Lujan,Junin,1,200,Lujan - Chacabuco - Junin
+D219,Lujan,Vedia,1,200,Lujan - Chacabuco - Junin - Vedia
+D220,Lujan,Rufino,1,200,Lujan - Chacabuco - Junin - Vedia - Rufino
+D221,Lujan,Pehuajo,1,200,Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo
+D222,Lujan,Bolivar,1,200,Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar
+D223,Lujan,Olavarria,1,200,Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria
+D224,Lujan,Azul,1,200,Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul
+D225,Lujan,Tandil,1,200,Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil
+D226,Chacabuco,Abasto,1,200,Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil
+D227,Junin,Abasto,1,200,Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil
+D228,Vedia,Abasto,1,200,Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil
+D229,Rufino,Abasto,1,200,Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto
+D230,Pehuajo,Abasto,1,200,Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto
+D231,Bolivar,Abasto,1,200,Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto
+D232,Olavarria,Abasto,1,200,Olavarria - Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto
+D233,Azul,Abasto,1,200,Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto
+D234,Tandil,Abasto,1,200,Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto
+D235,Lujan,Chacabuco,4,100,Lujan - Chacabuco
+D236,Chacabuco,Junin,4,100,Chacabuco - Junin
+D237,Junin,Vedia,4,100,Junin - Vedia
+D238,Vedia,Rufino,4,100,Vedia - Rufino
+D239,Rufino,Pehuajo,4,100,Rufino - Pehuajo
+D240,Pehuajo,Bolivar,4,100,Pehuajo - Bolivar
+D241,Bolivar,Olavarria,4,100,Bolivar - Olavarria
+D242,Olavarria,Azul,4,100,Olavarria - Azul
+D243,Azul,Tandil,4,100,Azul - Tandil
+D244,Tandil,Mar del Plata,4,100,Tandil - Mar del Plata
+D245,Lujan,Mercedes,1,200,Lujan - Mercedes
+D246,Lujan,Chivilcoy,1,200,Lujan - Mercedes - Chivilcoy
+D247,Lujan,Bragado,1,200,Lujan - Mercedes - Chivilcoy - Bragado
+D248,Lujan,9 De Julio,1,200,Lujan - Mercedes - Chivilcoy - Bragado - 9 De Julio
+D249,Mercedes,Abasto,1,200,Mercedes - Chivilcoy - Bragado - 9 De Julio - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Pinamar - Las Toninas - Abasto
+D250,Chivilcoy,Abasto,1,200,Chivilcoy - Bragado - 9 De Julio - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Pinamar - Las Toninas - Abasto
+D251,Bragado,Abasto,1,200,Bragado - 9 De Julio - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Pinamar - Las Toninas - Abasto
+D252,9 De Julio,Abasto,1,200,9 De Julio - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Pinamar - Las Toninas - Abasto
+D253,Lujan,Mercedes,4,100,Lujan - Mercedes
+D254,Mercedes,Chivilcoy,4,100,Mercedes - Chivilcoy
+D255,Chivilcoy,Bragado,4,100,Chivilcoy - Bragado
+D256,Bragado,9 De Julio,4,100,Bragado - 9 De Julio
+D257,9 De Julio,Pehuajo,4,100,9 De Julio - Pehuajo
+D258,Benavidez,Azopardo,1,200,Benavidez - Azopardo
+D259,Benavidez,La Plata,1,200,Benavidez - Azopardo - La Plata
+D260,Azopardo,Abasto,1,200,Azopardo - La Plata - Abasto
+D261,La Plata,Abasto,1,200,La Plata - Abasto
+D262,Benavidez,Azopardo,4,100,Benavidez - Azopardo
+D263,Azopardo,La Plata,4,100,Azopardo - La Plata
+D264,La Plata,Abasto,4,100,La Plata - Abasto
+D265,Abasto,Las Toninas,1,200,Abasto - Las Toninas
+D266,Abasto,Pinamar,1,200,Abasto - Las Toninas - Pinamar
+D267,Abasto,Mar Del Plata,1,200,Abasto - Las Toninas - Pinamar - Mar Del Plata
+D268,Abasto,Tres Arroyos,1,200,Abasto - Las Toninas - Pinamar - Mar Del Plata - Tres Arroyos
+D269,Las Toninas,Bahia Blanca,1,200,Las Toninas - Pinamar - Mar Del Plata - Tres Arroyos - Bahia Blanca
+D270,Pinamar,Bahia Blanca,1,200,Pinamar - Mar Del Plata - Tres Arroyos - Bahia Blanca
+D271,Mar Del Plata,Bahia Blanca,1,200,Mar Del Plata - Tres Arroyos - Bahia Blanca
+D272,Tres Arroyos,Bahia Blanca,1,200,Tres Arroyos - Bahia Blanca
+D273,Abasto,Las Toninas,4,100,Abasto - Las Toninas
+D274,Las Toninas,Pinamar,4,100,Las Toninas - Pinamar
+D275,Pinamar,Mar Del Plata,4,100,Pinamar - Mar Del Plata
+D276,Mar Del Plata,Tres Arroyos,4,100,Mar Del Plata - Tres Arroyos
+D277,Tres Arroyos,Bahia Blanca,4,100,Tres Arroyos - Bahia Blanca
+D278,Abasto,Chascomus,1,200,Abasto - Chascomus
+D279,Abasto,Dolores,1,200,Abasto - Chascomus - Dolores
+D280,Abasto,Las Armas,1,200,Abasto - Chascomus - Dolores - Las Armas
+D281,Chascomus,Bahia Blanca,1,200,Chascomus - Dolores - Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca
+D282,Dolores,Bahia Blanca,1,200,Dolores - Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca
+D283,Las Armas,Bahia Blanca,1,200,Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca
+D284,Abasto,Chascomus,4,100,Abasto - Chascomus
+D285,Chascomus,Dolores,4,100,Chascomus - Dolores
+D286,Dolores,Las Armas,4,100,Dolores - Las Armas
+D287,Las Armas,Mar Del Plata,4,100,Las Armas - Mar Del Plata
+D288,Lujan,Benavidez,1,200,Lujan - Benavidez
+D289,Lujan,Benavidez,4,100,Lujan - Benavidez
+D290,Bahia Blanca,Algarrobo,4,200,Bahia Blanca - Algarrobo
+D291,Bahia Blanca,Rio Colorado,1,200,Bahia Blanca - Algarrobo - Rio Colorado
+D292,Bahia Blanca,Peru,1,200,Bahia Blanca - Algarrobo - Rio Colorado - Peru
+D293,Bahia Blanca,Santa Rosa,1,200,Bahia Blanca - Algarrobo - Rio Colorado - Peru - Santa Rosa
+D294,Bahia Blanca,Winifreda,1,200,Bahia Blanca - Algarrobo - Rio Colorado - Peru - Santa Rosa - Winifreda
+D295,Bahia Blanca,Victorica,1,200,Bahia Blanca - Algarrobo - Rio Colorado - Peru - Santa Rosa - Winifreda - Victorica
+D296,Bahia Blanca,Santa Isabel,1,200,Bahia Blanca - Algarrobo - Rio Colorado - Peru - Santa Rosa - Winifreda - Victorica - Santa Isabel
+D297,Algarrobo,Mendoza,1,200,Algarrobo - Rio Colorado - Peru - Santa Rosa - Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza
+D298,Rio Colorado,Mendoza,1,200,Rio Colorado - Peru - Santa Rosa - Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza
+D299,Peru,Mendoza,1,200,Peru - Santa Rosa - Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza
+D300,Santa Rosa,Mendoza,1,200,Santa Rosa - Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza
+D301,Winifreda,Mendoza,1,200,Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza
+D302,Victorica,Mendoza,1,200,Victorica - Santa Isabel - San Rafael - Mendoza
+D303,Santa Isabel,Mendoza,1,200,Santa Isabel - San Rafael - Mendoza
+D304,Bahia Blanca,Algarrobo,4,100,Bahia Blanca - Algarrobo
+D305,Algarrobo,Rio Colorado,4,100,Algarrobo - Rio Colorado
+D306,Rio Colorado,Peru,4,100,Rio Colorado - Peru
+D307,Peru,Santa Rosa,4,100,Peru - Santa Rosa
+D308,Santa Rosa,Winifreda,4,100,Santa Rosa - Winifreda
+D309,Winifreda,Victorica,4,100,Winifreda - Victorica
+D310,Victorica,Santa Isabel,4,100,Victorica - Santa Isabel
+D311,Bahia Blanca,Trenque Lauquen,1,200,Bahia Blanca - Rio Colorado - Santa Rosa - Trenque Lauquen
+D312,Trenque Lauquen,Lujan,1,200,Trenque Lauquen - Pehuajo - Lujan
+D313,Santa Rosa,Trenque Lauquen,4,100,Santa Rosa - Trenque Lauquen
+D314,Trenque Lauquen,Pehuajo,4,100,Trenque Lauquen - Pehuajo
+D315,Santa Isabel,Gral. Alvear,1,200,Santa Isabel - Gral. Alvear
+D316,Santa Isabel,San Rafael,1,200,Santa Isabel - Gral. Alvear - San Rafael
+D317,Santa Isabel,Tunuyan,1,200,Santa Isabel - Gral. Alvear - San Rafael - Tunuyan
+D318,Gral. Alvear,Mendoza,1,200,Gral. Alvear - San Rafael - Tunuyan - Mendoza
+D319,San Rafael,Mendoza,1,200,San Rafael - Tunuyan - Mendoza
+D320,Tunuyan,Mendoza,1,200,Tunuyan - Mendoza
+D321,Santa Isabel,Gral. Alvear,4,100,Santa Isabel - Gral. Alvear
+D322,Gral. Alvear,San Rafael,4,100,Gral. Alvear - San Rafael
+D323,San Rafael,Tunuyan,4,100,San Rafael - Tunuyan
+D324,Tunuyan,Mendoza,4,100,Tunuyan - Mendoza
+D325,Lujan,Cañuelas,1,200,Lujan - Cañuelas
+D326,Cañuelas,Abasto,1,200,Cañuelas - Abasto
+D327,Lujan,Cañuelas,4,100,Lujan - Cañuelas
+D328,Cañuelas,Abasto,4,100,Cañuelas - Abasto
+D329,Benavidez,San Antonio de Areco,1,200,Benavidez - San Antonio de Areco
+D330,Benavidez,Arrecifes,1,200,Benavidez - San Antonio de Areco - Arrecifes
+D331,Benavidez,Pergamino,1,200,Benavidez - San Antonio de Areco - Arrecifes - Pergamino
+D332,San Antonio de Areco,Rosario,1,200,San Antonio de Areco - Arrecifes - Pergamino - Rosario
+D333,Arrecifes,Rosario,1,200,Arrecifes - Pergamino - Rosario
+D334,Pergamino,Rosario,1,200,Pergamino - Rosario
+D335,Benavidez,San Antonio de Areco,4,100,Benavidez - San Antonio de Areco
+D336,San Antonio de Areco,Arrecifes,4,100,San Antonio de Areco - Arrecifes
+D337,Arrecifes,Pergamino,4,100,Arrecifes - Pergamino
+D338,Pergamino,Rosario,4,100,Pergamino - Rosario
+D339,Rosario,Cañada de Gomez,1,200,Rosario - Cañada de Gomez
+D340,Rosario,Leones,1,200,Rosario - Cañada de Gomez - Leones
+D341,Rosario,Villa Maria,1,200,Rosario - Cañada de Gomez - Leones - Villa Maria
+D342,Rosario,Manfredi,1,200,Rosario - Cañada de Gomez - Leones - Villa Maria - Manfredi
+D343,Cañada de Gomez,Cordoba,1,200,Cañada de Gomez - Leones - Villa Maria - Manfredi - Cordoba
+D344,Leones,Cordoba,1,200,Leones - Villa Maria - Manfredi - Cordoba
+D345,Villa Maria,Cordoba,1,200,Villa Maria - Manfredi - Cordoba
+D346,Manfredi,Cordoba,1,200,Manfredi - Cordoba
+D347,Rosario,Cañada de Gomez,4,100,Rosario - Cañada de Gomez
+D348,Cañada de Gomez,Leones,4,100,Cañada de Gomez - Leones
+D349,Leones,Villa Maria,4,100,Leones - Villa Maria
+D350,Villa Maria,Manfredi,4,100,Villa Maria - Manfredi
+D351,Manfredi,Cordoba,4,100,Rosario - Cañada de Gomez
+D352,Cordoba,Corralito,1,200,Cordoba - Corralito
+D353,Cordoba,Hernando,1,200,Cordoba - Corralito - Hernando
+D354,Cordoba,Chucul,1,200,Cordoba - Corralito - Hernando - Chucul
+D355,Cordoba,V. Mercedes,1,200,Cordoba - Corralito - Hernando - Chucul - V. Mercedes
+D356,Cordoba,San Luis,1,200,Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis
+D357,Cordoba,Santa Rosa,1,200,Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa
+D358,Corralito,Mendoza,1,200,Corralito - Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa - Mendoza
+D359,Hernando,Mendoza,1,200,Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa - Mendoza
+D360,Chucul,Mendoza,1,200,Chucul - V. Mercedes - San Luis - Santa Rosa - Mendoza
+D361,V. Mercedes,Mendoza,1,200,V. Mercedes - San Luis - Santa Rosa - Mendoza
+D362,San Luis,Mendoza,1,200,San Luis - Santa Rosa - Mendoza
+D363,Santa Rosa,Mendoza,1,200,Santa Rosa - Mendoza
+D364,Cordoba,Corralito,4,100,Cordoba - Corralito
+D365,Corralito,Hernando,4,100,Corralito - Hernando
+D366,Hernando,Chucul,4,100,Hernando - Chucul
+D367,Chucul,V. Mercedes,4,100,Chucul - V. Mercedes
+D368,V. Mercedes,San Luis,4,100,V. Mercedes - San Luis
+D369,San Luis,Santa Rosa,4,100,San Luis - Santa Rosa
+D370,Santa Rosa,Mendoza,4,100,Santa Rosa - Mendoza
+D371,Benavidez,Mendoza,1,400,Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario - Cañada de Gomez - San Marcos - Villa Maria - Manfredi - Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa - Mendoza
+D372,Cordoba,V. Mercedes,1,300,Cordoba - Corralito - Hernando - Chucul - V. Mercedes
+D373,V. Mercedes,San Luis,1,300,V. Mercedes - San Luis
+D374,San Luis,Santa Rosa,1,300,San Luis - La Paz - Santa Rosa
+D375,Santa Rosa,Mendoza,1,300,Santa Rosa - Mendoza
+D376,Mendoza,Tunuyan,1,300,Mendoza - Tunuyan
+D377,Tunuyan,San Rafael,1,300,Tunuyan - San Rafael
+D378,Abasto,Marcos Paz,1,300,Abasto - Marcos Paz
+D379,Marcos Paz,Benavidez,1,300,Marcos Paz - Benavidez
+D380,Benavidez,Exaltacion de la Cruz,1,300,Benavidez - Exaltacion de la Cruz
+D381,Exaltacion de la Cruz,Arrecifes,1,300,Exaltacion de la Cruz - Arrecifes
+D382,Arrecifes,Pergamino,1,300,Arrecifes - Pergamino
+D383,Pergamino,Rosario,1,300,Pergamino - Rosario
+D384,Rosario,Cañada de Gomez,1,300,Rosario - Cañada de Gomez
+D385,Cañada de Gomez,San Marcos,1,300,Cañada de Gomez - San Marcos
+D386,San Marcos,Villa Maria,1,300,San Marcos - Villa Maria
+D387,Villa Maria,Manfredi,1,300,Villa Maria - Manfredi
+D388,Manfredi,Cordoba,1,300,Manfredi - Cordoba
+D389,Cordoba,Corralito,1,300,Cordoba - Corralito
+D390,Corralito,Hernando,1,300,Corralito - Hernando
+D391,Hernando,Chucul,1,300,Hernando - Chucul
+D392,Chucul,Mendoza,1,300,Chucul - V. Mercedes - San Luis - La Paz - Santa Rosa - Mendoza
+D393,Rosario,Cordoba,1,300,Rosario - Cañada de Gomez - San Marcos - Villa Maria - Manfredi - Cordoba
+D394,Cordoba,Mendoza,1,300,Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - Mendoza
+D395,Benavidez,Mendoza,2,300,Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario - Cañada de Gomez - San Marcos - Villa Maria - Manfredi - Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - La Paz - Santa Rosa - Mendoza
+D396,Benavidez,Cordoba,3,300,Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario - Cañada de Gomez - San Marcos - Villa Maria - Manfredi - Cordoba
+D397,Benavidez,Rosario,3,300,Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario
+D398,Rio Gallegos,San Sebastian,1,200,Rio Gallegos - Estacion Cullen - San Sebastian
+D399,San Sebastian,Usuahia,1,200,San Sebastian - Rio Grande - Tolhuin - Usuahia
+D400,Rio Gallegos,Estacion Cullen,1,200,Rio Gallegos - Estacion Cullen
+D401,Estacion Cullen,Rio Grande,1,200,Estacion Cullen - San Sebastian - Rio Grande
+D402,Rio Grande,Tolhuin,1,200,Rio Grande - Tolhuin
+D403,Rio Gallegos,Piedrabuena,4,100,Rio Gallegos - Piedrabuena
+D404,Piedrabuena,San Julian,4,100,Piedrabuena - San Julian
+D405,San Julian,Jaramillo,4,100,San Julian - Jaramillo
+D406,Jaramillo,Caleta Olivia,4,100,Jaramillo - Caleta Olivia
+D407,Rio Gallegos,Piedrabuena,1,200,Rio Gallegos - Piedrabuena
+D408,Piedrabuena,San Julian,1,200,Piedrabuena - San Julian
+D409,San Julian,Jaramillo,1,200,San Julian - Jaramillo
+D410,Jaramillo,Caleta Olivia,1,200,Jaramillo - Caleta Olivia
+D411,Rio Gallegos,Esperanza,4,100,Rio Gallegos - Esperanza
+D412,Esperanza,El Calafate,4,100,Esperanza - El Calafate
+D413,El Calafate,Tres Lagos,4,100,El Calafate - Tres Lagos
+D414,Tres Lagos,Gobernador Gregores,4,100,Tres Lagos - Gobernador Gregores
+D415,Gobernador Gregores,Bajo Caracoles,4,100,Gobernador Gregores - Bajo Caracoles
+D416,Bajo Caracoles,Perito Moreno,4,100,Bajo Caracoles - Perito Moreno
+D417,Perito Moreno,Colonia Las Heras,4,100,Perito Moreno - Colonia Las Heras
+D418,Colonia Las Heras,Pico Truncado,4,100,Colonia Las Heras - Pico Truncado
+D419,Pico Truncado,Caleta Olivia,4,100,Pico Truncado - Caleta Olivia
+D420,Rio Gallegos,Esperanza,1,200,Rio Gallegos - Esperanza
+D421,Esperanza,El Calafate,1,200,Esperanza - El Calafate
+D422,El Calafate,Tres Lagos,1,200,El Calafate - Tres Lagos
+D423,Tres Lagos,Gobernador Gregores,1,200,Tres Lagos - Gobernador Gregores
+D424,Gobernador Gregores,Bajo Caracoles,1,200,Gobernador Gregores - Bajo Caracoles
+D425,Bajo Caracoles,Perito Moreno,1,200,Bajo Caracoles - Perito Moreno
+D426,Perito Moreno,Colonia Las Heras,1,200,Perito Moreno - Colonia Las Heras
+D427,Colonia Las Heras,Pico Truncado,1,200,Colonia Las Heras - Pico Truncado
+D428,Pico Truncado,Caleta Olivia,1,200,Pico Truncado - Caleta Olivia
+D429,Dina Huapi,Bariloche,4,100,Dina Huapi - Bariloche
+D430,Bariloche,El Foyel,4,100,Bariloche - El Foyel
+D431,El Foyel,Epuyen,4,100,El Foyel - Epuyen
+D432,Epuyen,Esquel,4,100,Epuyen - Esquel
+D433,Esquel,Tecka,4,100,Esquel - Tecka
+D434,Tecka,J. de San Martin,4,100,Tecka - J. de San Martin
+D435,J. de San Martin,Alto Rio Senguer,4,100,J. de San Martin - Alto Rio Senguer
+D436,Alto Rio Senguer,Rio Mayo,4,100,Alto Rio Senguer - Rio Mayo
+D437,Rio Mayo,Perito Moreno,4,100,Rio Mayo - Perito Moreno
+D438,Neuquen,Dina Huapi,1,200,Neuquen - Dina Huapi
+D439,Dina Huapi,Bariloche,1,200,Dina Huapi - Bariloche
+D440,Bariloche,El Foyel,1,200,Bariloche - El Foyel
+D441,El Foyel,Epuyen,1,200,El Foyel - Epuyen
+D442,Epuyen,Esquel,1,200,Epuyen - Esquel
+D443,Esquel,Tecka,1,200,Esquel - Tecka
+D444,Tecka,J. de San Martin,1,200,Tecka - J. de San Martin
+D445,J. de San Martin,Alto Rio Senguer,1,200,J. de San Martin - Alto Rio Senguer
+D446,Alto Rio Senguer,Rio Mayo,1,200,Alto Rio Senguer - Rio Mayo
+D447,Rio Mayo,Perito Moreno,1,200,Rio Mayo - Perito Moreno
+D448,Perito Moreno,Caleta Olivia,1,200,Perito Moreno - Pico Truncado - Caleta Olivia
+D449,Bahia Blanca,Viedma,4,100,Bahia Blanca - Viedma
+D450,Viedma,San Antonio Oeste,4,100,Viedma - San Antonio Oeste
+D451,San Antonio Oeste,Sierra Grande,4,100,San Antonio Oeste - Sierra Grande
+D452,Sierra Grande,Puerto Madryn,4,100,Sierra Grande - Puerto Madryn
+D453,Puerto Madryn,Trelew,4,100,Puerto Madryn - Trelew
+D454,Trelew,Rawson,4,100,Trelew - Rawson
+D455,Rawson,Comodoro Rivadavia,4,100,Rawson - Comodoro Rivadavia
+D456,Comodoro Rivadavia,Caleta Olivia,4,100,Comodoro Rivadavia - Caleta Olivia
+D457,Bahia Blanca,Viedma,1,200,Bahia Blanca - Viedma
+D458,Viedma,Caleta Olivia,1,200,Viedma - San Antonio Oeste - Sierra Grande - Puerto Madryn - Trelew - Rawson - Comodoro Rivadavia - Caleta Olivia
+D459,Bahia Blanca,San Antonio Oeste,1,200,Bahia Blanca - Viedma - San Antonio Oeste
+D460,San Antonio Oeste,Sierra Grande,1,200,San Antonio Oeste - Sierra Grande
+D461,Sierra Grande,Puerto Madryn,1,200,Sierra Grande - Puerto Madryn
+D462,Puerto Madryn,Trelew,1,200,Puerto Madryn - Trelew
+D463,Trelew,Rawson,1,200,Trelew - Rawson
+D464,Rawson,Comodoro Rivadavia,1,200,Rawson - Comodoro Rivadavia
+D465,Comodoro Rivadavia,Caleta Olivia,1,200,Comodoro Rivadavia - Caleta Olivia
+D466,Neuquen,Arroyito,4,100,Neuquen - Arroyito
+D467,Arroyito,Picun Leufu,4,100,Arroyito - Picun Leufu
+D468,Picun Leufu,Piedra del Aguila,4,100,Picun Leufu - Piedra del Aguila
+D469,Piedra del Aguila,Dina Huapi,4,100,Piedra del Aguila - Dina Huapi
+D470,Dina Huapi,Aguada Cecilio,4,100,Dina Huapi - Aguada Cecilio
+D471,Aguada Cecilio,San Antonio Oeste,4,100,Aguada Cecilio - San Antonio Oeste
+D472,Neuquen,Dina Huapi,1,200,Neuquen - Arroyito - Picun Leufu - Piedra del Aguila - Dina Huapi
+D473,Dina Huapi,Aguada Cecilio,1,200,Dina Huapi - Aguada Cecilio
+D474,Aguada Cecilio,San Antonio Oeste,1,200,Aguada Cecilio - San Antonio Oeste
+D475,San Antonio Oeste,Bahia Blanca,1,200,San Antonio Oeste - Viedma - Bahia Blanca
+D476,Neuquen,Arroyito,1,200,Neuquen - Arroyito
+D477,Arroyito,Picun Leufu,1,200,Arroyito - Picun Leufu
+D478,Picun Leufu,Piedra del Aguila,1,200,Picun Leufu - Piedra del Aguila
+D479,Piedra del Aguila,Bahia Blanca,1,200,Piedra del Aguila - Dina Huapi - Aguada Cecilio - San Antonio Oeste - Viedma - Bahia Blanca
+D480,Neuquen,General Roca,4,100,Neuquen - General Roca
+D481,General Roca,Choele Choel,4,100,General Roca - Choele Choel
+D482,Choele Choel,Rio Colorado,4,100,Choele Choel - Rio Colorado
+D483,Rio Colorado,General Conesa,4,100,Rio Colorado - General Conesa
+D484,General Conesa,San Antonio Oeste,4,100,General Conesa - San Antonio Oeste
+D485,Neuquen,General Roca,1,200,Neuquen - General Roca
+D486,General Roca,Choele Choel,1,200,General Roca - Choele Choel
+D487,Choele Choel,Rio Colorado,1,200,Choele Choel - Rio Colorado
+D488,Rio Colorado,General Conesa,1,200,Rio Colorado - General Conesa
+D489,General Conesa,Bahia Blanca,1,200,General Conesa - San Antonio Oeste - Viedma - Bahia Blanca
+D490,Neuquen,Sargento Vidal,4,100,Neuquen - Sargento Vidal
+D491,Sargento Vidal,Catriel,4,100,Sargento Vidal - Catriel
+D492,Catriel,Santa Isabel,4,100,Catriel - Santa Isabel
+D493,Neuquen,Sargento Vidal,1,200,Neuquen - Sargento Vidal
+D494,Sargento Vidal,Catriel,1,200,Sargento Vidal - Catriel
+D495,Catriel,Santa Isabel,1,200,Catriel - Santa Isabel
+D496,Santa Isabel,San Rafael,1,200,Santa Isabel - San Rafael
+D497,Dina Huapi,Villa La Angostura,4,100,Dina Huapi - Villa La Angostura
+D498,Villa La Angostura,San Martin de los Andes,4,100,Villa La Angostura - San Martin de los Andes
+D499,San Martin de los Andes,Junin de los Andes,4,100,San Martin de los Andes - Junin de los Andes
+D500,Junin de los Andes,Zapala,4,100,Junin de los Andes - Zapala
+D501,Zapala,Chos Malal,4,100,Zapala - Chos Malal
+D502,Chos Malal,Buta Ranquil,4,100,Chos Malal - Buta Ranquil
+D503,Buta Ranquil,Malargue,4,100,Buta Ranquil - Malargue
+D504,Malargue,San Rafael,4,100,Malargue - San Rafael
+D505,Dina Huapi,Villa La Angostura,1,200,Dina Huapi - Villa La Angostura
+D506,Villa La Angostura,San Martin de los Andes,1,200,Villa La Angostura - San Martin de los Andes
+D507,San Martin de los Andes,Junin de los Andes,1,200,San Martin de los Andes - Junin de los Andes
+D508,Junin de los Andes,Zapala,1,200,Junin de los Andes - Zapala
+D509,Zapala,Chos Malal,1,200,Zapala - Chos Malal
+D510,Chos Malal,Buta Ranquil,1,200,Chos Malal - Buta Ranquil
+D511,Buta Ranquil,Malargue,1,200,Buta Ranquil - Malargue
+D512,Malargue,San Rafael,1,200,Malargue - San Rafael
+R1,Gobernador Gregores,Santa Rosa (LP),1,100,Gobernador Gregores - Tres lagos - El Calafate - Esperanza (StaCruz) - Rio Gallegos - Luis Piedrabuena - Puerto San Julian - Jaramillo - Caleta Olivia - Pico Truncado - Colonia Las Heras - Perito Moreno - Rio Mayo - Alto Rio Senguer - J. de San Martin - Tecka - Esquel - Epuyen - El Foyel - San Carlos de Bariloche - Dina Huapi - Piedra del Aguila - Picun Leufu - Arroyito (Nqn) - Neuquen - Sargento Vidal - Catriel - Santa Isabel - Victorica - Winifreda - Santa Rosa (LP)
+R2,Cap Juan Page,La Paz,1,200,Cap Juan Page - Las Lomitas - Formosa - Resistencia - Corrientes - Bellavista - Goya - La Paz
+R3,San Pedro Jujuy,Puerto Madryn,1,400,San Pedro Jujuy - San Salvador de Jujuy - Humahuaca - La Quiaca - San Antonio de los Cobres - Santa Maria - San Miguel de Tucuman - Santiago del Estero - Frias - Dean Funes - Jesus Maria - Cordoba - Arroyito - San Francisco - Rafaela - Santa Fe - Parana - Concordia - Concepcion del Uruguay - Zarate - Campana - Benavidez - CABA - La Plata - Abasto - Las Toninas - Pinamar - Mar Del Plata - Tres Arroyos - Bahia Blanca - Viedma - San Antonio Oeste - Sierra Grande - Puerto Madryn
+R4,Pehuajo,Bolivar,1,400,Pehuajo - Bolivar
+R5,Frias,V. Mercedes,1,100,Frias - Dean Funes - Jesus Maria - Cordoba - Corralito - Hernando - Chucul - V. Mercedes
+R6,Presidencia Roque Saenz Peña,Posadas,1,100,Presidencia Roque Saenz Peña - Resistencia - Corrientes - Ituzaingo - Posadas
+R7,Jaramillo,San Antonio de los Cobres,1,300,Jaramillo - Caleta Olivia - Comodoro Rivadavia - Rawson - Trelew - Puerto Madryn - Sierra Grande - San Antonio Oeste - General Conesa - Rio Colorado - Algarrobo - Bahia Blanca - Tres Arroyos - Mar Del Plata - Pinamar - Las Toninas - Abasto - La Plata - CABA - Benavidez - Campana - Zarate - Concepcion del Uruguay - Concordia - Paso de Los Libres - San Jose - Posadas - Ituzaingo - Corrientes - Resistencia - Presidencia Roque Saenz Peña - San Jose de Metan - Choromoro - San Miguel de Tucuman - Santa Maria - San Antonio de los Cobres
+R8,Posadas,San Carlos de Bariloche,1,300,Posadas - Ituzaingo - Corrientes - Resistencia - Vera - Tostado - Ceres - Sunchales - Rafaela - San Francisco - Arroyito - Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa (Mza) - Mendoza - Tunuyan - San Rafael - Malargue - Buta Ranquil - Chos Malal - Zapala - Junin de los Andes - San Martin de los Andes - Villa La Angostura - Dina Huapi - San Carlos de Bariloche
+R9,Winifreda,J. de San Martin,1,400,Winifreda - Victorica - Santa Isabel - Catriel - Sargento Vidal - Neuquen - Arroyito (Nqn) - Picun Leufu - Piedra del Aguila - Dina Huapi - San Carlos de Bariloche - El Foyel - Epuyen - Esquel - Tecka - J. de San Martin
+R10,San Miguel de Tucuman,Rio Colorado,1,300,San Miguel de Tucuman - Santiago del Estero - Añatuya - Tostado - Ceres - Sunchales - Rafaela - Santa Fe - San Fabian - Rosario - Pergamino - Arrecifes - San Antonio De Areco - Benavidez - Marcos Paz - Abasto - Chascomus - Dolores - Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca - Algarrobo - Rio Colorado
+R11,El Calafate,Esperanza (StaCruz),1,200,El Calafate - Esperanza (StaCruz)
+R12,Baradero,Catriel,1,200,Baradero - Zarate - Concepcion del Uruguay - Rosario - Cañada De Gomez - Leones - San Marcos - Villa Maria - Manfredi - Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa (Mza) - Mendoza - Tunuyan - San Rafael - Gral. Alvear - Santa Isabel - Catriel
+R13,Cap Juan Page,Salta,1,200,Cap Juan Page - Embarcacion - Lib Gral San Martin - San Pedro Jujuy - San Salvador de Jujuy - Salta
+R14,Bahia Blanca,La Plata,1,200,Bahia Blanca - Tres Arroyos - Mar Del Plata - Pinamar - Las Toninas - Abasto - La Plata
+R15,Rio Gallegos,Las Toninas,1,200,Rio Gallegos - Luis Piedrabuena - Puerto San Julian - Jaramillo - Caleta Olivia - Comodoro Rivadavia - Rawson - Trelew - Puerto Madryn - Sierra Grande - San Antonio Oeste - General Conesa - Rio Colorado - Algarrobo - Bahia Blanca - Tres Arroyos - Mar Del Plata - Pinamar - Las Toninas
+R16,Manfredi,Chilecito,1,100,Manfredi - Cordoba - La Falda - Serrezuela - Patquia - Chilecito
+R17,San Nicolas de los Arroyos,Vera,1,100,San Nicolas de los Arroyos - Rosario - San Fabian - Santa Fe - Rafaela - Sunchales - Ceres - Tostado - Vera
+R18,La Quiaca,General Roca,1,300,La Quiaca - Humahuaca - San Salvador de Jujuy - San Pedro Jujuy - Lib Gral San Martin - Embarcacion - Cap Juan Page - Las Lomitas - Formosa - Resistencia - Corrientes - Bellavista - Goya - La Paz - Parana - Concordia - Concepcion del Uruguay - Zarate - Campana - Benavidez - Marcos Paz - Abasto - Chascomus - Dolores - Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca - Viedma - San Antonio Oeste - Aguada Cecilio - Dina Huapi - Piedra del Aguila - Picun Leufu - Arroyito (Nqn) - Neuquen - General Roca
+R19,Rio Mayo,Corralito,1,200,Rio Mayo - Alto Rio Senguer - J. de San Martin - Tecka - Esquel - Epuyen - El Foyel - San Carlos de Bariloche - Dina Huapi - Villa La Angostura - San Martin de los Andes - Junin de los Andes - Zapala - Chos Malal - Buta Ranquil - Malargue - San Rafael - Tunuyan - Mendoza - Santa Rosa (Mza) - San Luis - V. Mercedes - Chucul - Hernando - Corralito
+R20,Winifreda,Serrezuela,1,200,Winifreda - Victorica - Santa Isabel - Gral. Alvear - San Rafael - Tunuyan - Mendoza - Villa Tulumaya - Villa Media Agua - San Juan - Serrezuela
+R21,Bolivar,Rio Grande,1,200,Bolivar - Olavarria - Azul - Tandil - Mar Del Plata - Tres Arroyos - Bahia Blanca - Viedma - San Antonio Oeste - Aguada Cecilio - Dina Huapi - San Carlos de Bariloche - El Foyel - Epuyen - Esquel - Tecka - J. de San Martin - Alto Rio Senguer - Rio Mayo - Perito Moreno - Bajo Caracoles - Gobernador Gregores - Tres lagos - El Calafate - Esperanza (StaCruz) - Rio Gallegos - El Condor - Estacion Cullen - San Sebastian - Rio Grande
+R22,Leones,San Pedro BsAs,1,100,Leones - Cañada De Gomez - Rosario - San Nicolas de los Arroyos - San Pedro BsAs
+R23,Puerto Madryn,Aristobulo del Valle,1,100,Puerto Madryn - Sierra Grande - San Antonio Oeste - Viedma - Bahia Blanca - Tres Arroyos - Mar Del Plata - Pinamar - Las Toninas - Abasto - La Plata - CABA - Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario - Cañada De Gomez - Leones - San Marcos - Villa Maria - Manfredi - Cordoba - Jesus Maria - Dean Funes - Frias - Santiago del Estero - San Miguel de Tucuman - Choromoro - San Jose de Metan - Presidencia Roque Saenz Peña - Resistencia - Corrientes - Ituzaingo - Posadas - Jardin America - Puerto Iguazu - Aristobulo del Valle
+R24,Hernando,Buta Ranquil,1,400,Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa (Mza) - Mendoza - Tunuyan - San Rafael - Malargue - Buta Ranquil
+R25,General Roca,Goya,1,200,General Roca - Neuquen - Sargento Vidal - Catriel - Santa Isabel - Gral. Alvear - San Rafael - Tunuyan - Mendoza - Santa Rosa (Mza) - San Luis - V. Mercedes - Chucul - Hernando - Corralito - Cordoba - Arroyito - San Francisco - Rafaela - Sunchales - Ceres - Tostado - Vera - Resistencia - Corrientes - Bellavista - Goya
+R26,Rio Mayo,Campana,1,300,Rio Mayo - Alto Rio Senguer - J. de San Martin - Tecka - Esquel - Epuyen - El Foyel - San Carlos de Bariloche - Dina Huapi - Aguada Cecilio - San Antonio Oeste - Viedma - Bahia Blanca - Tres Arroyos - Mar Del Plata - Las Armas - Dolores - Chascomus - Abasto - Marcos Paz - Benavidez - San Antonio De Areco - Arrecifes - Pergamino - Rosario - San Nicolas de los Arroyos - San Pedro BsAs - Baradero - Zarate - Campana
+R27,San Antonio Oeste,San Jose de Metan,1,100,San Antonio Oeste - Viedma - Bahia Blanca - Tres Arroyos - Mar Del Plata - Las Armas - Dolores - Chascomus - Abasto - Marcos Paz - Benavidez - San Antonio De Areco - Arrecifes - Pergamino - Rosario - San Fabian - Santa Fe - Parana - La Paz - Goya - Bellavista - Corrientes - Resistencia - Presidencia Roque Saenz Peña - San Jose de Metan
+R28,Zapala,Ceres,1,100,Zapala - Chos Malal - Buta Ranquil - Malargue - San Rafael - Tunuyan - Mendoza - Santa Rosa (Mza) - San Luis - V. Mercedes - Chucul - Hernando - Corralito - Cordoba - Arroyito - San Francisco - Rafaela - Sunchales - Ceres
+R29,Picun Leufu,Rio Gallegos,1,200,Picun Leufu - Piedra del Aguila - Dina Huapi - San Carlos de Bariloche - El Foyel - Epuyen - Esquel - Tecka - J. de San Martin - Alto Rio Senguer - Rio Mayo - Perito Moreno - Bajo Caracoles - Gobernador Gregores - Tres lagos - El Calafate - Esperanza (StaCruz) - Rio Gallegos
+R30,Tostado,Mercedes,1,100,Tostado - Ceres - Sunchales - Rafaela - Santa Fe - San Fabian - Rosario - Pergamino - Arrecifes - San Antonio De Areco - Benavidez - Lujan - Mercedes
+R31,Aristobulo del Valle,Clorinda,1,200,Aristobulo del Valle - San Jose - Posadas - Ituzaingo - Corrientes - Resistencia - Formosa - Clorinda
+R32,Humahuaca,Puerto Iguazu,1,400,Humahuaca - San Salvador de Jujuy - Salta - San Jose de Metan - Presidencia Roque Saenz Peña - Resistencia - Corrientes - Ituzaingo - Posadas - Jardin America - Puerto Iguazu
+R33,Santa Maria,Las Toninas,1,100,Santa Maria - San Miguel de Tucuman - Choromoro - San Jose de Metan - Presidencia Roque Saenz Peña - Resistencia - Corrientes - Bellavista - Goya - La Paz - Parana - Concordia - Concepcion del Uruguay - Zarate - Campana - Benavidez - Lujan - Cañuelas - Abasto - Las Toninas
+R34,Usuahia,San Pedro Jujuy,1,200,Usuahia - Tolhuin - Rio Grande - San Sebastian - Estacion Cullen - El Condor - Rio Gallegos - Luis Piedrabuena - Puerto San Julian - Jaramillo - Caleta Olivia - Comodoro Rivadavia - Rawson - Trelew - Puerto Madryn - Sierra Grande - San Antonio Oeste - General Conesa - Rio Colorado - Algarrobo - Bahia Blanca - Tres Arroyos - Mar Del Plata - Pinamar - Las Toninas - Abasto - La Plata - CABA - Benavidez - Campana - Zarate - Concepcion del Uruguay - Concordia - Parana - Santa Fe - Rafaela - San Francisco - Arroyito - Cordoba - Jesus Maria - Dean Funes - Frias - Santiago del Estero - San Miguel de Tucuman - Santa Maria - San Antonio de los Cobres - La Quiaca - Humahuaca - San Salvador de Jujuy - San Pedro Jujuy
+R35,Perito Moreno,Mercedes,1,200,Perito Moreno - Colonia Las Heras - Pico Truncado - Caleta Olivia - Comodoro Rivadavia - Rawson - Trelew - Puerto Madryn - Sierra Grande - San Antonio Oeste - General Conesa - Rio Colorado - Algarrobo - Bahia Blanca - Tres Arroyos - Mar Del Plata - Pinamar - Las Toninas - Abasto - Marcos Paz - Benavidez - Lujan - Mercedes
+R36,La Rioja,San Luis,1,400,La Rioja - Patquia - Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis
+R37,San Antonio de los Cobres,Choele Choel,1,400,San Antonio de los Cobres - Santa Maria - San Miguel de Tucuman - Choromoro - San Jose de Metan - Presidencia Roque Saenz Peña - Resistencia - Corrientes - Ituzaingo - Posadas - San Jose - Paso de Los Libres - Concordia - Concepcion del Uruguay - Zarate - Campana - Benavidez - CABA - La Plata - Abasto - Las Toninas - Pinamar - Mar Del Plata - Tres Arroyos - Bahia Blanca - Viedma - San Antonio Oeste - Aguada Cecilio - Dina Huapi - Piedra del Aguila - Picun Leufu - Arroyito (Nqn) - Neuquen - General Roca - Choele Choel
+R38,Dean Funes,Corralito,1,200,Dean Funes - Jesus Maria - Cordoba - Corralito
+R39,Winifreda,San Jose de Jachal,1,100,Winifreda - Victorica - Santa Isabel - Gral. Alvear - San Rafael - Tunuyan - Mendoza - Villa Tulumaya - Villa Media Agua - San Juan - San Jose de Jachal
+R40,Epuyen,Chascomus,1,200,Epuyen - El Foyel - San Carlos de Bariloche - Dina Huapi - Aguada Cecilio - San Antonio Oeste - Viedma - Bahia Blanca - Tres Arroyos - Mar Del Plata - Las Armas - Dolores - Chascomus
+R41,Vera,El Calafate,1,200,Vera - Resistencia - Corrientes - Ituzaingo - Posadas - San Jose - Paso de Los Libres - Concordia - Concepcion del Uruguay - Zarate - Campana - Benavidez - CABA - La Plata - Abasto - Las Toninas - Pinamar - Mar Del Plata - Tres Arroyos - Bahia Blanca - Algarrobo - Rio Colorado - General Conesa - San Antonio Oeste - Sierra Grande - Puerto Madryn - Trelew - Rawson - Comodoro Rivadavia - Caleta Olivia - Pico Truncado - Colonia Las Heras - Perito Moreno - Bajo Caracoles - Gobernador Gregores - Tres lagos - El Calafate
+R42,Rio Gallegos,Vera,1,200,Rio Gallegos - Luis Piedrabuena - Puerto San Julian - Jaramillo - Caleta Olivia - Comodoro Rivadavia - Rawson - Trelew - Puerto Madryn - Sierra Grande - San Antonio Oeste - General Conesa - Rio Colorado - Algarrobo - Bahia Blanca - Tres Arroyos - Mar Del Plata - Pinamar - Las Toninas - Abasto - La Plata - CABA - Benavidez - Campana - Zarate - Concepcion del Uruguay - Concordia - Paso de Los Libres - San Jose - Posadas - Ituzaingo - Corrientes - Resistencia - Vera
+R43,Cañuelas,Cordoba,1,400,Cañuelas - Lujan - Benavidez - San Antonio De Areco - Arrecifes - Pergamino - Rosario - Cañada De Gomez - Leones - San Marcos - Villa Maria - Manfredi - Cordoba
+R44,Esquel,Zarate,1,100,Esquel - Epuyen - El Foyel - San Carlos de Bariloche - Dina Huapi - Villa La Angostura - San Martin de los Andes - Junin de los Andes - Zapala - Chos Malal - Buta Ranquil - Malargue - San Rafael - Tunuyan - Mendoza - Santa Rosa (Mza) - San Luis - V. Mercedes - Chucul - Hernando - Corralito - Cordoba - Manfredi - Villa Maria - San Marcos - Leones - Cañada De Gomez - Rosario - Concepcion del Uruguay - Zarate
+R45,San Jose de Metan,Bahia Blanca,1,200,San Jose de Metan - Choromoro - San Miguel de Tucuman - Santiago del Estero - Añatuya - Tostado - Ceres - Sunchales - Rafaela - Santa Fe - San Fabian - Rosario - Pergamino - Arrecifes - San Antonio De Areco - Benavidez - Marcos Paz - Abasto - Chascomus - Dolores - Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca
+R46,Santa Isabel,Salta,1,100,Santa Isabel - Gral. Alvear - San Rafael - Tunuyan - Mendoza - Santa Rosa (Mza) - San Luis - V. Mercedes - Chucul - Hernando - Corralito - Cordoba - Arroyito - San Francisco - Rafaela - Sunchales - Ceres - Tostado - Vera - Resistencia - Formosa - Las Lomitas - Cap Juan Page - Embarcacion - Lib Gral San Martin - San Pedro Jujuy - San Salvador de Jujuy - Salta
+R47,San Antonio De Areco,Exaltacion de la Cruz,1,200,San Antonio De Areco - Arrecifes - Exaltacion de la Cruz
+R48,Santiago del Estero,Goya,1,100,Santiago del Estero - Frias - Dean Funes - Jesus Maria - Cordoba - Arroyito - San Francisco - Rafaela - Santa Fe - Parana - La Paz - Goya
+R49,Bajo Caracoles,Jardin America,1,400,Bajo Caracoles - Perito Moreno - Rio Mayo - Alto Rio Senguer - J. de San Martin - Tecka - Esquel - Epuyen - El Foyel - San Carlos de Bariloche - Dina Huapi - Villa La Angostura - San Martin de los Andes - Junin de los Andes - Zapala - Chos Malal - Buta Ranquil - Malargue - San Rafael - Tunuyan - Mendoza - Santa Rosa (Mza) - San Luis - V. Mercedes - Chucul - Hernando - Corralito - Cordoba - Arroyito - San Francisco - Rafaela - Sunchales - Ceres - Tostado - Vera - Resistencia - Corrientes - Ituzaingo - Posadas - Jardin America
+R50,San Rafael,Bahia Blanca,1,300,San Rafael - Gral. Alvear - Santa Isabel - Victorica - Winifreda - Santa Rosa (LP) - Trenque Lauquen - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar Del Plata - Tres Arroyos - Bahia Blanca
+R51,Chascomus,Victorica,1,200,Chascomus - Abasto - Las Toninas - Pinamar - Mar Del Plata - Tandil - Azul - Olavarria - Bolivar - Pehuajo - Trenque Lauquen - Santa Rosa (LP) - Winifreda - Victorica
+R52,Las Lomitas,Cordoba,1,400,Las Lomitas - Formosa - Resistencia - Vera - Tostado - Ceres - Sunchales - Rafaela - San Francisco - Arroyito - Cordoba
+R53,Leones,Usuahia,1,200,Leones - Cañada De Gomez - Rosario - Pergamino - Arrecifes - Exaltacion de la Cruz - Benavidez - CABA - La Plata - Abasto - Las Toninas - Pinamar - Mar Del Plata - Tres Arroyos - Bahia Blanca - Algarrobo - Rio Colorado - General Conesa - San Antonio Oeste - Sierra Grande - Puerto Madryn - Trelew - Rawson - Comodoro Rivadavia - Caleta Olivia - Jaramillo - Puerto San Julian - Luis Piedrabuena - Rio Gallegos - El Condor - Estacion Cullen - San Sebastian - Rio Grande - Tolhuin - Usuahia
+R54,Posadas,San Salvador de Jujuy,1,100,Posadas - Ituzaingo - Corrientes - Resistencia - Presidencia Roque Saenz Peña - San Jose de Metan - Salta - San Salvador de Jujuy
+R55,Concepcion del Uruguay,Zarate,1,200,Concepcion del Uruguay - Zarate
+R56,La Plata,San Carlos de Bariloche,1,100,La Plata - Abasto - Chascomus - Dolores - Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca - Viedma - San Antonio Oeste - Aguada Cecilio - Dina Huapi - San Carlos de Bariloche
+R57,Tostado,Caleta Olivia,1,300,Tostado - Ceres - Sunchales - Rafaela - San Francisco - Arroyito - Cordoba - Manfredi - Villa Maria - San Marcos - Leones - Cañada De Gomez - Rosario - Pergamino - Arrecifes - Exaltacion de la Cruz - Benavidez - CABA - La Plata - Abasto - Las Toninas - Pinamar - Mar Del Plata - Tres Arroyos - Bahia Blanca - Algarrobo - Rio Colorado - General Conesa - San Antonio Oeste - Sierra Grande - Puerto Madryn - Trelew - Rawson - Comodoro Rivadavia - Caleta Olivia
+R58,El Condor,Picun Leufu,1,100,El Condor - Rio Gallegos - Esperanza (StaCruz) - El Calafate - Tres lagos - Gobernador Gregores - Bajo Caracoles - Perito Moreno - Rio Mayo - Alto Rio Senguer - J. de San Martin - Tecka - Esquel - Epuyen - El Foyel - San Carlos de Bariloche - Dina Huapi - Piedra del Aguila - Picun Leufu
+R59,General Conesa,Paso de Los Libres,1,400,General Conesa - San Antonio Oeste - Viedma - Bahia Blanca - Tres Arroyos - Mar Del Plata - Las Armas - Dolores - Chascomus - Abasto - Marcos Paz - Benavidez - San Antonio De Areco - Arrecifes - Pergamino - Rosario - San Fabian - Santa Fe - Parana - La Paz - Goya - Bellavista - Corrientes - Ituzaingo - Posadas - San Jose - Paso de Los Libres
+R60,San Martin de los Andes,Tostado,1,200,San Martin de los Andes - Junin de los Andes - Zapala - Chos Malal - Buta Ranquil - Malargue - San Rafael - Tunuyan - Mendoza - Santa Rosa (Mza) - San Luis - V. Mercedes - Chucul - Hernando - Corralito - Cordoba - Arroyito - San Francisco - Rafaela - Sunchales - Ceres - Tostado
+R61,Chacabuco,Esquel,1,200,Chacabuco - Lujan - Cañuelas - Abasto - Chascomus - Dolores - Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca - Viedma - San Antonio Oeste - Sierra Grande - Puerto Madryn - Trelew - Rawson - Comodoro Rivadavia - Caleta Olivia - Pico Truncado - Colonia Las Heras - Perito Moreno - Rio Mayo - Alto Rio Senguer - J. de San Martin - Tecka - Esquel
+R62,San Jose de Metan,Paso de Los Libres,1,100,San Jose de Metan - Presidencia Roque Saenz Peña - Resistencia - Corrientes - Ituzaingo - Posadas - San Jose - Paso de Los Libres
+R63,Chacabuco,Sunchales,1,400,Chacabuco - Lujan - Benavidez - San Antonio De Areco - Arrecifes - Pergamino - Rosario - San Fabian - Santa Fe - Rafaela - Sunchales
+R64,Caleta Olivia,Exaltacion de la Cruz,1,400,Caleta Olivia - Comodoro Rivadavia - Rawson - Trelew - Puerto Madryn - Sierra Grande - San Antonio Oeste - General Conesa - Rio Colorado - Algarrobo - Bahia Blanca - Tres Arroyos - Mar Del Plata - Pinamar - Las Toninas - Abasto - La Plata - CABA - Benavidez - Exaltacion de la Cruz
+R65,El Foyel,Lib Gral San Martin,1,400,El Foyel - San Carlos de Bariloche - Dina Huapi - Piedra del Aguila - Picun Leufu - Arroyito (Nqn) - Neuquen - Sargento Vidal - Catriel - Santa Isabel - Gral. Alvear - San Rafael - Tunuyan - Mendoza - Santa Rosa (Mza) - San Luis - V. Mercedes - Chucul - Hernando - Corralito - Cordoba - Arroyito - San Francisco - Rafaela - Sunchales - Ceres - Tostado - Vera - Resistencia - Presidencia Roque Saenz Peña - San Jose de Metan - Salta - San Salvador de Jujuy - San Pedro Jujuy - Lib Gral San Martin
+R66,Salvador Mazza,Ceres,1,400,Salvador Mazza - Embarcacion - Cap Juan Page - Las Lomitas - Formosa - Resistencia - Vera - Tostado - Ceres
+R67,Bahia Blanca,Epuyen,1,300,Bahia Blanca - Viedma - San Antonio Oeste - Aguada Cecilio - Dina Huapi - San Carlos de Bariloche - El Foyel - Epuyen
+R68,Corrientes,Puerto Madryn,1,200,Corrientes - Ituzaingo - Posadas - San Jose - Paso de Los Libres - Concordia - Concepcion del Uruguay - Zarate - Campana - Benavidez - Marcos Paz - Abasto - Chascomus - Dolores - Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca - Viedma - San Antonio Oeste - Sierra Grande - Puerto Madryn
+R69,Sunchales,Colonia Las Heras,1,100,Sunchales - Rafaela - Santa Fe - Parana - Concordia - Concepcion del Uruguay - Zarate - Campana - Benavidez - CABA - La Plata - Abasto - Las Toninas - Pinamar - Mar Del Plata - Tres Arroyos - Bahia Blanca - Algarrobo - Rio Colorado - General Conesa - San Antonio Oeste - Sierra Grande - Puerto Madryn - Trelew - Rawson - Comodoro Rivadavia - Caleta Olivia - Pico Truncado - Colonia Las Heras
+R70,El Calafate,Usuahia,1,200,El Calafate - Esperanza (StaCruz) - Rio Gallegos - El Condor - Estacion Cullen - San Sebastian - Rio Grande - Tolhuin - Usuahia
+R71,San Jose de Jachal,Jaramillo,1,300,San Jose de Jachal - San Juan - Serrezuela - La Falda - Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa (Mza) - Mendoza - Tunuyan - San Rafael - Malargue - Buta Ranquil - Chos Malal - Zapala - Junin de los Andes - San Martin de los Andes - Villa La Angostura - Dina Huapi - San Carlos de Bariloche - El Foyel - Epuyen - Esquel - Tecka - J. de San Martin - Alto Rio Senguer - Rio Mayo - Perito Moreno - Colonia Las Heras - Pico Truncado - Caleta Olivia - Jaramillo
+R72,Tres Arroyos,Pinamar,1,300,Tres Arroyos - Mar Del Plata - Pinamar
+R73,Catamarca,La Plata,1,200,Catamarca - Concepcion - San Miguel de Tucuman - Choromoro - San Jose de Metan - Presidencia Roque Saenz Peña - Resistencia - Corrientes - Bellavista - Goya - La Paz - Parana - Concordia - Concepcion del Uruguay - Zarate - Campana - Benavidez - Marcos Paz - Abasto - La Plata
+R74,Resistencia,Salvador Mazza,1,200,Resistencia - Formosa - Las Lomitas - Cap Juan Page - Embarcacion - Salvador Mazza
+R75,Dina Huapi,Clorinda,1,400,Dina Huapi - Piedra del Aguila - Picun Leufu - Arroyito (Nqn) - Neuquen - Sargento Vidal - Catriel - Santa Isabel - Victorica - Winifreda - Santa Rosa (LP) - Trenque Lauquen - Pehuajo - 9 De Julio - Bragado - Chivilcoy - Mercedes - Lujan - Cañuelas - Abasto - La Plata - CABA - Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario - Cañada De Gomez - Leones - San Marcos - Villa Maria - Manfredi - Cordoba - Arroyito - San Francisco - Rafaela - Santa Fe - Parana - Concordia - Paso de Los Libres - San Jose - Posadas - Ituzaingo - Corrientes - Resistencia - Formosa - Clorinda
+R76,La Rioja,Presidencia Roque Saenz Peña,1,300,La Rioja - Catamarca - Concepcion - San Miguel de Tucuman - Choromoro - San Jose de Metan - Presidencia Roque Saenz Peña
+R77,Arroyito,San Salvador de Jujuy,1,300,Arroyito - San Francisco - Rafaela - Santa Fe - Parana - La Paz - Goya - Bellavista - Corrientes - Resistencia - Presidencia Roque Saenz Peña - San Jose de Metan - Salta - San Salvador de Jujuy
+R78,Chilecito,V. Mercedes,1,200,Chilecito - Belen - Santa Maria - San Antonio de los Cobres - La Quiaca - Humahuaca - San Salvador de Jujuy - Salta - San Jose de Metan - Choromoro - San Miguel de Tucuman - Santiago del Estero - Frias - Dean Funes - Jesus Maria - Cordoba - Corralito - Hernando - Chucul - V. Mercedes
+R79,Luis Piedrabuena,Salvador Mazza,1,400,Luis Piedrabuena - Puerto San Julian - Jaramillo - Caleta Olivia - Pico Truncado - Colonia Las Heras - Perito Moreno - Rio Mayo - Alto Rio Senguer - J. de San Martin - Tecka - Esquel - Epuyen - El Foyel - San Carlos de Bariloche - Dina Huapi - Villa La Angostura - San Martin de los Andes - Junin de los Andes - Zapala - Chos Malal - Buta Ranquil - Malargue - San Rafael - Tunuyan - Mendoza - Santa Rosa (Mza) - San Luis - V. Mercedes - Chucul - Hernando - Corralito - Cordoba - Arroyito - San Francisco - Rafaela - Sunchales - Ceres - Tostado - Vera - Resistencia - Formosa - Las Lomitas - Cap Juan Page - Embarcacion - Salvador Mazza
+R80,Epuyen,Lib Gral San Martin,1,300,Epuyen - El Foyel - San Carlos de Bariloche - Dina Huapi - Piedra del Aguila - Picun Leufu - Arroyito (Nqn) - Neuquen - Sargento Vidal - Catriel - Santa Isabel - Gral. Alvear - San Rafael - Tunuyan - Mendoza - Santa Rosa (Mza) - San Luis - V. Mercedes - Chucul - Hernando - Corralito - Cordoba - Arroyito - San Francisco - Rafaela - Sunchales - Ceres - Tostado - Vera - Resistencia - Presidencia Roque Saenz Peña - San Jose de Metan - Salta - San Salvador de Jujuy - San Pedro Jujuy - Lib Gral San Martin
+R81,Jardin America,Chivilcoy,1,100,Jardin America - Posadas - San Jose - Paso de Los Libres - Concordia - Concepcion del Uruguay - Zarate - Campana - Benavidez - Lujan - Mercedes - Chivilcoy
+R82,Santiago del Estero,Vera,1,300,Santiago del Estero - Frias - Dean Funes - Jesus Maria - Cordoba - Arroyito - San Francisco - Rafaela - Sunchales - Ceres - Tostado - Vera
+R83,San Carlos de Bariloche,Vera,1,300,San Carlos de Bariloche - Dina Huapi - Villa La Angostura - San Martin de los Andes - Junin de los Andes - Zapala - Chos Malal - Buta Ranquil - Malargue - San Rafael - Tunuyan - Mendoza - Santa Rosa (Mza) - San Luis - V. Mercedes - Chucul - Hernando - Corralito - Cordoba - Arroyito - San Francisco - Rafaela - Sunchales - Ceres - Tostado - Vera
+R84,San Jose de Jachal,Gobernador Gregores,1,300,San Jose de Jachal - San Juan - Serrezuela - La Falda - Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa (Mza) - Mendoza - Tunuyan - San Rafael - Gral. Alvear - Santa Isabel - Catriel - Sargento Vidal - Neuquen - Arroyito (Nqn) - Picun Leufu - Piedra del Aguila - Dina Huapi - San Carlos de Bariloche - El Foyel - Epuyen - Esquel - Tecka - J. de San Martin - Alto Rio Senguer - Rio Mayo - Perito Moreno - Bajo Caracoles - Gobernador Gregores
+R85,Puerto San Julian,San Nicolas de los Arroyos,1,200,Puerto San Julian - Jaramillo - Caleta Olivia - Comodoro Rivadavia - Rawson - Trelew - Puerto Madryn - Sierra Grande - San Antonio Oeste - General Conesa - Rio Colorado - Algarrobo - Bahia Blanca - Tres Arroyos - Mar Del Plata - Pinamar - Las Toninas - Abasto - La Plata - CABA - Benavidez - Campana - Zarate - Baradero - San Pedro BsAs - San Nicolas de los Arroyos
+R86,Resistencia,El Foyel,1,300,Resistencia - Vera - Tostado - Ceres - Sunchales - Rafaela - Santa Fe - Parana - Concordia - Concepcion del Uruguay - Zarate - Campana - Benavidez - Marcos Paz - Abasto - Chascomus - Dolores - Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca - Viedma - San Antonio Oeste - Sierra Grande - Puerto Madryn - Trelew - Rawson - Comodoro Rivadavia - Caleta Olivia - Pico Truncado - Colonia Las Heras - Perito Moreno - Rio Mayo - Alto Rio Senguer - J. de San Martin - Tecka - Esquel - Epuyen - El Foyel
+R87,Perito Moreno,Caleta Olivia,1,200,Perito Moreno - Colonia Las Heras - Pico Truncado - Caleta Olivia
+R88,Peru,Chivilcoy,1,300,Peru - Santa Rosa (LP) - Trenque Lauquen - Pehuajo - 9 De Julio - Bragado - Chivilcoy
+R89,Formosa,Patquia,1,300,Formosa - Resistencia - Presidencia Roque Saenz Peña - San Jose de Metan - Choromoro - San Miguel de Tucuman - Concepcion - Catamarca - La Rioja - Patquia
+R90,Dean Funes,Choromoro,1,100,Dean Funes - Frias - Santiago del Estero - San Miguel de Tucuman - Choromoro
+R91,Bolivar,Marcos Paz,1,200,Bolivar - Pehuajo - 9 De Julio - Bragado - Chivilcoy - Mercedes - Lujan - Cañuelas - Abasto - Marcos Paz
+R92,El Calafate,Estacion Cullen,1,200,El Calafate - Esperanza (StaCruz) - Rio Gallegos - El Condor - Estacion Cullen
+R93,Luis Piedrabuena,San Marcos,1,300,Luis Piedrabuena - Puerto San Julian - Jaramillo - Caleta Olivia - Comodoro Rivadavia - Rawson - Trelew - Puerto Madryn - Sierra Grande - San Antonio Oeste - Viedma - Bahia Blanca - Tres Arroyos - Mar Del Plata - Las Armas - Dolores - Chascomus - Abasto - Marcos Paz - Benavidez - Campana - Zarate - Baradero - San Pedro BsAs - San Nicolas de los Arroyos - Rosario - Cañada De Gomez - Leones - San Marcos
+R94,Santa Maria,CABA,1,400,Santa Maria - San Miguel de Tucuman - Choromoro - San Jose de Metan - Presidencia Roque Saenz Peña - Resistencia - Corrientes - Bellavista - Goya - La Paz - Parana - Concordia - Concepcion del Uruguay - Zarate - Campana - Benavidez - Marcos Paz - Abasto - La Plata - CABA
+R95,Luis Piedrabuena,Chacabuco,1,300,Luis Piedrabuena - Rio Gallegos - Esperanza (StaCruz) - El Calafate - Tres lagos - Gobernador Gregores - Bajo Caracoles - Perito Moreno - Rio Mayo - Alto Rio Senguer - J. de San Martin - Tecka - Esquel - Epuyen - El Foyel - San Carlos de Bariloche - Dina Huapi - Aguada Cecilio - San Antonio Oeste - Viedma - Bahia Blanca - Tres Arroyos - Mar Del Plata - Las Armas - Dolores - Chascomus - Abasto - Cañuelas - Lujan - Chacabuco
+R96,Chascomus,San Carlos de Bariloche,1,400,Chascomus - Dolores - Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca - Viedma - San Antonio Oeste - Aguada Cecilio - Dina Huapi - San Carlos de Bariloche
+R97,Winifreda,Epuyen,1,400,Winifreda - Victorica - Santa Isabel - Catriel - Sargento Vidal - Neuquen - Arroyito (Nqn) - Picun Leufu - Piedra del Aguila - Dina Huapi - San Carlos de Bariloche - El Foyel - Epuyen
+R98,Arroyito (Nqn),Paso de Los Libres,1,400,Arroyito (Nqn) - Neuquen - Sargento Vidal - Catriel - Santa Isabel - Gral. Alvear - San Rafael - Tunuyan - Mendoza - Santa Rosa (Mza) - San Luis - V. Mercedes - Chucul - Hernando - Corralito - Cordoba - Arroyito - San Francisco - Rafaela - Sunchales - Ceres - Tostado - Vera - Resistencia - Corrientes - Bellavista - Goya - La Paz - Parana - Concordia - Paso de Los Libres
+R99,Estacion Cullen,Rio Grande,1,400,Estacion Cullen - San Sebastian - Rio Grande
+R100,Campana,San Fabian,1,200,Campana - Zarate - Baradero - San Pedro BsAs - San Nicolas de los Arroyos - Rosario - San Fabian
+R101,Salvador Mazza,Catriel,1,300,Salvador Mazza - Embarcacion - Lib Gral San Martin - San Pedro Jujuy - San Salvador de Jujuy - Salta - San Jose de Metan - Presidencia Roque Saenz Peña - Resistencia - Corrientes - Ituzaingo - Posadas - San Jose - Paso de Los Libres - Concordia - Concepcion del Uruguay - Zarate - Campana - Benavidez - CABA - La Plata - Abasto - Cañuelas - Lujan - Mercedes - Chivilcoy - Bragado - 9 De Julio - Pehuajo - Trenque Lauquen - Santa Rosa (LP) - Winifreda - Victorica - Santa Isabel - Catriel
+R102,Patquia,San Salvador de Jujuy,1,100,Patquia - La Rioja - Catamarca - Concepcion - San Miguel de Tucuman - Choromoro - San Jose de Metan - Salta - San Salvador de Jujuy
+R103,Victorica,Perito Moreno,1,200,Victorica - Santa Isabel - Catriel - Sargento Vidal - Neuquen - Arroyito (Nqn) - Picun Leufu - Piedra del Aguila - Dina Huapi - San Carlos de Bariloche - El Foyel - Epuyen - Esquel - Tecka - J. de San Martin - Alto Rio Senguer - Rio Mayo - Perito Moreno
+R104,Buta Ranquil,Marcos Paz,1,400,Buta Ranquil - Malargue - San Rafael - Tunuyan - Mendoza - Santa Rosa (Mza) - San Luis - V. Mercedes - Chucul - Hernando - Corralito - Cordoba - Manfredi - Villa Maria - San Marcos - Leones - Cañada De Gomez - Rosario - Pergamino - Arrecifes - San Antonio De Areco - Benavidez - Marcos Paz
+R105,Zapala,Bajo Caracoles,1,100,Zapala - Junin de los Andes - San Martin de los Andes - Villa La Angostura - Dina Huapi - San Carlos de Bariloche - El Foyel - Epuyen - Esquel - Tecka - J. de San Martin - Alto Rio Senguer - Rio Mayo - Perito Moreno - Bajo Caracoles
+R106,Perito Moreno,Dolores,1,100,Perito Moreno - Colonia Las Heras - Pico Truncado - Caleta Olivia - Comodoro Rivadavia - Rawson - Trelew - Puerto Madryn - Sierra Grande - San Antonio Oeste - Viedma - Bahia Blanca - Tres Arroyos - Mar Del Plata - Las Armas - Dolores
+R107,Viedma,Leones,1,100,Viedma - Bahia Blanca - Tres Arroyos - Mar Del Plata - Pinamar - Las Toninas - Abasto - La Plata - CABA - Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario - Cañada De Gomez - Leones
+R108,Rio Mayo,Bolivar,1,200,Rio Mayo - Alto Rio Senguer - J. de San Martin - Tecka - Esquel - Epuyen - El Foyel - San Carlos de Bariloche - Dina Huapi - Aguada Cecilio - San Antonio Oeste - Viedma - Bahia Blanca - Tres Arroyos - Mar Del Plata - Tandil - Azul - Olavarria - Bolivar
+R109,Tunuyan,Santa Fe,1,200,Tunuyan - Mendoza - Santa Rosa (Mza) - San Luis - V. Mercedes - Chucul - Hernando - Corralito - Cordoba - Arroyito - San Francisco - Rafaela - Santa Fe
+R110,San Martin de los Andes,Peru,1,100,San Martin de los Andes - Junin de los Andes - Zapala - Chos Malal - Buta Ranquil - Malargue - San Rafael - Gral. Alvear - Santa Isabel - Victorica - Winifreda - Santa Rosa (LP) - Peru
+R111,El Condor,Clorinda,1,400,El Condor - Rio Gallegos - Luis Piedrabuena - Puerto San Julian - Jaramillo - Caleta Olivia - Comodoro Rivadavia - Rawson - Trelew - Puerto Madryn - Sierra Grande - San Antonio Oeste - Viedma - Bahia Blanca - Tres Arroyos - Mar Del Plata - Las Armas - Dolores - Chascomus - Abasto - Marcos Paz - Benavidez - Campana - Zarate - Concepcion del Uruguay - Concordia - Parana - Santa Fe - Rafaela - Sunchales - Ceres - Tostado - Vera - Resistencia - Formosa - Clorinda
+R112,Victorica,Baradero,1,200,Victorica - Winifreda - Santa Rosa (LP) - Trenque Lauquen - Pehuajo - 9 De Julio - Bragado - Chivilcoy - Mercedes - Lujan - Cañuelas - Abasto - La Plata - CABA - Benavidez - Campana - Zarate - Baradero
+R113,Embarcacion,Baradero,1,100,Embarcacion - Cap Juan Page - Las Lomitas - Formosa - Resistencia - Corrientes - Bellavista - Goya - La Paz - Parana - Santa Fe - San Fabian - Rosario - San Nicolas de los Arroyos - San Pedro BsAs - Baradero
+R114,Cañada De Gomez,Rawson,1,200,Cañada De Gomez - Rosario - San Nicolas de los Arroyos - San Pedro BsAs - Baradero - Zarate - Campana - Benavidez - Marcos Paz - Abasto - Chascomus - Dolores - Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca - Viedma - San Antonio Oeste - Sierra Grande - Puerto Madryn - Trelew - Rawson
+R115,Patquia,San Salvador de Jujuy,1,300,Patquia - La Rioja - Catamarca - Concepcion - San Miguel de Tucuman - Choromoro - San Jose de Metan - Salta - San Salvador de Jujuy
+R116,Azul,San Martin de los Andes,1,200,Azul - Tandil - Mar Del Plata - Tres Arroyos - Bahia Blanca - Viedma - San Antonio Oeste - Aguada Cecilio - Dina Huapi - Villa La Angostura - San Martin de los Andes
+R117,Cap Juan Page,Exaltacion de la Cruz,1,400,Cap Juan Page - Las Lomitas - Formosa - Resistencia - Corrientes - Ituzaingo - Posadas - San Jose - Paso de Los Libres - Concordia - Concepcion del Uruguay - Zarate - Campana - Benavidez - Exaltacion de la Cruz
+R118,Neuquen,Picun Leufu,1,200,Neuquen - Arroyito (Nqn) - Picun Leufu
+R119,Azul,Tres lagos,1,400,Azul - Tandil - Mar Del Plata - Tres Arroyos - Bahia Blanca - Algarrobo - Rio Colorado - General Conesa - San Antonio Oeste - Sierra Grande - Puerto Madryn - Trelew - Rawson - Comodoro Rivadavia - Caleta Olivia - Pico Truncado - Colonia Las Heras - Perito Moreno - Bajo Caracoles - Gobernador Gregores - Tres lagos
+R120,Colonia Las Heras,Gobernador Gregores,1,200,Colonia Las Heras - Pico Truncado - Caleta Olivia - Jaramillo - Puerto San Julian - Luis Piedrabuena - Rio Gallegos - Esperanza (StaCruz) - El Calafate - Tres lagos - Gobernador Gregores
+R121,Zarate,San Marcos,1,400,Zarate - Baradero - San Pedro BsAs - San Nicolas de los Arroyos - Rosario - Cañada De Gomez - Leones - San Marcos
+R122,San Jose de Metan,General Roca,1,300,San Jose de Metan - Salta - San Salvador de Jujuy - San Pedro Jujuy - Lib Gral San Martin - Embarcacion - Cap Juan Page - Las Lomitas - Formosa - Resistencia - Vera - Tostado - Ceres - Sunchales - Rafaela - Santa Fe - Parana - Concordia - Concepcion del Uruguay - Zarate - Campana - Benavidez - CABA - La Plata - Abasto - Cañuelas - Lujan - Mercedes - Chivilcoy - Bragado - 9 De Julio - Pehuajo - Trenque Lauquen - Santa Rosa (LP) - Winifreda - Victorica - Santa Isabel - Catriel - Sargento Vidal - Neuquen - General Roca
+R123,Pico Truncado,Chacabuco,1,400,Pico Truncado - Colonia Las Heras - Perito Moreno - Rio Mayo - Alto Rio Senguer - J. de San Martin - Tecka - Esquel - Epuyen - El Foyel - San Carlos de Bariloche - Dina Huapi - Aguada Cecilio - San Antonio Oeste - Viedma - Bahia Blanca - Tres Arroyos - Mar Del Plata - Las Armas - Dolores - Chascomus - Abasto - Cañuelas - Lujan - Chacabuco
+R124,Chacabuco,Embarcacion,1,200,Chacabuco - Lujan - Benavidez - San Antonio De Areco - Arrecifes - Pergamino - Rosario - San Fabian - Santa Fe - Parana - La Paz - Goya - Bellavista - Corrientes - Resistencia - Formosa - Las Lomitas - Cap Juan Page - Embarcacion
+R125,La Quiaca,Concordia,1,300,La Quiaca - Humahuaca - San Salvador de Jujuy - Salta - San Jose de Metan - Presidencia Roque Saenz Peña - Resistencia - Corrientes - Ituzaingo - Posadas - San Jose - Paso de Los Libres - Concordia
+R126,Rufino,Sargento Vidal,1,100,Rufino - Pehuajo - Trenque Lauquen - Santa Rosa (LP) - Winifreda - Victorica - Santa Isabel - Catriel - Sargento Vidal
+R127,Rio Mayo,Buta Ranquil,1,100,Rio Mayo - Alto Rio Senguer - J. de San Martin - Tecka - Esquel - Epuyen - El Foyel - San Carlos de Bariloche - Dina Huapi - Villa La Angostura - San Martin de los Andes - Junin de los Andes - Zapala - Chos Malal - Buta Ranquil
+R128,CABA,Tres Arroyos,1,100,CABA - La Plata - Abasto - Chascomus - Dolores - Las Armas - Mar Del Plata - Tres Arroyos
+R129,San Martin de los Andes,Victorica,1,100,San Martin de los Andes - Villa La Angostura - Dina Huapi - Piedra del Aguila - Picun Leufu - Arroyito (Nqn) - Neuquen - Sargento Vidal - Catriel - Santa Isabel - Victorica
+R130,San Sebastian,Chucul,1,300,San Sebastian - Estacion Cullen - El Condor - Rio Gallegos - Esperanza (StaCruz) - El Calafate - Tres lagos - Gobernador Gregores - Bajo Caracoles - Perito Moreno - Rio Mayo - Alto Rio Senguer - J. de San Martin - Tecka - Esquel - Epuyen - El Foyel - San Carlos de Bariloche - Dina Huapi - Villa La Angostura - San Martin de los Andes - Junin de los Andes - Zapala - Chos Malal - Buta Ranquil - Malargue - San Rafael - Tunuyan - Mendoza - Santa Rosa (Mza) - San Luis - V. Mercedes - Chucul
+R131,Junin de los Andes,Comodoro Rivadavia,1,400,Junin de los Andes - San Martin de los Andes - Villa La Angostura - Dina Huapi - Aguada Cecilio - San Antonio Oeste - Sierra Grande - Puerto Madryn - Trelew - Rawson - Comodoro Rivadavia
+R132,Jesus Maria,Jardin America,1,200,Jesus Maria - Cordoba - Arroyito - San Francisco - Rafaela - Santa Fe - Parana - La Paz - Goya - Bellavista - Corrientes - Ituzaingo - Posadas - Jardin America
+R133,Jardin America,Chascomus,1,400,Jardin America - Posadas - San Jose - Paso de Los Libres - Concordia - Concepcion del Uruguay - Zarate - Campana - Benavidez - Marcos Paz - Abasto - Chascomus
+R134,Leones,Santiago del Estero,1,400,Leones - San Marcos - Villa Maria - Manfredi - Cordoba - Jesus Maria - Dean Funes - Frias - Santiago del Estero
+R135,Benavidez,General Roca,1,300,Benavidez - San Antonio De Areco - Arrecifes - Pergamino - Rosario - Cañada De Gomez - Leones - San Marcos - Villa Maria - Manfredi - Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa (Mza) - Mendoza - Tunuyan - San Rafael - Malargue - Buta Ranquil - Chos Malal - Zapala - Junin de los Andes - San Martin de los Andes - Villa La Angostura - Dina Huapi - Piedra del Aguila - Picun Leufu - Arroyito (Nqn) - Neuquen - General Roca
+R136,San Fabian,San Luis,1,300,San Fabian - Santa Fe - Rafaela - San Francisco - Arroyito - Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis
+R137,Tecka,Arrecifes,1,400,Tecka - J. de San Martin - Alto Rio Senguer - Rio Mayo - Perito Moreno - Colonia Las Heras - Pico Truncado - Caleta Olivia - Comodoro Rivadavia - Rawson - Trelew - Puerto Madryn - Sierra Grande - San Antonio Oeste - Viedma - Bahia Blanca - Tres Arroyos - Mar Del Plata - Las Armas - Dolores - Chascomus - Abasto - Marcos Paz - Benavidez - Exaltacion de la Cruz - Arrecifes
+R138,Añatuya,Leones,1,200,Añatuya - Tostado - Ceres - Sunchales - Rafaela - Santa Fe - San Fabian - Rosario - Cañada De Gomez - Leones
+R139,Vera,Chascomus,1,200,Vera - Tostado - Ceres - Sunchales - Rafaela - Santa Fe - San Fabian - Rosario - Pergamino - Arrecifes - San Antonio De Areco - Benavidez - Marcos Paz - Abasto - Chascomus
+R140,San Carlos de Bariloche,Arrecifes,1,100,San Carlos de Bariloche - Dina Huapi - Villa La Angostura - San Martin de los Andes - Junin de los Andes - Zapala - Chos Malal - Buta Ranquil - Malargue - San Rafael - Tunuyan - Mendoza - Santa Rosa (Mza) - San Luis - V. Mercedes - Chucul - Hernando - Corralito - Cordoba - Manfredi - Villa Maria - San Marcos - Leones - Cañada De Gomez - Rosario - Pergamino - Arrecifes
+R141,Olavarria,Chivilcoy,1,300,Olavarria - Bolivar - Pehuajo - 9 De Julio - Bragado - Chivilcoy
+R142,Rosario,Formosa,1,100,Rosario - San Fabian - Santa Fe - Parana - La Paz - Goya - Bellavista - Corrientes - Resistencia - Formosa
+R143,Abasto,Chivilcoy,1,400,Abasto - Cañuelas - Lujan - Mercedes - Chivilcoy
+R144,Tecka,Rio Gallegos,1,200,Tecka - J. de San Martin - Alto Rio Senguer - Rio Mayo - Perito Moreno - Colonia Las Heras - Pico Truncado - Caleta Olivia - Jaramillo - Puerto San Julian - Luis Piedrabuena - Rio Gallegos
+R145,Aguada Cecilio,Ceres,1,200,Aguada Cecilio - San Antonio Oeste - Viedma - Bahia Blanca - Tres Arroyos - Mar Del Plata - Las Armas - Dolores - Chascomus - Abasto - Marcos Paz - Benavidez - Campana - Zarate - Concepcion del Uruguay - Concordia - Parana - La Paz - Goya - Bellavista - Corrientes - Resistencia - Vera - Tostado - Ceres
+R146,Tres Arroyos,Las Armas,1,300,Tres Arroyos - Mar Del Plata - Las Armas
+R147,Hernando,Humahuaca,1,200,Hernando - Corralito - Cordoba - Jesus Maria - Dean Funes - Frias - Santiago del Estero - San Miguel de Tucuman - Santa Maria - San Antonio de los Cobres - La Quiaca - Humahuaca
+R148,Chucul,Caleta Olivia,1,400,Chucul - Hernando - Corralito - Cordoba - Manfredi - Villa Maria - San Marcos - Leones - Cañada De Gomez - Rosario - Pergamino - Arrecifes - San Antonio De Areco - Benavidez - Marcos Paz - Abasto - Chascomus - Dolores - Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca - Viedma - San Antonio Oeste - Aguada Cecilio - Dina Huapi - San Carlos de Bariloche - El Foyel - Epuyen - Esquel - Tecka - J. de San Martin - Alto Rio Senguer - Rio Mayo - Perito Moreno - Colonia Las Heras - Pico Truncado - Caleta Olivia
+R149,Lib Gral San Martin,Mercedes,1,300,Lib Gral San Martin - San Pedro Jujuy - San Salvador de Jujuy - Salta - San Jose de Metan - Choromoro - San Miguel de Tucuman - Santiago del Estero - Añatuya - Tostado - Ceres - Sunchales - Rafaela - Santa Fe - San Fabian - Rosario - Pergamino - Arrecifes - San Antonio De Areco - Benavidez - Lujan - Mercedes
+R150,Concepcion,San Jose,1,400,Concepcion - San Miguel de Tucuman - Choromoro - San Jose de Metan - Presidencia Roque Saenz Peña - Resistencia - Corrientes - Ituzaingo - Posadas - San Jose
+R151,Choele Choel,Las Lomitas,1,400,Choele Choel - General Roca - Neuquen - Arroyito (Nqn) - Picun Leufu - Piedra del Aguila - Dina Huapi - Aguada Cecilio - San Antonio Oeste - Viedma - Bahia Blanca - Tres Arroyos - Mar Del Plata - Pinamar - Las Toninas - Abasto - La Plata - CABA - Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario - Cañada De Gomez - Leones - San Marcos - Villa Maria - Manfredi - Cordoba - Arroyito - San Francisco - Rafaela - Santa Fe - Parana - Concordia - Paso de Los Libres - San Jose - Posadas - Ituzaingo - Corrientes - Resistencia - Formosa - Las Lomitas
+R152,Gobernador Gregores,Bolivar,1,200,Gobernador Gregores - Tres lagos - El Calafate - Esperanza (StaCruz) - Rio Gallegos - Luis Piedrabuena - Puerto San Julian - Jaramillo - Caleta Olivia - Pico Truncado - Colonia Las Heras - Perito Moreno - Rio Mayo - Alto Rio Senguer - J. de San Martin - Tecka - Esquel - Epuyen - El Foyel - San Carlos de Bariloche - Dina Huapi - Aguada Cecilio - San Antonio Oeste - Viedma - Bahia Blanca - Tres Arroyos - Mar Del Plata - Tandil - Azul - Olavarria - Bolivar
+R153,Jesus Maria,9 De Julio,1,100,Jesus Maria - Cordoba - Manfredi - Villa Maria - San Marcos - Leones - Cañada De Gomez - Rosario - Pergamino - Arrecifes - San Antonio De Areco - Benavidez - Lujan - Mercedes - Chivilcoy - Bragado - 9 De Julio
+R154,Parana,Corralito,1,300,Parana - Santa Fe - Rafaela - San Francisco - Arroyito - Cordoba - Corralito
+R155,El Foyel,Salta,1,200,El Foyel - San Carlos de Bariloche - Dina Huapi - Piedra del Aguila - Picun Leufu - Arroyito (Nqn) - Neuquen - Sargento Vidal - Catriel - Santa Isabel - Gral. Alvear - San Rafael - Tunuyan - Mendoza - Santa Rosa (Mza) - San Luis - V. Mercedes - Chucul - Hernando - Corralito - Cordoba - Arroyito - San Francisco - Rafaela - Sunchales - Ceres - Tostado - Vera - Resistencia - Formosa - Las Lomitas - Cap Juan Page - Embarcacion - Lib Gral San Martin - San Pedro Jujuy - San Salvador de Jujuy - Salta
+R156,Cordoba,Posadas,1,400,Cordoba - Manfredi - Villa Maria - San Marcos - Leones - Cañada De Gomez - Rosario - Concepcion del Uruguay - Concordia - Paso de Los Libres - San Jose - Posadas
+R157,San Nicolas de los Arroyos,Las Lomitas,1,100,San Nicolas de los Arroyos - Rosario - San Fabian - Santa Fe - Parana - La Paz - Goya - Bellavista - Corrientes - Resistencia - Formosa - Las Lomitas
+R158,San Juan,Jaramillo,1,100,San Juan - Serrezuela - Patquia - Chilecito - Belen - Santa Maria - San Miguel de Tucuman - Choromoro - San Jose de Metan - Presidencia Roque Saenz Peña - Resistencia - Corrientes - Bellavista - Goya - La Paz - Parana - Concordia - Concepcion del Uruguay - Zarate - Campana - Benavidez - CABA - La Plata - Abasto - Las Toninas - Pinamar - Mar Del Plata - Tres Arroyos - Bahia Blanca - Algarrobo - Rio Colorado - General Conesa - San Antonio Oeste - Sierra Grande - Puerto Madryn - Trelew - Rawson - Comodoro Rivadavia - Caleta Olivia - Jaramillo
+R159,Santa Isabel,Rosario,1,200,Santa Isabel - Gral. Alvear - San Rafael - Tunuyan - Mendoza - Santa Rosa (Mza) - San Luis - V. Mercedes - Chucul - Hernando - Corralito - Cordoba - Manfredi - Villa Maria - San Marcos - Leones - Cañada De Gomez - Rosario
+R160,Tandil,Gral. Alvear,1,400,Tandil - Azul - Olavarria - Bolivar - Pehuajo - Trenque Lauquen - Santa Rosa (LP) - Winifreda - Victorica - Santa Isabel - Gral. Alvear
+R161,Peru,Belen,1,200,Peru - Santa Rosa (LP) - Trenque Lauquen - Pehuajo - Rufino - Lujan - Benavidez - Campana - Zarate - Concepcion del Uruguay - Concordia - Parana - La Paz - Goya - Bellavista - Corrientes - Resistencia - Presidencia Roque Saenz Peña - San Jose de Metan - Salta - San Salvador de Jujuy - Humahuaca - La Quiaca - San Antonio de los Cobres - Santa Maria - Belen
+R162,San Nicolas de los Arroyos,Leones,1,400,San Nicolas de los Arroyos - Rosario - Cañada De Gomez - Leones
+R163,Chacabuco,Marcos Paz,1,300,Chacabuco - Lujan - Benavidez - Marcos Paz
+R164,Catamarca,Buta Ranquil,1,300,Catamarca - La Rioja - Patquia - Serrezuela - San Juan - Villa Media Agua - Villa Tulumaya - Mendoza - Tunuyan - San Rafael - Malargue - Buta Ranquil
+R165,Santa Rosa (Mza),Parana,1,300,Santa Rosa (Mza) - San Luis - V. Mercedes - Chucul - Hernando - Corralito - Cordoba - Arroyito - San Francisco - Rafaela - Santa Fe - Parana
+R166,Patquia,San Francisco,1,100,Patquia - Serrezuela - La Falda - Cordoba - Arroyito - San Francisco
+R167,Arrecifes,Corralito,1,100,Arrecifes - Pergamino - Rosario - Cañada De Gomez - Leones - San Marcos - Villa Maria - Manfredi - Cordoba - Corralito
+R168,General Roca,Puerto Madryn,1,300,General Roca - Neuquen - Arroyito (Nqn) - Picun Leufu - Piedra del Aguila - Dina Huapi - San Carlos de Bariloche - El Foyel - Epuyen - Esquel - Tecka - J. de San Martin - Alto Rio Senguer - Rio Mayo - Perito Moreno - Colonia Las Heras - Pico Truncado - Caleta Olivia - Comodoro Rivadavia - Rawson - Trelew - Puerto Madryn
+R169,San Jose de Jachal,San Antonio Oeste,1,200,San Jose de Jachal - San Juan - Villa Media Agua - Villa Tulumaya - Mendoza - Tunuyan - San Rafael - Gral. Alvear - Santa Isabel - Victorica - Winifreda - Santa Rosa (LP) - Peru - Rio Colorado - General Conesa - San Antonio Oeste
+R170,Pico Truncado,Winifreda,1,200,Pico Truncado - Colonia Las Heras - Perito Moreno - Rio Mayo - Alto Rio Senguer - J. de San Martin - Tecka - Esquel - Epuyen - El Foyel - San Carlos de Bariloche - Dina Huapi - Piedra del Aguila - Picun Leufu - Arroyito (Nqn) - Neuquen - Sargento Vidal - Catriel - Santa Isabel - Victorica - Winifreda
+R171,Luis Piedrabuena,Trenque Lauquen,1,100,Luis Piedrabuena - Puerto San Julian - Jaramillo - Caleta Olivia - Comodoro Rivadavia - Rawson - Trelew - Puerto Madryn - Sierra Grande - San Antonio Oeste - Aguada Cecilio - Dina Huapi - Piedra del Aguila - Picun Leufu - Arroyito (Nqn) - Neuquen - Sargento Vidal - Catriel - Santa Isabel - Victorica - Winifreda - Santa Rosa (LP) - Trenque Lauquen
+R172,Esquel,General Roca,1,300,Esquel - Epuyen - El Foyel - San Carlos de Bariloche - Dina Huapi - Piedra del Aguila - Picun Leufu - Arroyito (Nqn) - Neuquen - General Roca
+R173,Catriel,Rio Mayo,1,300,Catriel - Sargento Vidal - Neuquen - Arroyito (Nqn) - Picun Leufu - Piedra del Aguila - Dina Huapi - San Carlos de Bariloche - El Foyel - Epuyen - Esquel - Tecka - J. de San Martin - Alto Rio Senguer - Rio Mayo
+R174,Corrientes,Santa Fe,1,300,Corrientes - Resistencia - Vera - Tostado - Ceres - Sunchales - Rafaela - Santa Fe
+R175,Tres lagos,Ituzaingo,1,300,Tres lagos - Gobernador Gregores - Bajo Caracoles - Perito Moreno - Rio Mayo - Alto Rio Senguer - J. de San Martin - Tecka - Esquel - Epuyen - El Foyel - San Carlos de Bariloche - Dina Huapi - Villa La Angostura - San Martin de los Andes - Junin de los Andes - Zapala - Chos Malal - Buta Ranquil - Malargue - San Rafael - Tunuyan - Mendoza - Santa Rosa (Mza) - San Luis - V. Mercedes - Chucul - Hernando - Corralito - Cordoba - Arroyito - San Francisco - Rafaela - Sunchales - Ceres - Tostado - Vera - Resistencia - Corrientes - Ituzaingo
+R176,Junin de los Andes,Lib Gral San Martin,1,100,Junin de los Andes - Zapala - Chos Malal - Buta Ranquil - Malargue - San Rafael - Gral. Alvear - Santa Isabel - Victorica - Winifreda - Santa Rosa (LP) - Trenque Lauquen - Pehuajo - 9 De Julio - Bragado - Chivilcoy - Mercedes - Lujan - Cañuelas - Abasto - La Plata - CABA - Benavidez - Campana - Zarate - Concepcion del Uruguay - Concordia - Paso de Los Libres - San Jose - Posadas - Ituzaingo - Corrientes - Resistencia - Formosa - Las Lomitas - Cap Juan Page - Embarcacion - Lib Gral San Martin
+R177,La Falda,La Paz,1,200,La Falda - Cordoba - Arroyito - San Francisco - Rafaela - Santa Fe - Parana - La Paz
+R178,Arrecifes,Sunchales,1,200,Arrecifes - Pergamino - Rosario - San Fabian - Santa Fe - Rafaela - Sunchales
+R179,Exaltacion de la Cruz,Bolivar,1,200,Exaltacion de la Cruz - Benavidez - CABA - La Plata - Abasto - Cañuelas - Lujan - Mercedes - Chivilcoy - Bragado - 9 De Julio - Pehuajo - Bolivar
+R180,San Francisco,V. Mercedes,1,300,San Francisco - Arroyito - Cordoba - Corralito - Hernando - Chucul - V. Mercedes
+R181,Santa Fe,Bolivar,1,200,Santa Fe - Parana - Concordia - Concepcion del Uruguay - Zarate - Campana - Benavidez - Marcos Paz - Abasto - Chascomus - Dolores - Las Armas - Mar Del Plata - Tandil - Azul - Olavarria - Bolivar
+R182,San Marcos,San Carlos de Bariloche,1,400,San Marcos - Leones - Cañada De Gomez - Rosario - San Nicolas de los Arroyos - San Pedro BsAs - Baradero - Zarate - Campana - Benavidez - Marcos Paz - Abasto - Chascomus - Dolores - Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca - Viedma - San Antonio Oeste - Aguada Cecilio - Dina Huapi - San Carlos de Bariloche
+R183,San Sebastian,CABA,1,200,San Sebastian - Estacion Cullen - El Condor - Rio Gallegos - Luis Piedrabuena - Puerto San Julian - Jaramillo - Caleta Olivia - Comodoro Rivadavia - Rawson - Trelew - Puerto Madryn - Sierra Grande - San Antonio Oeste - General Conesa - Rio Colorado - Algarrobo - Bahia Blanca - Tres Arroyos - Mar Del Plata - Pinamar - Las Toninas - Abasto - Marcos Paz - Benavidez - CABA
+R184,Mercedes,San Pedro BsAs,1,300,Mercedes - Lujan - Benavidez - Campana - Zarate - Baradero - San Pedro BsAs
+R185,Colonia Las Heras,Santa Rosa (Mza),1,100,Colonia Las Heras - Perito Moreno - Rio Mayo - Alto Rio Senguer - J. de San Martin - Tecka - Esquel - Epuyen - El Foyel - San Carlos de Bariloche - Dina Huapi - Villa La Angostura - San Martin de los Andes - Junin de los Andes - Zapala - Chos Malal - Buta Ranquil - Malargue - San Rafael - Tunuyan - Mendoza - Santa Rosa (Mza)
+R186,Pinamar,9 De Julio,1,100,Pinamar - Las Toninas - Abasto - Cañuelas - Lujan - Mercedes - Chivilcoy - Bragado - 9 De Julio
+R187,Tostado,Parana,1,100,Tostado - Ceres - Sunchales - Rafaela - Santa Fe - Parana
+R188,Arrecifes,San Juan,1,400,Arrecifes - San Antonio De Areco - Benavidez - Campana - Zarate - Baradero - San Pedro BsAs - San Nicolas de los Arroyos - Rosario - San Fabian - Santa Fe - Rafaela - San Francisco - Arroyito - Cordoba - La Falda - Serrezuela - San Juan
+R189,La Falda,Embarcacion,1,200,La Falda - Cordoba - Patquia - Chilecito - Belen - Santa Maria - San Antonio de los Cobres - La Quiaca - Humahuaca - San Salvador de Jujuy - San Pedro Jujuy - Lib Gral San Martin - Embarcacion
+R190,Colonia Las Heras,Trelew,1,400,Colonia Las Heras - Pico Truncado - Caleta Olivia - Comodoro Rivadavia - Rawson - Trelew
+R191,Ceres,Epuyen,1,100,Ceres - Sunchales - Rafaela - San Francisco - Arroyito - Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa (Mza) - Mendoza - Tunuyan - San Rafael - Malargue - Buta Ranquil - Chos Malal - Zapala - Junin de los Andes - San Martin de los Andes - Villa La Angostura - Dina Huapi - San Carlos de Bariloche - El Foyel - Epuyen
+R192,Bragado,Lib Gral San Martin,1,400,Bragado - Chivilcoy - Mercedes - Lujan - Benavidez - San Antonio De Areco - Arrecifes - Pergamino - Rosario - San Fabian - Santa Fe - Rafaela - Sunchales - Ceres - Tostado - Añatuya - Santiago del Estero - San Miguel de Tucuman - Choromoro - San Jose de Metan - Salta - San Salvador de Jujuy - San Pedro Jujuy - Lib Gral San Martin
+R193,Resistencia,Campana,1,400,Resistencia - Corrientes - Bellavista - Goya - La Paz - Parana - Concordia - Concepcion del Uruguay - Zarate - Campana
+R194,Esperanza (StaCruz),Epuyen,1,300,Esperanza (StaCruz) - El Calafate - Tres lagos - Gobernador Gregores - Bajo Caracoles - Perito Moreno - Rio Mayo - Alto Rio Senguer - J. de San Martin - Tecka - Esquel - Epuyen
+R195,Puerto San Julian,San Rafael,1,100,Puerto San Julian - Luis Piedrabuena - Rio Gallegos - Esperanza (StaCruz) - El Calafate - Tres lagos - Gobernador Gregores - Bajo Caracoles - Perito Moreno - Rio Mayo - Alto Rio Senguer - J. de San Martin - Tecka - Esquel - Epuyen - El Foyel - San Carlos de Bariloche - Dina Huapi - Villa La Angostura - San Martin de los Andes - Junin de los Andes - Zapala - Chos Malal - Buta Ranquil - Malargue - San Rafael
+R196,San Marcos,La Plata,1,200,San Marcos - Leones - Cañada De Gomez - Rosario - Pergamino - Arrecifes - San Antonio De Areco - Benavidez - CABA - La Plata
+R197,Mendoza,Rio Gallegos,1,400,Mendoza - Tunuyan - San Rafael - Malargue - Buta Ranquil - Chos Malal - Zapala - Junin de los Andes - San Martin de los Andes - Villa La Angostura - Dina Huapi - San Carlos de Bariloche - El Foyel - Epuyen - Esquel - Tecka - J. de San Martin - Alto Rio Senguer - Rio Mayo - Perito Moreno - Bajo Caracoles - Gobernador Gregores - Tres lagos - El Calafate - Esperanza (StaCruz) - Rio Gallegos
+R198,Santiago del Estero,El Condor,1,300,Santiago del Estero - Frias - Dean Funes - Jesus Maria - Cordoba - Manfredi - Villa Maria - San Marcos - Leones - Cañada De Gomez - Rosario - San Nicolas de los Arroyos - San Pedro BsAs - Baradero - Zarate - Campana - Benavidez - Marcos Paz - Abasto - Chascomus - Dolores - Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca - Viedma - San Antonio Oeste - Sierra Grande - Puerto Madryn - Trelew - Rawson - Comodoro Rivadavia - Caleta Olivia - Jaramillo - Puerto San Julian - Luis Piedrabuena - Rio Gallegos - El Condor
+R199,Ceres,V. Mercedes,1,100,Ceres - Sunchales - Rafaela - San Francisco - Arroyito - Cordoba - Corralito - Hernando - Chucul - V. Mercedes
+R200,Jaramillo,Tres lagos,1,200,Jaramillo - Puerto San Julian - Luis Piedrabuena - Rio Gallegos - Esperanza (StaCruz) - El Calafate - Tres lagos

@@ -1,0 +1,201 @@
+Nombre_Lightpath,ID_Demanda,Velocidad,Instancia
+roadm Gobernador Gregores-roadm Santa Rosa (LP)_100G_ref1,R1,100G,1
+roadm Cap Juan Page-roadm La Paz_200G_ref2,R2,200G,1
+roadm San Pedro Jujuy-roadm Puerto Madryn_400G_ref3,R3,400G,1
+roadm Pehuajo-roadm Bolivar_400G_ref4,R4,400G,1
+roadm Frias-roadm V. Mercedes_100G_ref5,R5,100G,1
+roadm Presidencia Roque Saenz Peña-roadm Posadas_100G_ref6,R6,100G,1
+roadm Jaramillo-roadm San Antonio de los Cobres_300G_ref7,R7,300G,1
+roadm Posadas-roadm San Carlos de Bariloche_300G_ref8,R8,300G,1
+roadm Winifreda-roadm J. de San Martin_400G_ref9,R9,400G,1
+roadm San Miguel de Tucuman-roadm Rio Colorado_300G_ref10,R10,300G,1
+roadm El Calafate-roadm Esperanza (StaCruz)_200G_ref11,R11,200G,1
+roadm Baradero-roadm Catriel_200G_ref12,R12,200G,1
+roadm Cap Juan Page-roadm Salta_200G_ref13,R13,200G,1
+roadm Bahia Blanca-roadm La Plata_200G_ref14,R14,200G,1
+roadm Rio Gallegos-roadm Las Toninas_200G_ref15,R15,200G,1
+roadm Manfredi-roadm Chilecito_100G_ref16,R16,100G,1
+roadm San Nicolas de los Arroyos-roadm Vera_100G_ref17,R17,100G,1
+roadm La Quiaca-roadm General Roca_300G_ref18,R18,300G,1
+roadm Rio Mayo-roadm Corralito_200G_ref19,R19,200G,1
+roadm Winifreda-roadm Serrezuela_200G_ref20,R20,200G,1
+roadm Bolivar-roadm Rio Grande_200G_ref21,R21,200G,1
+roadm Leones-roadm San Pedro BsAs_100G_ref22,R22,100G,1
+roadm Puerto Madryn-roadm Aristobulo del Valle_100G_ref23,R23,100G,1
+roadm Hernando-roadm Buta Ranquil_400G_ref24,R24,400G,1
+roadm General Roca-roadm Goya_200G_ref25,R25,200G,1
+roadm Rio Mayo-roadm Campana_300G_ref26,R26,300G,1
+roadm San Antonio Oeste-roadm San Jose de Metan_100G_ref27,R27,100G,1
+roadm Zapala-roadm Ceres_100G_ref28,R28,100G,1
+roadm Picun Leufu-roadm Rio Gallegos_200G_ref29,R29,200G,1
+roadm Tostado-roadm Mercedes_100G_ref30,R30,100G,1
+roadm Aristobulo del Valle-roadm Clorinda_200G_ref31,R31,200G,1
+roadm Humahuaca-roadm Puerto Iguazu_400G_ref32,R32,400G,1
+roadm Santa Maria-roadm Las Toninas_100G_ref33,R33,100G,1
+roadm Usuahia-roadm San Pedro Jujuy_200G_ref34,R34,200G,1
+roadm Perito Moreno-roadm Mercedes_200G_ref35,R35,200G,1
+roadm La Rioja-roadm San Luis_400G_ref36,R36,400G,1
+roadm San Antonio de los Cobres-roadm Choele Choel_400G_ref37,R37,400G,1
+roadm Dean Funes-roadm Corralito_200G_ref38,R38,200G,1
+roadm Winifreda-roadm San Jose de Jachal_100G_ref39,R39,100G,1
+roadm Epuyen-roadm Chascomus_200G_ref40,R40,200G,1
+roadm Vera-roadm El Calafate_200G_ref41,R41,200G,1
+roadm Rio Gallegos-roadm Vera_200G_ref42,R42,200G,1
+roadm Cañuelas-roadm Cordoba_400G_ref43,R43,400G,1
+roadm Esquel-roadm Zarate_100G_ref44,R44,100G,1
+roadm San Jose de Metan-roadm Bahia Blanca_200G_ref45,R45,200G,1
+roadm Santa Isabel-roadm Salta_100G_ref46,R46,100G,1
+roadm San Antonio De Areco-roadm Exaltacion de la Cruz_200G_ref47,R47,200G,1
+roadm Santiago del Estero-roadm Goya_100G_ref48,R48,100G,1
+roadm Bajo Caracoles-roadm Jardin America_400G_ref49,R49,400G,1
+roadm San Rafael-roadm Bahia Blanca_300G_ref50,R50,300G,1
+roadm Chascomus-roadm Victorica_200G_ref51,R51,200G,1
+roadm Las Lomitas-roadm Cordoba_400G_ref52,R52,400G,1
+roadm Leones-roadm Usuahia_200G_ref53,R53,200G,1
+roadm Posadas-roadm San Salvador de Jujuy_100G_ref54,R54,100G,1
+roadm Concepcion del Uruguay-roadm Zarate_200G_ref55,R55,200G,1
+roadm La Plata-roadm San Carlos de Bariloche_100G_ref56,R56,100G,1
+roadm Tostado-roadm Caleta Olivia_300G_ref57,R57,300G,1
+roadm El Condor-roadm Picun Leufu_100G_ref58,R58,100G,1
+roadm General Conesa-roadm Paso de Los Libres_400G_ref59,R59,400G,1
+roadm San Martin de los Andes-roadm Tostado_200G_ref60,R60,200G,1
+roadm Chacabuco-roadm Esquel_200G_ref61,R61,200G,1
+roadm San Jose de Metan-roadm Paso de Los Libres_100G_ref62,R62,100G,1
+roadm Chacabuco-roadm Sunchales_400G_ref63,R63,400G,1
+roadm Caleta Olivia-roadm Exaltacion de la Cruz_400G_ref64,R64,400G,1
+roadm El Foyel-roadm Lib Gral San Martin_400G_ref65,R65,400G,1
+roadm Salvador Mazza-roadm Ceres_400G_ref66,R66,400G,1
+roadm Bahia Blanca-roadm Epuyen_300G_ref67,R67,300G,1
+roadm Corrientes-roadm Puerto Madryn_200G_ref68,R68,200G,1
+roadm Sunchales-roadm Colonia Las Heras_100G_ref69,R69,100G,1
+roadm El Calafate-roadm Usuahia_200G_ref70,R70,200G,1
+roadm San Jose de Jachal-roadm Jaramillo_300G_ref71,R71,300G,1
+roadm Tres Arroyos-roadm Pinamar_300G_ref72,R72,300G,1
+roadm Catamarca-roadm La Plata_200G_ref73,R73,200G,1
+roadm Resistencia-roadm Salvador Mazza_200G_ref74,R74,200G,1
+roadm Dina Huapi-roadm Clorinda_400G_ref75,R75,400G,1
+roadm La Rioja-roadm Presidencia Roque Saenz Peña_300G_ref76,R76,300G,1
+roadm Arroyito-roadm San Salvador de Jujuy_300G_ref77,R77,300G,1
+roadm Chilecito-roadm V. Mercedes_200G_ref78,R78,200G,1
+roadm Luis Piedrabuena-roadm Salvador Mazza_400G_ref79,R79,400G,1
+roadm Epuyen-roadm Lib Gral San Martin_300G_ref80,R80,300G,1
+roadm Jardin America-roadm Chivilcoy_100G_ref81,R81,100G,1
+roadm Santiago del Estero-roadm Vera_300G_ref82,R82,300G,1
+roadm San Carlos de Bariloche-roadm Vera_300G_ref83,R83,300G,1
+roadm San Jose de Jachal-roadm Gobernador Gregores_300G_ref84,R84,300G,1
+roadm Puerto San Julian-roadm San Nicolas de los Arroyos_200G_ref85,R85,200G,1
+roadm Resistencia-roadm El Foyel_300G_ref86,R86,300G,1
+roadm Perito Moreno-roadm Caleta Olivia_200G_ref87,R87,200G,1
+roadm Peru-roadm Chivilcoy_300G_ref88,R88,300G,1
+roadm Formosa-roadm Patquia_300G_ref89,R89,300G,1
+roadm Dean Funes-roadm Choromoro_100G_ref90,R90,100G,1
+roadm Bolivar-roadm Marcos Paz_200G_ref91,R91,200G,1
+roadm El Calafate-roadm Estacion Cullen_200G_ref92,R92,200G,1
+roadm Luis Piedrabuena-roadm San Marcos_300G_ref93,R93,300G,1
+roadm Santa Maria-roadm CABA_400G_ref94,R94,400G,1
+roadm Luis Piedrabuena-roadm Chacabuco_300G_ref95,R95,300G,1
+roadm Chascomus-roadm San Carlos de Bariloche_400G_ref96,R96,400G,1
+roadm Winifreda-roadm Epuyen_400G_ref97,R97,400G,1
+roadm Arroyito (Nqn)-roadm Paso de Los Libres_400G_ref98,R98,400G,1
+roadm Estacion Cullen-roadm Rio Grande_400G_ref99,R99,400G,1
+roadm Campana-roadm San Fabian_200G_ref100,R100,200G,1
+roadm Salvador Mazza-roadm Catriel_300G_ref101,R101,300G,1
+roadm Patquia-roadm San Salvador de Jujuy_100G_ref102,R102,100G,1
+roadm Victorica-roadm Perito Moreno_200G_ref103,R103,200G,1
+roadm Buta Ranquil-roadm Marcos Paz_400G_ref104,R104,400G,1
+roadm Zapala-roadm Bajo Caracoles_100G_ref105,R105,100G,1
+roadm Perito Moreno-roadm Dolores_100G_ref106,R106,100G,1
+roadm Viedma-roadm Leones_100G_ref107,R107,100G,1
+roadm Rio Mayo-roadm Bolivar_200G_ref108,R108,200G,1
+roadm Tunuyan-roadm Santa Fe_200G_ref109,R109,200G,1
+roadm San Martin de los Andes-roadm Peru_100G_ref110,R110,100G,1
+roadm El Condor-roadm Clorinda_400G_ref111,R111,400G,1
+roadm Victorica-roadm Baradero_200G_ref112,R112,200G,1
+roadm Embarcacion-roadm Baradero_100G_ref113,R113,100G,1
+roadm Cañada De Gomez-roadm Rawson_200G_ref114,R114,200G,1
+roadm Patquia-roadm San Salvador de Jujuy_300G_ref115,R115,300G,1
+roadm Azul-roadm San Martin de los Andes_200G_ref116,R116,200G,1
+roadm Cap Juan Page-roadm Exaltacion de la Cruz_400G_ref117,R117,400G,1
+roadm Neuquen-roadm Picun Leufu_200G_ref118,R118,200G,1
+roadm Azul-roadm Tres lagos_400G_ref119,R119,400G,1
+roadm Colonia Las Heras-roadm Gobernador Gregores_200G_ref120,R120,200G,1
+roadm Zarate-roadm San Marcos_400G_ref121,R121,400G,1
+roadm San Jose de Metan-roadm General Roca_300G_ref122,R122,300G,1
+roadm Pico Truncado-roadm Chacabuco_400G_ref123,R123,400G,1
+roadm Chacabuco-roadm Embarcacion_200G_ref124,R124,200G,1
+roadm La Quiaca-roadm Concordia_300G_ref125,R125,300G,1
+roadm Rufino-roadm Sargento Vidal_100G_ref126,R126,100G,1
+roadm Rio Mayo-roadm Buta Ranquil_100G_ref127,R127,100G,1
+roadm CABA-roadm Tres Arroyos_100G_ref128,R128,100G,1
+roadm San Martin de los Andes-roadm Victorica_100G_ref129,R129,100G,1
+roadm San Sebastian-roadm Chucul_300G_ref130,R130,300G,1
+roadm Junin de los Andes-roadm Comodoro Rivadavia_400G_ref131,R131,400G,1
+roadm Jesus Maria-roadm Jardin America_200G_ref132,R132,200G,1
+roadm Jardin America-roadm Chascomus_400G_ref133,R133,400G,1
+roadm Leones-roadm Santiago del Estero_400G_ref134,R134,400G,1
+roadm Benavidez-roadm General Roca_300G_ref135,R135,300G,1
+roadm San Fabian-roadm San Luis_300G_ref136,R136,300G,1
+roadm Tecka-roadm Arrecifes_400G_ref137,R137,400G,1
+roadm Añatuya-roadm Leones_200G_ref138,R138,200G,1
+roadm Vera-roadm Chascomus_200G_ref139,R139,200G,1
+roadm San Carlos de Bariloche-roadm Arrecifes_100G_ref140,R140,100G,1
+roadm Olavarria-roadm Chivilcoy_300G_ref141,R141,300G,1
+roadm Rosario-roadm Formosa_100G_ref142,R142,100G,1
+roadm Abasto-roadm Chivilcoy_400G_ref143,R143,400G,1
+roadm Tecka-roadm Rio Gallegos_200G_ref144,R144,200G,1
+roadm Aguada Cecilio-roadm Ceres_200G_ref145,R145,200G,1
+roadm Tres Arroyos-roadm Las Armas_300G_ref146,R146,300G,1
+roadm Hernando-roadm Humahuaca_200G_ref147,R147,200G,1
+roadm Chucul-roadm Caleta Olivia_400G_ref148,R148,400G,1
+roadm Lib Gral San Martin-roadm Mercedes_300G_ref149,R149,300G,1
+roadm Concepcion-roadm San Jose_400G_ref150,R150,400G,1
+roadm Choele Choel-roadm Las Lomitas_400G_ref151,R151,400G,1
+roadm Gobernador Gregores-roadm Bolivar_200G_ref152,R152,200G,1
+roadm Jesus Maria-roadm 9 De Julio_100G_ref153,R153,100G,1
+roadm Parana-roadm Corralito_300G_ref154,R154,300G,1
+roadm El Foyel-roadm Salta_200G_ref155,R155,200G,1
+roadm Cordoba-roadm Posadas_400G_ref156,R156,400G,1
+roadm San Nicolas de los Arroyos-roadm Las Lomitas_100G_ref157,R157,100G,1
+roadm San Juan-roadm Jaramillo_100G_ref158,R158,100G,1
+roadm Santa Isabel-roadm Rosario_200G_ref159,R159,200G,1
+roadm Tandil-roadm General Alvear_400G_ref160,R160,400G,1
+roadm Peru-roadm Belen_200G_ref161,R161,200G,1
+roadm San Nicolas de los Arroyos-roadm Leones_400G_ref162,R162,400G,1
+roadm Chacabuco-roadm Marcos Paz_300G_ref163,R163,300G,1
+roadm Catamarca-roadm Buta Ranquil_300G_ref164,R164,300G,1
+roadm Santa Rosa (Mza)-roadm Parana_300G_ref165,R165,300G,1
+roadm Patquia-roadm San Francisco_100G_ref166,R166,100G,1
+roadm Arrecifes-roadm Corralito_100G_ref167,R167,100G,1
+roadm General Roca-roadm Puerto Madryn_300G_ref168,R168,300G,1
+roadm San Jose de Jachal-roadm San Antonio Oeste_200G_ref169,R169,200G,1
+roadm Pico Truncado-roadm Winifreda_200G_ref170,R170,200G,1
+roadm Luis Piedrabuena-roadm Trenque Lauquen_100G_ref171,R171,100G,1
+roadm Esquel-roadm General Roca_300G_ref172,R172,300G,1
+roadm Catriel-roadm Rio Mayo_300G_ref173,R173,300G,1
+roadm Corrientes-roadm Santa Fe_300G_ref174,R174,300G,1
+roadm Tres lagos-roadm Ituzaingo_300G_ref175,R175,300G,1
+roadm Junin de los Andes-roadm Lib Gral San Martin_100G_ref176,R176,100G,1
+roadm La Falda-roadm La Paz_200G_ref177,R177,200G,1
+roadm Arrecifes-roadm Sunchales_200G_ref178,R178,200G,1
+roadm Exaltacion de la Cruz-roadm Bolivar_200G_ref179,R179,200G,1
+roadm San Francisco-roadm V. Mercedes_300G_ref180,R180,300G,1
+roadm Santa Fe-roadm Bolivar_200G_ref181,R181,200G,1
+roadm San Marcos-roadm San Carlos de Bariloche_400G_ref182,R182,400G,1
+roadm San Sebastian-roadm CABA_200G_ref183,R183,200G,1
+roadm Mercedes-roadm San Pedro BsAs_300G_ref184,R184,300G,1
+roadm Colonia Las Heras-roadm Santa Rosa (Mza)_100G_ref185,R185,100G,1
+roadm Pinamar-roadm 9 De Julio_100G_ref186,R186,100G,1
+roadm Tostado-roadm Parana_100G_ref187,R187,100G,1
+roadm Arrecifes-roadm San Juan_400G_ref188,R188,400G,1
+roadm La Falda-roadm Embarcacion_200G_ref189,R189,200G,1
+roadm Colonia Las Heras-roadm Trelew_400G_ref190,R190,400G,1
+roadm Ceres-roadm Epuyen_100G_ref191,R191,100G,1
+roadm Bragado-roadm Lib Gral San Martin_400G_ref192,R192,400G,1
+roadm Resistencia-roadm Campana_400G_ref193,R193,400G,1
+roadm Esperanza (StaCruz)-roadm Epuyen_300G_ref194,R194,300G,1
+roadm Puerto San Julian-roadm San Rafael_100G_ref195,R195,100G,1
+roadm San Marcos-roadm La Plata_200G_ref196,R196,200G,1
+roadm Mendoza-roadm Rio Gallegos_400G_ref197,R197,400G,1
+roadm Santiago del Estero-roadm El Condor_300G_ref198,R198,300G,1
+roadm Ceres-roadm V. Mercedes_100G_ref199,R199,100G,1
+roadm Jaramillo-roadm Tres lagos_200G_ref200,R200,200G,1

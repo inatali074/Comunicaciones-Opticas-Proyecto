@@ -1,513 +1,513 @@
-"Region"	"Origen"	"Destino"	"Cantidad de Enlaces"	"Velocidad [Gbps]"	"Ruta"	"Distancia_km"	"GSNR_Total_dB"	"Umbral_OSNR_dB"	"Factible"	"Necesito_Regeneracion"	"Reg_Factible"	"Reg_Count"	"Ruta_Regenerada"	"Nodos_Regeneradores"	"Necesito Bajada"	"Factible con bajada"	"Velocidad_Ajustada [Gbps]"	"GSNR_Total_dB"	"Umbral_OSNR_dB"
-"Norte"	"Mendoza"	"San Juan"	"1"	"200"	"Mendoza - San Juan"	"237"	"24.86"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.86"	"20.50"
-"Norte"	"Mendoza"	"San Jose de Jachal"	"1"	"200"	"Mendoza - San Juan - San Jose de Jachal"	"396"	"22.56"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.56"	"20.50"
-"Norte"	"Mendoza"	"Patquia"	"1"	"200"	"Mendoza - San Juan - San Jose de Jachal - Patquia"	"629"	"8.13"	"20.50"	"NO"	"SI"	"SI"	"1"	"Mendoza -> Villa Tulumaya (27.97 dB) -> Villa Media Agua (24.76 dB) -> San Juan (23.16 dB) -> San Jose de Jachal (21.15 dB) [REG]-> Patquia (23.96 dB)"	"San Jose de Jachal"	"NO"	"SI"	"200"	"8.13"	"20.50"
-"Norte"	"Mendoza"	"Chilecito"	"1"	"200"	"Mendoza - San Juan - San Jose de Jachal - Patquia - Chilecito"	"793"	"8.03"	"20.50"	"NO"	"SI"	"SI"	"1"	"Mendoza -> Villa Tulumaya (27.97 dB) -> Villa Media Agua (24.76 dB) -> San Juan (23.16 dB) -> San Jose de Jachal (21.15 dB) [REG]-> Patquia (23.96 dB) -> Chilecito (21.41 dB)"	"San Jose de Jachal"	"NO"	"SI"	"200"	"8.03"	"20.50"
-"Norte"	"Mendoza"	"Belen"	"1"	"200"	"Mendoza - San Juan - San Jose de Jachal - Patquia - Chilecito - Belen"	"1009.01"	"7.97"	"20.50"	"NO"	"SI"	"SI"	"2"	"Mendoza -> Villa Tulumaya (27.97 dB) -> Villa Media Agua (24.76 dB) -> San Juan (23.16 dB) -> San Jose de Jachal (21.15 dB) [REG]-> Patquia (23.96 dB) -> Chilecito (21.41 dB) [REG]-> Belen (24.06 dB)"	"San Jose de Jachal - Chilecito"	"NO"	"SI"	"200"	"7.97"	"20.50"
-"Norte"	"Mendoza"	"Santa Maria"	"1"	"200"	"Mendoza - San Juan - San Jose de Jachal - Patquia - Chilecito - Belen - Santa Maria"	"1179.01"	"7.94"	"20.50"	"NO"	"SI"	"SI"	"2"	"Mendoza -> Villa Tulumaya (27.97 dB) -> Villa Media Agua (24.76 dB) -> San Juan (23.16 dB) -> San Jose de Jachal (21.15 dB) [REG]-> Patquia (23.96 dB) -> Chilecito (21.41 dB) [REG]-> Belen (24.06 dB) -> Santa Maria (21.75 dB)"	"San Jose de Jachal - Chilecito"	"NO"	"SI"	"200"	"7.94"	"20.50"
-"Norte"	"San Jose de Jachal"	"San Miguel de Tucumán"	"1"	"200"	"San Jose de Jachal - Patquia - Chilecito - Belen - Santa Maria - San Miguel de Tucuman"	"968.01"	"8.05"	"20.50"	"NO"	"SI"	"SI"	"2"	"San Jose de Jachal -> Patquia (23.96 dB) -> Chilecito (21.41 dB) [REG]-> Belen (24.06 dB) -> Santa Maria (21.75 dB) [REG]-> San Miguel de Tucuman (24.51 dB)"	"Chilecito - Santa Maria"	"NO"	"SI"	"200"	"8.05"	"20.50"
-"Norte"	"Patquia"	"San Miguel de Tucumán"	"1"	"200"	"Patquia - Chilecito - Belen - Santa Maria - San Miguel de Tucuman"	"735.01"	"20.78"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"20.78"	"20.50"
-"Norte"	"Chilecito"	"San Miguel de Tucumán"	"1"	"200"	"Chilecito - Belen - Santa Maria - San Miguel de Tucuman"	"571.01"	"23.15"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.15"	"20.50"
-"Norte"	"Belen"	"San Miguel de Tucumán"	"1"	"200"	"Belen - Santa Maria - San Miguel de Tucuman"	"355"	"25.49"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.49"	"20.50"
-"Norte"	"Santa Maria"	"San Miguel de Tucumán"	"1"	"200"	"Santa Maria - San Miguel de Tucuman"	"185"	"28.06"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"28.06"	"20.50"
-"Norte"	"San Juan"	"San Jose de Jachal"	"4"	"100"	"San Juan - San Jose de Jachal"	"159"	"26.11"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"26.11"	"11.80"
-"Norte"	"San Jose de Jachal"	"Patquia"	"4"	"100"	"San Jose de Jachal - Patquia"	"233"	"8.28"	"11.80"	"NO"	"SI"	"SI"	"0"	"San Jose de Jachal -> Patquia (23.96 dB)"		"NO"	"SI"	"100"	"8.28"	"11.80"
-"Norte"	"Patquia"	"Chilecito"	"4"	"100"	"Patquia - Chilecito"	"164"	"24.34"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"24.34"	"11.80"
-"Norte"	"Chilecito"	"Belen"	"4"	"100"	"Chilecito - Belen"	"216.01"	"26.63"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"26.63"	"11.80"
-"Norte"	"Belen"	"Santa Maria"	"4"	"100"	"Belen - Santa Maria"	"170"	"28.47"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.47"	"11.80"
-"Norte"	"Santa Maria"	"San Miguel de Tucumán"	"4"	"100"	"Santa Maria - San Miguel de Tucuman"	"185"	"28.06"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.06"	"11.80"
-"Norte"	"Mendoza"	"Villa Tulumaya"	"1"	"200"	"Mendoza - Villa Tulumaya"	"45"	"30.76"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"30.76"	"20.50"
-"Norte"	"Mendoza"	"Media Agua"	"1"	"200"	"Mendoza - Villa Tulumaya - Media Agua"	"145"	"26.10"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"26.10"	"20.50"
-"Norte"	"Mendoza"	"San Juan"	"1"	"200"	"Mendoza - Villa Tulumaya - Media Agua - San Juan"	"237"	"24.86"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.86"	"20.50"
-"Norte"	"Mendoza"	"Serrezuela"	"1"	"200"	"Mendoza - Villa Tulumaya - Media Agua - San Juan - Serrezuela"	"628"	"22.27"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.27"	"20.50"
-"Norte"	"Mendoza"	"La Falda"	"1"	"200"	"Mendoza - Villa Tulumaya - Media Agua - San Juan - Serrezuela - La Falda"	"773"	"21.46"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"21.46"	"20.50"
-"Norte"	"Villa Tulumaya"	"Cordoba"	"1"	"200"	"Villa Tulumaya - Media Agua - San Juan - Serrezuela - La Falda - Cordoba"	"813"	"21.21"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"21.21"	"20.50"
-"Norte"	"Media Agua"	"Cordoba"	"1"	"200"	"Media Agua - San Juan - Serrezuela - La Falda - Cordoba"	"713"	"22.25"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.25"	"20.50"
-"Norte"	"San Juan"	"Cordoba"	"1"	"200"	"San Juan - Serrezuela - La Falda - Cordoba"	"621"	"22.89"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.89"	"20.50"
-"Norte"	"Serrezuela"	"Cordoba"	"1"	"200"	"Serrezuela - La Falda - Cordoba"	"230"	"26.05"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"26.05"	"20.50"
-"Norte"	"La Falda"	"Cordoba"	"1"	"200"	"La Falda - Cordoba"	"85"	"28.96"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"28.96"	"20.50"
-"Norte"	"Mendoza"	"Villa Tulumaya"	"4"	"100"	"Mendoza - Villa Tulumaya"	"45"	"30.76"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"30.76"	"11.80"
-"Norte"	"Villa Tulumaya"	"Media Agua"	"4"	"100"	"Villa Tulumaya - Media Agua"	"100"	"27.51"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.51"	"11.80"
-"Norte"	"Media Agua"	"San Juan"	"4"	"100"	"Media Agua - San Juan"	"92"	"30.15"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"30.15"	"11.80"
-"Norte"	"San Juan"	"Serrezuela"	"4"	"100"	"San Juan - Serrezuela"	"391"	"25.49"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.49"	"11.80"
-"Norte"	"Serrezuela"	"La Falda"	"4"	"100"	"Serrezuela - La Falda"	"145"	"28.64"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.64"	"11.80"
-"Norte"	"La Falda"	"Cordoba"	"4"	"100"	"La Falda - Cordoba"	"85"	"28.96"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.96"	"11.80"
-"Norte"	"Tucuman"	"Concepcion"	"1"	"200"	"Tucuman - Concepcion"	"80"	"29.05"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"29.05"	"20.50"
-"Norte"	"Tucuman"	"Catamarca"	"1"	"200"	"Tucuman - Concepcion - Catamarca"	"237.8"	"23.77"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.77"	"20.50"
-"Norte"	"Tucuman"	"La Rioja"	"1"	"200"	"Tucuman - Concepcion - Catamarca - La Rioja"	"423.2"	"21.46"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"21.46"	"20.50"
-"Norte"	"Tucuman"	"Patquia"	"1"	"200"	"Tucuman - Concepcion - Catamarca - La Rioja - Patquia"	"503.2"	"20.84"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"20.84"	"20.50"
-"Norte"	"Concepcion"	"Cordoba"	"1"	"200"	"Concepcion - Catamarca - La Rioja - Cordoba"	"767.71"	"9.81"	"20.50"	"NO"	"SI"	"SI"	"1"	"Concepcion -> Catamarca (24.44 dB) -> La Rioja (21.72 dB) [REG]-> Cordoba (22.20 dB)"	"La Rioja"	"NO"	"SI"	"200"	"9.81"	"20.50"
-"Norte"	"Catamarca"	"Cordoba"	"1"	"200"	"Catamarca - La Rioja - Cordoba"	"609.91"	"9.94"	"20.50"	"NO"	"SI"	"SI"	"1"	"Catamarca -> La Rioja (24.24 dB) [REG]-> Cordoba (22.20 dB)"	"La Rioja"	"NO"	"SI"	"200"	"9.94"	"20.50"
-"Norte"	"La Rioja"	"Cordoba"	"1"	"200"	"La Rioja - Cordoba"	"424.51"	"10.06"	"20.50"	"NO"	"SI"	"SI"	"0"	"La Rioja -> Cordoba (22.20 dB)"		"NO"	"SI"	"200"	"10.06"	"20.50"
-"Norte"	"Patquia"	"Cordoba"	"1"	"200"	"Patquia - Cordoba"	"374.09"	"15.07"	"20.50"	"NO"	"SI"	"SI"	"0"	"Patquia -> Cordoba (21.63 dB)"		"NO"	"SI"	"200"	"15.07"	"20.50"
-"Norte"	"Serrezuela"	"Cordoba"	"1"	"200"	"Serrezuela - Cordoba"	"230"	"26.05"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"26.05"	"20.50"
-"Norte"	"Tucuman"	"Concepcion"	"4"	"100"	"Tucuman - Concepcion"	"80"	"29.05"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.05"	"11.80"
-"Norte"	"Concepcion"	"Catamarca"	"4"	"100"	"Concepcion - Catamarca"	"157.8"	"25.07"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.07"	"11.80"
-"Norte"	"Catamarca"	"La Rioja"	"4"	"100"	"Catamarca - La Rioja"	"185.4"	"25.08"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.08"	"11.80"
-"Norte"	"La Rioja"	"Patquia"	"4"	"100"	"La Rioja - Patquia"	"80"	"29.05"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.05"	"11.80"
-"Norte"	"Patquia"	"Serrezuela"	"4"	"100"	"Patquia - Serrezuela"	"226.3"	"20.79"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"20.79"	"11.80"
-"Norte"	"Serrezuela"	"Cordoba"	"4"	"100"	"Serrezuela - Cordoba"	"230"	"26.05"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"26.05"	"11.80"
-"Norte"	"Tucuman"	"Santiago del Estero"	"1"	"200"	"Tucuman - Santiago del Estero"	"193"	"25.94"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.94"	"20.50"
-"Norte"	"Tucuman"	"Frias"	"1"	"200"	"Tucuman - Santiago del Estero - Frias"	"365"	"23.42"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.42"	"20.50"
-"Norte"	"Tucuman"	"Dean Funes"	"1"	"200"	"Tucuman - Santiago del Estero - Frias - Dean Funes"	"592"	"22.05"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.05"	"20.50"
-"Norte"	"Tucuman"	"Jesus Maria"	"1"	"200"	"Tucuman - Santiago del Estero - Frias - Dean Funes - Jesus Maria"	"677"	"21.34"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"21.34"	"20.50"
-"Norte"	"Tucuman"	"Cordoba"	"1"	"200"	"Tucuman - Santiago del Estero - Frias - Dean Funes - Jesus Maria - Cordoba"	"731"	"20.93"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"20.93"	"20.50"
-"Norte"	"Santiago del Estero"	"Cordoba"	"1"	"200"	"Santiago del Estero - Frias - Dean Funes - Jesus Maria - Cordoba"	"538"	"22.45"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.45"	"20.50"
-"Norte"	"Frias"	"Cordoba"	"1"	"200"	"Frias - Dean Funes - Jesus Maria - Cordoba"	"366"	"24.34"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.34"	"20.50"
-"Norte"	"Dean Funes"	"Cordoba"	"1"	"200"	"Dean Funes - Jesus Maria - Cordoba"	"139"	"27"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"27"	"20.50"
-"Norte"	"Jesus Maria"	"Cordoba"	"1"	"200"	"Jesus Maria - Cordoba"	"54"	"30.54"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"30.54"	"20.50"
-"Norte"	"Tucuman"	"Santiago del Estero"	"4"	"100"	"Tucuman - Santiago del Estero"	"193"	"25.94"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.94"	"11.80"
-"Norte"	"Santiago del Estero"	"Frias"	"4"	"100"	"Santiago del Estero - Frias"	"172"	"26.65"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"26.65"	"11.80"
-"Norte"	"Frias"	"Dean Funes"	"4"	"100"	"Frias - Dean Funes"	"227"	"27.33"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.33"	"11.80"
-"Norte"	"Dean Funes"	"Jesus Maria"	"4"	"100"	"Dean Funes - Jesus Maria"	"85"	"28.96"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.96"	"11.80"
-"Norte"	"Jesus Maria"	"Cordoba"	"4"	"100"	"Jesus Maria - Cordoba"	"54"	"30.54"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"30.54"	"11.80"
-"Norte"	"San Miguel de Tucuman"	"Santa Maria"	"1"	"200"	"San Miguel de Tucuman - Santa Maria"	"185"	"28.06"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"28.06"	"20.50"
-"Norte"	"San Miguel de Tucuman"	"San Antonio de los Cobres"	"1"	"200"	"San Miguel de Tucuman - Santa Maria - San Antonio de los Cobres"	"530.9"	"22.80"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.80"	"20.50"
-"Norte"	"San Miguel de Tucuman"	"La Quiaca"	"1"	"200"	"San Miguel de Tucuman - Santa Maria - San Antonio de los Cobres - La Quiaca"	"838.7"	"19.39"	"20.50"	"NO"	"SI"	"SI"	"1"	"San Miguel de Tucuman -> Santa Maria (24.79 dB) -> San Antonio de los Cobres (20.97 dB) [REG]-> La Quiaca (22.30 dB)"	"San Antonio de los Cobres"	"NO"	"SI"	"200"	"19.39"	"20.50"
-"Norte"	"San Miguel de Tucuman"	"Humahuaca"	"1"	"200"	"San Miguel de Tucuman - Santa Maria - San Antonio de los Cobres - La Quiaca - Humahuaca"	"980.7"	"18.94"	"20.50"	"NO"	"SI"	"SI"	"1"	"San Miguel de Tucuman -> Santa Maria (24.79 dB) -> San Antonio de los Cobres (20.97 dB) [REG]-> La Quiaca (22.30 dB) -> Humahuaca (20.84 dB)"	"San Antonio de los Cobres"	"NO"	"SI"	"200"	"18.94"	"20.50"
-"Norte"	"San Antonio de los Cobres"	"San Salvador de Jujuy"	"1"	"200"	"San Antonio de los Cobres - La Quiaca - Humahuaca - San Salvador de Jujuy"	"577.8"	"20.66"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"20.66"	"20.50"
-"Norte"	"La Quiaca"	"San Salvador de Jujuy"	"1"	"200"	"La Quiaca - Humahuaca - San Salvador de Jujuy"	"270"	"26.33"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"26.33"	"20.50"
-"Norte"	"Humahuaca"	"San Salvador de Jujuy"	"1"	"200"	"Humahuaca - San Salvador de Jujuy"	"128"	"29.75"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"29.75"	"20.50"
-"Norte"	"Santa Maria"	"San Antonio de los Cobres"	"4"	"100"	"Santa Maria - San Antonio de los Cobres"	"345.9"	"24.15"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"24.15"	"11.80"
-"Norte"	"San Antonio de los Cobres"	"La Quiaca"	"4"	"100"	"San Antonio de los Cobres - La Quiaca"	"307.8"	"21.93"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"21.93"	"11.80"
-"Norte"	"La Quiaca"	"Humahuaca"	"4"	"100"	"La Quiaca - Humahuaca"	"142"	"28.46"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.46"	"11.80"
-"Norte"	"Humahuaca"	"San Salvador de Jujuy"	"4"	"100"	"Humahuaca - San Salvador de Jujuy"	"128"	"29.75"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.75"	"11.80"
-"Norte"	"Tucuman"	"San Jose de Metan"	"1"	"200"	"Tucuman - San Jose de Metan"	"181"	"26.91"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"26.91"	"20.50"
-"Norte"	"Tucuman"	"Salta"	"1"	"200"	"Tucuman - San Jose de Metan - Salta"	"332"	"23.48"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.48"	"20.50"
-"Norte"	"San Jose de Metan"	"Jujuy"	"1"	"200"	"San Jose de Metan - Salta - Jujuy"	"285"	"24.23"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.23"	"20.50"
-"Norte"	"Salta"	"Jujuy"	"1"	"200"	"Salta - Jujuy"	"134"	"28.79"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"28.79"	"20.50"
-"Norte"	"Tucuman"	"San Jose de Metan"	"4"	"100"	"Tucuman - San Jose de Metan"	"181"	"26.91"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"26.91"	"11.80"
-"Norte"	"San Jose de Metan"	"Salta"	"4"	"100"	"San Jose de Metan - Salta"	"151"	"25.83"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.83"	"11.80"
-"Norte"	"Salta"	"Jujuy"	"1"	"100"	"Salta - Jujuy"	"134"	"28.79"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.79"	"11.80"
-"Norte"	"San Salvador de Jujuy"	"San Jose de Metan"	"1"	"200"	"San Salvador de Jujuy - San Jose de Metan"	"285"	"24.23"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.23"	"20.50"
-"Norte"	"San Salvador de Jujuy"	"Saenz Peña"	"1"	"200"	"San Salvador de Jujuy - San Jose de Metan - Saenz Peña"	"854"	"20.56"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"20.56"	"20.50"
-"Norte"	"Saenz Peña"	"Resistencia"	"1"	"200"	"Saenz Peña - Resistencia"	"177"	"25.81"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.81"	"20.50"
-"Norte"	"San Jose de Metan"	"Saenz Peña"	"4"	"100"	"San Jose de Metan - Saenz Peña"	"569"	"22.87"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"22.87"	"11.80"
-"Norte"	"Saenz Peña"	"Resistencia"	"4"	"100"	"Saenz Peña - Resistencia"	"177"	"25.81"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.81"	"11.80"
-"Norte"	"San Salvador de Jujuy"	"San Pedro"	"1"	"200"	"San Salvador de Jujuy - San Pedro"	"70"	"29.93"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"29.93"	"20.50"
-"Norte"	"San Salvador de Jujuy"	"San Martin"	"1"	"200"	"San Salvador de Jujuy - San Pedro - San Martin"	"126"	"27.56"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"27.56"	"20.50"
-"Norte"	"San Salvador de Jujuy"	"Embarcacion"	"1"	"200"	"San Salvador de Jujuy - San Pedro - San Martin - Embarcacion"	"237"	"25.16"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.16"	"20.50"
-"Norte"	"San Salvador de Jujuy"	"Juan Page"	"1"	"200"	"San Salvador de Jujuy - San Pedro - San Martin - Embarcacion - Juan Page"	"437"	"23.52"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.52"	"20.50"
-"Norte"	"San Salvador de Jujuy"	"Las Lomitas"	"1"	"200"	"San Salvador de Jujuy - San Pedro - San Martin - Embarcacion - Juan Page - Las Lomitas"	"666"	"22.03"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.03"	"20.50"
-"Norte"	"San Salvador de Jujuy"	"Formosa"	"1"	"200"	"San Salvador de Jujuy - San Pedro - San Martin - Embarcacion - Juan Page - Las Lomitas - Formosa"	"1005"	"20.83"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"20.83"	"20.50"
-"Norte"	"San Pedro"	"Resistencia"	"1"	"200"	"San Pedro - San Martin - Embarcacion - Juan Page - Las Lomitas - Formosa - Resistencia"	"1156"	"20.46"	"20.50"	"NO"	"SI"	"SI"	"1"	"San Pedro Jujuy -> Lib Gral San Martin (27.49 dB) -> Embarcacion (24.46 dB) -> Cap Juan Page (22.15 dB) -> Las Lomitas (20.51 dB) [REG]-> Formosa (23.47 dB) -> Resistencia (21.50 dB)"	"Las Lomitas"	"NO"	"SI"	"200"	"20.46"	"20.50"
-"Norte"	"San Martin"	"Resistencia"	"1"	"200"	"San Martin - Embarcacion - Juan Page - Las Lomitas - Formosa - Resistencia"	"1100"	"20.83"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"20.83"	"20.50"
-"Norte"	"Embarcacion"	"Resistencia"	"1"	"200"	"Embarcacion - Juan Page - Las Lomitas - Formosa - Resistencia"	"989"	"21.57"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"21.57"	"20.50"
-"Norte"	"Juan Page"	"Resistencia"	"1"	"200"	"Juan Page - Las Lomitas - Formosa - Resistencia"	"789"	"22.55"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.55"	"20.50"
-"Norte"	"Las Lomitas"	"Resistencia"	"1"	"200"	"Las Lomitas - Formosa - Resistencia"	"560"	"24.28"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.28"	"20.50"
-"Norte"	"Formosa"	"Resistencia"	"1"	"200"	"Formosa - Resistencia"	"221"	"27.58"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"27.58"	"20.50"
-"Norte"	"San Salvador de Jujuy"	"San Pedro"	"4"	"100"	"San Salvador de Jujuy - San Pedro"	"70"	"29.93"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.93"	"11.80"
-"Norte"	"San Pedro"	"San Martin"	"4"	"100"	"San Pedro - San Martin"	"56"	"30.48"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"30.48"	"11.80"
-"Norte"	"San Martin"	"Embarcacion"	"4"	"100"	"San Martin - Embarcacion"	"111"	"28.39"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.39"	"11.80"
-"Norte"	"Embarcacion"	"Juan Page"	"4"	"100"	"Embarcacion - Juan Page"	"200"	"28.08"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.08"	"11.80"
-"Norte"	"Juan Page"	"Las Lomitas"	"4"	"100"	"Juan Page - Las Lomitas"	"229"	"27.02"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.02"	"11.80"
-"Norte"	"Las Lomitas"	"Formosa"	"4"	"100"	"Las Lomitas - Formosa"	"339"	"26.68"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"26.68"	"11.80"
-"Norte"	"Formosa"	"Resistencia"	"4"	"100"	"Formosa - Resistencia"	"221"	"27.58"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.58"	"11.80"
-"Norte"	"Tucuman"	"Añatuya"	"1"	"200"	"Tucuman - Santiago del Estero - Añatuya"	"390.6"	"17.71"	"20.50"	"NO"	"SI"	"SI"	"0"	"San Miguel de Tucuman -> Santiago del Estero (24.75 dB) -> Añatuya (21.96 dB)"		"NO"	"SI"	"200"	"17.71"	"20.50"
-"Norte"	"Añatuya"	"Santa Fe"	"1"	"200"	"Añatuya - Tostado - Rafaela - Santa Fe"	"591"	"21.87"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"21.87"	"20.50"
-"Norte"	"Tostado"	"Santa Fe"	"1"	"200"	"Tostado - Rafaela - Santa Fe"	"423"	"23.35"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.35"	"20.50"
-"Norte"	"Santiago del Estero"	"Añatuya"	"4"	"100"	"Santiago del Estero - Añatuya"	"197.6"	"18.37"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"18.37"	"11.80"
-"Norte"	"Añatuya"	"Tostado"	"4"	"100"	"Añatuya - Tostado"	"168"	"26.90"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"26.90"	"11.80"
-"Norte"	"Cordoba"	"Arroyito"	"4"	"100"	"Cordoba - Arroyito"	"146"	"28.32"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.32"	"11.80"
-"Norte"	"Arroyito"	"San Francisco"	"4"	"100"	"Arroyito - San Francisco"	"100"	"27.51"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.51"	"11.80"
-"Norte"	"San Francisco"	"Rafaela"	"4"	"100"	"San Francisco - Rafaela"	"87"	"28.80"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.80"	"11.80"
-"Norte"	"Rafaela"	"Santa Fe"	"4"	"100"	"Rafaela - Santa Fe"	"125"	"29.29"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.29"	"11.80"
-"Norte"	"Cordoba"	"Arroyito"	"1"	"200"	"Cordoba - Arroyito"	"146"	"28.32"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"28.32"	"20.50"
-"Norte"	"Arroyito"	"Santa Fe"	"1"	"200"	"Arroyito - San Francisco - Rafaela - Santa Fe"	"312"	"24.03"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.03"	"20.50"
-"Norte"	"Cordoba"	"San Francisco"	"1"	"200"	"Cordoba - Arroyito - San Francisco"	"246"	"25.10"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.10"	"20.50"
-"Norte"	"San Francisco"	"Santa Fe"	"1"	"200"	"San Francisco - Rafaela - Santa Fe"	"212"	"26.31"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"26.31"	"20.50"
-"Norte"	"Cordoba"	"Rafaela"	"1"	"200"	"Cordoba - Arroyito - San Francisco - Rafaela"	"333"	"23.72"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.72"	"20.50"
-"Norte"	"Rafaela"	"Santa Fe"	"1"	"200"	"Rafaela - Santa Fe"	"125"	"29.29"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"29.29"	"20.50"
-"Norte"	"Rafaela"	"Sunchales"	"4"	"100"	"Rafaela - Sunchales"	"50"	"30.65"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"30.65"	"11.80"
-"Norte"	"Sunchales"	"Ceres"	"4"	"100"	"Sunchales - Ceres"	"163"	"27.48"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.48"	"11.80"
-"Norte"	"Ceres"	"Tostado"	"4"	"100"	"Ceres - Tostado"	"85"	"28.96"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.96"	"11.80"
-"Norte"	"Tostado"	"Vera"	"4"	"100"	"Tostado - Vera"	"207"	"27.32"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.32"	"11.80"
-"Norte"	"Vera"	"Resistencia"	"4"	"100"	"Vera - Resistencia"	"327"	"24.66"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"24.66"	"11.80"
-"Norte"	"Santa Fe"	"Rafaela"	"1"	"200"	"Santa Fe - Rafaela"	"125"	"29.29"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"29.29"	"20.50"
-"Norte"	"Santa Fe"	"Sunchales"	"1"	"200"	"Santa Fe - Rafaela - Sunchales"	"175"	"27.26"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"27.26"	"20.50"
-"Norte"	"Sunchales"	"Resistencia"	"1"	"200"	"Sunchales - Ceres - Tostado - Vera - Resistencia"	"782"	"21.05"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"21.05"	"20.50"
-"Norte"	"Santa Fe"	"Ceres"	"1"	"200"	"Santa Fe - Rafaela - Sunchales - Ceres"	"338"	"24.55"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.55"	"20.50"
-"Norte"	"Ceres"	"Resistencia"	"1"	"200"	"Ceres - Tostado - Vera - Resistencia"	"619"	"22.06"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.06"	"20.50"
-"Norte"	"Santa Fe"	"Tostado"	"1"	"200"	"Santa Fe - Rafaela - Sunchales - Ceres - Tostado"	"423"	"23.35"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.35"	"20.50"
-"Norte"	"Tostado"	"Resistencia"	"1"	"200"	"Tostado - Vera - Resistencia"	"534"	"22.91"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.91"	"20.50"
-"Norte"	"Santa Fe"	"Vera"	"1"	"200"	"Santa Fe - Rafaela - Sunchales - Ceres - Tostado - Vera"	"630"	"22"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22"	"20.50"
-"Norte"	"Vera"	"Resistencia"	"1"	"200"	"Vera - Resistencia"	"327"	"24.66"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.66"	"20.50"
-"Norte"	"Resistencia"	"Corrientes"	"4"	"100"	"Resistencia - Corrientes"	"22"	"31.09"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"31.09"	"11.80"
-"Norte"	"Corrientes"	"Ituzaingo"	"4"	"100"	"Corrientes - Ituzaingo"	"249"	"25.29"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.29"	"11.80"
-"Norte"	"Ituzaingo"	"Posadas"	"4"	"100"	"Ituzaingo - Posadas"	"95"	"28.05"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.05"	"11.80"
-"Norte"	"Resistencia"	"Ituzaingo"	"1"	"200"	"Resistencia - Corrientes - Ituzaingo"	"271"	"24.47"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.47"	"20.50"
-"Norte"	"Ituzaingo"	"Posadas"	"1"	"200"	"Ituzaingo - Posadas"	"95"	"28.05"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"28.05"	"20.50"
-"Norte"	"Posadas"	"San Jose"	"1"	"200"	"Posadas - San Jose"	"53"	"30.57"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"30.57"	"20.50"
-"Norte"	"Posadas"	"Paso de los Libres"	"1"	"200"	"Posadas - San Jose - Paso de los Libres"	"395"	"23.71"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.71"	"20.50"
-"Norte"	"San Jose"	"Santa Fe"	"1"	"200"	"San Jose - Paso de los Libres - Concordia - Parana - Santa Fe"	"989"	"20.12"	"20.50"	"NO"	"SI"	"SI"	"1"	"San Jose -> Paso de Los Libres (22.86 dB) -> Concordia (20.72 dB) [REG]-> Parana (23.40 dB) -> Santa Fe (22.61 dB)"	"Concordia"	"NO"	"SI"	"200"	"20.12"	"20.50"
-"Norte"	"Paso de los Libres"	"Santa Fe"	"1"	"200"	"Paso de los Libres - Concordia - Parana - Santa Fe"	"647"	"21.97"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"21.97"	"20.50"
-"Norte"	"Concordia"	"Santa Fe"	"1"	"200"	"Concordia - Parana - Santa Fe"	"382"	"24.36"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.36"	"20.50"
-"Norte"	"Posadas"	"San Jose"	"4"	"100"	"Posadas - San Jose"	"53"	"30.57"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"30.57"	"11.80"
-"Norte"	"San Jose"	"Paso de los Libres"	"4"	"100"	"San Jose - Paso de los Libres"	"342"	"24.51"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"24.51"	"11.80"
-"Norte"	"Paso de los Libres"	"Concordia"	"4"	"100"	"Paso de los Libres - Concordia"	"265"	"25.45"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.45"	"11.80"
-"Norte"	"Benavidez"	"Concepcion del Uruguay"	"1"	"200"	"Benavidez - Campana - Concepcion del Uruguay"	"355"	"23.82"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.82"	"20.50"
-"Norte"	"Benavidez"	"Concordia"	"1"	"200"	"Benavidez - Campana - Concepcion del Uruguay - Concordia"	"517"	"22.40"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.40"	"20.50"
-"Norte"	"Concepcion del Uruguay"	"Santa Fe"	"1"	"200"	"Concepcion del Uruguay - Concordia - Parana - Santa Fe"	"544"	"22.79"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.79"	"20.50"
-"Norte"	"Campana"	"Concepcion del Uruguay"	"4"	"100"	"Campana - Concepcion del Uruguay"	"275"	"25.02"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.02"	"11.80"
-"Norte"	"Concepcion del Uruguay"	"Concordia"	"4"	"100"	"Concepcion del Uruguay - Concordia"	"162"	"27.56"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.56"	"11.80"
-"Norte"	"Benavidez"	"Campana"	"1"	"200"	"Benavidez - Campana"	"80"	"29.33"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"29.33"	"20.50"
-"Norte"	"Benavidez"	"Baradero"	"1"	"200"	"Benavidez - Campana - Baradero"	"160"	"25.86"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.86"	"20.50"
-"Norte"	"Benavidez"	"San Nicolas"	"1"	"200"	"Benavidez - Campana - Baradero - San Nicolas"	"270"	"23.79"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.79"	"20.50"
-"Norte"	"Campana"	"Rosario"	"1"	"200"	"Campana - Baradero - San Nicolas - Rosario"	"271"	"23.77"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.77"	"20.50"
-"Norte"	"Baradero"	"Rosario"	"1"	"200"	"Baradero - San Nicolas - Rosario"	"191"	"25.58"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.58"	"20.50"
-"Norte"	"San Nicolas"	"Rosario"	"1"	"200"	"San Nicolas - Rosario"	"81"	"29.26"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"29.26"	"20.50"
-"Norte"	"Benavidez"	"Campana"	"4"	"100"	"Benavidez - Campana"	"80"	"29.33"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.33"	"11.80"
-"Norte"	"Campana"	"Baradero"	"4"	"100"	"Campana - Baradero"	"80"	"28"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28"	"11.80"
-"Norte"	"Baradero"	"San Nicolas"	"4"	"100"	"Baradero - San Nicolas"	"110"	"27.59"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.59"	"11.80"
-"Norte"	"San Nicolas"	"Rosario"	"4"	"100"	"San Nicolas - Rosario"	"81"	"29.26"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.26"	"11.80"
-"Norte"	"Rosario"	"San Fabian"	"1"	"200"	"Rosario - San Fabian"	"125"	"24.02"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.02"	"20.50"
-"Norte"	"San Fabian"	"Santa Fe"	"1"	"200"	"San Fabian - Santa Fe"	"80"	"29.33"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"29.33"	"20.50"
-"Norte"	"Rosario"	"San Fabian"	"4"	"100"	"Rosario - San Fabian"	"125"	"24.02"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"24.02"	"11.80"
-"Norte"	"San Fabian"	"Santa Fe"	"4"	"100"	"San Fabian - Santa Fe"	"80"	"29.33"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.33"	"11.80"
-"Norte"	"Santa Fe"	"Parana"	"1"	"200"	"Santa Fe - Parana"	"40"	"30.85"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"30.85"	"20.50"
-"Norte"	"Santa Fe"	"La Paz"	"1"	"200"	"Santa Fe - Parana - La Paz"	"222"	"23.44"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.44"	"20.50"
-"Norte"	"Santa Fe"	"Goya"	"1"	"200"	"Santa Fe - Parana - La Paz - Goya"	"435"	"20.69"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"20.69"	"20.50"
-"Norte"	"Santa Fe"	"Bellavista"	"1"	"200"	"Santa Fe - Parana - La Paz - Goya - Bellavista"	"526"	"20.09"	"20.50"	"NO"	"SI"	"SI"	"1"	"Santa Fe -> Parana (28.06 dB) -> La Paz (23.27 dB) -> Goya (20.86 dB) [REG]-> Bellavista (26.64 dB)"	"Goya"	"NO"	"SI"	"200"	"20.09"	"20.50"
-"Norte"	"Santa Fe"	"Corrientes"	"1"	"200"	"Santa Fe - Parana - La Paz - Goya - Bellavista - Corrientes"	"684"	"19.46"	"20.50"	"NO"	"SI"	"SI"	"1"	"Santa Fe -> Parana (28.06 dB) -> La Paz (23.27 dB) -> Goya (20.86 dB) [REG]-> Bellavista (26.64 dB) -> Corrientes (23.71 dB)"	"Goya"	"NO"	"SI"	"200"	"19.46"	"20.50"
-"Norte"	"Parana"	"Resistencia"	"1"	"200"	"Parana - La Paz - Goya - Bellavista - Corrientes - Resistencia"	"666"	"19.48"	"20.50"	"NO"	"SI"	"SI"	"1"	"Parana -> La Paz (24.20 dB) -> Goya (21.37 dB) -> Bellavista (20.54 dB) [REG]-> Corrientes (25.63 dB) -> Resistencia (24.43 dB)"	"Bellavista"	"NO"	"SI"	"200"	"19.48"	"20.50"
-"Norte"	"La Paz"	"Resistencia"	"1"	"200"	"La Paz - Goya - Bellavista - Corrientes - Resistencia"	"484"	"21.21"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"21.21"	"20.50"
-"Norte"	"Goya"	"Resistencia"	"1"	"200"	"Goya - Bellavista - Corrientes - Resistencia"	"271"	"24.48"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.48"	"20.50"
-"Norte"	"Bellavista"	"Resistencia"	"1"	"200"	"Bellavista - Corrientes - Resistencia"	"180"	"26.41"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"26.41"	"20.50"
-"Norte"	"Corrientes"	"Resistencia"	"1"	"200"	"Corrientes - Resistencia"	"22"	"31.09"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"31.09"	"20.50"
-"Norte"	"Santa Fe"	"Parana"	"4"	"100"	"Santa Fe - Parana"	"40"	"30.85"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"30.85"	"11.80"
-"Norte"	"Parana"	"La Paz"	"4"	"100"	"Parana - La Paz"	"182"	"24.13"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"24.13"	"11.80"
-"Norte"	"La Paz"	"Goya"	"4"	"100"	"La Paz - Goya"	"213"	"23.81"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"23.81"	"11.80"
-"Norte"	"Goya"	"Bellavista"	"4"	"100"	"Goya - Bellavista"	"91"	"28.44"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.44"	"11.80"
-"Norte"	"Bellavista"	"Corrientes"	"4"	"100"	"Bellavista - Corrientes"	"158"	"27.78"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.78"	"11.80"
-"Norte"	"Posadas"	"Jardin America"	"1"	"200"	"Posadas - Jardin America"	"104"	"29.06"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"29.06"	"20.50"
-"Norte"	"Posadas"	"Puerto Iguazu"	"1"	"200"	"Posadas - Jardin America - Puerto Iguazu"	"284"	"25.29"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.29"	"20.50"
-"Norte"	"Jardin America"	"Puerto Iguazu"	"1"	"200"	"Jardin America - Puerto Iguazu"	"180"	"27.27"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"27.27"	"20.50"
-"Norte"	"Posadas"	"Jardin America"	"4"	"100"	"Posadas - Jardin America"	"104"	"29.06"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.06"	"11.80"
-"Norte"	"Jardin America"	"Puerto Iguazu"	"4"	"100"	"Jardin America - Puerto Iguazu"	"180"	"27.27"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.27"	"11.80"
-"Norte"	"Posadas"	"Puerto Iguazu"	"1"	"200"	"Posadas - San Jose - Aristobulo del valle - Puerto Iguazu"	"407.5"	"19.92"	"20.50"	"NO"	"SI"	"SI"	"1"	"Posadas -> San Jose (27.60 dB) -> Aristobulo del Valle (23.82 dB) [REG]-> Puerto Iguazu (22.26 dB)"	"Aristobulo del Valle"	"NO"	"SI"	"200"	"19.92"	"20.50"
-"Norte"	"San Jose"	"Aristobulo del Valle"	"1"	"200"	"San Jose - Aristobulo del valle"	"143.9"	"27.89"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"27.89"	"20.50"
-"Norte"	"Aristobulo del Valle"	"Puerto Iguazu"	"1"	"200"	"Aristobulo del valle - Puerto Iguazu"	"210.6"	"20.97"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"20.97"	"20.50"
-"Norte"	"San Jose"	"Aristobulo del Valle"	"4"	"100"	"San Jose - Aristobulo del Valle"	"143.9"	"27.89"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.89"	"11.80"
-"Norte"	"Aristobulo del Valle"	"Puerto Iguazu"	"4"	"100"	"Aristobulo del Valle - Puerto Iguazu"	"210.6"	"20.97"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"20.97"	"11.80"
-"Norte"	"Clorinda"	"Formosa"	"1"	"200"	"Clorinda - Formosa - Resistencia"	"357"	"24.45"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.45"	"20.50"
-"Norte"	"Clorinda"	"Resistencia"	"4"	"100"	"Clorinda - Formosa"	"136"	"26.99"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"26.99"	"11.80"
-"Norte"	"San Salvador de Jujuy"	"Salvador Mazza"	"1"	"200"	"San Salvador de Jujuy - Embarcacion - Salvador Mazza"	"381"	"23.74"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.74"	"20.50"
-"Norte"	"San Salvador de Jujuy"	"Embarcacion"	"1"	"200"	"San Salvador de Jujuy - Embarcacion"	"237"	"25.16"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.16"	"20.50"
-"Norte"	"Embarcacion"	"Salvador Mazza"	"4"	"100"	"Embarcacion - Salvador Mazza"	"144"	"28.71"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.71"	"11.80"
-"Norte"	"Benavidez"	"Rosario"	"1"	"400"	"Benavidez - Zarate - San Pedro - San Nicolas de los Arroyos - Rosario"	"351"	"22.84"	"23.50"	"NO"	"SI"	"SI"	"1"	"Benavidez -> Campana (27.05 dB) -> Zarate (25.48 dB) -> Baradero (24.00 dB) [REG]-> San Pedro BsAs (28.13 dB) -> San Nicolas de los Arroyos (25.58 dB) -> Rosario (23.87 dB)"	"Baradero"	"NO"	"SI"	"400"	"22.84"	"23.50"
-"Norte"	"Rosario"	"Resistencia"	"1"	"400"	"Rosario - San Fabian - Santa Fe - Parana - La Paz - Goya - Bellavista - Corrientes - Resistencia"	"911"	"17.76"	"23.50"	"NO"	"SI"	"SI"	"5"	"Rosario -> San Fabian (24.69 dB) [REG]-> Santa Fe (27.05 dB) -> Parana (25.41 dB) [REG]-> La Paz (24.20 dB) [REG]-> Goya (23.85 dB) [REG]-> Bellavista (26.64 dB) -> Corrientes (23.71 dB) [REG]-> Resistencia (28.19 dB)"	"San Fabian - Parana - La Paz - Goya - Corrientes"	"NO"	"SI"	"400"	"17.76"	"23.50"
-"Norte"	"Benavidez"	"Zarate"	"2"	"300"	"Benavidez - Zarate"	"93"	"27.52"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"27.52"	"20.50"
-"Norte"	"Benavidez"	"San Nicolas de los Arroyos"	"1"	"300"	"Benavidez - Zarate - San Pedro - San Nicolas de los Arroyos"	"270"	"23.79"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"23.79"	"20.50"
-"Norte"	"Zarate"	"San Pedro"	"1"	"300"	"Zarate - San Pedro"	"101"	"27.88"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"27.88"	"20.50"
-"Norte"	"Zarate"	"Rosario"	"1"	"300"	"Zarate - San Pedro - San Nicolas de los Arroyos - Rosario"	"258"	"24.44"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"24.44"	"20.50"
-"Norte"	"San Pedro"	"Rosario"	"1"	"300"	"San Pedro - San Nicolas de los Arroyos - Rosario"	"157"	"26.73"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"26.73"	"20.50"
-"Norte"	"San Nicolas"	"Rosario"	"1"	"300"	"San Nicolas de los Arroyos - Rosario"	"81"	"29.26"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"29.26"	"20.50"
-"Norte"	"Rosario"	"San Fabian"	"1"	"300"	"Rosario - San Fabian"	"125"	"24.02"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"24.02"	"20.50"
-"Norte"	"Rosario"	"Santa Fe"	"1"	"300"	"Rosario - San Fabian - Santa Fe"	"205"	"23.04"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"23.04"	"20.50"
-"Norte"	"San Fabian"	"Santa Fe"	"1"	"300"	"San Fabian - Santa Fe"	"80"	"29.33"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"29.33"	"20.50"
-"Norte"	"Santa Fe"	"La Paz"	"1"	"300"	"Santa Fe - Parana - La Paz"	"222"	"23.44"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"23.44"	"20.50"
-"Norte"	"Santa Fe"	"Parana"	"1"	"300"	"Santa Fe - Parana"	"40"	"30.85"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"30.85"	"20.50"
-"Norte"	"Parana"	"Goya"	"1"	"300"	"Parana - La Paz - Goya"	"395"	"21.04"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"21.04"	"20.50"
-"Norte"	"Goya"	"Resistencia"	"1"	"300"	"Goya - Bellavista - Corrientes - Resistencia"	"271"	"24.48"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"24.48"	"20.50"
-"Norte"	"La Paz"	"Bellavista"	"1"	"300"	"La Paz - Goya - Bellavista"	"304"	"22.65"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"22.65"	"20.50"
-"Norte"	"Bellavista"	"Corrientes"	"1"	"300"	"Bellavista - Corrientes"	"158"	"27.78"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"27.78"	"20.50"
-"Norte"	"Corrientes"	"Resistencia"	"1"	"300"	"Corrientes - Resistencia"	"22"	"31.09"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"31.09"	"20.50"
-"Norte"	"Benavidez"	"Santa Fe"	"2"	"300"	"Benavidez - Zarate - San Pedro - San Nicolas de los Arroyos - Rosario - San Fabian - Santa Fe"	"556"	"19.99"	"20.50"	"NO"	"SI"	"SI"	"1"	"Benavidez -> Campana (27.05 dB) -> Zarate (25.48 dB) -> Baradero (24.00 dB) -> San Pedro BsAs (23.13 dB) -> San Nicolas de los Arroyos (22.14 dB) -> Rosario (21.28 dB) [REG]-> San Fabian (24.69 dB) -> Santa Fe (23.26 dB)"	"Rosario"	"NO"	"SI"	"300"	"19.99"	"20.50"
-"Centro"	"Cordoba"	"V. Mercedes"	"1"	"200"	"Cordoba - V. Mercedes"	"452"	"21.70"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"21.70"	"20.50"
-"Centro"	"Rufino"	"Lujan"	"1"	"200"	"Rufino - Lujan"	"412"	"15.98"	"20.50"	"NO"	"SI"	"SI"	"0"	"Rufino -> Lujan (22.09 dB)"		"NO"	"SI"	"200"	"15.98"	"20.50"
-"Centro"	"Lujan"	"Chacabuco"	"1"	"200"	"Lujan - Chacabuco"	"153"	"24.45"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.45"	"20.50"
-"Centro"	"Lujan"	"Junin"	"1"	"200"	"Lujan - Chacabuco - Junin"	"208"	"23.63"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.63"	"20.50"
-"Centro"	"Lujan"	"Vedia"	"1"	"200"	"Lujan - Chacabuco - Junin - Vedia"	"278"	"22.81"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.81"	"20.50"
-"Centro"	"Lujan"	"Rufino"	"1"	"200"	"Lujan - Chacabuco - Junin - Vedia - Rufino"	"353"	"22.06"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.06"	"20.50"
-"Centro"	"Lujan"	"Pehuajo"	"1"	"200"	"Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo"	"587"	"19.72"	"20.50"	"NO"	"SI"	"SI"	"1"	"Lujan -> Chacabuco (24.44 dB) -> Junin (22.95 dB) -> Vedia (21.80 dB) -> Rufino (20.88 dB) [REG]-> Pehuajo (23.36 dB)"	"Rufino"	"NO"	"SI"	"200"	"19.72"	"20.50"
-"Centro"	"Lujan"	"Bolivar"	"1"	"200"	"Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar"	"674"	"19.22"	"20.50"	"NO"	"SI"	"SI"	"1"	"Lujan -> Chacabuco (24.44 dB) -> Junin (22.95 dB) -> Vedia (21.80 dB) -> Rufino (20.88 dB) [REG]-> Pehuajo (23.36 dB) -> Bolivar (22.15 dB)"	"Rufino"	"NO"	"SI"	"200"	"19.22"	"20.50"
-"Centro"	"Lujan"	"Olavarria"	"1"	"200"	"Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria"	"781"	"17.58"	"20.50"	"NO"	"SI"	"SI"	"2"	"Lujan -> Chacabuco (24.44 dB) -> Junin (22.95 dB) -> Vedia (21.80 dB) -> Rufino (20.88 dB) [REG]-> Pehuajo (23.36 dB) -> Bolivar (22.15 dB) [REG]-> Olavarria (24.00 dB)"	"Rufino - Bolivar"	"NO"	"SI"	"200"	"17.58"	"20.50"
-"Centro"	"Lujan"	"Azul"	"1"	"200"	"Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul"	"836"	"17.37"	"20.50"	"NO"	"SI"	"SI"	"2"	"Lujan -> Chacabuco (24.44 dB) -> Junin (22.95 dB) -> Vedia (21.80 dB) -> Rufino (20.88 dB) [REG]-> Pehuajo (23.36 dB) -> Bolivar (22.15 dB) [REG]-> Olavarria (24.00 dB) -> Azul (22.93 dB)"	"Rufino - Bolivar"	"NO"	"SI"	"200"	"17.37"	"20.50"
-"Centro"	"Lujan"	"Tandil"	"1"	"200"	"Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil"	"941"	"16.87"	"20.50"	"NO"	"SI"	"SI"	"2"	"Lujan -> Chacabuco (24.44 dB) -> Junin (22.95 dB) -> Vedia (21.80 dB) -> Rufino (20.88 dB) [REG]-> Pehuajo (23.36 dB) -> Bolivar (22.15 dB) [REG]-> Olavarria (24.00 dB) -> Azul (22.93 dB) -> Tandil (21.42 dB)"	"Rufino - Bolivar"	"NO"	"SI"	"200"	"16.87"	"20.50"
-"Centro"	"Chacabuco"	"Abasto"	"1"	"200"	"Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil"	"788"	"17.66"	"20.50"	"NO"	"SI"	"SI"	"4"	"Chacabuco -> Junin (26.72 dB) -> Vedia (24.38 dB) -> Rufino (22.84 dB) [REG]-> Pehuajo (23.36 dB) -> Bolivar (22.15 dB) [REG]-> Olavarria (24.00 dB) -> Azul (22.93 dB) -> Tandil (21.42 dB) [REG]-> Mar Del Plata (24.59 dB) -> Las Armas (22.75 dB) -> Dolores (20.99 dB) [REG]-> Chascomus (25.13 dB) -> Abasto (23.54 dB)"	"Rufino - Bolivar - Tandil - Dolores"	"NO"	"SI"	"200"	"17.66"	"20.50"
-"Centro"	"Junin"	"Abasto"	"1"	"200"	"Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil"	"733"	"17.85"	"20.50"	"NO"	"SI"	"SI"	"3"	"Junin -> Vedia (26.62 dB) -> Rufino (24.30 dB) -> Pehuajo (21.13 dB) [REG]-> Bolivar (26.72 dB) -> Olavarria (22.62 dB) -> Azul (21.82 dB) -> Tandil (20.61 dB) [REG]-> Mar Del Plata (24.59 dB) -> Las Armas (22.75 dB) -> Dolores (20.99 dB) [REG]-> Chascomus (25.13 dB) -> Abasto (23.54 dB)"	"Pehuajo - Tandil - Dolores"	"NO"	"SI"	"200"	"17.85"	"20.50"
-"Centro"	"Vedia"	"Abasto"	"1"	"200"	"Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil"	"663"	"18.10"	"20.50"	"NO"	"SI"	"SI"	"3"	"Vedia -> Rufino (26.59 dB) -> Pehuajo (22.10 dB) -> Bolivar (21.16 dB) [REG]-> Olavarria (24.00 dB) -> Azul (22.93 dB) -> Tandil (21.42 dB) [REG]-> Mar Del Plata (24.59 dB) -> Las Armas (22.75 dB) -> Dolores (20.99 dB) [REG]-> Chascomus (25.13 dB) -> Abasto (23.54 dB)"	"Bolivar - Tandil - Dolores"	"NO"	"SI"	"200"	"18.10"	"20.50"
-"Centro"	"Rufino"	"Abasto"	"1"	"200"	"Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto"	"1152"	"15.64"	"20.50"	"NO"	"SI"	"SI"	"3"	"Rufino -> Pehuajo (23.36 dB) -> Bolivar (22.15 dB) [REG]-> Olavarria (24.00 dB) -> Azul (22.93 dB) -> Tandil (21.42 dB) [REG]-> Mar Del Plata (24.59 dB) -> Las Armas (22.75 dB) -> Dolores (20.99 dB) [REG]-> Chascomus (25.13 dB) -> Abasto (23.54 dB)"	"Bolivar - Tandil - Dolores"	"NO"	"SI"	"200"	"15.64"	"20.50"
-"Centro"	"Pehuajo"	"Abasto"	"1"	"200"	"Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto"	"918"	"16.42"	"20.50"	"NO"	"SI"	"SI"	"2"	"Pehuajo -> Bolivar (26.72 dB) -> Olavarria (22.62 dB) -> Azul (21.82 dB) -> Tandil (20.61 dB) [REG]-> Mar Del Plata (24.59 dB) -> Las Armas (22.75 dB) -> Dolores (20.99 dB) [REG]-> Chascomus (25.13 dB) -> Abasto (23.54 dB)"	"Tandil - Dolores"	"NO"	"SI"	"200"	"16.42"	"20.50"
-"Centro"	"Bolivar"	"Abasto"	"1"	"200"	"Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto"	"831"	"16.67"	"20.50"	"NO"	"SI"	"SI"	"2"	"Bolivar -> Olavarria (24.00 dB) -> Azul (22.93 dB) -> Tandil (21.42 dB) [REG]-> Mar Del Plata (24.59 dB) -> Las Armas (22.75 dB) -> Dolores (20.99 dB) [REG]-> Chascomus (25.13 dB) -> Abasto (23.54 dB)"	"Tandil - Dolores"	"NO"	"SI"	"200"	"16.67"	"20.50"
-"Centro"	"Olavarria"	"Abasto"	"1"	"200"	"Olavarria - Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto"	"724"	"17.96"	"20.50"	"NO"	"SI"	"SI"	"1"	"Olavarria -> Azul (27.54 dB) -> Tandil (24.14 dB) -> Mar Del Plata (21.75 dB) -> Las Armas (20.68 dB) [REG]-> Dolores (24.83 dB) -> Chascomus (22.43 dB) -> Abasto (21.50 dB)"	"Las Armas"	"NO"	"SI"	"200"	"17.96"	"20.50"
-"Centro"	"Azul"	"Abasto"	"1"	"200"	"Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto"	"669"	"18.19"	"20.50"	"NO"	"SI"	"SI"	"1"	"Azul -> Tandil (25.61 dB) -> Mar Del Plata (22.54 dB) -> Las Armas (21.30 dB) [REG]-> Dolores (24.83 dB) -> Chascomus (22.43 dB) -> Abasto (21.50 dB)"	"Las Armas"	"NO"	"SI"	"200"	"18.19"	"20.50"
-"Centro"	"Tandil"	"Abasto"	"1"	"200"	"Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto"	"564"	"18.89"	"20.50"	"NO"	"SI"	"SI"	"1"	"Tandil -> Mar Del Plata (24.59 dB) -> Las Armas (22.75 dB) -> Dolores (20.99 dB) [REG]-> Chascomus (25.13 dB) -> Abasto (23.54 dB)"	"Dolores"	"NO"	"SI"	"200"	"18.89"	"20.50"
-"Centro"	"Lujan"	"Chacabuco"	"4"	"100"	"Lujan - Chacabuco"	"153"	"24.45"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"24.45"	"11.80"
-"Centro"	"Chacabuco"	"Junin"	"4"	"100"	"Chacabuco - Junin"	"55"	"30.44"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"30.44"	"11.80"
-"Centro"	"Junin"	"Vedia"	"4"	"100"	"Junin - Vedia"	"70"	"29.75"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.75"	"11.80"
-"Centro"	"Vedia"	"Rufino"	"4"	"100"	"Vedia - Rufino"	"75"	"29.43"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.43"	"11.80"
-"Centro"	"Rufino"	"Pehuajo"	"4"	"100"	"Rufino - Pehuajo"	"234"	"23.36"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"23.36"	"11.80"
-"Centro"	"Pehuajo"	"Bolivar"	"4"	"100"	"Pehuajo - Bolivar"	"87"	"28.37"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.37"	"11.80"
-"Centro"	"Bolivar"	"Olavarria"	"4"	"100"	"Bolivar - Olavarria"	"107"	"22.48"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"22.48"	"11.80"
-"Centro"	"Olavarria"	"Azul"	"4"	"100"	"Olavarria - Azul"	"55"	"30"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"30"	"11.80"
-"Centro"	"Azul"	"Tandil"	"4"	"100"	"Azul - Tandil"	"105"	"26.16"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"26.16"	"11.80"
-"Centro"	"Tandil"	"Mar del Plata"	"4"	"100"	"Tandil - Mar del Plata"	"179"	"25.07"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.07"	"11.80"
-"Centro"	"Lujan"	"Mercedes"	"1"	"200"	"Lujan - Mercedes"	"36"	"30.90"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"30.90"	"20.50"
-"Centro"	"Lujan"	"Chivilcoy"	"1"	"200"	"Lujan - Mercedes - Chivilcoy"	"106"	"27.37"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"27.37"	"20.50"
-"Centro"	"Lujan"	"Bragado"	"1"	"200"	"Lujan - Mercedes - Chivilcoy - Bragado"	"170"	"25.62"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.62"	"20.50"
-"Centro"	"Lujan"	"9 De Julio"	"1"	"200"	"Lujan - Mercedes - Chivilcoy - Bragado - 9 De Julio"	"231"	"24.44"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.44"	"20.50"
-"Centro"	"Mercedes"	"Abasto"	"1"	"200"	"Mercedes - Chivilcoy - Bragado - 9 De Julio - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Pinamar - Las Toninas - Abasto"	"1365"	"16.43"	"20.50"	"NO"	"SI"	"SI"	"3"	"Mercedes -> Chivilcoy (27.21 dB) -> Bragado (25.15 dB) -> 9 De Julio (23.77 dB) -> Pehuajo (22.30 dB) -> Bolivar (21.32 dB) [REG]-> Olavarria (24.00 dB) -> Azul (22.93 dB) -> Tandil (21.42 dB) [REG]-> Mar Del Plata (24.59 dB) -> Pinamar (22.40 dB) -> Las Toninas (21.32 dB) [REG]-> Abasto (23.59 dB)"	"Bolivar - Tandil - Las Toninas"	"NO"	"SI"	"200"	"16.43"	"20.50"
-"Centro"	"Chivilcoy"	"Abasto"	"1"	"200"	"Chivilcoy - Bragado - 9 De Julio - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Pinamar - Las Toninas - Abasto"	"1295"	"16.62"	"20.50"	"NO"	"SI"	"SI"	"3"	"Chivilcoy -> Bragado (27.42 dB) -> 9 De Julio (25.31 dB) -> Pehuajo (23.35 dB) -> Bolivar (22.14 dB) [REG]-> Olavarria (24.00 dB) -> Azul (22.93 dB) -> Tandil (21.42 dB) [REG]-> Mar Del Plata (24.59 dB) -> Pinamar (22.40 dB) -> Las Toninas (21.32 dB) [REG]-> Abasto (23.59 dB)"	"Bolivar - Tandil - Las Toninas"	"NO"	"SI"	"200"	"16.62"	"20.50"
-"Centro"	"Bragado"	"Abasto"	"1"	"200"	"Bragado - 9 De Julio - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Pinamar - Las Toninas - Abasto"	"1231"	"16.81"	"20.50"	"NO"	"SI"	"SI"	"2"	"Bragado -> 9 De Julio (27.47 dB) -> Pehuajo (24.60 dB) -> Bolivar (23.06 dB) -> Olavarria (20.81 dB) [REG]-> Azul (27.54 dB) -> Tandil (24.14 dB) -> Mar Del Plata (21.75 dB) [REG]-> Pinamar (25.33 dB) -> Las Toninas (23.43 dB) -> Abasto (20.82 dB)"	"Olavarria - Mar Del Plata"	"NO"	"SI"	"200"	"16.81"	"20.50"
-"Centro"	"9 De Julio"	"Abasto"	"1"	"200"	"9 De Julio - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Pinamar - Las Toninas - Abasto"	"1170"	"16.99"	"20.50"	"NO"	"SI"	"SI"	"2"	"9 De Julio -> Pehuajo (26.32 dB) -> Bolivar (24.19 dB) -> Olavarria (21.45 dB) -> Azul (20.82 dB) [REG]-> Tandil (25.61 dB) -> Mar Del Plata (22.54 dB) -> Pinamar (21.04 dB) [REG]-> Las Toninas (26.47 dB) -> Abasto (22.23 dB)"	"Azul - Pinamar"	"NO"	"SI"	"200"	"16.99"	"20.50"
-"Centro"	"Lujan"	"Mercedes"	"4"	"100"	"Lujan - Mercedes"	"36"	"30.90"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"30.90"	"11.80"
-"Centro"	"Mercedes"	"Chivilcoy"	"4"	"100"	"Mercedes - Chivilcoy"	"70"	"29.28"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.28"	"11.80"
-"Centro"	"Chivilcoy"	"Bragado"	"4"	"100"	"Chivilcoy - Bragado"	"64"	"29.73"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.73"	"11.80"
-"Centro"	"Bragado"	"9 De Julio"	"4"	"100"	"Bragado - 9 De Julio"	"61"	"29.92"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.92"	"11.80"
-"Centro"	"9 De Julio"	"Pehuajo"	"4"	"100"	"9 De Julio - Pehuajo"	"111"	"29.26"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.26"	"11.80"
-"Centro"	"Benavidez"	"Azopardo"	"1"	"200"	"Benavidez - Azopardo"	"75.6"	"29.38"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"29.38"	"20.50"
-"Centro"	"Benavidez"	"La Plata"	"1"	"200"	"Benavidez - Azopardo - La Plata"	"138.9"	"27.05"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"27.05"	"20.50"
-"Centro"	"Azopardo"	"Abasto"	"1"	"200"	"Azopardo - La Plata - Abasto"	"93.3"	"27.90"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"27.90"	"20.50"
-"Centro"	"La Plata"	"Abasto"	"1"	"200"	"La Plata - Abasto"	"30"	"30.96"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"30.96"	"20.50"
-"Centro"	"Benavidez"	"Azopardo"	"4"	"100"	"Benavidez - Azopardo"	"75.6"	"29.38"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.38"	"11.80"
-"Centro"	"Azopardo"	"La Plata"	"4"	"100"	"Azopardo - La Plata"	"63.3"	"30.10"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"30.10"	"11.80"
-"Centro"	"La Plata"	"Abasto"	"4"	"100"	"La Plata - Abasto"	"30"	"30.96"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"30.96"	"11.80"
-"Centro"	"Abasto"	"Las Toninas"	"1"	"200"	"Abasto - Las Toninas"	"308"	"26.13"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"26.13"	"20.50"
-"Centro"	"Abasto"	"Pinamar"	"1"	"200"	"Abasto - Las Toninas - Pinamar"	"393"	"24.01"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.01"	"20.50"
-"Centro"	"Abasto"	"Mar Del Plata"	"1"	"200"	"Abasto - Las Toninas - Pinamar - Mar Del Plata"	"526"	"22.14"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.14"	"20.50"
-"Centro"	"Abasto"	"Tres Arroyos"	"1"	"200"	"Abasto - Las Toninas - Pinamar - Mar Del Plata - Tres Arroyos"	"876"	"17.76"	"20.50"	"NO"	"SI"	"SI"	"1"	"Abasto -> Las Toninas (23.62 dB) -> Pinamar (22.25 dB) -> Mar Del Plata (20.84 dB) [REG]-> Tres Arroyos (21.08 dB)"	"Mar Del Plata"	"NO"	"SI"	"200"	"17.76"	"20.50"
-"Centro"	"Las Toninas"	"Bahia Blanca"	"1"	"200"	"Las Toninas - Pinamar - Mar Del Plata - Tres Arroyos - Bahia Blanca"	"795"	"16.98"	"20.50"	"NO"	"SI"	"SI"	"2"	"Las Toninas -> Pinamar (26.47 dB) -> Mar Del Plata (23.45 dB) [REG]-> Tres Arroyos (21.08 dB) [REG]-> Bahia Blanca (23.02 dB)"	"Mar Del Plata - Tres Arroyos"	"NO"	"SI"	"200"	"16.98"	"20.50"
-"Centro"	"Pinamar"	"Bahia Blanca"	"1"	"200"	"Pinamar - Mar Del Plata - Tres Arroyos - Bahia Blanca"	"710"	"17.33"	"20.50"	"NO"	"SI"	"SI"	"2"	"Pinamar -> Mar Del Plata (25.35 dB) [REG]-> Tres Arroyos (21.08 dB) [REG]-> Bahia Blanca (23.02 dB)"	"Mar Del Plata - Tres Arroyos"	"NO"	"SI"	"200"	"17.33"	"20.50"
-"Centro"	"Mar Del Plata"	"Bahia Blanca"	"1"	"200"	"Mar Del Plata - Tres Arroyos - Bahia Blanca"	"577"	"17.86"	"20.50"	"NO"	"SI"	"SI"	"1"	"Mar Del Plata -> Tres Arroyos (21.08 dB) [REG]-> Bahia Blanca (23.02 dB)"	"Tres Arroyos"	"NO"	"SI"	"200"	"17.86"	"20.50"
-"Centro"	"Tres Arroyos"	"Bahia Blanca"	"1"	"200"	"Tres Arroyos - Bahia Blanca"	"227"	"22.41"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.41"	"20.50"
-"Centro"	"Abasto"	"Las Toninas"	"4"	"100"	"Abasto - Las Toninas"	"308"	"26.13"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"26.13"	"11.80"
-"Centro"	"Las Toninas"	"Pinamar"	"4"	"100"	"Las Toninas - Pinamar"	"85"	"27.72"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.72"	"11.80"
-"Centro"	"Pinamar"	"Mar Del Plata"	"4"	"100"	"Pinamar - Mar Del Plata"	"133"	"26.39"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"26.39"	"11.80"
-"Centro"	"Mar Del Plata"	"Tres Arroyos"	"4"	"100"	"Mar Del Plata - Tres Arroyos"	"350"	"19.67"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"19.67"	"11.80"
-"Centro"	"Tres Arroyos"	"Bahia Blanca"	"4"	"100"	"Tres Arroyos - Bahia Blanca"	"227"	"22.41"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"22.41"	"11.80"
-"Centro"	"Abasto"	"Chascomus"	"1"	"200"	"Abasto - Chascomus"	"71"	"28.63"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"28.63"	"20.50"
-"Centro"	"Abasto"	"Dolores"	"1"	"200"	"Abasto - Chascomus - Dolores"	"168"	"23.26"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.26"	"20.50"
-"Centro"	"Abasto"	"Las Armas"	"1"	"200"	"Abasto - Chascomus - Dolores - Las Armas"	"268"	"20.66"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"20.66"	"20.50"
-"Centro"	"Chascomus"	"Bahia Blanca"	"1"	"200"	"Chascomus - Dolores - Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca"	"891"	"16.03"	"20.50"	"NO"	"SI"	"SI"	"2"	"Chascomus -> Dolores (25.13 dB) -> Las Armas (22.43 dB) -> Mar Del Plata (21.22 dB) [REG]-> Tres Arroyos (21.08 dB) [REG]-> Bahia Blanca (23.02 dB)"	"Mar Del Plata - Tres Arroyos"	"NO"	"SI"	"200"	"16.03"	"20.50"
-"Centro"	"Dolores"	"Bahia Blanca"	"1"	"200"	"Dolores - Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca"	"794"	"16.66"	"20.50"	"NO"	"SI"	"SI"	"2"	"Dolores -> Las Armas (24.83 dB) -> Mar Del Plata (22.91 dB) [REG]-> Tres Arroyos (21.08 dB) [REG]-> Bahia Blanca (23.02 dB)"	"Mar Del Plata - Tres Arroyos"	"NO"	"SI"	"200"	"16.66"	"20.50"
-"Centro"	"Las Armas"	"Bahia Blanca"	"1"	"200"	"Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca"	"694"	"17.52"	"20.50"	"NO"	"SI"	"SI"	"2"	"Las Armas -> Mar Del Plata (26.06 dB) [REG]-> Tres Arroyos (21.08 dB) [REG]-> Bahia Blanca (23.02 dB)"	"Mar Del Plata - Tres Arroyos"	"NO"	"SI"	"200"	"17.52"	"20.50"
-"Centro"	"Abasto"	"Chascomus"	"4"	"100"	"Abasto - Chascomus"	"71"	"28.63"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.63"	"11.80"
-"Centro"	"Chascomus"	"Dolores"	"4"	"100"	"Chascomus - Dolores"	"97"	"24.55"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"24.55"	"11.80"
-"Centro"	"Dolores"	"Las Armas"	"4"	"100"	"Dolores - Las Armas"	"100"	"23.95"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"23.95"	"11.80"
-"Centro"	"Las Armas"	"Mar Del Plata"	"4"	"100"	"Las Armas - Mar Del Plata"	"117"	"28.18"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.18"	"11.80"
-"Centro"	"Lujan"	"Benavidez"	"1"	"200"	"Lujan - Benavidez"	"60"	"30.23"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"30.23"	"20.50"
-"Centro"	"Lujan"	"Benavidez"	"4"	"100"	"Lujan - Benavidez"	"60"	"30.23"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"30.23"	"11.80"
-"Centro"	"Bahia Blanca"	"Algarrobo"	"4"	"200"	"Bahia Blanca - Algarrobo"	"96"	"30.01"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"30.01"	"20.50"
-"Centro"	"Bahia Blanca"	"Rio Colorado"	"1"	"200"	"Bahia Blanca - Algarrobo - Rio Colorado"	"190"	"27.22"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"27.22"	"20.50"
-"Centro"	"Bahia Blanca"	"Peru"	"1"	"200"	"Bahia Blanca - Algarrobo - Rio Colorado - Peru"	"374.6"	"11.28"	"20.50"	"NO"	"SI"	"SI"	"0"	"Bahia Blanca -> Algarrobo (25.89 dB) -> Rio Colorado (23.59 dB) -> Peru (21.37 dB)"		"NO"	"SI"	"200"	"11.28"	"20.50"
-"Centro"	"Bahia Blanca"	"Santa Rosa"	"1"	"200"	"Bahia Blanca - Algarrobo - Rio Colorado - Peru - Santa Rosa"	"520.4"	"11.19"	"20.50"	"NO"	"SI"	"SI"	"1"	"Bahia Blanca -> Algarrobo (25.89 dB) -> Rio Colorado (23.59 dB) -> Peru (21.37 dB) [REG]-> Santa Rosa (LP) (24.91 dB)"	"Peru"	"NO"	"SI"	"200"	"11.19"	"20.50"
-"Centro"	"Bahia Blanca"	"Winifreda"	"1"	"200"	"Bahia Blanca - Algarrobo - Rio Colorado - Peru - Santa Rosa - Winifreda"	"584.4"	"11.14"	"20.50"	"NO"	"SI"	"SI"	"1"	"Bahia Blanca -> Algarrobo (25.89 dB) -> Rio Colorado (23.59 dB) -> Peru (21.37 dB) [REG]-> Santa Rosa (LP) (24.91 dB) -> Winifreda (23.24 dB)"	"Peru"	"NO"	"SI"	"200"	"11.14"	"20.50"
-"Centro"	"Bahia Blanca"	"Victorica"	"1"	"200"	"Bahia Blanca - Algarrobo - Rio Colorado - Peru - Santa Rosa - Winifreda - Victorica"	"693.4"	"11.09"	"20.50"	"NO"	"SI"	"SI"	"1"	"Bahia Blanca -> Algarrobo (25.89 dB) -> Rio Colorado (23.59 dB) -> Peru (21.37 dB) [REG]-> Santa Rosa (LP) (24.91 dB) -> Winifreda (23.24 dB) -> Victorica (21.84 dB)"	"Peru"	"NO"	"SI"	"200"	"11.09"	"20.50"
-"Centro"	"Bahia Blanca"	"Santa Isabel"	"1"	"200"	"Bahia Blanca - Algarrobo - Rio Colorado - Peru - Santa Rosa - Winifreda - Victorica - Santa Isabel"	"843.4"	"10.56"	"20.50"	"NO"	"SI"	"SI"	"2"	"Bahia Blanca -> Algarrobo (25.89 dB) -> Rio Colorado (23.59 dB) -> Peru (21.37 dB) [REG]-> Santa Rosa (LP) (24.91 dB) -> Winifreda (23.24 dB) -> Victorica (21.84 dB) [REG]-> Santa Isabel (25.09 dB)"	"Peru - Victorica"	"NO"	"SI"	"200"	"10.56"	"20.50"
-"Centro"	"Algarrobo"	"Mendoza"	"1"	"200"	"Algarrobo - Rio Colorado - Peru - Santa Rosa - Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza"	"1319.4"	"10.27"	"20.50"	"NO"	"SI"	"SI"	"2"	"Algarrobo -> Rio Colorado (26.11 dB) -> Peru (22.71 dB) -> Santa Rosa (LP) (21.00 dB) [REG]-> Winifreda (26.66 dB) -> Victorica (24.02 dB) -> Santa Isabel (21.93 dB) -> Gral. Alvear (20.50 dB) [REG]-> San Rafael (25.92 dB) -> Tunuyan (23.23 dB) -> Mendoza (21.88 dB)"	"Santa Rosa (LP) - Gral. Alvear"	"NO"	"SI"	"200"	"10.27"	"20.50"
-"Centro"	"Rio Colorado"	"Mendoza"	"1"	"200"	"Rio Colorado - Peru - Santa Rosa - Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza"	"1225.4"	"10.31"	"20.50"	"NO"	"SI"	"SI"	"2"	"Rio Colorado -> Peru (24.49 dB) -> Santa Rosa (LP) (22.12 dB) -> Winifreda (21.16 dB) [REG]-> Victorica (26.10 dB) -> Santa Isabel (23.10 dB) -> Gral. Alvear (21.31 dB) [REG]-> San Rafael (25.92 dB) -> Tunuyan (23.23 dB) -> Mendoza (21.88 dB)"	"Winifreda - Gral. Alvear"	"NO"	"SI"	"200"	"10.31"	"20.50"
-"Centro"	"Peru"	"Mendoza"	"1"	"200"	"Peru - Santa Rosa - Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza"	"1040.8"	"16.85"	"20.50"	"NO"	"SI"	"SI"	"2"	"Peru -> Santa Rosa (LP) (24.91 dB) -> Winifreda (23.24 dB) -> Victorica (21.84 dB) [REG]-> Santa Isabel (25.09 dB) -> Gral. Alvear (22.53 dB) -> San Rafael (21.25 dB) [REG]-> Tunuyan (25.46 dB) -> Mendoza (23.40 dB)"	"Victorica - San Rafael"	"NO"	"SI"	"200"	"16.85"	"20.50"
-"Centro"	"Santa Rosa"	"Mendoza"	"1"	"200"	"Santa Rosa - Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza"	"895"	"17.20"	"20.50"	"NO"	"SI"	"SI"	"1"	"Santa Rosa (LP) -> Winifreda (26.66 dB) -> Victorica (24.02 dB) -> Santa Isabel (21.93 dB) -> Gral. Alvear (20.50 dB) [REG]-> San Rafael (25.92 dB) -> Tunuyan (23.23 dB) -> Mendoza (21.88 dB)"	"Gral. Alvear"	"NO"	"SI"	"200"	"17.20"	"20.50"
-"Centro"	"Winifreda"	"Mendoza"	"1"	"200"	"Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza"	"831"	"17.40"	"20.50"	"NO"	"SI"	"SI"	"1"	"Winifreda -> Victorica (26.10 dB) -> Santa Isabel (23.10 dB) -> Gral. Alvear (21.31 dB) [REG]-> San Rafael (25.92 dB) -> Tunuyan (23.23 dB) -> Mendoza (21.88 dB)"	"Gral. Alvear"	"NO"	"SI"	"200"	"17.40"	"20.50"
-"Centro"	"Victorica"	"Mendoza"	"1"	"200"	"Victorica - Santa Isabel - San Rafael - Mendoza"	"722"	"17.65"	"20.50"	"NO"	"SI"	"SI"	"1"	"Victorica -> Santa Isabel (25.09 dB) -> Gral. Alvear (22.53 dB) -> San Rafael (21.25 dB) [REG]-> Tunuyan (25.46 dB) -> Mendoza (23.40 dB)"	"San Rafael"	"NO"	"SI"	"200"	"17.65"	"20.50"
-"Centro"	"Santa Isabel"	"Mendoza"	"1"	"200"	"Santa Isabel - San Rafael - Mendoza"	"572"	"21.43"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"21.43"	"20.50"
-"Centro"	"Bahia Blanca"	"Algarrobo"	"4"	"100"	"Bahia Blanca - Algarrobo"	"96"	"30.01"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"30.01"	"11.80"
-"Centro"	"Algarrobo"	"Rio Colorado"	"4"	"100"	"Algarrobo - Rio Colorado"	"94"	"29.77"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.77"	"11.80"
-"Centro"	"Rio Colorado"	"Peru"	"4"	"100"	"Rio Colorado - Peru"	"184.6"	"11.39"	"11.80"	"NO"	"SI"	"SI"	"0"	"Rio Colorado -> Peru (24.49 dB)"		"NO"	"SI"	"100"	"11.39"	"11.80"
-"Centro"	"Peru"	"Santa Rosa"	"4"	"100"	"Peru - Santa Rosa"	"145.8"	"27.46"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.46"	"11.80"
-"Centro"	"Santa Rosa"	"Winifreda"	"4"	"100"	"Santa Rosa - Winifreda"	"64"	"30.07"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"30.07"	"11.80"
-"Centro"	"Winifreda"	"Victorica"	"4"	"100"	"Winifreda - Victorica"	"109"	"29.31"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.31"	"11.80"
-"Centro"	"Victorica"	"Santa Isabel"	"4"	"100"	"Victorica - Santa Isabel"	"150"	"19.93"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"19.93"	"11.80"
-"Centro"	"Bahia Blanca"	"Trenque Lauquen"	"1"	"200"	"Bahia Blanca - Rio Colorado - Santa Rosa - Trenque Lauquen"	"674.4"	"11.10"	"20.50"	"NO"	"SI"	"SI"	"1"	"Bahia Blanca -> Algarrobo (25.89 dB) -> Rio Colorado (23.59 dB) -> Peru (21.37 dB) [REG]-> Santa Rosa (LP) (24.91 dB) -> Trenque Lauquen (22.39 dB)"	"Peru"	"NO"	"SI"	"200"	"11.10"	"20.50"
-"Centro"	"Trenque Lauquen"	"Lujan"	"1"	"200"	"Trenque Lauquen - Pehuajo - Lujan"	"736"	"15.14"	"20.50"	"NO"	"SI"	"SI"	"1"	"Trenque Lauquen -> Pehuajo (26.12 dB) -> Rufino (21.87 dB) [REG]-> Lujan (22.09 dB)"	"Rufino"	"NO"	"SI"	"200"	"15.14"	"20.50"
-"Centro"	"Santa Rosa"	"Trenque Lauquen"	"4"	"100"	"Santa Rosa - Trenque Lauquen"	"154"	"27.76"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.76"	"11.80"
-"Centro"	"Trenque Lauquen"	"Pehuajo"	"4"	"100"	"Trenque Lauquen - Pehuajo"	"90"	"29.81"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.81"	"11.80"
-"Centro"	"Santa Isabel"	"Gral. Alvear"	"1"	"200"	"Santa Isabel - Gral. Alvear"	"211"	"27.39"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"27.39"	"20.50"
-"Centro"	"Santa Isabel"	"San Rafael"	"1"	"200"	"Santa Isabel - Gral. Alvear - San Rafael"	"311"	"24.28"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.28"	"20.50"
-"Centro"	"Santa Isabel"	"Tunuyan"	"1"	"200"	"Santa Isabel - Gral. Alvear - San Rafael - Tunuyan"	"476"	"22.58"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.58"	"20.50"
-"Centro"	"Gral. Alvear"	"Mendoza"	"1"	"200"	"Gral. Alvear - San Rafael - Tunuyan - Mendoza"	"361"	"22.57"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.57"	"20.50"
-"Centro"	"San Rafael"	"Mendoza"	"1"	"200"	"San Rafael - Tunuyan - Mendoza"	"261"	"24.40"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.40"	"20.50"
-"Centro"	"Tunuyan"	"Mendoza"	"1"	"200"	"Tunuyan - Mendoza"	"96"	"27.36"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"27.36"	"20.50"
-"Centro"	"Santa Isabel"	"Gral. Alvear"	"4"	"100"	"Santa Isabel - Gral. Alvear"	"211"	"27.39"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.39"	"11.80"
-"Centro"	"Gral. Alvear"	"San Rafael"	"4"	"100"	"Gral. Alvear - San Rafael"	"100"	"26.85"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"26.85"	"11.80"
-"Centro"	"San Rafael"	"Tunuyan"	"4"	"100"	"San Rafael - Tunuyan"	"165"	"27.09"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.09"	"11.80"
-"Centro"	"Tunuyan"	"Mendoza"	"4"	"100"	"Tunuyan - Mendoza"	"96"	"27.36"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.36"	"11.80"
-"Centro"	"Lujan"	"Cañuelas"	"1"	"200"	"Lujan - Cañuelas"	"70"	"29.72"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"29.72"	"20.50"
-"Centro"	"Cañuelas"	"Abasto"	"1"	"200"	"Cañuelas - Abasto"	"80"	"29.01"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"29.01"	"20.50"
-"Centro"	"Lujan"	"Cañuelas"	"4"	"100"	"Lujan - Cañuelas"	"70"	"29.72"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.72"	"11.80"
-"Centro"	"Cañuelas"	"Abasto"	"4"	"100"	"Cañuelas - Abasto"	"80"	"29.01"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.01"	"11.80"
-"Centro"	"Benavidez"	"San Antonio de Areco"	"1"	"200"	"Benavidez - San Antonio de Areco"	"93"	"27.72"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"27.72"	"20.50"
-"Centro"	"Benavidez"	"Arrecifes"	"1"	"200"	"Benavidez - San Antonio de Areco - Arrecifes"	"161"	"25.90"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.90"	"20.50"
-"Centro"	"Benavidez"	"Pergamino"	"1"	"200"	"Benavidez - San Antonio de Areco - Arrecifes - Pergamino"	"251"	"24.01"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.01"	"20.50"
-"Centro"	"San Antonio de Areco"	"Rosario"	"1"	"200"	"San Antonio de Areco - Arrecifes - Pergamino - Rosario"	"250"	"24.05"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.05"	"20.50"
-"Centro"	"Arrecifes"	"Rosario"	"1"	"200"	"Arrecifes - Pergamino - Rosario"	"182"	"25.15"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.15"	"20.50"
-"Centro"	"Pergamino"	"Rosario"	"1"	"200"	"Pergamino - Rosario"	"92"	"27.83"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"27.83"	"20.50"
-"Centro"	"Benavidez"	"San Antonio de Areco"	"4"	"100"	"Benavidez - San Antonio de Areco"	"93"	"27.72"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.72"	"11.80"
-"Centro"	"San Antonio de Areco"	"Arrecifes"	"4"	"100"	"San Antonio de Areco - Arrecifes"	"68"	"29.84"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.84"	"11.80"
-"Centro"	"Arrecifes"	"Pergamino"	"4"	"100"	"Arrecifes - Pergamino"	"90"	"28.06"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.06"	"11.80"
-"Centro"	"Pergamino"	"Rosario"	"4"	"100"	"Pergamino - Rosario"	"92"	"27.83"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.83"	"11.80"
-"Centro"	"Rosario"	"Cañada de Gomez"	"1"	"200"	"Rosario - Cañada de Gomez"	"90"	"28.06"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"28.06"	"20.50"
-"Centro"	"Rosario"	"Leones"	"1"	"200"	"Rosario - Cañada de Gomez - Leones"	"198"	"23.89"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.89"	"20.50"
-"Centro"	"Rosario"	"Villa Maria"	"1"	"200"	"Rosario - Cañada de Gomez - Leones - Villa Maria"	"308"	"22.39"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.39"	"20.50"
-"Centro"	"Rosario"	"Manfredi"	"1"	"200"	"Rosario - Cañada de Gomez - Leones - Villa Maria - Manfredi"	"403"	"21.31"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"21.31"	"20.50"
-"Centro"	"Cañada de Gomez"	"Cordoba"	"1"	"200"	"Cañada de Gomez - Leones - Villa Maria - Manfredi - Cordoba"	"413"	"21.03"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"21.03"	"20.50"
-"Centro"	"Leones"	"Cordoba"	"1"	"200"	"Leones - Villa Maria - Manfredi - Cordoba"	"305"	"22.70"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.70"	"20.50"
-"Centro"	"Villa Maria"	"Cordoba"	"1"	"200"	"Villa Maria - Manfredi - Cordoba"	"195"	"24.33"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.33"	"20.50"
-"Centro"	"Manfredi"	"Cordoba"	"1"	"200"	"Manfredi - Cordoba"	"100"	"26.85"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"26.85"	"20.50"
-"Centro"	"Rosario"	"Cañada de Gomez"	"4"	"100"	"Rosario - Cañada de Gomez"	"90"	"28.06"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.06"	"11.80"
-"Centro"	"Cañada de Gomez"	"Leones"	"4"	"100"	"Cañada de Gomez - Leones"	"108"	"25.72"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.72"	"11.80"
-"Centro"	"Leones"	"Villa Maria"	"4"	"100"	"Leones - Villa Maria"	"110"	"27.36"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.36"	"11.80"
-"Centro"	"Villa Maria"	"Manfredi"	"4"	"100"	"Villa Maria - Manfredi"	"95"	"27.48"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.48"	"11.80"
-"Centro"	"Manfredi"	"Cordoba"	"4"	"100"	"Rosario - Cañada de Gomez"	"90"	"28.06"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.06"	"11.80"
-"Centro"	"Cordoba"	"Corralito"	"1"	"200"	"Cordoba - Corralito"	"85"	"28.56"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"28.56"	"20.50"
-"Centro"	"Cordoba"	"Hernando"	"1"	"200"	"Cordoba - Corralito - Hernando"	"180"	"25.20"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.20"	"20.50"
-"Centro"	"Cordoba"	"Chucul"	"1"	"200"	"Cordoba - Corralito - Hernando - Chucul"	"268"	"23.61"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.61"	"20.50"
-"Centro"	"Cordoba"	"V. Mercedes"	"1"	"200"	"Cordoba - Corralito - Hernando - Chucul - V. Mercedes"	"452"	"21.70"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"21.70"	"20.50"
-"Centro"	"Cordoba"	"San Luis"	"1"	"200"	"Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis"	"539"	"20.94"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"20.94"	"20.50"
-"Centro"	"Cordoba"	"Santa Rosa"	"1"	"200"	"Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa"	"734"	"19.56"	"20.50"	"NO"	"SI"	"SI"	"1"	"Cordoba -> Corralito (26.78 dB) -> Hernando (24.21 dB) -> Chucul (22.76 dB) -> V. Mercedes (20.97 dB) [REG]-> San Luis (26.72 dB) -> Santa Rosa (Mza) (22.87 dB)"	"V. Mercedes"	"NO"	"SI"	"200"	"19.56"	"20.50"
-"Centro"	"Corralito"	"Mendoza"	"1"	"200"	"Corralito - Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa - Mendoza"	"759"	"19.02"	"20.50"	"NO"	"SI"	"SI"	"1"	"Corralito -> Hernando (26.28 dB) -> Chucul (24.15 dB) -> V. Mercedes (21.85 dB) -> San Luis (20.95 dB) [REG]-> Santa Rosa (Mza) (24.34 dB) -> Mendoza (22.24 dB)"	"San Luis"	"NO"	"SI"	"200"	"19.02"	"20.50"
-"Centro"	"Hernando"	"Mendoza"	"1"	"200"	"Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa - Mendoza"	"664"	"19.62"	"20.50"	"NO"	"SI"	"SI"	"1"	"Hernando -> Chucul (26.68 dB) -> V. Mercedes (23.17 dB) -> San Luis (22.00 dB) [REG]-> Santa Rosa (Mza) (24.34 dB) -> Mendoza (22.24 dB)"	"San Luis"	"NO"	"SI"	"200"	"19.62"	"20.50"
-"Centro"	"Chucul"	"Mendoza"	"1"	"200"	"Chucul - V. Mercedes - San Luis - Santa Rosa - Mendoza"	"576"	"20.18"	"20.50"	"NO"	"SI"	"SI"	"1"	"Chucul -> V. Mercedes (24.78 dB) -> San Luis (23.18 dB) -> Santa Rosa (Mza) (21.05 dB) [REG]-> Mendoza (25.32 dB)"	"Santa Rosa (Mza)"	"NO"	"SI"	"200"	"20.18"	"20.50"
-"Centro"	"V. Mercedes"	"Mendoza"	"1"	"200"	"V. Mercedes - San Luis - Santa Rosa - Mendoza"	"392"	"21.44"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"21.44"	"20.50"
-"Centro"	"San Luis"	"Mendoza"	"1"	"200"	"San Luis - Santa Rosa - Mendoza"	"305"	"22.31"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.31"	"20.50"
-"Centro"	"Santa Rosa"	"Mendoza"	"1"	"200"	"Santa Rosa - Mendoza"	"110"	"25.41"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.41"	"20.50"
-"Centro"	"Cordoba"	"Corralito"	"4"	"100"	"Cordoba - Corralito"	"85"	"28.56"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.56"	"11.80"
-"Centro"	"Corralito"	"Hernando"	"4"	"100"	"Corralito - Hernando"	"95"	"27.48"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.48"	"11.80"
-"Centro"	"Hernando"	"Chucul"	"4"	"100"	"Hernando - Chucul"	"88"	"28.27"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.27"	"11.80"
-"Centro"	"Chucul"	"V. Mercedes"	"4"	"100"	"Chucul - V. Mercedes"	"184"	"25.90"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.90"	"11.80"
-"Centro"	"V. Mercedes"	"San Luis"	"4"	"100"	"V. Mercedes - San Luis"	"87"	"28.37"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.37"	"11.80"
-"Centro"	"San Luis"	"Santa Rosa"	"4"	"100"	"San Luis - Santa Rosa"	"195"	"25"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25"	"11.80"
-"Centro"	"Santa Rosa"	"Mendoza"	"4"	"100"	"Santa Rosa - Mendoza"	"110"	"25.41"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.41"	"11.80"
-"Centro"	"Benavidez"	"Mendoza"	"1"	"400"	"Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario - Cañada de Gomez - San Marcos - Villa Maria - Manfredi - Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa - Mendoza"	"1622"	"15.65"	"23.50"	"NO"	"SI"	"SI"	"10"	"Benavidez -> Exaltacion de la Cruz (27.32 dB) -> Arrecifes (24.97 dB) [REG]-> Pergamino (26.48 dB) -> Rosario (24.11 dB) [REG]-> Cañada De Gomez (26.48 dB) -> Leones (23.51 dB) [REG]-> San Marcos (27.99 dB) -> Villa Maria (25.42 dB) [REG]-> Manfredi (26.28 dB) -> Cordoba (23.70 dB) [REG]-> Corralito (26.78 dB) -> Hernando (24.21 dB) [REG]-> Chucul (26.68 dB) [REG]-> V. Mercedes (24.78 dB) [REG]-> San Luis (26.72 dB) [REG]-> Santa Rosa (Mza) (24.34 dB) [REG]-> Mendoza (25.32 dB)"	"Arrecifes - Rosario - Leones - Villa Maria - Cordoba - Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa (Mza)"	"NO"	"SI"	"400"	"15.65"	"23.50"
-"Centro"	"Cordoba"	"V. Mercedes"	"1"	"300"	"Cordoba - Corralito - Hernando - Chucul - V. Mercedes"	"452"	"21.70"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"21.70"	"20.50"
-"Centro"	"V. Mercedes"	"San Luis"	"1"	"300"	"V. Mercedes - San Luis"	"87"	"28.37"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"28.37"	"20.50"
-"Centro"	"San Luis"	"Santa Rosa"	"1"	"300"	"San Luis - La Paz - Santa Rosa"	"195"	"25"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"25"	"20.50"
-"Centro"	"Santa Rosa"	"Mendoza"	"1"	"300"	"Santa Rosa - Mendoza"	"110"	"25.41"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"25.41"	"20.50"
-"Centro"	"Mendoza"	"Tunuyan"	"1"	"300"	"Mendoza - Tunuyan"	"96"	"27.36"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"27.36"	"20.50"
-"Centro"	"Tunuyan"	"San Rafael"	"1"	"300"	"Tunuyan - San Rafael"	"165"	"27.09"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"27.09"	"20.50"
-"Centro"	"Abasto"	"Marcos Paz"	"1"	"300"	"Abasto - Marcos Paz"	"88"	"28.27"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"28.27"	"20.50"
-"Centro"	"Marcos Paz"	"Benavidez"	"1"	"300"	"Marcos Paz - Benavidez"	"85"	"28.56"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"28.56"	"20.50"
-"Centro"	"Benavidez"	"Exaltacion de la Cruz"	"1"	"300"	"Benavidez - Exaltacion de la Cruz"	"45"	"30.72"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"30.72"	"20.50"
-"Centro"	"Exaltacion de la Cruz"	"Arrecifes"	"1"	"300"	"Exaltacion de la Cruz - Arrecifes"	"48"	"30.65"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"30.65"	"20.50"
-"Centro"	"Arrecifes"	"Pergamino"	"1"	"300"	"Arrecifes - Pergamino"	"90"	"28.06"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"28.06"	"20.50"
-"Centro"	"Pergamino"	"Rosario"	"1"	"300"	"Pergamino - Rosario"	"92"	"27.83"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"27.83"	"20.50"
-"Centro"	"Rosario"	"Cañada de Gomez"	"1"	"300"	"Rosario - Cañada de Gomez"	"90"	"28.06"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"28.06"	"20.50"
-"Centro"	"Cañada de Gomez"	"San Marcos"	"1"	"300"	"Cañada de Gomez - San Marcos"	"140.9"	"24.78"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"24.78"	"20.50"
-"Centro"	"San Marcos"	"Villa Maria"	"1"	"300"	"San Marcos - Villa Maria"	"77.1"	"29.24"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"29.24"	"20.50"
-"Centro"	"Villa Maria"	"Manfredi"	"1"	"300"	"Villa Maria - Manfredi"	"95"	"27.48"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"27.48"	"20.50"
-"Centro"	"Manfredi"	"Cordoba"	"1"	"300"	"Manfredi - Cordoba"	"100"	"26.85"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"26.85"	"20.50"
-"Centro"	"Cordoba"	"Corralito"	"1"	"300"	"Cordoba - Corralito"	"85"	"28.56"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"28.56"	"20.50"
-"Centro"	"Corralito"	"Hernando"	"1"	"300"	"Corralito - Hernando"	"95"	"27.48"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"27.48"	"20.50"
-"Centro"	"Hernando"	"Chucul"	"1"	"300"	"Hernando - Chucul"	"88"	"28.27"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"28.27"	"20.50"
-"Centro"	"Chucul"	"Mendoza"	"1"	"300"	"Chucul - V. Mercedes - San Luis - La Paz - Santa Rosa - Mendoza"	"576"	"20.18"	"20.50"	"NO"	"SI"	"SI"	"1"	"Chucul -> V. Mercedes (24.78 dB) -> San Luis (23.18 dB) -> V. Mercedes (24.78 dB) -> Chucul -> Hernando (26.68 dB) -> Corralito (24.15 dB) -> Cordoba (22.76 dB) -> Arroyito (21.39 dB) -> San Francisco (20.44 dB) -> Rafaela (19.81 dB) -> Santa Fe (19.11 dB) -> Parana (18.80 dB) -> La Paz (17.84 dB) -> Parana (18.80 dB) -> Santa Fe (19.11 dB) -> Rafaela (19.81 dB) -> San Francisco (20.44 dB) -> Arroyito (21.39 dB) -> Cordoba (22.76 dB) -> Corralito (24.15 dB) -> Hernando (26.68 dB) -> Chucul -> V. Mercedes (24.78 dB) -> San Luis (23.18 dB) -> Santa Rosa (Mza) (21.05 dB) [REG]-> Mendoza (25.32 dB)"	"Santa Rosa (Mza)"	"NO"	"SI"	"300"	"20.18"	"20.50"
-"Centro"	"Rosario"	"Cordoba"	"1"	"300"	"Rosario - Cañada de Gomez - San Marcos - Villa Maria - Manfredi - Cordoba"	"503"	"20.32"	"20.50"	"NO"	"SI"	"SI"	"1"	"Rosario -> Cañada De Gomez (26.48 dB) -> Leones (23.51 dB) -> San Marcos (22.68 dB) -> Villa Maria (21.75 dB) -> Manfredi (20.75 dB) [REG]-> Cordoba (25.92 dB)"	"Manfredi"	"NO"	"SI"	"300"	"20.32"	"20.50"
-"Centro"	"Cordoba"	"Mendoza"	"1"	"300"	"Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - Mendoza"	"844"	"18.61"	"20.50"	"NO"	"SI"	"SI"	"1"	"Cordoba -> Corralito (26.78 dB) -> Hernando (24.21 dB) -> Chucul (22.76 dB) -> V. Mercedes (20.97 dB) [REG]-> San Luis (26.72 dB) -> Santa Rosa (Mza) (22.87 dB) -> Mendoza (21.27 dB)"	"V. Mercedes"	"NO"	"SI"	"300"	"18.61"	"20.50"
-"Centro"	"Benavidez"	"Mendoza"	"2"	"300"	"Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario - Cañada de Gomez - San Marcos - Villa Maria - Manfredi - Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - La Paz - Santa Rosa - Mendoza"	"1622"	"15.65"	"20.50"	"NO"	"SI"	"SI"	"3"	"Benavidez -> Exaltacion de la Cruz (27.32 dB) -> Arrecifes (24.97 dB) -> Pergamino (23.20 dB) -> Rosario (21.28 dB) -> Cañada De Gomez (20.95 dB) [REG]-> Leones (25.44 dB) -> San Marcos (24.21 dB) -> Villa Maria (22.94 dB) -> Manfredi (21.68 dB) -> Cordoba (N/A) [REG]-> Corralito (26.78 dB) -> Hernando (24.21 dB) -> Chucul (22.76 dB) -> V. Mercedes (20.97 dB) [REG]-> San Luis (26.72 dB) -> V. Mercedes (20.97 dB) [REG]-> Chucul (22.76 dB) -> Hernando (24.21 dB) -> Corralito (26.78 dB) -> Cordoba (N/A) [REG]-> Arroyito (25.85 dB) -> San Francisco (23.61 dB) -> Rafaela (22.40 dB) -> Santa Fe (21.22 dB) -> Parana (20.72 dB) -> La Paz (19.33 dB) -> Parana (20.72 dB) -> Santa Fe (21.22 dB) -> Rafaela (22.40 dB) -> San Francisco (23.61 dB) -> Arroyito (25.85 dB) -> Cordoba (N/A) [REG]-> Corralito (26.78 dB) -> Hernando (24.21 dB) -> Chucul (22.76 dB) -> V. Mercedes (20.97 dB) [REG]-> San Luis (26.72 dB) -> Santa Rosa (Mza) (22.87 dB) -> Mendoza (21.27 dB)"	"Cañada De Gomez - Cordoba - V. Mercedes"	"NO"	"SI"	"300"	"15.65"	"20.50"
-"Centro"	"Benavidez"	"Cordoba"	"3"	"300"	"Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario - Cañada de Gomez - San Marcos - Villa Maria - Manfredi - Cordoba"	"778"	"18.67"	"20.50"	"NO"	"SI"	"SI"	"1"	"Benavidez -> Exaltacion de la Cruz (27.32 dB) -> Arrecifes (24.97 dB) -> Pergamino (23.20 dB) -> Rosario (21.28 dB) -> Cañada De Gomez (20.95 dB) [REG]-> Leones (25.44 dB) -> San Marcos (24.21 dB) -> Villa Maria (22.94 dB) -> Manfredi (21.68 dB) -> Cordoba (20.59 dB)"	"Cañada De Gomez"	"NO"	"SI"	"300"	"18.67"	"20.50"
-"Centro"	"Benavidez"	"Rosario"	"3"	"300"	"Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario"	"275"	"23.52"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"300"	"23.52"	"20.50"
-"Sur"	"Rio Gallegos"	"San Sebastian"	"1"	"200"	"Rio Gallegos - Estacion Cullen - San Sebastian"	"278"	"21.10"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"21.10"	"20.50"
-"Sur"	"San Sebastian"	"Usuahia"	"1"	"200"	"San Sebastian - Rio Grande - Tolhuin - Usuahia"	"285"	"20.70"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"20.70"	"20.50"
-"Sur"	"Rio Gallegos"	"Estacion Cullen"	"1"	"200"	"Rio Gallegos - Estacion Cullen"	"193"	"22.11"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.11"	"20.50"
-"Sur"	"Estacion Cullen"	"Rio Grande"	"1"	"200"	"Estacion Cullen - San Sebastian - Rio Grande"	"160"	"25.30"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.30"	"20.50"
-"Sur"	"Rio Grande"	"Tolhuin"	"1"	"200"	"Rio Grande - Tolhuin"	"107"	"23.91"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.91"	"20.50"
-"Sur"	"Rio Gallegos"	"Piedrabuena"	"4"	"100"	"Rio Gallegos - Piedrabuena"	"240"	"24.93"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"24.93"	"11.80"
-"Sur"	"Piedrabuena"	"San Julian"	"4"	"100"	"Piedrabuena - San Julian"	"124"	"26.64"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"26.64"	"11.80"
-"Sur"	"San Julian"	"Jaramillo"	"4"	"100"	"San Julian - Jaramillo"	"288"	"25.30"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.30"	"11.80"
-"Sur"	"Jaramillo"	"Caleta Olivia"	"4"	"100"	"Jaramillo - Caleta Olivia"	"25"	"31.03"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"31.03"	"11.80"
-"Sur"	"Rio Gallegos"	"Piedrabuena"	"1"	"200"	"Rio Gallegos - Piedrabuena"	"240"	"24.93"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.93"	"20.50"
-"Sur"	"Piedrabuena"	"San Julian"	"1"	"200"	"Piedrabuena - San Julian"	"124"	"26.64"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"26.64"	"20.50"
-"Sur"	"San Julian"	"Jaramillo"	"1"	"200"	"San Julian - Jaramillo"	"288"	"25.30"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.30"	"20.50"
-"Sur"	"Jaramillo"	"Caleta Olivia"	"1"	"200"	"Jaramillo - Caleta Olivia"	"25"	"31.03"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"31.03"	"20.50"
-"Sur"	"Rio Gallegos"	"Esperanza"	"4"	"100"	"Rio Gallegos - Esperanza"	"142"	"26.31"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"26.31"	"11.80"
-"Sur"	"Esperanza"	"El Calafate"	"4"	"100"	"Esperanza - El Calafate"	"163"	"25.46"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.46"	"11.80"
-"Sur"	"El Calafate"	"Tres Lagos"	"4"	"100"	"El Calafate - Tres Lagos"	"163"	"23.83"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"23.83"	"11.80"
-"Sur"	"Tres Lagos"	"Gobernador Gregores"	"4"	"100"	"Tres Lagos - Gobernador Gregores"	"162"	"23.15"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"23.15"	"11.80"
-"Sur"	"Gobernador Gregores"	"Bajo Caracoles"	"4"	"100"	"Gobernador Gregores - Bajo Caracoles"	"211"	"21.51"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"21.51"	"11.80"
-"Sur"	"Bajo Caracoles"	"Perito Moreno"	"4"	"100"	"Bajo Caracoles - Perito Moreno"	"130"	"26.59"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"26.59"	"11.80"
-"Sur"	"Perito Moreno"	"Colonia Las Heras"	"4"	"100"	"Perito Moreno - Colonia Las Heras"	"172"	"25.13"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.13"	"11.80"
-"Sur"	"Colonia Las Heras"	"Pico Truncado"	"4"	"100"	"Colonia Las Heras - Pico Truncado"	"85"	"27.54"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.54"	"11.80"
-"Sur"	"Pico Truncado"	"Caleta Olivia"	"4"	"100"	"Pico Truncado - Caleta Olivia"	"60"	"29.93"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.93"	"11.80"
-"Sur"	"Rio Gallegos"	"Esperanza"	"1"	"200"	"Rio Gallegos - Esperanza"	"142"	"26.31"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"26.31"	"20.50"
-"Sur"	"Esperanza"	"El Calafate"	"1"	"200"	"Esperanza - El Calafate"	"163"	"25.46"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.46"	"20.50"
-"Sur"	"El Calafate"	"Tres Lagos"	"1"	"200"	"El Calafate - Tres Lagos"	"163"	"23.83"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.83"	"20.50"
-"Sur"	"Tres Lagos"	"Gobernador Gregores"	"1"	"200"	"Tres Lagos - Gobernador Gregores"	"162"	"23.15"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.15"	"20.50"
-"Sur"	"Gobernador Gregores"	"Bajo Caracoles"	"1"	"200"	"Gobernador Gregores - Bajo Caracoles"	"211"	"21.51"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"21.51"	"20.50"
-"Sur"	"Bajo Caracoles"	"Perito Moreno"	"1"	"200"	"Bajo Caracoles - Perito Moreno"	"130"	"26.59"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"26.59"	"20.50"
-"Sur"	"Perito Moreno"	"Colonia Las Heras"	"1"	"200"	"Perito Moreno - Colonia Las Heras"	"172"	"25.13"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.13"	"20.50"
-"Sur"	"Colonia Las Heras"	"Pico Truncado"	"1"	"200"	"Colonia Las Heras - Pico Truncado"	"85"	"27.54"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"27.54"	"20.50"
-"Sur"	"Pico Truncado"	"Caleta Olivia"	"1"	"200"	"Pico Truncado - Caleta Olivia"	"60"	"29.93"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"29.93"	"20.50"
-"Sur"	"Dina Huapi"	"Bariloche"	"4"	"100"	"Dina Huapi - Bariloche"	"20"	"31.10"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"31.10"	"11.80"
-"Sur"	"Bariloche"	"El Foyel"	"4"	"100"	"Bariloche - El Foyel"	"78"	"28.40"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.40"	"11.80"
-"Sur"	"El Foyel"	"Epuyen"	"4"	"100"	"El Foyel - Epuyen"	"95"	"26.05"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"26.05"	"11.80"
-"Sur"	"Epuyen"	"Esquel"	"4"	"100"	"Epuyen - Esquel"	"110"	"23.33"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"23.33"	"11.80"
-"Sur"	"Esquel"	"Tecka"	"4"	"100"	"Esquel - Tecka"	"100"	"25.20"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.20"	"11.80"
-"Sur"	"Tecka"	"J. de San Martin"	"4"	"100"	"Tecka - J. de San Martin"	"100"	"25.20"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.20"	"11.80"
-"Sur"	"J. de San Martin"	"Alto Rio Senguer"	"4"	"100"	"J. de San Martin - Alto Rio Senguer"	"148"	"26.78"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"26.78"	"11.80"
-"Sur"	"Alto Rio Senguer"	"Rio Mayo"	"4"	"100"	"Alto Rio Senguer - Rio Mayo"	"100"	"25.20"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.20"	"11.80"
-"Sur"	"Rio Mayo"	"Perito Moreno"	"4"	"100"	"Rio Mayo - Perito Moreno"	"110"	"23.33"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"23.33"	"11.80"
-"Sur"	"Neuquen"	"Dina Huapi"	"1"	"200"	"Neuquen - Dina Huapi"	"438"	"20.87"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"20.87"	"20.50"
-"Sur"	"Dina Huapi"	"Bariloche"	"1"	"200"	"Dina Huapi - Bariloche"	"20"	"31.10"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"31.10"	"20.50"
-"Sur"	"Bariloche"	"El Foyel"	"1"	"200"	"Bariloche - El Foyel"	"78"	"28.40"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"28.40"	"20.50"
-"Sur"	"El Foyel"	"Epuyen"	"1"	"200"	"El Foyel - Epuyen"	"95"	"26.05"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"26.05"	"20.50"
-"Sur"	"Epuyen"	"Esquel"	"1"	"200"	"Epuyen - Esquel"	"110"	"23.33"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.33"	"20.50"
-"Sur"	"Esquel"	"Tecka"	"1"	"200"	"Esquel - Tecka"	"100"	"25.20"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.20"	"20.50"
-"Sur"	"Tecka"	"J. de San Martin"	"1"	"200"	"Tecka - J. de San Martin"	"100"	"25.20"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.20"	"20.50"
-"Sur"	"J. de San Martin"	"Alto Rio Senguer"	"1"	"200"	"J. de San Martin - Alto Rio Senguer"	"148"	"26.78"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"26.78"	"20.50"
-"Sur"	"Alto Rio Senguer"	"Rio Mayo"	"1"	"200"	"Alto Rio Senguer - Rio Mayo"	"100"	"25.20"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.20"	"20.50"
-"Sur"	"Rio Mayo"	"Perito Moreno"	"1"	"200"	"Rio Mayo - Perito Moreno"	"110"	"23.33"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.33"	"20.50"
-"Sur"	"Perito Moreno"	"Caleta Olivia"	"1"	"200"	"Perito Moreno - Pico Truncado - Caleta Olivia"	"317"	"22.57"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.57"	"20.50"
-"Sur"	"Bahia Blanca"	"Viedma"	"4"	"100"	"Bahia Blanca - Viedma"	"304"	"23.97"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"23.97"	"11.80"
-"Sur"	"Viedma"	"San Antonio Oeste"	"4"	"100"	"Viedma - San Antonio Oeste"	"194"	"25.47"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.47"	"11.80"
-"Sur"	"San Antonio Oeste"	"Sierra Grande"	"4"	"100"	"San Antonio Oeste - Sierra Grande"	"128"	"23.29"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"23.29"	"11.80"
-"Sur"	"Sierra Grande"	"Puerto Madryn"	"4"	"100"	"Sierra Grande - Puerto Madryn"	"149"	"24.96"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"24.96"	"11.80"
-"Sur"	"Puerto Madryn"	"Trelew"	"4"	"100"	"Puerto Madryn - Trelew"	"69"	"29.28"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.28"	"11.80"
-"Sur"	"Trelew"	"Rawson"	"4"	"100"	"Trelew - Rawson"	"22"	"31.07"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"31.07"	"11.80"
-"Sur"	"Rawson"	"Comodoro Rivadavia"	"4"	"100"	"Rawson - Comodoro Rivadavia"	"376"	"20.67"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"20.67"	"11.80"
-"Sur"	"Comodoro Rivadavia"	"Caleta Olivia"	"4"	"100"	"Comodoro Rivadavia - Caleta Olivia"	"84"	"27.67"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.67"	"11.80"
-"Sur"	"Bahia Blanca"	"Viedma"	"1"	"200"	"Bahia Blanca - Viedma"	"304"	"23.97"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.97"	"20.50"
-"Sur"	"Viedma"	"Caleta Olivia"	"1"	"200"	"Viedma - San Antonio Oeste - Sierra Grande - Puerto Madryn - Trelew - Rawson - Comodoro Rivadavia - Caleta Olivia"	"1022"	"16.57"	"20.50"	"NO"	"SI"	"SI"	"2"	"Viedma -> San Antonio Oeste (24.36 dB) -> Sierra Grande (21.67 dB) [REG]-> Puerto Madryn (24.74 dB) -> Trelew (23.35 dB) -> Rawson (22.61 dB) [REG]-> Comodoro Rivadavia (21.44 dB) -> Caleta Olivia (20.55 dB)"	"Sierra Grande - Rawson"	"NO"	"SI"	"200"	"16.57"	"20.50"
-"Sur"	"Bahia Blanca"	"San Antonio Oeste"	"1"	"200"	"Bahia Blanca - Viedma - San Antonio Oeste"	"498"	"21.75"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"21.75"	"20.50"
-"Sur"	"San Antonio Oeste"	"Sierra Grande"	"1"	"200"	"San Antonio Oeste - Sierra Grande"	"128"	"23.29"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.29"	"20.50"
-"Sur"	"Sierra Grande"	"Puerto Madryn"	"1"	"200"	"Sierra Grande - Puerto Madryn"	"149"	"24.96"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.96"	"20.50"
-"Sur"	"Puerto Madryn"	"Trelew"	"1"	"200"	"Puerto Madryn - Trelew"	"69"	"29.28"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"29.28"	"20.50"
-"Sur"	"Trelew"	"Rawson"	"1"	"200"	"Trelew - Rawson"	"22"	"31.07"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"31.07"	"20.50"
-"Sur"	"Rawson"	"Comodoro Rivadavia"	"1"	"200"	"Rawson - Comodoro Rivadavia"	"376"	"20.67"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"20.67"	"20.50"
-"Sur"	"Comodoro Rivadavia"	"Caleta Olivia"	"1"	"200"	"Comodoro Rivadavia - Caleta Olivia"	"84"	"27.67"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"27.67"	"20.50"
-"Sur"	"Neuquen"	"Arroyito"	"4"	"100"	"Neuquen - Arroyito"	"54"	"30.25"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"30.25"	"11.80"
-"Sur"	"Arroyito"	"Picun Leufu"	"4"	"100"	"Arroyito - Picun Leufu"	"84"	"27.67"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"27.67"	"11.80"
-"Sur"	"Picun Leufu"	"Piedra del Aguila"	"4"	"100"	"Picun Leufu - Piedra del Aguila"	"100"	"25.20"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.20"	"11.80"
-"Sur"	"Piedra del Aguila"	"Dina Huapi"	"4"	"100"	"Piedra del Aguila - Dina Huapi"	"200"	"25.26"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.26"	"11.80"
-"Sur"	"Dina Huapi"	"Aguada Cecilio"	"4"	"100"	"Dina Huapi - Aguada Cecilio"	"592"	"19.98"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"19.98"	"11.80"
-"Sur"	"Aguada Cecilio"	"San Antonio Oeste"	"4"	"100"	"Aguada Cecilio - San Antonio Oeste"	"90"	"26.83"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"26.83"	"11.80"
-"Sur"	"Neuquen"	"Dina Huapi"	"1"	"200"	"Neuquen - Arroyito - Picun Leufu - Piedra del Aguila - Dina Huapi"	"438"	"20.87"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"20.87"	"20.50"
-"Sur"	"Dina Huapi"	"Aguada Cecilio"	"1"	"200"	"Dina Huapi - Aguada Cecilio"	"592"	"19.98"	"20.50"	"NO"	"SI"	"NO"	"0"			"SI"	"SI"	"100"	"19.98"	"11.80"
-"Sur"	"Aguada Cecilio"	"San Antonio Oeste"	"1"	"200"	"Aguada Cecilio - San Antonio Oeste"	"90"	"26.83"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"26.83"	"20.50"
-"Sur"	"San Antonio Oeste"	"Bahia Blanca"	"1"	"200"	"San Antonio Oeste - Viedma - Bahia Blanca"	"498"	"21.75"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"21.75"	"20.50"
-"Sur"	"Neuquen"	"Arroyito"	"1"	"200"	"Neuquen - Arroyito"	"54"	"30.25"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"30.25"	"20.50"
-"Sur"	"Arroyito"	"Picun Leufu"	"1"	"200"	"Arroyito - Picun Leufu"	"84"	"27.67"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"27.67"	"20.50"
-"Sur"	"Picun Leufu"	"Piedra del Aguila"	"1"	"200"	"Picun Leufu - Piedra del Aguila"	"100"	"25.20"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.20"	"20.50"
-"Sur"	"Piedra del Aguila"	"Bahia Blanca"	"1"	"200"	"Piedra del Aguila - Dina Huapi - Aguada Cecilio - San Antonio Oeste - Viedma - Bahia Blanca"	"1380"	"16.71"	"20.50"	"NO"	"SI"	"NO"	"0"			"SI"	"SI"	"100"	"16.71"	"11.80"
-"Sur"	"Neuquen"	"General Roca"	"4"	"100"	"Neuquen - General Roca"	"51"	"30.19"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"30.19"	"11.80"
-"Sur"	"General Roca"	"Choele Choel"	"4"	"100"	"General Roca - Choele Choel"	"188"	"22.11"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"22.11"	"11.80"
-"Sur"	"Choele Choel"	"Rio Colorado"	"4"	"100"	"Choele Choel - Rio Colorado"	"147"	"12.41"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"12.41"	"11.80"
-"Sur"	"Rio Colorado"	"General Conesa"	"4"	"100"	"Rio Colorado - General Conesa"	"156"	"26.64"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"26.64"	"11.80"
-"Sur"	"General Conesa"	"San Antonio Oeste"	"4"	"100"	"General Conesa - San Antonio Oeste"	"98"	"25.54"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.54"	"11.80"
-"Sur"	"Neuquen"	"General Roca"	"1"	"200"	"Neuquen - General Roca"	"51"	"30.19"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"30.19"	"20.50"
-"Sur"	"General Roca"	"Choele Choel"	"1"	"200"	"General Roca - Choele Choel"	"188"	"22.11"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.11"	"20.50"
-"Sur"	"Choele Choel"	"Rio Colorado"	"1"	"200"	"Choele Choel - Rio Colorado"	"147"	"12.41"	"20.50"	"NO"	"SI"	"SI"	"0"	"Choele Choel -> Rio Colorado (25.00 dB)"		"NO"	"SI"	"200"	"12.41"	"20.50"
-"Sur"	"Rio Colorado"	"General Conesa"	"1"	"200"	"Rio Colorado - General Conesa"	"156"	"26.64"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"26.64"	"20.50"
-"Sur"	"General Conesa"	"Bahia Blanca"	"1"	"200"	"General Conesa - San Antonio Oeste - Viedma - Bahia Blanca"	"596"	"20.31"	"20.50"	"NO"	"SI"	"SI"	"1"	"General Conesa -> San Antonio Oeste (25.52 dB) -> Viedma (22.40 dB) [REG]-> Bahia Blanca (23.12 dB)"	"Viedma"	"NO"	"SI"	"200"	"20.31"	"20.50"
-"Sur"	"Neuquen"	"Sargento Vidal"	"4"	"100"	"Neuquen - Sargento Vidal"	"35"	"30.86"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"30.86"	"11.80"
-"Sur"	"Sargento Vidal"	"Catriel"	"4"	"100"	"Sargento Vidal - Catriel"	"102"	"24.84"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"24.84"	"11.80"
-"Sur"	"Catriel"	"Santa Isabel"	"4"	"100"	"Catriel - Santa Isabel"	"240"	"21.81"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"21.81"	"11.80"
-"Sur"	"Neuquen"	"Sargento Vidal"	"1"	"200"	"Neuquen - Sargento Vidal"	"35"	"30.86"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"30.86"	"20.50"
-"Sur"	"Sargento Vidal"	"Catriel"	"1"	"200"	"Sargento Vidal - Catriel"	"102"	"24.84"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.84"	"20.50"
-"Sur"	"Catriel"	"Santa Isabel"	"1"	"200"	"Catriel - Santa Isabel"	"240"	"21.81"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"21.81"	"20.50"
-"Sur"	"Santa Isabel"	"San Rafael"	"1"	"200"	"Santa Isabel - San Rafael"	"311"	"24.28"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"24.28"	"20.50"
-"Sur"	"Dina Huapi"	"Villa La Angostura"	"4"	"100"	"Dina Huapi - Villa La Angostura"	"74"	"28.14"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"28.14"	"11.80"
-"Sur"	"Villa La Angostura"	"San Martin de los Andes"	"4"	"100"	"Villa La Angostura - San Martin de los Andes"	"110"	"21.42"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"21.42"	"11.80"
-"Sur"	"San Martin de los Andes"	"Junin de los Andes"	"4"	"100"	"San Martin de los Andes - Junin de los Andes"	"61"	"29.51"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"29.51"	"11.80"
-"Sur"	"Junin de los Andes"	"Zapala"	"4"	"100"	"Junin de los Andes - Zapala"	"202"	"20.23"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"20.23"	"11.80"
-"Sur"	"Zapala"	"Chos Malal"	"4"	"100"	"Zapala - Chos Malal"	"255"	"22.41"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"22.41"	"11.80"
-"Sur"	"Chos Malal"	"Buta Ranquil"	"4"	"100"	"Chos Malal - Buta Ranquil"	"92"	"25.23"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"25.23"	"11.80"
-"Sur"	"Buta Ranquil"	"Malargue"	"4"	"100"	"Buta Ranquil - Malargue"	"244"	"20.80"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"20.80"	"11.80"
-"Sur"	"Malargue"	"San Rafael"	"4"	"100"	"Malargue - San Rafael"	"191"	"23.26"	"11.80"	"SI"	"NO"		"0"			"NO"	"SI"	"100"	"23.26"	"11.80"
-"Sur"	"Dina Huapi"	"Villa La Angostura"	"1"	"200"	"Dina Huapi - Villa La Angostura"	"74"	"28.14"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"28.14"	"20.50"
-"Sur"	"Villa La Angostura"	"San Martin de los Andes"	"1"	"200"	"Villa La Angostura - San Martin de los Andes"	"110"	"21.42"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"21.42"	"20.50"
-"Sur"	"San Martin de los Andes"	"Junin de los Andes"	"1"	"200"	"San Martin de los Andes - Junin de los Andes"	"61"	"29.51"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"29.51"	"20.50"
-"Sur"	"Junin de los Andes"	"Zapala"	"1"	"200"	"Junin de los Andes - Zapala"	"202"	"20.23"	"20.50"	"NO"	"SI"	"SI"	"0"	"Junin de los Andes -> Zapala (22.22 dB)"		"NO"	"SI"	"200"	"20.23"	"20.50"
-"Sur"	"Zapala"	"Chos Malal"	"1"	"200"	"Zapala - Chos Malal"	"255"	"22.41"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"22.41"	"20.50"
-"Sur"	"Chos Malal"	"Buta Ranquil"	"1"	"200"	"Chos Malal - Buta Ranquil"	"92"	"25.23"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"25.23"	"20.50"
-"Sur"	"Buta Ranquil"	"Malargue"	"1"	"200"	"Buta Ranquil - Malargue"	"244"	"20.80"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"20.80"	"20.50"
-"Sur"	"Malargue"	"San Rafael"	"1"	"200"	"Malargue - San Rafael"	"191"	"23.26"	"20.50"	"SI"	"NO"		"0"			"NO"	"SI"	"200"	"23.26"	"20.50"
+Region;Origen;Destino;Cantidad de Enlaces;Velocidad [Gbps];Ruta;Distancia_km;GSNR_Total_dB;Umbral_OSNR_dB;Factible;Necesito_Regeneracion;Reg_Factible;Reg_Count;Ruta_Regenerada;Nodos_Regeneradores;Necesito Bajada;Factible con bajada;Velocidad_Ajustada [Gbps];GSNR_Total_dB;Umbral_OSNR_dB
+Norte;Mendoza;San Juan;1;200;Mendoza - San Juan;237;24.86;20.50;SI;NO;;0;;;NO;;;;
+Norte;Mendoza;San Jose de Jachal;1;200;Mendoza - San Juan - San Jose de Jachal;396;22.56;20.50;SI;NO;;0;;;NO;;;;
+Norte;Mendoza;Patquia;1;200;Mendoza - San Juan - San Jose de Jachal - Patquia;629;8.13;20.50;NO;SI;SI;1;Mendoza -> Villa Tulumaya (27.97 dB) -> Villa Media Agua (24.76 dB) -> San Juan (23.16 dB) -> San Jose de Jachal (21.15 dB) [REG]-> Patquia (23.96 dB);San Jose de Jachal;NO;;;;
+Norte;Mendoza;Chilecito;1;200;Mendoza - San Juan - San Jose de Jachal - Patquia - Chilecito;793;8.03;20.50;NO;SI;SI;1;Mendoza -> Villa Tulumaya (27.97 dB) -> Villa Media Agua (24.76 dB) -> San Juan (23.16 dB) -> San Jose de Jachal (21.15 dB) [REG]-> Patquia (23.96 dB) -> Chilecito (21.41 dB);San Jose de Jachal;NO;;;;
+Norte;Mendoza;Belen;1;200;Mendoza - San Juan - San Jose de Jachal - Patquia - Chilecito - Belen;1009.01;7.97;20.50;NO;SI;SI;2;Mendoza -> Villa Tulumaya (27.97 dB) -> Villa Media Agua (24.76 dB) -> San Juan (23.16 dB) -> San Jose de Jachal (21.15 dB) [REG]-> Patquia (23.96 dB) -> Chilecito (21.41 dB) [REG]-> Belen (24.06 dB);San Jose de Jachal - Chilecito;NO;;;;
+Norte;Mendoza;Santa Maria;1;200;Mendoza - San Juan - San Jose de Jachal - Patquia - Chilecito - Belen - Santa Maria;1179.01;7.94;20.50;NO;SI;SI;2;Mendoza -> Villa Tulumaya (27.97 dB) -> Villa Media Agua (24.76 dB) -> San Juan (23.16 dB) -> San Jose de Jachal (21.15 dB) [REG]-> Patquia (23.96 dB) -> Chilecito (21.41 dB) [REG]-> Belen (24.06 dB) -> Santa Maria (21.75 dB);San Jose de Jachal - Chilecito;NO;;;;
+Norte;San Jose de Jachal;San Miguel de Tucum�n;1;200;San Jose de Jachal - Patquia - Chilecito - Belen - Santa Maria - San Miguel de Tucuman;968.01;8.05;20.50;NO;SI;SI;2;San Jose de Jachal -> Patquia (23.96 dB) -> Chilecito (21.41 dB) [REG]-> Belen (24.06 dB) -> Santa Maria (21.75 dB) [REG]-> San Miguel de Tucuman (24.51 dB);Chilecito - Santa Maria;NO;;;;
+Norte;Patquia;San Miguel de Tucum�n;1;200;Patquia - Chilecito - Belen - Santa Maria - San Miguel de Tucuman;735.01;20.78;20.50;SI;NO;;0;;;NO;;;;
+Norte;Chilecito;San Miguel de Tucum�n;1;200;Chilecito - Belen - Santa Maria - San Miguel de Tucuman;571.01;23.15;20.50;SI;NO;;0;;;NO;;;;
+Norte;Belen;San Miguel de Tucum�n;1;200;Belen - Santa Maria - San Miguel de Tucuman;355;25.49;20.50;SI;NO;;0;;;NO;;;;
+Norte;Santa Maria;San Miguel de Tucum�n;1;200;Santa Maria - San Miguel de Tucuman;185;28.06;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Juan;San Jose de Jachal;4;100;San Juan - San Jose de Jachal;159;26.11;11.80;SI;NO;;0;;;NO;;;;
+Norte;San Jose de Jachal;Patquia;4;100;San Jose de Jachal - Patquia;233;8.28;11.80;NO;SI;SI;0;San Jose de Jachal -> Patquia (23.96 dB);;NO;;;;
+Norte;Patquia;Chilecito;4;100;Patquia - Chilecito;164;24.34;11.80;SI;NO;;0;;;NO;;;;
+Norte;Chilecito;Belen;4;100;Chilecito - Belen;216.01;26.63;11.80;SI;NO;;0;;;NO;;;;
+Norte;Belen;Santa Maria;4;100;Belen - Santa Maria;170;28.47;11.80;SI;NO;;0;;;NO;;;;
+Norte;Santa Maria;San Miguel de Tucum�n;4;100;Santa Maria - San Miguel de Tucuman;185;28.06;11.80;SI;NO;;0;;;NO;;;;
+Norte;Mendoza;Villa Tulumaya;1;200;Mendoza - Villa Tulumaya;45;30.76;20.50;SI;NO;;0;;;NO;;;;
+Norte;Mendoza;Media Agua;1;200;Mendoza - Villa Tulumaya - Media Agua;145;26.10;20.50;SI;NO;;0;;;NO;;;;
+Norte;Mendoza;San Juan;1;200;Mendoza - Villa Tulumaya - Media Agua - San Juan;237;24.86;20.50;SI;NO;;0;;;NO;;;;
+Norte;Mendoza;Serrezuela;1;200;Mendoza - Villa Tulumaya - Media Agua - San Juan - Serrezuela;628;22.27;20.50;SI;NO;;0;;;NO;;;;
+Norte;Mendoza;La Falda;1;200;Mendoza - Villa Tulumaya - Media Agua - San Juan - Serrezuela - La Falda;773;21.46;20.50;SI;NO;;0;;;NO;;;;
+Norte;Villa Tulumaya;Cordoba;1;200;Villa Tulumaya - Media Agua - San Juan - Serrezuela - La Falda - Cordoba;813;21.21;20.50;SI;NO;;0;;;NO;;;;
+Norte;Media Agua;Cordoba;1;200;Media Agua - San Juan - Serrezuela - La Falda - Cordoba;713;22.25;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Juan;Cordoba;1;200;San Juan - Serrezuela - La Falda - Cordoba;621;22.89;20.50;SI;NO;;0;;;NO;;;;
+Norte;Serrezuela;Cordoba;1;200;Serrezuela - La Falda - Cordoba;230;26.05;20.50;SI;NO;;0;;;NO;;;;
+Norte;La Falda;Cordoba;1;200;La Falda - Cordoba;85;28.96;20.50;SI;NO;;0;;;NO;;;;
+Norte;Mendoza;Villa Tulumaya;4;100;Mendoza - Villa Tulumaya;45;30.76;11.80;SI;NO;;0;;;NO;;;;
+Norte;Villa Tulumaya;Media Agua;4;100;Villa Tulumaya - Media Agua;100;27.51;11.80;SI;NO;;0;;;NO;;;;
+Norte;Media Agua;San Juan;4;100;Media Agua - San Juan;92;30.15;11.80;SI;NO;;0;;;NO;;;;
+Norte;San Juan;Serrezuela;4;100;San Juan - Serrezuela;391;25.49;11.80;SI;NO;;0;;;NO;;;;
+Norte;Serrezuela;La Falda;4;100;Serrezuela - La Falda;145;28.64;11.80;SI;NO;;0;;;NO;;;;
+Norte;La Falda;Cordoba;4;100;La Falda - Cordoba;85;28.96;11.80;SI;NO;;0;;;NO;;;;
+Norte;Tucuman;Concepcion;1;200;Tucuman - Concepcion;80;29.05;20.50;SI;NO;;0;;;NO;;;;
+Norte;Tucuman;Catamarca;1;200;Tucuman - Concepcion - Catamarca;237.8;23.77;20.50;SI;NO;;0;;;NO;;;;
+Norte;Tucuman;La Rioja;1;200;Tucuman - Concepcion - Catamarca - La Rioja;423.2;21.46;20.50;SI;NO;;0;;;NO;;;;
+Norte;Tucuman;Patquia;1;200;Tucuman - Concepcion - Catamarca - La Rioja - Patquia;503.2;20.84;20.50;SI;NO;;0;;;NO;;;;
+Norte;Concepcion;Cordoba;1;200;Concepcion - Catamarca - La Rioja - Cordoba;767.71;9.81;20.50;NO;SI;SI;1;Concepcion -> Catamarca (24.44 dB) -> La Rioja (21.72 dB) [REG]-> Cordoba (22.20 dB);La Rioja;NO;;;;
+Norte;Catamarca;Cordoba;1;200;Catamarca - La Rioja - Cordoba;609.91;9.94;20.50;NO;SI;SI;1;Catamarca -> La Rioja (24.24 dB) [REG]-> Cordoba (22.20 dB);La Rioja;NO;;;;
+Norte;La Rioja;Cordoba;1;200;La Rioja - Cordoba;424.51;10.06;20.50;NO;SI;SI;0;La Rioja -> Cordoba (22.20 dB);;NO;;;;
+Norte;Patquia;Cordoba;1;200;Patquia - Cordoba;374.09;15.07;20.50;NO;SI;SI;0;Patquia -> Cordoba (21.63 dB);;NO;;;;
+Norte;Serrezuela;Cordoba;1;200;Serrezuela - Cordoba;230;26.05;20.50;SI;NO;;0;;;NO;;;;
+Norte;Tucuman;Concepcion;4;100;Tucuman - Concepcion;80;29.05;11.80;SI;NO;;0;;;NO;;;;
+Norte;Concepcion;Catamarca;4;100;Concepcion - Catamarca;157.8;25.07;11.80;SI;NO;;0;;;NO;;;;
+Norte;Catamarca;La Rioja;4;100;Catamarca - La Rioja;185.4;25.08;11.80;SI;NO;;0;;;NO;;;;
+Norte;La Rioja;Patquia;4;100;La Rioja - Patquia;80;29.05;11.80;SI;NO;;0;;;NO;;;;
+Norte;Patquia;Serrezuela;4;100;Patquia - Serrezuela;226.3;20.79;11.80;SI;NO;;0;;;NO;;;;
+Norte;Serrezuela;Cordoba;4;100;Serrezuela - Cordoba;230;26.05;11.80;SI;NO;;0;;;NO;;;;
+Norte;Tucuman;Santiago del Estero;1;200;Tucuman - Santiago del Estero;193;25.94;20.50;SI;NO;;0;;;NO;;;;
+Norte;Tucuman;Frias;1;200;Tucuman - Santiago del Estero - Frias;365;23.42;20.50;SI;NO;;0;;;NO;;;;
+Norte;Tucuman;Dean Funes;1;200;Tucuman - Santiago del Estero - Frias - Dean Funes;592;22.05;20.50;SI;NO;;0;;;NO;;;;
+Norte;Tucuman;Jesus Maria;1;200;Tucuman - Santiago del Estero - Frias - Dean Funes - Jesus Maria;677;21.34;20.50;SI;NO;;0;;;NO;;;;
+Norte;Tucuman;Cordoba;1;200;Tucuman - Santiago del Estero - Frias - Dean Funes - Jesus Maria - Cordoba;731;20.93;20.50;SI;NO;;0;;;NO;;;;
+Norte;Santiago del Estero;Cordoba;1;200;Santiago del Estero - Frias - Dean Funes - Jesus Maria - Cordoba;538;22.45;20.50;SI;NO;;0;;;NO;;;;
+Norte;Frias;Cordoba;1;200;Frias - Dean Funes - Jesus Maria - Cordoba;366;24.34;20.50;SI;NO;;0;;;NO;;;;
+Norte;Dean Funes;Cordoba;1;200;Dean Funes - Jesus Maria - Cordoba;139;27;20.50;SI;NO;;0;;;NO;;;;
+Norte;Jesus Maria;Cordoba;1;200;Jesus Maria - Cordoba;54;30.54;20.50;SI;NO;;0;;;NO;;;;
+Norte;Tucuman;Santiago del Estero;4;100;Tucuman - Santiago del Estero;193;25.94;11.80;SI;NO;;0;;;NO;;;;
+Norte;Santiago del Estero;Frias;4;100;Santiago del Estero - Frias;172;26.65;11.80;SI;NO;;0;;;NO;;;;
+Norte;Frias;Dean Funes;4;100;Frias - Dean Funes;227;27.33;11.80;SI;NO;;0;;;NO;;;;
+Norte;Dean Funes;Jesus Maria;4;100;Dean Funes - Jesus Maria;85;28.96;11.80;SI;NO;;0;;;NO;;;;
+Norte;Jesus Maria;Cordoba;4;100;Jesus Maria - Cordoba;54;30.54;11.80;SI;NO;;0;;;NO;;;;
+Norte;San Miguel de Tucuman;Santa Maria;1;200;San Miguel de Tucuman - Santa Maria;185;28.06;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Miguel de Tucuman;San Antonio de los Cobres;1;200;San Miguel de Tucuman - Santa Maria - San Antonio de los Cobres;530.9;22.80;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Miguel de Tucuman;La Quiaca;1;200;San Miguel de Tucuman - Santa Maria - San Antonio de los Cobres - La Quiaca;838.7;19.39;20.50;NO;SI;SI;1;San Miguel de Tucuman -> Santa Maria (24.79 dB) -> San Antonio de los Cobres (20.97 dB) [REG]-> La Quiaca (22.30 dB);San Antonio de los Cobres;NO;;;;
+Norte;San Miguel de Tucuman;Humahuaca;1;200;San Miguel de Tucuman - Santa Maria - San Antonio de los Cobres - La Quiaca - Humahuaca;980.7;18.94;20.50;NO;SI;SI;1;San Miguel de Tucuman -> Santa Maria (24.79 dB) -> San Antonio de los Cobres (20.97 dB) [REG]-> La Quiaca (22.30 dB) -> Humahuaca (20.84 dB);San Antonio de los Cobres;NO;;;;
+Norte;San Antonio de los Cobres;San Salvador de Jujuy;1;200;San Antonio de los Cobres - La Quiaca - Humahuaca - San Salvador de Jujuy;577.8;20.66;20.50;SI;NO;;0;;;NO;;;;
+Norte;La Quiaca;San Salvador de Jujuy;1;200;La Quiaca - Humahuaca - San Salvador de Jujuy;270;26.33;20.50;SI;NO;;0;;;NO;;;;
+Norte;Humahuaca;San Salvador de Jujuy;1;200;Humahuaca - San Salvador de Jujuy;128;29.75;20.50;SI;NO;;0;;;NO;;;;
+Norte;Santa Maria;San Antonio de los Cobres;4;100;Santa Maria - San Antonio de los Cobres;345.9;24.15;11.80;SI;NO;;0;;;NO;;;;
+Norte;San Antonio de los Cobres;La Quiaca;4;100;San Antonio de los Cobres - La Quiaca;307.8;21.93;11.80;SI;NO;;0;;;NO;;;;
+Norte;La Quiaca;Humahuaca;4;100;La Quiaca - Humahuaca;142;28.46;11.80;SI;NO;;0;;;NO;;;;
+Norte;Humahuaca;San Salvador de Jujuy;4;100;Humahuaca - San Salvador de Jujuy;128;29.75;11.80;SI;NO;;0;;;NO;;;;
+Norte;Tucuman;San Jose de Metan;1;200;Tucuman - San Jose de Metan;181;26.91;20.50;SI;NO;;0;;;NO;;;;
+Norte;Tucuman;Salta;1;200;Tucuman - San Jose de Metan - Salta;332;23.48;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Jose de Metan;Jujuy;1;200;San Jose de Metan - Salta - Jujuy;285;24.23;20.50;SI;NO;;0;;;NO;;;;
+Norte;Salta;Jujuy;1;200;Salta - Jujuy;134;28.79;20.50;SI;NO;;0;;;NO;;;;
+Norte;Tucuman;San Jose de Metan;4;100;Tucuman - San Jose de Metan;181;26.91;11.80;SI;NO;;0;;;NO;;;;
+Norte;San Jose de Metan;Salta;4;100;San Jose de Metan - Salta;151;25.83;11.80;SI;NO;;0;;;NO;;;;
+Norte;Salta;Jujuy;1;100;Salta - Jujuy;134;28.79;11.80;SI;NO;;0;;;NO;;;;
+Norte;San Salvador de Jujuy;San Jose de Metan;1;200;San Salvador de Jujuy - San Jose de Metan;285;24.23;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Salvador de Jujuy;Saenz Pe�a;1;200;San Salvador de Jujuy - San Jose de Metan - Saenz Pe�a;854;20.56;20.50;SI;NO;;0;;;NO;;;;
+Norte;Saenz Pe�a;Resistencia;1;200;Saenz Pe�a - Resistencia;177;25.81;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Jose de Metan;Saenz Pe�a;4;100;San Jose de Metan - Saenz Pe�a;569;22.87;11.80;SI;NO;;0;;;NO;;;;
+Norte;Saenz Pe�a;Resistencia;4;100;Saenz Pe�a - Resistencia;177;25.81;11.80;SI;NO;;0;;;NO;;;;
+Norte;San Salvador de Jujuy;San Pedro;1;200;San Salvador de Jujuy - San Pedro;70;29.93;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Salvador de Jujuy;San Martin;1;200;San Salvador de Jujuy - San Pedro - San Martin;126;27.56;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Salvador de Jujuy;Embarcacion;1;200;San Salvador de Jujuy - San Pedro - San Martin - Embarcacion;237;25.16;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Salvador de Jujuy;Juan Page;1;200;San Salvador de Jujuy - San Pedro - San Martin - Embarcacion - Juan Page;437;23.52;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Salvador de Jujuy;Las Lomitas;1;200;San Salvador de Jujuy - San Pedro - San Martin - Embarcacion - Juan Page - Las Lomitas;666;22.03;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Salvador de Jujuy;Formosa;1;200;San Salvador de Jujuy - San Pedro - San Martin - Embarcacion - Juan Page - Las Lomitas - Formosa;1005;20.83;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Pedro;Resistencia;1;200;San Pedro - San Martin - Embarcacion - Juan Page - Las Lomitas - Formosa - Resistencia;1156;20.46;20.50;NO;SI;SI;1;San Pedro Jujuy -> Lib Gral San Martin (27.49 dB) -> Embarcacion (24.46 dB) -> Cap Juan Page (22.15 dB) -> Las Lomitas (20.51 dB) [REG]-> Formosa (23.47 dB) -> Resistencia (21.50 dB);Las Lomitas;NO;;;;
+Norte;San Martin;Resistencia;1;200;San Martin - Embarcacion - Juan Page - Las Lomitas - Formosa - Resistencia;1100;20.83;20.50;SI;NO;;0;;;NO;;;;
+Norte;Embarcacion;Resistencia;1;200;Embarcacion - Juan Page - Las Lomitas - Formosa - Resistencia;989;21.57;20.50;SI;NO;;0;;;NO;;;;
+Norte;Juan Page;Resistencia;1;200;Juan Page - Las Lomitas - Formosa - Resistencia;789;22.55;20.50;SI;NO;;0;;;NO;;;;
+Norte;Las Lomitas;Resistencia;1;200;Las Lomitas - Formosa - Resistencia;560;24.28;20.50;SI;NO;;0;;;NO;;;;
+Norte;Formosa;Resistencia;1;200;Formosa - Resistencia;221;27.58;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Salvador de Jujuy;San Pedro;4;100;San Salvador de Jujuy - San Pedro;70;29.93;11.80;SI;NO;;0;;;NO;;;;
+Norte;San Pedro;San Martin;4;100;San Pedro - San Martin;56;30.48;11.80;SI;NO;;0;;;NO;;;;
+Norte;San Martin;Embarcacion;4;100;San Martin - Embarcacion;111;28.39;11.80;SI;NO;;0;;;NO;;;;
+Norte;Embarcacion;Juan Page;4;100;Embarcacion - Juan Page;200;28.08;11.80;SI;NO;;0;;;NO;;;;
+Norte;Juan Page;Las Lomitas;4;100;Juan Page - Las Lomitas;229;27.02;11.80;SI;NO;;0;;;NO;;;;
+Norte;Las Lomitas;Formosa;4;100;Las Lomitas - Formosa;339;26.68;11.80;SI;NO;;0;;;NO;;;;
+Norte;Formosa;Resistencia;4;100;Formosa - Resistencia;221;27.58;11.80;SI;NO;;0;;;NO;;;;
+Norte;Tucuman;A�atuya;1;200;Tucuman - Santiago del Estero - A�atuya;390.6;17.71;20.50;NO;SI;SI;0;San Miguel de Tucuman -> Santiago del Estero (24.75 dB) -> A�atuya (21.96 dB);;NO;;;;
+Norte;A�atuya;Santa Fe;1;200;A�atuya - Tostado - Rafaela - Santa Fe;591;21.87;20.50;SI;NO;;0;;;NO;;;;
+Norte;Tostado;Santa Fe;1;200;Tostado - Rafaela - Santa Fe;423;23.35;20.50;SI;NO;;0;;;NO;;;;
+Norte;Santiago del Estero;A�atuya;4;100;Santiago del Estero - A�atuya;197.6;18.37;11.80;SI;NO;;0;;;NO;;;;
+Norte;A�atuya;Tostado;4;100;A�atuya - Tostado;168;26.90;11.80;SI;NO;;0;;;NO;;;;
+Norte;Cordoba;Arroyito;4;100;Cordoba - Arroyito;146;28.32;11.80;SI;NO;;0;;;NO;;;;
+Norte;Arroyito;San Francisco;4;100;Arroyito - San Francisco;100;27.51;11.80;SI;NO;;0;;;NO;;;;
+Norte;San Francisco;Rafaela;4;100;San Francisco - Rafaela;87;28.80;11.80;SI;NO;;0;;;NO;;;;
+Norte;Rafaela;Santa Fe;4;100;Rafaela - Santa Fe;125;29.29;11.80;SI;NO;;0;;;NO;;;;
+Norte;Cordoba;Arroyito;1;200;Cordoba - Arroyito;146;28.32;20.50;SI;NO;;0;;;NO;;;;
+Norte;Arroyito;Santa Fe;1;200;Arroyito - San Francisco - Rafaela - Santa Fe;312;24.03;20.50;SI;NO;;0;;;NO;;;;
+Norte;Cordoba;San Francisco;1;200;Cordoba - Arroyito - San Francisco;246;25.10;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Francisco;Santa Fe;1;200;San Francisco - Rafaela - Santa Fe;212;26.31;20.50;SI;NO;;0;;;NO;;;;
+Norte;Cordoba;Rafaela;1;200;Cordoba - Arroyito - San Francisco - Rafaela;333;23.72;20.50;SI;NO;;0;;;NO;;;;
+Norte;Rafaela;Santa Fe;1;200;Rafaela - Santa Fe;125;29.29;20.50;SI;NO;;0;;;NO;;;;
+Norte;Rafaela;Sunchales;4;100;Rafaela - Sunchales;50;30.65;11.80;SI;NO;;0;;;NO;;;;
+Norte;Sunchales;Ceres;4;100;Sunchales - Ceres;163;27.48;11.80;SI;NO;;0;;;NO;;;;
+Norte;Ceres;Tostado;4;100;Ceres - Tostado;85;28.96;11.80;SI;NO;;0;;;NO;;;;
+Norte;Tostado;Vera;4;100;Tostado - Vera;207;27.32;11.80;SI;NO;;0;;;NO;;;;
+Norte;Vera;Resistencia;4;100;Vera - Resistencia;327;24.66;11.80;SI;NO;;0;;;NO;;;;
+Norte;Santa Fe;Rafaela;1;200;Santa Fe - Rafaela;125;29.29;20.50;SI;NO;;0;;;NO;;;;
+Norte;Santa Fe;Sunchales;1;200;Santa Fe - Rafaela - Sunchales;175;27.26;20.50;SI;NO;;0;;;NO;;;;
+Norte;Sunchales;Resistencia;1;200;Sunchales - Ceres - Tostado - Vera - Resistencia;782;21.05;20.50;SI;NO;;0;;;NO;;;;
+Norte;Santa Fe;Ceres;1;200;Santa Fe - Rafaela - Sunchales - Ceres;338;24.55;20.50;SI;NO;;0;;;NO;;;;
+Norte;Ceres;Resistencia;1;200;Ceres - Tostado - Vera - Resistencia;619;22.06;20.50;SI;NO;;0;;;NO;;;;
+Norte;Santa Fe;Tostado;1;200;Santa Fe - Rafaela - Sunchales - Ceres - Tostado;423;23.35;20.50;SI;NO;;0;;;NO;;;;
+Norte;Tostado;Resistencia;1;200;Tostado - Vera - Resistencia;534;22.91;20.50;SI;NO;;0;;;NO;;;;
+Norte;Santa Fe;Vera;1;200;Santa Fe - Rafaela - Sunchales - Ceres - Tostado - Vera;630;22;20.50;SI;NO;;0;;;NO;;;;
+Norte;Vera;Resistencia;1;200;Vera - Resistencia;327;24.66;20.50;SI;NO;;0;;;NO;;;;
+Norte;Resistencia;Corrientes;4;100;Resistencia - Corrientes;22;31.09;11.80;SI;NO;;0;;;NO;;;;
+Norte;Corrientes;Ituzaingo;4;100;Corrientes - Ituzaingo;249;25.29;11.80;SI;NO;;0;;;NO;;;;
+Norte;Ituzaingo;Posadas;4;100;Ituzaingo - Posadas;95;28.05;11.80;SI;NO;;0;;;NO;;;;
+Norte;Resistencia;Ituzaingo;1;200;Resistencia - Corrientes - Ituzaingo;271;24.47;20.50;SI;NO;;0;;;NO;;;;
+Norte;Ituzaingo;Posadas;1;200;Ituzaingo - Posadas;95;28.05;20.50;SI;NO;;0;;;NO;;;;
+Norte;Posadas;San Jose;1;200;Posadas - San Jose;53;30.57;20.50;SI;NO;;0;;;NO;;;;
+Norte;Posadas;Paso de los Libres;1;200;Posadas - San Jose - Paso de los Libres;395;23.71;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Jose;Santa Fe;1;200;San Jose - Paso de los Libres - Concordia - Parana - Santa Fe;989;20.12;20.50;NO;SI;SI;1;San Jose -> Paso de Los Libres (22.86 dB) -> Concordia (20.72 dB) [REG]-> Parana (23.40 dB) -> Santa Fe (22.61 dB);Concordia;NO;;;;
+Norte;Paso de los Libres;Santa Fe;1;200;Paso de los Libres - Concordia - Parana - Santa Fe;647;21.97;20.50;SI;NO;;0;;;NO;;;;
+Norte;Concordia;Santa Fe;1;200;Concordia - Parana - Santa Fe;382;24.36;20.50;SI;NO;;0;;;NO;;;;
+Norte;Posadas;San Jose;4;100;Posadas - San Jose;53;30.57;11.80;SI;NO;;0;;;NO;;;;
+Norte;San Jose;Paso de los Libres;4;100;San Jose - Paso de los Libres;342;24.51;11.80;SI;NO;;0;;;NO;;;;
+Norte;Paso de los Libres;Concordia;4;100;Paso de los Libres - Concordia;265;25.45;11.80;SI;NO;;0;;;NO;;;;
+Norte;Benavidez;Concepcion del Uruguay;1;200;Benavidez - Campana - Concepcion del Uruguay;355;23.82;20.50;SI;NO;;0;;;NO;;;;
+Norte;Benavidez;Concordia;1;200;Benavidez - Campana - Concepcion del Uruguay - Concordia;517;22.40;20.50;SI;NO;;0;;;NO;;;;
+Norte;Concepcion del Uruguay;Santa Fe;1;200;Concepcion del Uruguay - Concordia - Parana - Santa Fe;544;22.79;20.50;SI;NO;;0;;;NO;;;;
+Norte;Campana;Concepcion del Uruguay;4;100;Campana - Concepcion del Uruguay;275;25.02;11.80;SI;NO;;0;;;NO;;;;
+Norte;Concepcion del Uruguay;Concordia;4;100;Concepcion del Uruguay - Concordia;162;27.56;11.80;SI;NO;;0;;;NO;;;;
+Norte;Benavidez;Campana;1;200;Benavidez - Campana;80;29.33;20.50;SI;NO;;0;;;NO;;;;
+Norte;Benavidez;Baradero;1;200;Benavidez - Campana - Baradero;160;25.86;20.50;SI;NO;;0;;;NO;;;;
+Norte;Benavidez;San Nicolas;1;200;Benavidez - Campana - Baradero - San Nicolas;270;23.79;20.50;SI;NO;;0;;;NO;;;;
+Norte;Campana;Rosario;1;200;Campana - Baradero - San Nicolas - Rosario;271;23.77;20.50;SI;NO;;0;;;NO;;;;
+Norte;Baradero;Rosario;1;200;Baradero - San Nicolas - Rosario;191;25.58;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Nicolas;Rosario;1;200;San Nicolas - Rosario;81;29.26;20.50;SI;NO;;0;;;NO;;;;
+Norte;Benavidez;Campana;4;100;Benavidez - Campana;80;29.33;11.80;SI;NO;;0;;;NO;;;;
+Norte;Campana;Baradero;4;100;Campana - Baradero;80;28;11.80;SI;NO;;0;;;NO;;;;
+Norte;Baradero;San Nicolas;4;100;Baradero - San Nicolas;110;27.59;11.80;SI;NO;;0;;;NO;;;;
+Norte;San Nicolas;Rosario;4;100;San Nicolas - Rosario;81;29.26;11.80;SI;NO;;0;;;NO;;;;
+Norte;Rosario;San Fabian;1;200;Rosario - San Fabian;125;24.02;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Fabian;Santa Fe;1;200;San Fabian - Santa Fe;80;29.33;20.50;SI;NO;;0;;;NO;;;;
+Norte;Rosario;San Fabian;4;100;Rosario - San Fabian;125;24.02;11.80;SI;NO;;0;;;NO;;;;
+Norte;San Fabian;Santa Fe;4;100;San Fabian - Santa Fe;80;29.33;11.80;SI;NO;;0;;;NO;;;;
+Norte;Santa Fe;Parana;1;200;Santa Fe - Parana;40;30.85;20.50;SI;NO;;0;;;NO;;;;
+Norte;Santa Fe;La Paz;1;200;Santa Fe - Parana - La Paz;222;23.44;20.50;SI;NO;;0;;;NO;;;;
+Norte;Santa Fe;Goya;1;200;Santa Fe - Parana - La Paz - Goya;435;20.69;20.50;SI;NO;;0;;;NO;;;;
+Norte;Santa Fe;Bellavista;1;200;Santa Fe - Parana - La Paz - Goya - Bellavista;526;20.09;20.50;NO;SI;SI;1;Santa Fe -> Parana (28.06 dB) -> La Paz (23.27 dB) -> Goya (20.86 dB) [REG]-> Bellavista (26.64 dB);Goya;NO;;;;
+Norte;Santa Fe;Corrientes;1;200;Santa Fe - Parana - La Paz - Goya - Bellavista - Corrientes;684;19.46;20.50;NO;SI;SI;1;Santa Fe -> Parana (28.06 dB) -> La Paz (23.27 dB) -> Goya (20.86 dB) [REG]-> Bellavista (26.64 dB) -> Corrientes (23.71 dB);Goya;NO;;;;
+Norte;Parana;Resistencia;1;200;Parana - La Paz - Goya - Bellavista - Corrientes - Resistencia;666;19.48;20.50;NO;SI;SI;1;Parana -> La Paz (24.20 dB) -> Goya (21.37 dB) -> Bellavista (20.54 dB) [REG]-> Corrientes (25.63 dB) -> Resistencia (24.43 dB);Bellavista;NO;;;;
+Norte;La Paz;Resistencia;1;200;La Paz - Goya - Bellavista - Corrientes - Resistencia;484;21.21;20.50;SI;NO;;0;;;NO;;;;
+Norte;Goya;Resistencia;1;200;Goya - Bellavista - Corrientes - Resistencia;271;24.48;20.50;SI;NO;;0;;;NO;;;;
+Norte;Bellavista;Resistencia;1;200;Bellavista - Corrientes - Resistencia;180;26.41;20.50;SI;NO;;0;;;NO;;;;
+Norte;Corrientes;Resistencia;1;200;Corrientes - Resistencia;22;31.09;20.50;SI;NO;;0;;;NO;;;;
+Norte;Santa Fe;Parana;4;100;Santa Fe - Parana;40;30.85;11.80;SI;NO;;0;;;NO;;;;
+Norte;Parana;La Paz;4;100;Parana - La Paz;182;24.13;11.80;SI;NO;;0;;;NO;;;;
+Norte;La Paz;Goya;4;100;La Paz - Goya;213;23.81;11.80;SI;NO;;0;;;NO;;;;
+Norte;Goya;Bellavista;4;100;Goya - Bellavista;91;28.44;11.80;SI;NO;;0;;;NO;;;;
+Norte;Bellavista;Corrientes;4;100;Bellavista - Corrientes;158;27.78;11.80;SI;NO;;0;;;NO;;;;
+Norte;Posadas;Jardin America;1;200;Posadas - Jardin America;104;29.06;20.50;SI;NO;;0;;;NO;;;;
+Norte;Posadas;Puerto Iguazu;1;200;Posadas - Jardin America - Puerto Iguazu;284;25.29;20.50;SI;NO;;0;;;NO;;;;
+Norte;Jardin America;Puerto Iguazu;1;200;Jardin America - Puerto Iguazu;180;27.27;20.50;SI;NO;;0;;;NO;;;;
+Norte;Posadas;Jardin America;4;100;Posadas - Jardin America;104;29.06;11.80;SI;NO;;0;;;NO;;;;
+Norte;Jardin America;Puerto Iguazu;4;100;Jardin America - Puerto Iguazu;180;27.27;11.80;SI;NO;;0;;;NO;;;;
+Norte;Posadas;Puerto Iguazu;1;200;Posadas - San Jose - Aristobulo del valle - Puerto Iguazu;407.5;19.92;20.50;NO;SI;SI;1;Posadas -> San Jose (27.60 dB) -> Aristobulo del Valle (23.82 dB) [REG]-> Puerto Iguazu (22.26 dB);Aristobulo del Valle;NO;;;;
+Norte;San Jose;Aristobulo del Valle;1;200;San Jose - Aristobulo del valle;143.9;27.89;20.50;SI;NO;;0;;;NO;;;;
+Norte;Aristobulo del Valle;Puerto Iguazu;1;200;Aristobulo del valle - Puerto Iguazu;210.6;20.97;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Jose;Aristobulo del Valle;4;100;San Jose - Aristobulo del Valle;143.9;27.89;11.80;SI;NO;;0;;;NO;;;;
+Norte;Aristobulo del Valle;Puerto Iguazu;4;100;Aristobulo del Valle - Puerto Iguazu;210.6;20.97;11.80;SI;NO;;0;;;NO;;;;
+Norte;Clorinda;Formosa;1;200;Clorinda - Formosa - Resistencia;357;24.45;20.50;SI;NO;;0;;;NO;;;;
+Norte;Clorinda;Resistencia;4;100;Clorinda - Formosa;136;26.99;11.80;SI;NO;;0;;;NO;;;;
+Norte;San Salvador de Jujuy;Salvador Mazza;1;200;San Salvador de Jujuy - Embarcacion - Salvador Mazza;381;23.74;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Salvador de Jujuy;Embarcacion;1;200;San Salvador de Jujuy - Embarcacion;237;25.16;20.50;SI;NO;;0;;;NO;;;;
+Norte;Embarcacion;Salvador Mazza;4;100;Embarcacion - Salvador Mazza;144;28.71;11.80;SI;NO;;0;;;NO;;;;
+Norte;Benavidez;Rosario;1;400;Benavidez - Zarate - San Pedro - San Nicolas de los Arroyos - Rosario;351;22.84;23.50;NO;SI;SI;1;Benavidez -> Campana (27.05 dB) -> Zarate (25.48 dB) -> Baradero (24.00 dB) [REG]-> San Pedro BsAs (28.13 dB) -> San Nicolas de los Arroyos (25.58 dB) -> Rosario (23.87 dB);Baradero;NO;;;;
+Norte;Rosario;Resistencia;1;400;Rosario - San Fabian - Santa Fe - Parana - La Paz - Goya - Bellavista - Corrientes - Resistencia;911;17.76;23.50;NO;SI;NO;0;;;SI;SI;100;17.76;11.80
+Norte;Benavidez;Zarate;2;300;Benavidez - Zarate;93;27.52;20.50;SI;NO;;0;;;NO;;;;
+Norte;Benavidez;San Nicolas de los Arroyos;1;300;Benavidez - Zarate - San Pedro - San Nicolas de los Arroyos;270;23.79;20.50;SI;NO;;0;;;NO;;;;
+Norte;Zarate;San Pedro;1;300;Zarate - San Pedro;101;27.88;20.50;SI;NO;;0;;;NO;;;;
+Norte;Zarate;Rosario;1;300;Zarate - San Pedro - San Nicolas de los Arroyos - Rosario;258;24.44;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Pedro;Rosario;1;300;San Pedro - San Nicolas de los Arroyos - Rosario;157;26.73;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Nicolas;Rosario;1;300;San Nicolas de los Arroyos - Rosario;81;29.26;20.50;SI;NO;;0;;;NO;;;;
+Norte;Rosario;San Fabian;1;300;Rosario - San Fabian;125;24.02;20.50;SI;NO;;0;;;NO;;;;
+Norte;Rosario;Santa Fe;1;300;Rosario - San Fabian - Santa Fe;205;23.04;20.50;SI;NO;;0;;;NO;;;;
+Norte;San Fabian;Santa Fe;1;300;San Fabian - Santa Fe;80;29.33;20.50;SI;NO;;0;;;NO;;;;
+Norte;Santa Fe;La Paz;1;300;Santa Fe - Parana - La Paz;222;23.44;20.50;SI;NO;;0;;;NO;;;;
+Norte;Santa Fe;Parana;1;300;Santa Fe - Parana;40;30.85;20.50;SI;NO;;0;;;NO;;;;
+Norte;Parana;Goya;1;300;Parana - La Paz - Goya;395;21.04;20.50;SI;NO;;0;;;NO;;;;
+Norte;Goya;Resistencia;1;300;Goya - Bellavista - Corrientes - Resistencia;271;24.48;20.50;SI;NO;;0;;;NO;;;;
+Norte;La Paz;Bellavista;1;300;La Paz - Goya - Bellavista;304;22.65;20.50;SI;NO;;0;;;NO;;;;
+Norte;Bellavista;Corrientes;1;300;Bellavista - Corrientes;158;27.78;20.50;SI;NO;;0;;;NO;;;;
+Norte;Corrientes;Resistencia;1;300;Corrientes - Resistencia;22;31.09;20.50;SI;NO;;0;;;NO;;;;
+Norte;Benavidez;Santa Fe;2;300;Benavidez - Zarate - San Pedro - San Nicolas de los Arroyos - Rosario - San Fabian - Santa Fe;556;19.99;20.50;NO;SI;SI;1;Benavidez -> Campana (27.05 dB) -> Zarate (25.48 dB) -> Baradero (24.00 dB) -> San Pedro BsAs (23.13 dB) -> San Nicolas de los Arroyos (22.14 dB) -> Rosario (21.28 dB) [REG]-> San Fabian (24.69 dB) -> Santa Fe (23.26 dB);Rosario;NO;;;;
+Centro;Cordoba;V. Mercedes;1;200;Cordoba - V. Mercedes;452;21.70;20.50;SI;NO;;0;;;NO;;;;
+Centro;Rufino;Lujan;1;200;Rufino - Lujan;412;15.98;20.50;NO;SI;SI;0;Rufino -> Lujan (22.09 dB);;NO;;;;
+Centro;Lujan;Chacabuco;1;200;Lujan - Chacabuco;153;24.45;20.50;SI;NO;;0;;;NO;;;;
+Centro;Lujan;Junin;1;200;Lujan - Chacabuco - Junin;208;23.63;20.50;SI;NO;;0;;;NO;;;;
+Centro;Lujan;Vedia;1;200;Lujan - Chacabuco - Junin - Vedia;278;22.81;20.50;SI;NO;;0;;;NO;;;;
+Centro;Lujan;Rufino;1;200;Lujan - Chacabuco - Junin - Vedia - Rufino;353;22.06;20.50;SI;NO;;0;;;NO;;;;
+Centro;Lujan;Pehuajo;1;200;Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo;587;19.72;20.50;NO;SI;SI;1;Lujan -> Chacabuco (24.44 dB) -> Junin (22.95 dB) -> Vedia (21.80 dB) -> Rufino (20.88 dB) [REG]-> Pehuajo (23.36 dB);Rufino;NO;;;;
+Centro;Lujan;Bolivar;1;200;Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar;674;19.22;20.50;NO;SI;SI;1;Lujan -> Chacabuco (24.44 dB) -> Junin (22.95 dB) -> Vedia (21.80 dB) -> Rufino (20.88 dB) [REG]-> Pehuajo (23.36 dB) -> Bolivar (22.15 dB);Rufino;NO;;;;
+Centro;Lujan;Olavarria;1;200;Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria;781;17.58;20.50;NO;SI;SI;2;Lujan -> Chacabuco (24.44 dB) -> Junin (22.95 dB) -> Vedia (21.80 dB) -> Rufino (20.88 dB) [REG]-> Pehuajo (23.36 dB) -> Bolivar (22.15 dB) [REG]-> Olavarria (24.00 dB);Rufino - Bolivar;NO;;;;
+Centro;Lujan;Azul;1;200;Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul;836;17.37;20.50;NO;SI;SI;2;Lujan -> Chacabuco (24.44 dB) -> Junin (22.95 dB) -> Vedia (21.80 dB) -> Rufino (20.88 dB) [REG]-> Pehuajo (23.36 dB) -> Bolivar (22.15 dB) [REG]-> Olavarria (24.00 dB) -> Azul (22.93 dB);Rufino - Bolivar;NO;;;;
+Centro;Lujan;Tandil;1;200;Lujan - Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil;941;16.87;20.50;NO;SI;SI;2;Lujan -> Chacabuco (24.44 dB) -> Junin (22.95 dB) -> Vedia (21.80 dB) -> Rufino (20.88 dB) [REG]-> Pehuajo (23.36 dB) -> Bolivar (22.15 dB) [REG]-> Olavarria (24.00 dB) -> Azul (22.93 dB) -> Tandil (21.42 dB);Rufino - Bolivar;NO;;;;
+Centro;Chacabuco;Abasto;1;200;Chacabuco - Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil;788;17.66;20.50;NO;SI;SI;4;Chacabuco -> Junin (26.72 dB) -> Vedia (24.38 dB) -> Rufino (22.84 dB) [REG]-> Pehuajo (23.36 dB) -> Bolivar (22.15 dB) [REG]-> Olavarria (24.00 dB) -> Azul (22.93 dB) -> Tandil (21.42 dB) [REG]-> Mar Del Plata (24.59 dB) -> Las Armas (22.75 dB) -> Dolores (20.99 dB) [REG]-> Chascomus (25.13 dB) -> Abasto (23.54 dB);Rufino - Bolivar - Tandil - Dolores;NO;;;;
+Centro;Junin;Abasto;1;200;Junin - Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil;733;17.85;20.50;NO;SI;SI;3;Junin -> Vedia (26.62 dB) -> Rufino (24.30 dB) -> Pehuajo (21.13 dB) [REG]-> Bolivar (26.72 dB) -> Olavarria (22.62 dB) -> Azul (21.82 dB) -> Tandil (20.61 dB) [REG]-> Mar Del Plata (24.59 dB) -> Las Armas (22.75 dB) -> Dolores (20.99 dB) [REG]-> Chascomus (25.13 dB) -> Abasto (23.54 dB);Pehuajo - Tandil - Dolores;NO;;;;
+Centro;Vedia;Abasto;1;200;Vedia - Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil;663;18.10;20.50;NO;SI;SI;3;Vedia -> Rufino (26.59 dB) -> Pehuajo (22.10 dB) -> Bolivar (21.16 dB) [REG]-> Olavarria (24.00 dB) -> Azul (22.93 dB) -> Tandil (21.42 dB) [REG]-> Mar Del Plata (24.59 dB) -> Las Armas (22.75 dB) -> Dolores (20.99 dB) [REG]-> Chascomus (25.13 dB) -> Abasto (23.54 dB);Bolivar - Tandil - Dolores;NO;;;;
+Centro;Rufino;Abasto;1;200;Rufino - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto;1152;15.64;20.50;NO;SI;SI;3;Rufino -> Pehuajo (23.36 dB) -> Bolivar (22.15 dB) [REG]-> Olavarria (24.00 dB) -> Azul (22.93 dB) -> Tandil (21.42 dB) [REG]-> Mar Del Plata (24.59 dB) -> Las Armas (22.75 dB) -> Dolores (20.99 dB) [REG]-> Chascomus (25.13 dB) -> Abasto (23.54 dB);Bolivar - Tandil - Dolores;NO;;;;
+Centro;Pehuajo;Abasto;1;200;Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto;918;16.42;20.50;NO;SI;SI;2;Pehuajo -> Bolivar (26.72 dB) -> Olavarria (22.62 dB) -> Azul (21.82 dB) -> Tandil (20.61 dB) [REG]-> Mar Del Plata (24.59 dB) -> Las Armas (22.75 dB) -> Dolores (20.99 dB) [REG]-> Chascomus (25.13 dB) -> Abasto (23.54 dB);Tandil - Dolores;NO;;;;
+Centro;Bolivar;Abasto;1;200;Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto;831;16.67;20.50;NO;SI;SI;2;Bolivar -> Olavarria (24.00 dB) -> Azul (22.93 dB) -> Tandil (21.42 dB) [REG]-> Mar Del Plata (24.59 dB) -> Las Armas (22.75 dB) -> Dolores (20.99 dB) [REG]-> Chascomus (25.13 dB) -> Abasto (23.54 dB);Tandil - Dolores;NO;;;;
+Centro;Olavarria;Abasto;1;200;Olavarria - Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto;724;17.96;20.50;NO;SI;SI;1;Olavarria -> Azul (27.54 dB) -> Tandil (24.14 dB) -> Mar Del Plata (21.75 dB) -> Las Armas (20.68 dB) [REG]-> Dolores (24.83 dB) -> Chascomus (22.43 dB) -> Abasto (21.50 dB);Las Armas;NO;;;;
+Centro;Azul;Abasto;1;200;Azul - Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto;669;18.19;20.50;NO;SI;SI;1;Azul -> Tandil (25.61 dB) -> Mar Del Plata (22.54 dB) -> Las Armas (21.30 dB) [REG]-> Dolores (24.83 dB) -> Chascomus (22.43 dB) -> Abasto (21.50 dB);Las Armas;NO;;;;
+Centro;Tandil;Abasto;1;200;Tandil - Mar del Plata - Las Armas - Dolores - Chascomus - Abasto;564;18.89;20.50;NO;SI;SI;1;Tandil -> Mar Del Plata (24.59 dB) -> Las Armas (22.75 dB) -> Dolores (20.99 dB) [REG]-> Chascomus (25.13 dB) -> Abasto (23.54 dB);Dolores;NO;;;;
+Centro;Lujan;Chacabuco;4;100;Lujan - Chacabuco;153;24.45;11.80;SI;NO;;0;;;NO;;;;
+Centro;Chacabuco;Junin;4;100;Chacabuco - Junin;55;30.44;11.80;SI;NO;;0;;;NO;;;;
+Centro;Junin;Vedia;4;100;Junin - Vedia;70;29.75;11.80;SI;NO;;0;;;NO;;;;
+Centro;Vedia;Rufino;4;100;Vedia - Rufino;75;29.43;11.80;SI;NO;;0;;;NO;;;;
+Centro;Rufino;Pehuajo;4;100;Rufino - Pehuajo;234;23.36;11.80;SI;NO;;0;;;NO;;;;
+Centro;Pehuajo;Bolivar;4;100;Pehuajo - Bolivar;87;28.37;11.80;SI;NO;;0;;;NO;;;;
+Centro;Bolivar;Olavarria;4;100;Bolivar - Olavarria;107;22.48;11.80;SI;NO;;0;;;NO;;;;
+Centro;Olavarria;Azul;4;100;Olavarria - Azul;55;30;11.80;SI;NO;;0;;;NO;;;;
+Centro;Azul;Tandil;4;100;Azul - Tandil;105;26.16;11.80;SI;NO;;0;;;NO;;;;
+Centro;Tandil;Mar del Plata;4;100;Tandil - Mar del Plata;179;25.07;11.80;SI;NO;;0;;;NO;;;;
+Centro;Lujan;Mercedes;1;200;Lujan - Mercedes;36;30.90;20.50;SI;NO;;0;;;NO;;;;
+Centro;Lujan;Chivilcoy;1;200;Lujan - Mercedes - Chivilcoy;106;27.37;20.50;SI;NO;;0;;;NO;;;;
+Centro;Lujan;Bragado;1;200;Lujan - Mercedes - Chivilcoy - Bragado;170;25.62;20.50;SI;NO;;0;;;NO;;;;
+Centro;Lujan;9 De Julio;1;200;Lujan - Mercedes - Chivilcoy - Bragado - 9 De Julio;231;24.44;20.50;SI;NO;;0;;;NO;;;;
+Centro;Mercedes;Abasto;1;200;Mercedes - Chivilcoy - Bragado - 9 De Julio - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Pinamar - Las Toninas - Abasto;1365;16.43;20.50;NO;SI;SI;3;Mercedes -> Chivilcoy (27.21 dB) -> Bragado (25.15 dB) -> 9 De Julio (23.77 dB) -> Pehuajo (22.30 dB) -> Bolivar (21.32 dB) [REG]-> Olavarria (24.00 dB) -> Azul (22.93 dB) -> Tandil (21.42 dB) [REG]-> Mar Del Plata (24.59 dB) -> Pinamar (22.40 dB) -> Las Toninas (21.32 dB) [REG]-> Abasto (23.59 dB);Bolivar - Tandil - Las Toninas;NO;;;;
+Centro;Chivilcoy;Abasto;1;200;Chivilcoy - Bragado - 9 De Julio - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Pinamar - Las Toninas - Abasto;1295;16.62;20.50;NO;SI;SI;3;Chivilcoy -> Bragado (27.42 dB) -> 9 De Julio (25.31 dB) -> Pehuajo (23.35 dB) -> Bolivar (22.14 dB) [REG]-> Olavarria (24.00 dB) -> Azul (22.93 dB) -> Tandil (21.42 dB) [REG]-> Mar Del Plata (24.59 dB) -> Pinamar (22.40 dB) -> Las Toninas (21.32 dB) [REG]-> Abasto (23.59 dB);Bolivar - Tandil - Las Toninas;NO;;;;
+Centro;Bragado;Abasto;1;200;Bragado - 9 De Julio - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Pinamar - Las Toninas - Abasto;1231;16.81;20.50;NO;SI;SI;2;Bragado -> 9 De Julio (27.47 dB) -> Pehuajo (24.60 dB) -> Bolivar (23.06 dB) -> Olavarria (20.81 dB) [REG]-> Azul (27.54 dB) -> Tandil (24.14 dB) -> Mar Del Plata (21.75 dB) [REG]-> Pinamar (25.33 dB) -> Las Toninas (23.43 dB) -> Abasto (20.82 dB);Olavarria - Mar Del Plata;NO;;;;
+Centro;9 De Julio;Abasto;1;200;9 De Julio - Pehuajo - Bolivar - Olavarria - Azul - Tandil - Mar del Plata - Pinamar - Las Toninas - Abasto;1170;16.99;20.50;NO;SI;SI;2;9 De Julio -> Pehuajo (26.32 dB) -> Bolivar (24.19 dB) -> Olavarria (21.45 dB) -> Azul (20.82 dB) [REG]-> Tandil (25.61 dB) -> Mar Del Plata (22.54 dB) -> Pinamar (21.04 dB) [REG]-> Las Toninas (26.47 dB) -> Abasto (22.23 dB);Azul - Pinamar;NO;;;;
+Centro;Lujan;Mercedes;4;100;Lujan - Mercedes;36;30.90;11.80;SI;NO;;0;;;NO;;;;
+Centro;Mercedes;Chivilcoy;4;100;Mercedes - Chivilcoy;70;29.28;11.80;SI;NO;;0;;;NO;;;;
+Centro;Chivilcoy;Bragado;4;100;Chivilcoy - Bragado;64;29.73;11.80;SI;NO;;0;;;NO;;;;
+Centro;Bragado;9 De Julio;4;100;Bragado - 9 De Julio;61;29.92;11.80;SI;NO;;0;;;NO;;;;
+Centro;9 De Julio;Pehuajo;4;100;9 De Julio - Pehuajo;111;29.26;11.80;SI;NO;;0;;;NO;;;;
+Centro;Benavidez;Azopardo;1;200;Benavidez - Azopardo;75.6;29.38;20.50;SI;NO;;0;;;NO;;;;
+Centro;Benavidez;La Plata;1;200;Benavidez - Azopardo - La Plata;138.9;27.05;20.50;SI;NO;;0;;;NO;;;;
+Centro;Azopardo;Abasto;1;200;Azopardo - La Plata - Abasto;93.3;27.90;20.50;SI;NO;;0;;;NO;;;;
+Centro;La Plata;Abasto;1;200;La Plata - Abasto;30;30.96;20.50;SI;NO;;0;;;NO;;;;
+Centro;Benavidez;Azopardo;4;100;Benavidez - Azopardo;75.6;29.38;11.80;SI;NO;;0;;;NO;;;;
+Centro;Azopardo;La Plata;4;100;Azopardo - La Plata;63.3;30.10;11.80;SI;NO;;0;;;NO;;;;
+Centro;La Plata;Abasto;4;100;La Plata - Abasto;30;30.96;11.80;SI;NO;;0;;;NO;;;;
+Centro;Abasto;Las Toninas;1;200;Abasto - Las Toninas;308;26.13;20.50;SI;NO;;0;;;NO;;;;
+Centro;Abasto;Pinamar;1;200;Abasto - Las Toninas - Pinamar;393;24.01;20.50;SI;NO;;0;;;NO;;;;
+Centro;Abasto;Mar Del Plata;1;200;Abasto - Las Toninas - Pinamar - Mar Del Plata;526;22.14;20.50;SI;NO;;0;;;NO;;;;
+Centro;Abasto;Tres Arroyos;1;200;Abasto - Las Toninas - Pinamar - Mar Del Plata - Tres Arroyos;876;17.76;20.50;NO;SI;SI;1;Abasto -> Las Toninas (23.62 dB) -> Pinamar (22.25 dB) -> Mar Del Plata (20.84 dB) [REG]-> Tres Arroyos (21.08 dB);Mar Del Plata;NO;;;;
+Centro;Las Toninas;Bahia Blanca;1;200;Las Toninas - Pinamar - Mar Del Plata - Tres Arroyos - Bahia Blanca;795;16.98;20.50;NO;SI;SI;2;Las Toninas -> Pinamar (26.47 dB) -> Mar Del Plata (23.45 dB) [REG]-> Tres Arroyos (21.08 dB) [REG]-> Bahia Blanca (23.02 dB);Mar Del Plata - Tres Arroyos;NO;;;;
+Centro;Pinamar;Bahia Blanca;1;200;Pinamar - Mar Del Plata - Tres Arroyos - Bahia Blanca;710;17.33;20.50;NO;SI;SI;2;Pinamar -> Mar Del Plata (25.35 dB) [REG]-> Tres Arroyos (21.08 dB) [REG]-> Bahia Blanca (23.02 dB);Mar Del Plata - Tres Arroyos;NO;;;;
+Centro;Mar Del Plata;Bahia Blanca;1;200;Mar Del Plata - Tres Arroyos - Bahia Blanca;577;17.86;20.50;NO;SI;SI;1;Mar Del Plata -> Tres Arroyos (21.08 dB) [REG]-> Bahia Blanca (23.02 dB);Tres Arroyos;NO;;;;
+Centro;Tres Arroyos;Bahia Blanca;1;200;Tres Arroyos - Bahia Blanca;227;22.41;20.50;SI;NO;;0;;;NO;;;;
+Centro;Abasto;Las Toninas;4;100;Abasto - Las Toninas;308;26.13;11.80;SI;NO;;0;;;NO;;;;
+Centro;Las Toninas;Pinamar;4;100;Las Toninas - Pinamar;85;27.72;11.80;SI;NO;;0;;;NO;;;;
+Centro;Pinamar;Mar Del Plata;4;100;Pinamar - Mar Del Plata;133;26.39;11.80;SI;NO;;0;;;NO;;;;
+Centro;Mar Del Plata;Tres Arroyos;4;100;Mar Del Plata - Tres Arroyos;350;19.67;11.80;SI;NO;;0;;;NO;;;;
+Centro;Tres Arroyos;Bahia Blanca;4;100;Tres Arroyos - Bahia Blanca;227;22.41;11.80;SI;NO;;0;;;NO;;;;
+Centro;Abasto;Chascomus;1;200;Abasto - Chascomus;71;28.63;20.50;SI;NO;;0;;;NO;;;;
+Centro;Abasto;Dolores;1;200;Abasto - Chascomus - Dolores;168;23.26;20.50;SI;NO;;0;;;NO;;;;
+Centro;Abasto;Las Armas;1;200;Abasto - Chascomus - Dolores - Las Armas;268;20.66;20.50;SI;NO;;0;;;NO;;;;
+Centro;Chascomus;Bahia Blanca;1;200;Chascomus - Dolores - Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca;891;16.03;20.50;NO;SI;SI;2;Chascomus -> Dolores (25.13 dB) -> Las Armas (22.43 dB) -> Mar Del Plata (21.22 dB) [REG]-> Tres Arroyos (21.08 dB) [REG]-> Bahia Blanca (23.02 dB);Mar Del Plata - Tres Arroyos;NO;;;;
+Centro;Dolores;Bahia Blanca;1;200;Dolores - Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca;794;16.66;20.50;NO;SI;SI;2;Dolores -> Las Armas (24.83 dB) -> Mar Del Plata (22.91 dB) [REG]-> Tres Arroyos (21.08 dB) [REG]-> Bahia Blanca (23.02 dB);Mar Del Plata - Tres Arroyos;NO;;;;
+Centro;Las Armas;Bahia Blanca;1;200;Las Armas - Mar Del Plata - Tres Arroyos - Bahia Blanca;694;17.52;20.50;NO;SI;SI;2;Las Armas -> Mar Del Plata (26.06 dB) [REG]-> Tres Arroyos (21.08 dB) [REG]-> Bahia Blanca (23.02 dB);Mar Del Plata - Tres Arroyos;NO;;;;
+Centro;Abasto;Chascomus;4;100;Abasto - Chascomus;71;28.63;11.80;SI;NO;;0;;;NO;;;;
+Centro;Chascomus;Dolores;4;100;Chascomus - Dolores;97;24.55;11.80;SI;NO;;0;;;NO;;;;
+Centro;Dolores;Las Armas;4;100;Dolores - Las Armas;100;23.95;11.80;SI;NO;;0;;;NO;;;;
+Centro;Las Armas;Mar Del Plata;4;100;Las Armas - Mar Del Plata;117;28.18;11.80;SI;NO;;0;;;NO;;;;
+Centro;Lujan;Benavidez;1;200;Lujan - Benavidez;60;30.23;20.50;SI;NO;;0;;;NO;;;;
+Centro;Lujan;Benavidez;4;100;Lujan - Benavidez;60;30.23;11.80;SI;NO;;0;;;NO;;;;
+Centro;Bahia Blanca;Algarrobo;4;200;Bahia Blanca - Algarrobo;96;30.01;20.50;SI;NO;;0;;;NO;;;;
+Centro;Bahia Blanca;Rio Colorado;1;200;Bahia Blanca - Algarrobo - Rio Colorado;190;27.22;20.50;SI;NO;;0;;;NO;;;;
+Centro;Bahia Blanca;Peru;1;200;Bahia Blanca - Algarrobo - Rio Colorado - Peru;374.6;11.28;20.50;NO;SI;SI;0;Bahia Blanca -> Algarrobo (25.89 dB) -> Rio Colorado (23.59 dB) -> Peru (21.37 dB);;NO;;;;
+Centro;Bahia Blanca;Santa Rosa;1;200;Bahia Blanca - Algarrobo - Rio Colorado - Peru - Santa Rosa;520.4;11.19;20.50;NO;SI;SI;1;Bahia Blanca -> Algarrobo (25.89 dB) -> Rio Colorado (23.59 dB) -> Peru (21.37 dB) [REG]-> Santa Rosa (LP) (24.91 dB);Peru;NO;;;;
+Centro;Bahia Blanca;Winifreda;1;200;Bahia Blanca - Algarrobo - Rio Colorado - Peru - Santa Rosa - Winifreda;584.4;11.14;20.50;NO;SI;SI;1;Bahia Blanca -> Algarrobo (25.89 dB) -> Rio Colorado (23.59 dB) -> Peru (21.37 dB) [REG]-> Santa Rosa (LP) (24.91 dB) -> Winifreda (23.24 dB);Peru;NO;;;;
+Centro;Bahia Blanca;Victorica;1;200;Bahia Blanca - Algarrobo - Rio Colorado - Peru - Santa Rosa - Winifreda - Victorica;693.4;11.09;20.50;NO;SI;SI;1;Bahia Blanca -> Algarrobo (25.89 dB) -> Rio Colorado (23.59 dB) -> Peru (21.37 dB) [REG]-> Santa Rosa (LP) (24.91 dB) -> Winifreda (23.24 dB) -> Victorica (21.84 dB);Peru;NO;;;;
+Centro;Bahia Blanca;Santa Isabel;1;200;Bahia Blanca - Algarrobo - Rio Colorado - Peru - Santa Rosa - Winifreda - Victorica - Santa Isabel;843.4;10.56;20.50;NO;SI;SI;2;Bahia Blanca -> Algarrobo (25.89 dB) -> Rio Colorado (23.59 dB) -> Peru (21.37 dB) [REG]-> Santa Rosa (LP) (24.91 dB) -> Winifreda (23.24 dB) -> Victorica (21.84 dB) [REG]-> Santa Isabel (25.09 dB);Peru - Victorica;NO;;;;
+Centro;Algarrobo;Mendoza;1;200;Algarrobo - Rio Colorado - Peru - Santa Rosa - Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza;1319.4;10.27;20.50;NO;SI;SI;2;Algarrobo -> Rio Colorado (26.11 dB) -> Peru (22.71 dB) -> Santa Rosa (LP) (21.00 dB) [REG]-> Winifreda (26.66 dB) -> Victorica (24.02 dB) -> Santa Isabel (21.93 dB) -> Gral. Alvear (20.50 dB) [REG]-> San Rafael (25.92 dB) -> Tunuyan (23.23 dB) -> Mendoza (21.88 dB);Santa Rosa (LP) - Gral. Alvear;NO;;;;
+Centro;Rio Colorado;Mendoza;1;200;Rio Colorado - Peru - Santa Rosa - Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza;1225.4;10.31;20.50;NO;SI;SI;2;Rio Colorado -> Peru (24.49 dB) -> Santa Rosa (LP) (22.12 dB) -> Winifreda (21.16 dB) [REG]-> Victorica (26.10 dB) -> Santa Isabel (23.10 dB) -> Gral. Alvear (21.31 dB) [REG]-> San Rafael (25.92 dB) -> Tunuyan (23.23 dB) -> Mendoza (21.88 dB);Winifreda - Gral. Alvear;NO;;;;
+Centro;Peru;Mendoza;1;200;Peru - Santa Rosa - Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza;1040.8;16.85;20.50;NO;SI;SI;2;Peru -> Santa Rosa (LP) (24.91 dB) -> Winifreda (23.24 dB) -> Victorica (21.84 dB) [REG]-> Santa Isabel (25.09 dB) -> Gral. Alvear (22.53 dB) -> San Rafael (21.25 dB) [REG]-> Tunuyan (25.46 dB) -> Mendoza (23.40 dB);Victorica - San Rafael;NO;;;;
+Centro;Santa Rosa;Mendoza;1;200;Santa Rosa - Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza;895;17.20;20.50;NO;SI;SI;1;Santa Rosa (LP) -> Winifreda (26.66 dB) -> Victorica (24.02 dB) -> Santa Isabel (21.93 dB) -> Gral. Alvear (20.50 dB) [REG]-> San Rafael (25.92 dB) -> Tunuyan (23.23 dB) -> Mendoza (21.88 dB);Gral. Alvear;NO;;;;
+Centro;Winifreda;Mendoza;1;200;Winifreda - Victorica - Santa Isabel - San Rafael - Mendoza;831;17.40;20.50;NO;SI;SI;1;Winifreda -> Victorica (26.10 dB) -> Santa Isabel (23.10 dB) -> Gral. Alvear (21.31 dB) [REG]-> San Rafael (25.92 dB) -> Tunuyan (23.23 dB) -> Mendoza (21.88 dB);Gral. Alvear;NO;;;;
+Centro;Victorica;Mendoza;1;200;Victorica - Santa Isabel - San Rafael - Mendoza;722;17.65;20.50;NO;SI;SI;1;Victorica -> Santa Isabel (25.09 dB) -> Gral. Alvear (22.53 dB) -> San Rafael (21.25 dB) [REG]-> Tunuyan (25.46 dB) -> Mendoza (23.40 dB);San Rafael;NO;;;;
+Centro;Santa Isabel;Mendoza;1;200;Santa Isabel - San Rafael - Mendoza;572;21.43;20.50;SI;NO;;0;;;NO;;;;
+Centro;Bahia Blanca;Algarrobo;4;100;Bahia Blanca - Algarrobo;96;30.01;11.80;SI;NO;;0;;;NO;;;;
+Centro;Algarrobo;Rio Colorado;4;100;Algarrobo - Rio Colorado;94;29.77;11.80;SI;NO;;0;;;NO;;;;
+Centro;Rio Colorado;Peru;4;100;Rio Colorado - Peru;184.6;11.39;11.80;NO;SI;SI;0;Rio Colorado -> Peru (24.49 dB);;NO;;;;
+Centro;Peru;Santa Rosa;4;100;Peru - Santa Rosa;145.8;27.46;11.80;SI;NO;;0;;;NO;;;;
+Centro;Santa Rosa;Winifreda;4;100;Santa Rosa - Winifreda;64;30.07;11.80;SI;NO;;0;;;NO;;;;
+Centro;Winifreda;Victorica;4;100;Winifreda - Victorica;109;29.31;11.80;SI;NO;;0;;;NO;;;;
+Centro;Victorica;Santa Isabel;4;100;Victorica - Santa Isabel;150;19.93;11.80;SI;NO;;0;;;NO;;;;
+Centro;Bahia Blanca;Trenque Lauquen;1;200;Bahia Blanca - Rio Colorado - Santa Rosa - Trenque Lauquen;674.4;11.10;20.50;NO;SI;SI;1;Bahia Blanca -> Algarrobo (25.89 dB) -> Rio Colorado (23.59 dB) -> Peru (21.37 dB) [REG]-> Santa Rosa (LP) (24.91 dB) -> Trenque Lauquen (22.39 dB);Peru;NO;;;;
+Centro;Trenque Lauquen;Lujan;1;200;Trenque Lauquen - Pehuajo - Lujan;736;15.14;20.50;NO;SI;SI;1;Trenque Lauquen -> Pehuajo (26.12 dB) -> Rufino (21.87 dB) [REG]-> Lujan (22.09 dB);Rufino;NO;;;;
+Centro;Santa Rosa;Trenque Lauquen;4;100;Santa Rosa - Trenque Lauquen;154;27.76;11.80;SI;NO;;0;;;NO;;;;
+Centro;Trenque Lauquen;Pehuajo;4;100;Trenque Lauquen - Pehuajo;90;29.81;11.80;SI;NO;;0;;;NO;;;;
+Centro;Santa Isabel;Gral. Alvear;1;200;Santa Isabel - Gral. Alvear;211;27.39;20.50;SI;NO;;0;;;NO;;;;
+Centro;Santa Isabel;San Rafael;1;200;Santa Isabel - Gral. Alvear - San Rafael;311;24.28;20.50;SI;NO;;0;;;NO;;;;
+Centro;Santa Isabel;Tunuyan;1;200;Santa Isabel - Gral. Alvear - San Rafael - Tunuyan;476;22.58;20.50;SI;NO;;0;;;NO;;;;
+Centro;Gral. Alvear;Mendoza;1;200;Gral. Alvear - San Rafael - Tunuyan - Mendoza;361;22.57;20.50;SI;NO;;0;;;NO;;;;
+Centro;San Rafael;Mendoza;1;200;San Rafael - Tunuyan - Mendoza;261;24.40;20.50;SI;NO;;0;;;NO;;;;
+Centro;Tunuyan;Mendoza;1;200;Tunuyan - Mendoza;96;27.36;20.50;SI;NO;;0;;;NO;;;;
+Centro;Santa Isabel;Gral. Alvear;4;100;Santa Isabel - Gral. Alvear;211;27.39;11.80;SI;NO;;0;;;NO;;;;
+Centro;Gral. Alvear;San Rafael;4;100;Gral. Alvear - San Rafael;100;26.85;11.80;SI;NO;;0;;;NO;;;;
+Centro;San Rafael;Tunuyan;4;100;San Rafael - Tunuyan;165;27.09;11.80;SI;NO;;0;;;NO;;;;
+Centro;Tunuyan;Mendoza;4;100;Tunuyan - Mendoza;96;27.36;11.80;SI;NO;;0;;;NO;;;;
+Centro;Lujan;Ca�uelas;1;200;Lujan - Ca�uelas;70;29.72;20.50;SI;NO;;0;;;NO;;;;
+Centro;Ca�uelas;Abasto;1;200;Ca�uelas - Abasto;80;29.01;20.50;SI;NO;;0;;;NO;;;;
+Centro;Lujan;Ca�uelas;4;100;Lujan - Ca�uelas;70;29.72;11.80;SI;NO;;0;;;NO;;;;
+Centro;Ca�uelas;Abasto;4;100;Ca�uelas - Abasto;80;29.01;11.80;SI;NO;;0;;;NO;;;;
+Centro;Benavidez;San Antonio de Areco;1;200;Benavidez - San Antonio de Areco;93;27.72;20.50;SI;NO;;0;;;NO;;;;
+Centro;Benavidez;Arrecifes;1;200;Benavidez - San Antonio de Areco - Arrecifes;161;25.90;20.50;SI;NO;;0;;;NO;;;;
+Centro;Benavidez;Pergamino;1;200;Benavidez - San Antonio de Areco - Arrecifes - Pergamino;251;24.01;20.50;SI;NO;;0;;;NO;;;;
+Centro;San Antonio de Areco;Rosario;1;200;San Antonio de Areco - Arrecifes - Pergamino - Rosario;250;24.05;20.50;SI;NO;;0;;;NO;;;;
+Centro;Arrecifes;Rosario;1;200;Arrecifes - Pergamino - Rosario;182;25.15;20.50;SI;NO;;0;;;NO;;;;
+Centro;Pergamino;Rosario;1;200;Pergamino - Rosario;92;27.83;20.50;SI;NO;;0;;;NO;;;;
+Centro;Benavidez;San Antonio de Areco;4;100;Benavidez - San Antonio de Areco;93;27.72;11.80;SI;NO;;0;;;NO;;;;
+Centro;San Antonio de Areco;Arrecifes;4;100;San Antonio de Areco - Arrecifes;68;29.84;11.80;SI;NO;;0;;;NO;;;;
+Centro;Arrecifes;Pergamino;4;100;Arrecifes - Pergamino;90;28.06;11.80;SI;NO;;0;;;NO;;;;
+Centro;Pergamino;Rosario;4;100;Pergamino - Rosario;92;27.83;11.80;SI;NO;;0;;;NO;;;;
+Centro;Rosario;Ca�ada de Gomez;1;200;Rosario - Ca�ada de Gomez;90;28.06;20.50;SI;NO;;0;;;NO;;;;
+Centro;Rosario;Leones;1;200;Rosario - Ca�ada de Gomez - Leones;198;23.89;20.50;SI;NO;;0;;;NO;;;;
+Centro;Rosario;Villa Maria;1;200;Rosario - Ca�ada de Gomez - Leones - Villa Maria;308;22.39;20.50;SI;NO;;0;;;NO;;;;
+Centro;Rosario;Manfredi;1;200;Rosario - Ca�ada de Gomez - Leones - Villa Maria - Manfredi;403;21.31;20.50;SI;NO;;0;;;NO;;;;
+Centro;Ca�ada de Gomez;Cordoba;1;200;Ca�ada de Gomez - Leones - Villa Maria - Manfredi - Cordoba;413;21.03;20.50;SI;NO;;0;;;NO;;;;
+Centro;Leones;Cordoba;1;200;Leones - Villa Maria - Manfredi - Cordoba;305;22.70;20.50;SI;NO;;0;;;NO;;;;
+Centro;Villa Maria;Cordoba;1;200;Villa Maria - Manfredi - Cordoba;195;24.33;20.50;SI;NO;;0;;;NO;;;;
+Centro;Manfredi;Cordoba;1;200;Manfredi - Cordoba;100;26.85;20.50;SI;NO;;0;;;NO;;;;
+Centro;Rosario;Ca�ada de Gomez;4;100;Rosario - Ca�ada de Gomez;90;28.06;11.80;SI;NO;;0;;;NO;;;;
+Centro;Ca�ada de Gomez;Leones;4;100;Ca�ada de Gomez - Leones;108;25.72;11.80;SI;NO;;0;;;NO;;;;
+Centro;Leones;Villa Maria;4;100;Leones - Villa Maria;110;27.36;11.80;SI;NO;;0;;;NO;;;;
+Centro;Villa Maria;Manfredi;4;100;Villa Maria - Manfredi;95;27.48;11.80;SI;NO;;0;;;NO;;;;
+Centro;Manfredi;Cordoba;4;100;Rosario - Ca�ada de Gomez;90;28.06;11.80;SI;NO;;0;;;NO;;;;
+Centro;Cordoba;Corralito;1;200;Cordoba - Corralito;85;28.56;20.50;SI;NO;;0;;;NO;;;;
+Centro;Cordoba;Hernando;1;200;Cordoba - Corralito - Hernando;180;25.20;20.50;SI;NO;;0;;;NO;;;;
+Centro;Cordoba;Chucul;1;200;Cordoba - Corralito - Hernando - Chucul;268;23.61;20.50;SI;NO;;0;;;NO;;;;
+Centro;Cordoba;V. Mercedes;1;200;Cordoba - Corralito - Hernando - Chucul - V. Mercedes;452;21.70;20.50;SI;NO;;0;;;NO;;;;
+Centro;Cordoba;San Luis;1;200;Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis;539;20.94;20.50;SI;NO;;0;;;NO;;;;
+Centro;Cordoba;Santa Rosa;1;200;Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa;734;19.56;20.50;NO;SI;SI;1;Cordoba -> Corralito (26.78 dB) -> Hernando (24.21 dB) -> Chucul (22.76 dB) -> V. Mercedes (20.97 dB) [REG]-> San Luis (26.72 dB) -> Santa Rosa (Mza) (22.87 dB);V. Mercedes;NO;;;;
+Centro;Corralito;Mendoza;1;200;Corralito - Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa - Mendoza;759;19.02;20.50;NO;SI;SI;1;Corralito -> Hernando (26.28 dB) -> Chucul (24.15 dB) -> V. Mercedes (21.85 dB) -> San Luis (20.95 dB) [REG]-> Santa Rosa (Mza) (24.34 dB) -> Mendoza (22.24 dB);San Luis;NO;;;;
+Centro;Hernando;Mendoza;1;200;Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa - Mendoza;664;19.62;20.50;NO;SI;SI;1;Hernando -> Chucul (26.68 dB) -> V. Mercedes (23.17 dB) -> San Luis (22.00 dB) [REG]-> Santa Rosa (Mza) (24.34 dB) -> Mendoza (22.24 dB);San Luis;NO;;;;
+Centro;Chucul;Mendoza;1;200;Chucul - V. Mercedes - San Luis - Santa Rosa - Mendoza;576;20.18;20.50;NO;SI;SI;1;Chucul -> V. Mercedes (24.78 dB) -> San Luis (23.18 dB) -> Santa Rosa (Mza) (21.05 dB) [REG]-> Mendoza (25.32 dB);Santa Rosa (Mza);NO;;;;
+Centro;V. Mercedes;Mendoza;1;200;V. Mercedes - San Luis - Santa Rosa - Mendoza;392;21.44;20.50;SI;NO;;0;;;NO;;;;
+Centro;San Luis;Mendoza;1;200;San Luis - Santa Rosa - Mendoza;305;22.31;20.50;SI;NO;;0;;;NO;;;;
+Centro;Santa Rosa;Mendoza;1;200;Santa Rosa - Mendoza;110;25.41;20.50;SI;NO;;0;;;NO;;;;
+Centro;Cordoba;Corralito;4;100;Cordoba - Corralito;85;28.56;11.80;SI;NO;;0;;;NO;;;;
+Centro;Corralito;Hernando;4;100;Corralito - Hernando;95;27.48;11.80;SI;NO;;0;;;NO;;;;
+Centro;Hernando;Chucul;4;100;Hernando - Chucul;88;28.27;11.80;SI;NO;;0;;;NO;;;;
+Centro;Chucul;V. Mercedes;4;100;Chucul - V. Mercedes;184;25.90;11.80;SI;NO;;0;;;NO;;;;
+Centro;V. Mercedes;San Luis;4;100;V. Mercedes - San Luis;87;28.37;11.80;SI;NO;;0;;;NO;;;;
+Centro;San Luis;Santa Rosa;4;100;San Luis - Santa Rosa;195;25;11.80;SI;NO;;0;;;NO;;;;
+Centro;Santa Rosa;Mendoza;4;100;Santa Rosa - Mendoza;110;25.41;11.80;SI;NO;;0;;;NO;;;;
+Centro;Benavidez;Mendoza;1;400;Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario - Ca�ada de Gomez - San Marcos - Villa Maria - Manfredi - Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - Santa Rosa - Mendoza;1622;15.65;23.50;NO;SI;NO;0;;;SI;SI;100;15.65;11.80
+Centro;Cordoba;V. Mercedes;1;300;Cordoba - Corralito - Hernando - Chucul - V. Mercedes;452;21.70;20.50;SI;NO;;0;;;NO;;;;
+Centro;V. Mercedes;San Luis;1;300;V. Mercedes - San Luis;87;28.37;20.50;SI;NO;;0;;;NO;;;;
+Centro;San Luis;Santa Rosa;1;300;San Luis - La Paz - Santa Rosa;195;25;20.50;SI;NO;;0;;;NO;;;;
+Centro;Santa Rosa;Mendoza;1;300;Santa Rosa - Mendoza;110;25.41;20.50;SI;NO;;0;;;NO;;;;
+Centro;Mendoza;Tunuyan;1;300;Mendoza - Tunuyan;96;27.36;20.50;SI;NO;;0;;;NO;;;;
+Centro;Tunuyan;San Rafael;1;300;Tunuyan - San Rafael;165;27.09;20.50;SI;NO;;0;;;NO;;;;
+Centro;Abasto;Marcos Paz;1;300;Abasto - Marcos Paz;88;28.27;20.50;SI;NO;;0;;;NO;;;;
+Centro;Marcos Paz;Benavidez;1;300;Marcos Paz - Benavidez;85;28.56;20.50;SI;NO;;0;;;NO;;;;
+Centro;Benavidez;Exaltacion de la Cruz;1;300;Benavidez - Exaltacion de la Cruz;45;30.72;20.50;SI;NO;;0;;;NO;;;;
+Centro;Exaltacion de la Cruz;Arrecifes;1;300;Exaltacion de la Cruz - Arrecifes;48;30.65;20.50;SI;NO;;0;;;NO;;;;
+Centro;Arrecifes;Pergamino;1;300;Arrecifes - Pergamino;90;28.06;20.50;SI;NO;;0;;;NO;;;;
+Centro;Pergamino;Rosario;1;300;Pergamino - Rosario;92;27.83;20.50;SI;NO;;0;;;NO;;;;
+Centro;Rosario;Ca�ada de Gomez;1;300;Rosario - Ca�ada de Gomez;90;28.06;20.50;SI;NO;;0;;;NO;;;;
+Centro;Ca�ada de Gomez;San Marcos;1;300;Ca�ada de Gomez - San Marcos;140.9;24.78;20.50;SI;NO;;0;;;NO;;;;
+Centro;San Marcos;Villa Maria;1;300;San Marcos - Villa Maria;77.1;29.24;20.50;SI;NO;;0;;;NO;;;;
+Centro;Villa Maria;Manfredi;1;300;Villa Maria - Manfredi;95;27.48;20.50;SI;NO;;0;;;NO;;;;
+Centro;Manfredi;Cordoba;1;300;Manfredi - Cordoba;100;26.85;20.50;SI;NO;;0;;;NO;;;;
+Centro;Cordoba;Corralito;1;300;Cordoba - Corralito;85;28.56;20.50;SI;NO;;0;;;NO;;;;
+Centro;Corralito;Hernando;1;300;Corralito - Hernando;95;27.48;20.50;SI;NO;;0;;;NO;;;;
+Centro;Hernando;Chucul;1;300;Hernando - Chucul;88;28.27;20.50;SI;NO;;0;;;NO;;;;
+Centro;Chucul;Mendoza;1;300;Chucul - V. Mercedes - San Luis - La Paz - Santa Rosa - Mendoza;576;20.18;20.50;NO;SI;SI;1;Chucul -> V. Mercedes (24.78 dB) -> San Luis (23.18 dB) -> V. Mercedes (24.78 dB) -> Chucul -> Hernando (26.68 dB) -> Corralito (24.15 dB) -> Cordoba (22.76 dB) -> Arroyito (21.39 dB) -> San Francisco (20.44 dB) -> Rafaela (19.81 dB) -> Santa Fe (19.11 dB) -> Parana (18.80 dB) -> La Paz (17.84 dB) -> Parana (18.80 dB) -> Santa Fe (19.11 dB) -> Rafaela (19.81 dB) -> San Francisco (20.44 dB) -> Arroyito (21.39 dB) -> Cordoba (22.76 dB) -> Corralito (24.15 dB) -> Hernando (26.68 dB) -> Chucul -> V. Mercedes (24.78 dB) -> San Luis (23.18 dB) -> Santa Rosa (Mza) (21.05 dB) [REG]-> Mendoza (25.32 dB);Santa Rosa (Mza);NO;;;;
+Centro;Rosario;Cordoba;1;300;Rosario - Ca�ada de Gomez - San Marcos - Villa Maria - Manfredi - Cordoba;503;20.32;20.50;NO;SI;SI;1;Rosario -> Ca�ada De Gomez (26.48 dB) -> Leones (23.51 dB) -> San Marcos (22.68 dB) -> Villa Maria (21.75 dB) -> Manfredi (20.75 dB) [REG]-> Cordoba (25.92 dB);Manfredi;NO;;;;
+Centro;Cordoba;Mendoza;1;300;Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - Mendoza;844;18.61;20.50;NO;SI;SI;1;Cordoba -> Corralito (26.78 dB) -> Hernando (24.21 dB) -> Chucul (22.76 dB) -> V. Mercedes (20.97 dB) [REG]-> San Luis (26.72 dB) -> Santa Rosa (Mza) (22.87 dB) -> Mendoza (21.27 dB);V. Mercedes;NO;;;;
+Centro;Benavidez;Mendoza;2;300;Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario - Ca�ada de Gomez - San Marcos - Villa Maria - Manfredi - Cordoba - Corralito - Hernando - Chucul - V. Mercedes - San Luis - La Paz - Santa Rosa - Mendoza;1622;15.65;20.50;NO;SI;SI;3;Benavidez -> Exaltacion de la Cruz (27.32 dB) -> Arrecifes (24.97 dB) -> Pergamino (23.20 dB) -> Rosario (21.28 dB) -> Ca�ada De Gomez (20.95 dB) [REG]-> Leones (25.44 dB) -> San Marcos (24.21 dB) -> Villa Maria (22.94 dB) -> Manfredi (21.68 dB) -> Cordoba (N/A) [REG]-> Corralito (26.78 dB) -> Hernando (24.21 dB) -> Chucul (22.76 dB) -> V. Mercedes (20.97 dB) [REG]-> San Luis (26.72 dB) -> V. Mercedes (20.97 dB) [REG]-> Chucul (22.76 dB) -> Hernando (24.21 dB) -> Corralito (26.78 dB) -> Cordoba (N/A) [REG]-> Arroyito (25.85 dB) -> San Francisco (23.61 dB) -> Rafaela (22.40 dB) -> Santa Fe (21.22 dB) -> Parana (20.72 dB) -> La Paz (19.33 dB) -> Parana (20.72 dB) -> Santa Fe (21.22 dB) -> Rafaela (22.40 dB) -> San Francisco (23.61 dB) -> Arroyito (25.85 dB) -> Cordoba (N/A) [REG]-> Corralito (26.78 dB) -> Hernando (24.21 dB) -> Chucul (22.76 dB) -> V. Mercedes (20.97 dB) [REG]-> San Luis (26.72 dB) -> Santa Rosa (Mza) (22.87 dB) -> Mendoza (21.27 dB);Ca�ada De Gomez - Cordoba - V. Mercedes;NO;;;;
+Centro;Benavidez;Cordoba;3;300;Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario - Ca�ada de Gomez - San Marcos - Villa Maria - Manfredi - Cordoba;778;18.67;20.50;NO;SI;SI;1;Benavidez -> Exaltacion de la Cruz (27.32 dB) -> Arrecifes (24.97 dB) -> Pergamino (23.20 dB) -> Rosario (21.28 dB) -> Ca�ada De Gomez (20.95 dB) [REG]-> Leones (25.44 dB) -> San Marcos (24.21 dB) -> Villa Maria (22.94 dB) -> Manfredi (21.68 dB) -> Cordoba (20.59 dB);Ca�ada De Gomez;NO;;;;
+Centro;Benavidez;Rosario;3;300;Benavidez - Exaltacion de la Cruz - Arrecifes - Pergamino - Rosario;275;23.52;20.50;SI;NO;;0;;;NO;;;;
+Sur;Rio Gallegos;San Sebastian;1;200;Rio Gallegos - Estacion Cullen - San Sebastian;278;21.10;20.50;SI;NO;;0;;;NO;;;;
+Sur;San Sebastian;Usuahia;1;200;San Sebastian - Rio Grande - Tolhuin - Usuahia;285;20.70;20.50;SI;NO;;0;;;NO;;;;
+Sur;Rio Gallegos;Estacion Cullen;1;200;Rio Gallegos - Estacion Cullen;193;22.11;20.50;SI;NO;;0;;;NO;;;;
+Sur;Estacion Cullen;Rio Grande;1;200;Estacion Cullen - San Sebastian - Rio Grande;160;25.30;20.50;SI;NO;;0;;;NO;;;;
+Sur;Rio Grande;Tolhuin;1;200;Rio Grande - Tolhuin;107;23.91;20.50;SI;NO;;0;;;NO;;;;
+Sur;Rio Gallegos;Piedrabuena;4;100;Rio Gallegos - Piedrabuena;240;24.93;11.80;SI;NO;;0;;;NO;;;;
+Sur;Piedrabuena;San Julian;4;100;Piedrabuena - San Julian;124;26.64;11.80;SI;NO;;0;;;NO;;;;
+Sur;San Julian;Jaramillo;4;100;San Julian - Jaramillo;288;25.30;11.80;SI;NO;;0;;;NO;;;;
+Sur;Jaramillo;Caleta Olivia;4;100;Jaramillo - Caleta Olivia;25;31.03;11.80;SI;NO;;0;;;NO;;;;
+Sur;Rio Gallegos;Piedrabuena;1;200;Rio Gallegos - Piedrabuena;240;24.93;20.50;SI;NO;;0;;;NO;;;;
+Sur;Piedrabuena;San Julian;1;200;Piedrabuena - San Julian;124;26.64;20.50;SI;NO;;0;;;NO;;;;
+Sur;San Julian;Jaramillo;1;200;San Julian - Jaramillo;288;25.30;20.50;SI;NO;;0;;;NO;;;;
+Sur;Jaramillo;Caleta Olivia;1;200;Jaramillo - Caleta Olivia;25;31.03;20.50;SI;NO;;0;;;NO;;;;
+Sur;Rio Gallegos;Esperanza;4;100;Rio Gallegos - Esperanza;142;26.31;11.80;SI;NO;;0;;;NO;;;;
+Sur;Esperanza;El Calafate;4;100;Esperanza - El Calafate;163;25.46;11.80;SI;NO;;0;;;NO;;;;
+Sur;El Calafate;Tres Lagos;4;100;El Calafate - Tres Lagos;163;23.83;11.80;SI;NO;;0;;;NO;;;;
+Sur;Tres Lagos;Gobernador Gregores;4;100;Tres Lagos - Gobernador Gregores;162;23.15;11.80;SI;NO;;0;;;NO;;;;
+Sur;Gobernador Gregores;Bajo Caracoles;4;100;Gobernador Gregores - Bajo Caracoles;211;21.51;11.80;SI;NO;;0;;;NO;;;;
+Sur;Bajo Caracoles;Perito Moreno;4;100;Bajo Caracoles - Perito Moreno;130;26.59;11.80;SI;NO;;0;;;NO;;;;
+Sur;Perito Moreno;Colonia Las Heras;4;100;Perito Moreno - Colonia Las Heras;172;25.13;11.80;SI;NO;;0;;;NO;;;;
+Sur;Colonia Las Heras;Pico Truncado;4;100;Colonia Las Heras - Pico Truncado;85;27.54;11.80;SI;NO;;0;;;NO;;;;
+Sur;Pico Truncado;Caleta Olivia;4;100;Pico Truncado - Caleta Olivia;60;29.93;11.80;SI;NO;;0;;;NO;;;;
+Sur;Rio Gallegos;Esperanza;1;200;Rio Gallegos - Esperanza;142;26.31;20.50;SI;NO;;0;;;NO;;;;
+Sur;Esperanza;El Calafate;1;200;Esperanza - El Calafate;163;25.46;20.50;SI;NO;;0;;;NO;;;;
+Sur;El Calafate;Tres Lagos;1;200;El Calafate - Tres Lagos;163;23.83;20.50;SI;NO;;0;;;NO;;;;
+Sur;Tres Lagos;Gobernador Gregores;1;200;Tres Lagos - Gobernador Gregores;162;23.15;20.50;SI;NO;;0;;;NO;;;;
+Sur;Gobernador Gregores;Bajo Caracoles;1;200;Gobernador Gregores - Bajo Caracoles;211;21.51;20.50;SI;NO;;0;;;NO;;;;
+Sur;Bajo Caracoles;Perito Moreno;1;200;Bajo Caracoles - Perito Moreno;130;26.59;20.50;SI;NO;;0;;;NO;;;;
+Sur;Perito Moreno;Colonia Las Heras;1;200;Perito Moreno - Colonia Las Heras;172;25.13;20.50;SI;NO;;0;;;NO;;;;
+Sur;Colonia Las Heras;Pico Truncado;1;200;Colonia Las Heras - Pico Truncado;85;27.54;20.50;SI;NO;;0;;;NO;;;;
+Sur;Pico Truncado;Caleta Olivia;1;200;Pico Truncado - Caleta Olivia;60;29.93;20.50;SI;NO;;0;;;NO;;;;
+Sur;Dina Huapi;Bariloche;4;100;Dina Huapi - Bariloche;20;31.10;11.80;SI;NO;;0;;;NO;;;;
+Sur;Bariloche;El Foyel;4;100;Bariloche - El Foyel;78;28.40;11.80;SI;NO;;0;;;NO;;;;
+Sur;El Foyel;Epuyen;4;100;El Foyel - Epuyen;95;26.05;11.80;SI;NO;;0;;;NO;;;;
+Sur;Epuyen;Esquel;4;100;Epuyen - Esquel;110;23.33;11.80;SI;NO;;0;;;NO;;;;
+Sur;Esquel;Tecka;4;100;Esquel - Tecka;100;25.20;11.80;SI;NO;;0;;;NO;;;;
+Sur;Tecka;J. de San Martin;4;100;Tecka - J. de San Martin;100;25.20;11.80;SI;NO;;0;;;NO;;;;
+Sur;J. de San Martin;Alto Rio Senguer;4;100;J. de San Martin - Alto Rio Senguer;148;26.78;11.80;SI;NO;;0;;;NO;;;;
+Sur;Alto Rio Senguer;Rio Mayo;4;100;Alto Rio Senguer - Rio Mayo;100;25.20;11.80;SI;NO;;0;;;NO;;;;
+Sur;Rio Mayo;Perito Moreno;4;100;Rio Mayo - Perito Moreno;110;23.33;11.80;SI;NO;;0;;;NO;;;;
+Sur;Neuquen;Dina Huapi;1;200;Neuquen - Dina Huapi;438;20.87;20.50;SI;NO;;0;;;NO;;;;
+Sur;Dina Huapi;Bariloche;1;200;Dina Huapi - Bariloche;20;31.10;20.50;SI;NO;;0;;;NO;;;;
+Sur;Bariloche;El Foyel;1;200;Bariloche - El Foyel;78;28.40;20.50;SI;NO;;0;;;NO;;;;
+Sur;El Foyel;Epuyen;1;200;El Foyel - Epuyen;95;26.05;20.50;SI;NO;;0;;;NO;;;;
+Sur;Epuyen;Esquel;1;200;Epuyen - Esquel;110;23.33;20.50;SI;NO;;0;;;NO;;;;
+Sur;Esquel;Tecka;1;200;Esquel - Tecka;100;25.20;20.50;SI;NO;;0;;;NO;;;;
+Sur;Tecka;J. de San Martin;1;200;Tecka - J. de San Martin;100;25.20;20.50;SI;NO;;0;;;NO;;;;
+Sur;J. de San Martin;Alto Rio Senguer;1;200;J. de San Martin - Alto Rio Senguer;148;26.78;20.50;SI;NO;;0;;;NO;;;;
+Sur;Alto Rio Senguer;Rio Mayo;1;200;Alto Rio Senguer - Rio Mayo;100;25.20;20.50;SI;NO;;0;;;NO;;;;
+Sur;Rio Mayo;Perito Moreno;1;200;Rio Mayo - Perito Moreno;110;23.33;20.50;SI;NO;;0;;;NO;;;;
+Sur;Perito Moreno;Caleta Olivia;1;200;Perito Moreno - Pico Truncado - Caleta Olivia;317;22.57;20.50;SI;NO;;0;;;NO;;;;
+Sur;Bahia Blanca;Viedma;4;100;Bahia Blanca - Viedma;304;23.97;11.80;SI;NO;;0;;;NO;;;;
+Sur;Viedma;San Antonio Oeste;4;100;Viedma - San Antonio Oeste;194;25.47;11.80;SI;NO;;0;;;NO;;;;
+Sur;San Antonio Oeste;Sierra Grande;4;100;San Antonio Oeste - Sierra Grande;128;23.29;11.80;SI;NO;;0;;;NO;;;;
+Sur;Sierra Grande;Puerto Madryn;4;100;Sierra Grande - Puerto Madryn;149;24.96;11.80;SI;NO;;0;;;NO;;;;
+Sur;Puerto Madryn;Trelew;4;100;Puerto Madryn - Trelew;69;29.28;11.80;SI;NO;;0;;;NO;;;;
+Sur;Trelew;Rawson;4;100;Trelew - Rawson;22;31.07;11.80;SI;NO;;0;;;NO;;;;
+Sur;Rawson;Comodoro Rivadavia;4;100;Rawson - Comodoro Rivadavia;376;20.67;11.80;SI;NO;;0;;;NO;;;;
+Sur;Comodoro Rivadavia;Caleta Olivia;4;100;Comodoro Rivadavia - Caleta Olivia;84;27.67;11.80;SI;NO;;0;;;NO;;;;
+Sur;Bahia Blanca;Viedma;1;200;Bahia Blanca - Viedma;304;23.97;20.50;SI;NO;;0;;;NO;;;;
+Sur;Viedma;Caleta Olivia;1;200;Viedma - San Antonio Oeste - Sierra Grande - Puerto Madryn - Trelew - Rawson - Comodoro Rivadavia - Caleta Olivia;1022;16.57;20.50;NO;SI;SI;2;Viedma -> San Antonio Oeste (24.36 dB) -> Sierra Grande (21.67 dB) [REG]-> Puerto Madryn (24.74 dB) -> Trelew (23.35 dB) -> Rawson (22.61 dB) [REG]-> Comodoro Rivadavia (21.44 dB) -> Caleta Olivia (20.55 dB);Sierra Grande - Rawson;NO;;;;
+Sur;Bahia Blanca;San Antonio Oeste;1;200;Bahia Blanca - Viedma - San Antonio Oeste;498;21.75;20.50;SI;NO;;0;;;NO;;;;
+Sur;San Antonio Oeste;Sierra Grande;1;200;San Antonio Oeste - Sierra Grande;128;23.29;20.50;SI;NO;;0;;;NO;;;;
+Sur;Sierra Grande;Puerto Madryn;1;200;Sierra Grande - Puerto Madryn;149;24.96;20.50;SI;NO;;0;;;NO;;;;
+Sur;Puerto Madryn;Trelew;1;200;Puerto Madryn - Trelew;69;29.28;20.50;SI;NO;;0;;;NO;;;;
+Sur;Trelew;Rawson;1;200;Trelew - Rawson;22;31.07;20.50;SI;NO;;0;;;NO;;;;
+Sur;Rawson;Comodoro Rivadavia;1;200;Rawson - Comodoro Rivadavia;376;20.67;20.50;SI;NO;;0;;;NO;;;;
+Sur;Comodoro Rivadavia;Caleta Olivia;1;200;Comodoro Rivadavia - Caleta Olivia;84;27.67;20.50;SI;NO;;0;;;NO;;;;
+Sur;Neuquen;Arroyito;4;100;Neuquen - Arroyito;54;30.25;11.80;SI;NO;;0;;;NO;;;;
+Sur;Arroyito;Picun Leufu;4;100;Arroyito - Picun Leufu;84;27.67;11.80;SI;NO;;0;;;NO;;;;
+Sur;Picun Leufu;Piedra del Aguila;4;100;Picun Leufu - Piedra del Aguila;100;25.20;11.80;SI;NO;;0;;;NO;;;;
+Sur;Piedra del Aguila;Dina Huapi;4;100;Piedra del Aguila - Dina Huapi;200;25.26;11.80;SI;NO;;0;;;NO;;;;
+Sur;Dina Huapi;Aguada Cecilio;4;100;Dina Huapi - Aguada Cecilio;592;19.98;11.80;SI;NO;;0;;;NO;;;;
+Sur;Aguada Cecilio;San Antonio Oeste;4;100;Aguada Cecilio - San Antonio Oeste;90;26.83;11.80;SI;NO;;0;;;NO;;;;
+Sur;Neuquen;Dina Huapi;1;200;Neuquen - Arroyito - Picun Leufu - Piedra del Aguila - Dina Huapi;438;20.87;20.50;SI;NO;;0;;;NO;;;;
+Sur;Dina Huapi;Aguada Cecilio;1;200;Dina Huapi - Aguada Cecilio;592;19.98;20.50;NO;SI;NO;0;;;SI;SI;100;19.98;11.80
+Sur;Aguada Cecilio;San Antonio Oeste;1;200;Aguada Cecilio - San Antonio Oeste;90;26.83;20.50;SI;NO;;0;;;NO;;;;
+Sur;San Antonio Oeste;Bahia Blanca;1;200;San Antonio Oeste - Viedma - Bahia Blanca;498;21.75;20.50;SI;NO;;0;;;NO;;;;
+Sur;Neuquen;Arroyito;1;200;Neuquen - Arroyito;54;30.25;20.50;SI;NO;;0;;;NO;;;;
+Sur;Arroyito;Picun Leufu;1;200;Arroyito - Picun Leufu;84;27.67;20.50;SI;NO;;0;;;NO;;;;
+Sur;Picun Leufu;Piedra del Aguila;1;200;Picun Leufu - Piedra del Aguila;100;25.20;20.50;SI;NO;;0;;;NO;;;;
+Sur;Piedra del Aguila;Bahia Blanca;1;200;Piedra del Aguila - Dina Huapi - Aguada Cecilio - San Antonio Oeste - Viedma - Bahia Blanca;1380;16.71;20.50;NO;SI;NO;0;;;SI;SI;100;16.71;11.80
+Sur;Neuquen;General Roca;4;100;Neuquen - General Roca;51;30.19;11.80;SI;NO;;0;;;NO;;;;
+Sur;General Roca;Choele Choel;4;100;General Roca - Choele Choel;188;22.11;11.80;SI;NO;;0;;;NO;;;;
+Sur;Choele Choel;Rio Colorado;4;100;Choele Choel - Rio Colorado;147;12.41;11.80;SI;NO;;0;;;NO;;;;
+Sur;Rio Colorado;General Conesa;4;100;Rio Colorado - General Conesa;156;26.64;11.80;SI;NO;;0;;;NO;;;;
+Sur;General Conesa;San Antonio Oeste;4;100;General Conesa - San Antonio Oeste;98;25.54;11.80;SI;NO;;0;;;NO;;;;
+Sur;Neuquen;General Roca;1;200;Neuquen - General Roca;51;30.19;20.50;SI;NO;;0;;;NO;;;;
+Sur;General Roca;Choele Choel;1;200;General Roca - Choele Choel;188;22.11;20.50;SI;NO;;0;;;NO;;;;
+Sur;Choele Choel;Rio Colorado;1;200;Choele Choel - Rio Colorado;147;12.41;20.50;NO;SI;SI;0;Choele Choel -> Rio Colorado (25.00 dB);;NO;;;;
+Sur;Rio Colorado;General Conesa;1;200;Rio Colorado - General Conesa;156;26.64;20.50;SI;NO;;0;;;NO;;;;
+Sur;General Conesa;Bahia Blanca;1;200;General Conesa - San Antonio Oeste - Viedma - Bahia Blanca;596;20.31;20.50;NO;SI;SI;1;General Conesa -> San Antonio Oeste (25.52 dB) -> Viedma (22.40 dB) [REG]-> Bahia Blanca (23.12 dB);Viedma;NO;;;;
+Sur;Neuquen;Sargento Vidal;4;100;Neuquen - Sargento Vidal;35;30.86;11.80;SI;NO;;0;;;NO;;;;
+Sur;Sargento Vidal;Catriel;4;100;Sargento Vidal - Catriel;102;24.84;11.80;SI;NO;;0;;;NO;;;;
+Sur;Catriel;Santa Isabel;4;100;Catriel - Santa Isabel;240;21.81;11.80;SI;NO;;0;;;NO;;;;
+Sur;Neuquen;Sargento Vidal;1;200;Neuquen - Sargento Vidal;35;30.86;20.50;SI;NO;;0;;;NO;;;;
+Sur;Sargento Vidal;Catriel;1;200;Sargento Vidal - Catriel;102;24.84;20.50;SI;NO;;0;;;NO;;;;
+Sur;Catriel;Santa Isabel;1;200;Catriel - Santa Isabel;240;21.81;20.50;SI;NO;;0;;;NO;;;;
+Sur;Santa Isabel;San Rafael;1;200;Santa Isabel - San Rafael;311;24.28;20.50;SI;NO;;0;;;NO;;;;
+Sur;Dina Huapi;Villa La Angostura;4;100;Dina Huapi - Villa La Angostura;74;28.14;11.80;SI;NO;;0;;;NO;;;;
+Sur;Villa La Angostura;San Martin de los Andes;4;100;Villa La Angostura - San Martin de los Andes;110;21.42;11.80;SI;NO;;0;;;NO;;;;
+Sur;San Martin de los Andes;Junin de los Andes;4;100;San Martin de los Andes - Junin de los Andes;61;29.51;11.80;SI;NO;;0;;;NO;;;;
+Sur;Junin de los Andes;Zapala;4;100;Junin de los Andes - Zapala;202;20.23;11.80;SI;NO;;0;;;NO;;;;
+Sur;Zapala;Chos Malal;4;100;Zapala - Chos Malal;255;22.41;11.80;SI;NO;;0;;;NO;;;;
+Sur;Chos Malal;Buta Ranquil;4;100;Chos Malal - Buta Ranquil;92;25.23;11.80;SI;NO;;0;;;NO;;;;
+Sur;Buta Ranquil;Malargue;4;100;Buta Ranquil - Malargue;244;20.80;11.80;SI;NO;;0;;;NO;;;;
+Sur;Malargue;San Rafael;4;100;Malargue - San Rafael;191;23.26;11.80;SI;NO;;0;;;NO;;;;
+Sur;Dina Huapi;Villa La Angostura;1;200;Dina Huapi - Villa La Angostura;74;28.14;20.50;SI;NO;;0;;;NO;;;;
+Sur;Villa La Angostura;San Martin de los Andes;1;200;Villa La Angostura - San Martin de los Andes;110;21.42;20.50;SI;NO;;0;;;NO;;;;
+Sur;San Martin de los Andes;Junin de los Andes;1;200;San Martin de los Andes - Junin de los Andes;61;29.51;20.50;SI;NO;;0;;;NO;;;;
+Sur;Junin de los Andes;Zapala;1;200;Junin de los Andes - Zapala;202;20.23;20.50;NO;SI;SI;0;Junin de los Andes -> Zapala (22.22 dB);;NO;;;;
+Sur;Zapala;Chos Malal;1;200;Zapala - Chos Malal;255;22.41;20.50;SI;NO;;0;;;NO;;;;
+Sur;Chos Malal;Buta Ranquil;1;200;Chos Malal - Buta Ranquil;92;25.23;20.50;SI;NO;;0;;;NO;;;;
+Sur;Buta Ranquil;Malargue;1;200;Buta Ranquil - Malargue;244;20.80;20.50;SI;NO;;0;;;NO;;;;
+Sur;Malargue;San Rafael;1;200;Malargue - San Rafael;191;23.26;20.50;SI;NO;;0;;;NO;;;;

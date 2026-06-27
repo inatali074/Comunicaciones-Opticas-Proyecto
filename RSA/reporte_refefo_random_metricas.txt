@@ -1,0 +1,661 @@
+================================================================================
+  REPORTE COMPLETO: ASIGNACIÓN DE DEMANDAS REFEFO CON MÉTODO ALEATORIO Y MÉTODOS DE CALIDAD
+================================================================================
+
+Estado base: /home/maximo/opticas/TpOpticas/RSA/base/aleatorio/ocupacion_base_random_V3_metricas.csv
+Demandas:    /home/maximo/opticas/TpOpticas/RSA/refefo/demandas_refefo.csv
+
+--- ESTADO BASE ---
+  Enlaces:          406
+  Slots ocupados:   14648 / 123424
+  Ocupación:        11.87%
+  S_max:            304
+
+--- RESULTADOS REFEFO ---
+  Demandas REFEFO totales:        200
+  Demandas asignadas con éxito:   177
+  Demandas bloqueadas:            23
+  Probabilidad de bloqueo:        11.50%
+
+--- MÉTRIAS DE TIEMPO POR DEMANDA REFEFO INDIVIDUAL ---
+  Tiempo mínimo:                  6.3627 ms
+  Tiempo máximo:                  34.3484 ms
+  Tiempo promedio:                13.4467 ms
+
+--- ESTADO FINAL ACUMULADO DE LA RED ---
+  Enlaces:          416
+  Slots ocupados:   26530 / 126464
+  Ocupación:        20.98%
+  S_max:            304
+
+  Δ Slots ocupados: +11882
+  Δ S_max:          304 → 304
+  Fragmentación Promedio:         0.748155
+  Contigüidad Promedio:           0.154056
+  Variación de Carga (Max-Min):   156 slots
+  Transiciones Ocupado-Libre (min/max/prom): 0 / 27 / 13.0649
+  Prob. Bloqueo Promedio Enlace:   10.2606%
+
+--- MÉTRIAS DETALLADAS ENLACE POR ENLACE ---
+Enlace (Origen -> Destino)                                   | Ocupados | Libres   | Frag (F) | Contig (C) | Trans O->L | Solics  | Bloqs  | P_block%
+----------------------------------------------------------------------------------------------------------------------------------------------------
+9 De Julio -> Bragado                                        |       64 |      240 |   0.6750 |     0.1705 |         12 |      16 |      1 |    6.25%
+9 De Julio -> Pehuajo                                        |       42 |      262 |   0.5725 |     0.2671 |         10 |      11 |      1 |    9.09%
+Abasto -> Cañuelas                                           |       40 |      264 |   0.6553 |     0.2174 |          8 |      10 |      1 |   10.00%
+Abasto -> Chascomus                                          |       88 |      216 |   0.8380 |     0.0868 |         17 |      24 |      3 |   12.50%
+Abasto -> La Plata                                           |       64 |      240 |   0.8000 |     0.1170 |         14 |      18 |      2 |   11.11%
+Abasto -> Las Toninas                                        |       76 |      228 |   0.8509 |     0.0905 |         17 |      21 |      3 |   14.29%
+Abasto -> Marcos Paz                                         |       66 |      238 |   0.8151 |     0.1301 |         13 |      14 |      1 |    7.14%
+Aguada Cecilio -> Dina Huapi                                 |       54 |      250 |   0.8320 |     0.1117 |         12 |      13 |      1 |    7.69%
+Aguada Cecilio -> San Antonio Oeste                          |       68 |      236 |   0.7246 |     0.1755 |         13 |      15 |      0 |    0.00%
+Algarrobo -> Bahia Blanca                                    |       86 |      218 |   0.7523 |     0.1154 |         19 |      22 |      1 |    4.55%
+Algarrobo -> Rio Colorado                                    |       62 |      242 |   0.7066 |     0.1651 |         12 |      19 |      4 |   21.05%
+Alto Rio Senguer -> J. de San Martin                         |       88 |      216 |   0.8194 |     0.1024 |         18 |      23 |      3 |   13.04%
+Alto Rio Senguer -> Rio Mayo                                 |       66 |      238 |   0.8109 |     0.1259 |         14 |      17 |      2 |   11.76%
+Aristobulo del Valle -> Puerto Iguazu                        |       24 |      280 |   0.6929 |     0.2346 |          6 |       6 |      0 |    0.00%
+Aristobulo del Valle -> San Jose                             |       28 |      276 |   0.7210 |     0.1900 |          7 |       7 |      0 |    0.00%
+Arrecifes -> Exaltacion de la Cruz                           |       62 |      242 |   0.6529 |     0.1983 |          8 |      12 |      1 |    8.33%
+Arrecifes -> Pergamino                                       |      136 |      168 |   0.7917 |     0.0923 |         24 |      29 |      1 |    3.45%
+Arrecifes -> San Antonio De Areco                            |       64 |      240 |   0.8167 |     0.1269 |         12 |      16 |      1 |    6.25%
+Arroyito -> Cordoba                                          |       56 |      248 |   0.6492 |     0.1955 |         11 |      15 |      3 |   20.00%
+Arroyito -> San Francisco                                    |       78 |      226 |   0.7699 |     0.1099 |         17 |      25 |      7 |   28.00%
+Arroyito (Nqn) -> Neuquen                                    |       52 |      252 |   0.7857 |     0.1338 |         12 |      14 |      3 |   21.43%
+Arroyito (Nqn) -> Picun Leufu                                |       60 |      244 |   0.7664 |     0.1350 |         12 |      13 |      1 |    7.69%
+Azopardo -> Benavidez                                        |       24 |      280 |   0.4500 |     0.3481 |          5 |       6 |      0 |    0.00%
+Azopardo -> La Plata                                         |       24 |      280 |   0.6429 |     0.2435 |          6 |       6 |      0 |    0.00%
+Azul -> Olavarria                                            |       90 |      214 |   0.8832 |     0.0680 |         20 |      23 |      1 |    4.35%
+Azul -> Tandil                                               |       82 |      222 |   0.8829 |     0.0742 |         20 |      21 |      1 |    4.76%
+Añatuya -> Santiago del Estero                               |       20 |      284 |   0.5634 |     0.2665 |          5 |       5 |      0 |    0.00%
+Añatuya -> Tostado                                           |       34 |      270 |   0.6111 |     0.2335 |          8 |       9 |      1 |   11.11%
+Bahia Blanca -> Algarrobo                                    |       74 |      230 |   0.6913 |     0.1499 |         15 |      22 |      4 |   18.18%
+Bahia Blanca -> Tres Arroyos                                 |      144 |      160 |   0.8500 |     0.0924 |         21 |      35 |      2 |    5.71%
+Bahia Blanca -> Viedma                                       |       80 |      224 |   0.8884 |     0.0716 |         17 |      20 |      2 |   10.00%
+Bajo Caracoles -> Gobernador Gregores                        |       28 |      276 |   0.5326 |     0.3219 |          7 |      11 |      4 |   36.36%
+Bajo Caracoles -> Perito Moreno                              |       50 |      254 |   0.7559 |     0.1730 |          9 |      13 |      2 |   15.38%
+Baradero -> San Pedro BsAs                                   |       84 |      220 |   0.8591 |     0.0834 |         17 |      18 |      1 |    5.56%
+Baradero -> Zarate                                           |       78 |      226 |   0.8407 |     0.0944 |         15 |      18 |      2 |   11.11%
+Belen -> Chilecito                                           |       54 |      250 |   0.8440 |     0.1143 |         12 |      12 |      0 |    0.00%
+Belen -> Santa Maria                                         |       50 |      254 |   0.7402 |     0.1452 |         12 |      13 |      1 |    7.69%
+Bellavista -> Corrientes                                     |       86 |      218 |   0.7936 |     0.1047 |         18 |      19 |      0 |    0.00%
+Bellavista -> Goya                                           |       80 |      224 |   0.8661 |     0.0809 |         15 |      19 |      1 |    5.26%
+Benavidez -> Azopardo                                        |       24 |      280 |   0.4500 |     0.3481 |          5 |       6 |      0 |    0.00%
+Benavidez -> CABA                                            |       38 |      266 |   0.7669 |     0.1755 |          7 |      12 |      4 |   33.33%
+Benavidez -> Campana                                         |      134 |      170 |   0.8824 |     0.0722 |         23 |      29 |      2 |    6.90%
+Benavidez -> Exaltacion de la Cruz                           |       76 |      228 |   0.7807 |     0.1315 |         13 |      15 |      1 |    6.67%
+Benavidez -> Lujan                                           |       54 |      250 |   0.6960 |     0.1448 |         13 |      14 |      1 |    7.14%
+Benavidez -> Marcos Paz                                      |       46 |      258 |   0.7597 |     0.1650 |          9 |      12 |      3 |   25.00%
+Benavidez -> San Antonio De Areco                            |       68 |      236 |   0.7966 |     0.1160 |         14 |      15 |      0 |    0.00%
+Bolivar -> Olavarria                                         |       78 |      226 |   0.8894 |     0.0753 |         18 |      19 |      0 |    0.00%
+Bolivar -> Pehuajo                                           |       92 |      212 |   0.8726 |     0.0731 |         21 |      22 |      0 |    0.00%
+Bragado -> 9 De Julio                                        |       50 |      254 |   0.6575 |     0.1882 |         12 |      13 |      1 |    7.69%
+Bragado -> Chivilcoy                                         |       64 |      240 |   0.7875 |     0.1351 |         12 |      16 |      1 |    6.25%
+Buta Ranquil -> Chos Malal                                   |       26 |      278 |   0.5144 |     0.3078 |          6 |       8 |      2 |   25.00%
+Buta Ranquil -> Malargue                                     |       58 |      246 |   0.8333 |     0.1041 |         12 |      18 |      4 |   22.22%
+CABA -> Benavidez                                            |       32 |      272 |   0.6912 |     0.2003 |          6 |      10 |      2 |   20.00%
+CABA -> La Plata                                             |       32 |      272 |   0.6029 |     0.2454 |          6 |      11 |      4 |   36.36%
+Caleta Olivia -> Comodoro Rivadavia                          |       98 |      206 |   0.7961 |     0.1169 |         16 |      23 |      2 |    8.70%
+Caleta Olivia -> Jaramillo                                   |       38 |      266 |   0.6955 |     0.2034 |          8 |      11 |      2 |   18.18%
+Caleta Olivia -> Pico Truncado                               |       46 |      258 |   0.7713 |     0.1664 |         10 |      14 |      3 |   21.43%
+Campana -> Benavidez                                         |      120 |      184 |   0.8315 |     0.0781 |         21 |      31 |      6 |   19.35%
+Campana -> Zarate                                            |      154 |      150 |   0.9067 |     0.0543 |         27 |      34 |      2 |    5.88%
+Cap Juan Page -> Embarcacion                                 |       66 |      238 |   0.7857 |     0.1271 |         15 |      17 |      1 |    5.88%
+Cap Juan Page -> Las Lomitas                                 |       60 |      244 |   0.7910 |     0.1397 |         14 |      15 |      1 |    6.67%
+Catamarca -> Concepcion                                      |       60 |      244 |   0.7787 |     0.1333 |         13 |      14 |      0 |    0.00%
+Catamarca -> La Rioja                                        |       56 |      248 |   0.8266 |     0.1164 |         11 |      12 |      0 |    0.00%
+Catriel -> Santa Isabel                                      |       36 |      268 |   0.7052 |     0.1799 |          9 |      12 |      3 |   25.00%
+Catriel -> Sargento Vidal                                    |       58 |      246 |   0.6179 |     0.2114 |         12 |      14 |      2 |   14.29%
+Cañada De Gomez -> Leones                                    |      112 |      192 |   0.7031 |     0.1493 |         19 |      25 |      2 |    8.00%
+Cañada De Gomez -> Rosario                                   |      116 |      188 |   0.7926 |     0.0857 |         23 |      25 |      4 |   16.00%
+Cañuelas -> Abasto                                           |       54 |      250 |   0.6600 |     0.1933 |         10 |      14 |      1 |    7.14%
+Cañuelas -> Lujan                                            |       46 |      258 |   0.6550 |     0.1873 |         10 |      11 |      1 |    9.09%
+Ceres -> Sunchales                                           |       82 |      222 |   0.7342 |     0.1288 |         17 |      23 |      4 |   17.39%
+Ceres -> Tostado                                             |       74 |      230 |   0.7696 |     0.1173 |         15 |      22 |      5 |   22.73%
+Chacabuco -> Junin                                           |       52 |      252 |   0.8254 |     0.1038 |         13 |      13 |      0 |    0.00%
+Chacabuco -> Lujan                                           |       72 |      232 |   0.7974 |     0.1091 |         16 |      17 |      0 |    0.00%
+Chascomus -> Abasto                                          |      104 |      200 |   0.8600 |     0.0748 |         20 |      24 |      1 |    4.17%
+Chascomus -> Dolores                                         |       84 |      220 |   0.8455 |     0.0899 |         18 |      23 |      3 |   13.04%
+Chilecito -> Belen                                           |       50 |      254 |   0.8465 |     0.1129 |         12 |      13 |      1 |    7.69%
+Chilecito -> Patquia                                         |       54 |      250 |   0.8240 |     0.1347 |         11 |      12 |      0 |    0.00%
+Chivilcoy -> Bragado                                         |       44 |      260 |   0.7423 |     0.1592 |         11 |      12 |      1 |    8.33%
+Chivilcoy -> Mercedes                                        |       52 |      252 |   0.8175 |     0.1242 |         10 |      14 |      1 |    7.14%
+Choele Choel -> General Roca                                 |       26 |      278 |   0.5683 |     0.2486 |          6 |       6 |      0 |    0.00%
+Choele Choel -> Rio Colorado                                 |       32 |      272 |   0.6691 |     0.1995 |          7 |       7 |      0 |    0.00%
+Choromoro -> San Jose de Metan                               |       62 |      242 |   0.8017 |     0.1116 |         13 |      15 |      1 |    6.67%
+Choromoro -> San Miguel de Tucuman                           |       50 |      254 |   0.7992 |     0.1163 |         11 |      12 |      1 |    8.33%
+Chos Malal -> Buta Ranquil                                   |       56 |      248 |   0.6895 |     0.1831 |         12 |      18 |      4 |   22.22%
+Chos Malal -> Zapala                                         |       26 |      278 |   0.6115 |     0.2636 |          6 |       8 |      2 |   25.00%
+Chucul -> Hernando                                           |       88 |      216 |   0.7870 |     0.1178 |         17 |      26 |      7 |   26.92%
+Chucul -> V. Mercedes                                        |      110 |      194 |   0.8454 |     0.0827 |         23 |      24 |      2 |    8.33%
+Clorinda -> Formosa                                          |       20 |      284 |   0.6901 |     0.2161 |          5 |       5 |      0 |    0.00%
+Colonia Las Heras -> Perito Moreno                           |       50 |      254 |   0.6614 |     0.2310 |          9 |      15 |      3 |   20.00%
+Colonia Las Heras -> Pico Truncado                           |       76 |      228 |   0.8158 |     0.1051 |         15 |      17 |      0 |    0.00%
+Comodoro Rivadavia -> Caleta Olivia                          |       48 |      256 |   0.6992 |     0.1833 |         10 |      16 |      5 |   31.25%
+Comodoro Rivadavia -> Rawson                                 |       98 |      206 |   0.8835 |     0.0744 |         18 |      23 |      2 |    8.70%
+Concepcion -> Catamarca                                      |       50 |      254 |   0.6732 |     0.1891 |         11 |      11 |      0 |    0.00%
+Concepcion -> San Miguel de Tucuman                          |       66 |      238 |   0.7731 |     0.1397 |         11 |      15 |      0 |    0.00%
+Concepcion del Uruguay -> Concordia                          |       78 |      226 |   0.7965 |     0.1230 |         13 |      17 |      1 |    5.88%
+Concepcion del Uruguay -> Rosario                            |        0 |      304 |   0.0000 |     1.0000 |          0 |       0 |      0 |    0.00%
+Concepcion del Uruguay -> Zarate                             |       78 |      226 |   0.7876 |     0.1190 |         15 |      21 |      4 |   19.05%
+Concordia -> Concepcion del Uruguay                          |       74 |      230 |   0.7565 |     0.1167 |         15 |      20 |      4 |   20.00%
+Concordia -> Parana                                          |       38 |      266 |   0.7143 |     0.1589 |          8 |       9 |      1 |   11.11%
+Concordia -> Paso de Los Libres                              |       56 |      248 |   0.8024 |     0.1220 |         12 |      13 |      1 |    7.69%
+Cordoba -> Arroyito                                          |       72 |      232 |   0.7759 |     0.1195 |         15 |      24 |      7 |   29.17%
+Cordoba -> Corralito                                         |      112 |      192 |   0.8073 |     0.0902 |         24 |      25 |      2 |    8.00%
+Cordoba -> Jesus Maria                                       |       50 |      254 |   0.4961 |     0.2847 |         11 |      13 |      1 |    7.69%
+Cordoba -> La Falda                                          |       60 |      244 |   0.8689 |     0.0875 |         15 |      14 |      0 |    0.00%
+Cordoba -> La Rioja                                          |       16 |      288 |   0.6042 |     0.3150 |          3 |       4 |      0 |    0.00%
+Cordoba -> Manfredi                                          |       68 |      236 |   0.5890 |     0.2127 |         13 |      16 |      3 |   18.75%
+Cordoba -> Patquia                                           |       14 |      290 |   0.0897 |     0.8339 |          3 |       3 |      0 |    0.00%
+Corralito -> Cordoba                                         |       88 |      216 |   0.8287 |     0.0881 |         19 |      26 |      7 |   26.92%
+Corralito -> Hernando                                        |       98 |      206 |   0.8738 |     0.0693 |         21 |      22 |      2 |    9.09%
+Corrientes -> Bellavista                                     |       80 |      224 |   0.7634 |     0.1164 |         15 |      19 |      1 |    5.26%
+Corrientes -> Ituzaingo                                      |       64 |      240 |   0.8583 |     0.0974 |         13 |      16 |      2 |   12.50%
+Corrientes -> Resistencia                                    |      108 |      196 |   0.8163 |     0.1010 |         22 |      25 |      1 |    4.00%
+Dean Funes -> Frias                                          |       54 |      250 |   0.7760 |     0.1416 |         11 |      14 |      1 |    7.14%
+Dean Funes -> Jesus Maria                                    |       64 |      240 |   0.7917 |     0.1181 |         13 |      16 |      1 |    6.25%
+Dina Huapi -> Aguada Cecilio                                 |       64 |      240 |   0.7750 |     0.1380 |         12 |      14 |      0 |    0.00%
+Dina Huapi -> Piedra del Aguila                              |       50 |      254 |   0.8150 |     0.1121 |         12 |      14 |      3 |   21.43%
+Dina Huapi -> San Carlos de Bariloche                        |       88 |      216 |   0.8657 |     0.0779 |         17 |      22 |      4 |   18.18%
+Dina Huapi -> Villa La Angostura                             |       44 |      260 |   0.7769 |     0.1632 |         11 |      15 |      4 |   26.67%
+Dolores -> Chascomus                                         |      104 |      200 |   0.8350 |     0.0843 |         20 |      24 |      1 |    4.17%
+Dolores -> Las Armas                                         |       84 |      220 |   0.7682 |     0.1279 |         16 |      23 |      3 |   13.04%
+El Calafate -> Esperanza (StaCruz)                           |       48 |      256 |   0.8086 |     0.1096 |         12 |      13 |      1 |    7.69%
+El Calafate -> Tres lagos                                    |       52 |      252 |   0.7460 |     0.1680 |         12 |      13 |      1 |    7.69%
+El Condor -> Estacion Cullen                                 |       24 |      280 |   0.5500 |     0.2845 |          5 |       6 |      0 |    0.00%
+El Condor -> Rio Gallegos                                    |       22 |      282 |   0.6702 |     0.2487 |          5 |       7 |      2 |   28.57%
+El Foyel -> Epuyen                                           |       70 |      234 |   0.8291 |     0.1087 |         14 |      18 |      3 |   16.67%
+El Foyel -> San Carlos de Bariloche                          |       92 |      212 |   0.7358 |     0.1350 |         18 |      26 |      5 |   19.23%
+Embarcacion -> Cap Juan Page                                 |       50 |      254 |   0.7756 |     0.1500 |         12 |      13 |      1 |    7.69%
+Embarcacion -> Lib Gral San Martin                           |       72 |      232 |   0.8103 |     0.1159 |         17 |      16 |      0 |    0.00%
+Embarcacion -> Salvador Mazza                                |       24 |      280 |   0.6857 |     0.1879 |          6 |       7 |      1 |   14.29%
+Epuyen -> El Foyel                                           |       88 |      216 |   0.7870 |     0.1298 |         18 |      24 |      4 |   16.67%
+Epuyen -> Esquel                                             |       58 |      246 |   0.8130 |     0.1393 |         12 |      15 |      2 |   13.33%
+Esperanza (StaCruz) -> El Calafate                           |       52 |      252 |   0.7778 |     0.1365 |         12 |      13 |      1 |    7.69%
+Esperanza (StaCruz) -> Rio Gallegos                          |       44 |      260 |   0.7346 |     0.1609 |         10 |      12 |      1 |    8.33%
+Esquel -> Epuyen                                             |       90 |      214 |   0.7570 |     0.1293 |         17 |      23 |      3 |   13.04%
+Esquel -> Tecka                                              |       62 |      242 |   0.7934 |     0.1421 |         14 |      16 |      2 |   12.50%
+Estacion Cullen -> El Condor                                 |       12 |      292 |   0.6233 |     0.2915 |          3 |       5 |      2 |   40.00%
+Estacion Cullen -> San Sebastian                             |       26 |      278 |   0.6115 |     0.2442 |          5 |       6 |      0 |    0.00%
+Exaltacion de la Cruz -> Arrecifes                           |       70 |      234 |   0.7863 |     0.1406 |         10 |      14 |      1 |    7.14%
+Exaltacion de la Cruz -> Benavidez                           |       56 |      248 |   0.5927 |     0.2328 |          9 |      11 |      1 |    9.09%
+Formosa -> Clorinda                                          |       30 |      274 |   0.7044 |     0.2121 |          6 |       8 |      1 |   12.50%
+Formosa -> Las Lomitas                                       |       72 |      232 |   0.8060 |     0.1092 |         15 |      18 |      1 |    5.56%
+Formosa -> Resistencia                                       |       76 |      228 |   0.8684 |     0.0844 |         16 |      18 |      1 |    5.56%
+Frias -> Dean Funes                                          |       60 |      244 |   0.8115 |     0.1345 |         12 |      15 |      1 |    6.67%
+Frias -> Santiago del Estero                                 |       54 |      250 |   0.7960 |     0.1308 |         11 |      14 |      1 |    7.14%
+General Alvear -> San Rafael                                 |       22 |      282 |   0.7376 |     0.1862 |          5 |       8 |      3 |   37.50%
+General Alvear -> Santa Isabel                               |       58 |      246 |   0.6707 |     0.1730 |          9 |      12 |      1 |    8.33%
+General Conesa -> Rio Colorado                               |       74 |      230 |   0.8391 |     0.0910 |         15 |      17 |      1 |    5.88%
+General Conesa -> San Antonio Oeste                          |       54 |      250 |   0.7600 |     0.1811 |         10 |      16 |      4 |   25.00%
+General Roca -> Choele Choel                                 |       32 |      272 |   0.7169 |     0.1717 |          7 |       7 |      0 |    0.00%
+General Roca -> Neuquen                                      |       30 |      274 |   0.7007 |     0.1785 |          7 |       7 |      0 |    0.00%
+Gobernador Gregores -> Bajo Caracoles                        |       44 |      260 |   0.6962 |     0.2038 |         10 |      12 |      2 |   16.67%
+Gobernador Gregores -> Tres lagos                            |       36 |      268 |   0.6418 |     0.2138 |          9 |      12 |      3 |   25.00%
+Goya -> Bellavista                                           |       86 |      218 |   0.7156 |     0.1349 |         16 |      19 |      0 |    0.00%
+Goya -> La Paz                                               |       76 |      228 |   0.7851 |     0.1171 |         15 |      18 |      1 |    5.56%
+Gral. Alvear -> San Rafael                                   |       60 |      244 |   0.7787 |     0.1118 |         14 |      14 |      0 |    0.00%
+Gral. Alvear -> Santa Isabel                                 |       60 |      244 |   0.7295 |     0.1324 |         14 |      14 |      0 |    0.00%
+Hernando -> Chucul                                           |      104 |      200 |   0.8500 |     0.0770 |         21 |      23 |      2 |    8.70%
+Hernando -> Corralito                                        |       92 |      212 |   0.8160 |     0.0951 |         19 |      27 |      7 |   25.93%
+Humahuaca -> La Quiaca                                       |       34 |      270 |   0.4444 |     0.3535 |          7 |       8 |      0 |    0.00%
+Humahuaca -> San Salvador de Jujuy                           |       48 |      256 |   0.8281 |     0.1097 |         11 |      12 |      1 |    8.33%
+Ituzaingo -> Corrientes                                      |       36 |      268 |   0.7351 |     0.1783 |          9 |      10 |      1 |   10.00%
+Ituzaingo -> Posadas                                         |       64 |      240 |   0.8333 |     0.1023 |         12 |      15 |      1 |    6.67%
+J. de San Martin -> Alto Rio Senguer                         |       66 |      238 |   0.7521 |     0.1348 |         15 |      17 |      2 |   11.76%
+J. de San Martin -> Tecka                                    |       88 |      216 |   0.6574 |     0.1602 |         18 |      23 |      3 |   13.04%
+Jaramillo -> Caleta Olivia                                   |       56 |      248 |   0.7863 |     0.1324 |         12 |      16 |      3 |   18.75%
+Jaramillo -> Puerto San Julian                               |       36 |      268 |   0.7052 |     0.1994 |          7 |      10 |      1 |   10.00%
+Jardin America -> Posadas                                    |       34 |      270 |   0.6556 |     0.2211 |          8 |       8 |      0 |    0.00%
+Jardin America -> Puerto Iguazu                              |       34 |      270 |   0.5074 |     0.3305 |          8 |       8 |      0 |    0.00%
+Jesus Maria -> Cordoba                                       |       72 |      232 |   0.7845 |     0.1188 |         17 |      18 |      1 |    5.56%
+Jesus Maria -> Dean Funes                                    |       50 |      254 |   0.8031 |     0.1225 |         10 |      13 |      1 |    7.69%
+Junin -> Chacabuco                                           |       58 |      246 |   0.8415 |     0.0984 |         14 |      14 |      0 |    0.00%
+Junin -> Vedia                                               |       52 |      252 |   0.7698 |     0.1321 |         13 |      13 |      0 |    0.00%
+Junin de los Andes -> San Martin de los Andes                |       36 |      268 |   0.7239 |     0.1623 |          8 |      10 |      2 |   20.00%
+Junin de los Andes -> Zapala                                 |       52 |      252 |   0.7540 |     0.1554 |         12 |      17 |      4 |   23.53%
+La Falda -> Cordoba                                          |       68 |      236 |   0.8686 |     0.0872 |         15 |      17 |      1 |    5.88%
+La Falda -> Serrezuela                                       |       60 |      244 |   0.7623 |     0.1081 |         15 |      14 |      0 |    0.00%
+La Paz -> Goya                                               |       90 |      214 |   0.8505 |     0.0883 |         19 |      20 |      0 |    0.00%
+La Paz -> Parana                                             |       72 |      232 |   0.8534 |     0.0942 |         14 |      17 |      1 |    5.88%
+La Plata -> Abasto                                           |       56 |      248 |   0.7379 |     0.1618 |         12 |      17 |      4 |   23.53%
+La Plata -> Azopardo                                         |       24 |      280 |   0.6429 |     0.2435 |          6 |       6 |      0 |    0.00%
+La Plata -> CABA                                             |       32 |      272 |   0.6912 |     0.2003 |          6 |      10 |      2 |   20.00%
+La Quiaca -> Humahuaca                                       |       46 |      258 |   0.6279 |     0.1901 |         10 |      12 |      1 |    8.33%
+La Quiaca -> San Antonio de los Cobres                       |       40 |      264 |   0.7576 |     0.1710 |          9 |       9 |      0 |    0.00%
+La Rioja -> Catamarca                                        |       56 |      248 |   0.7944 |     0.1216 |         12 |      13 |      0 |    0.00%
+La Rioja -> Cordoba                                          |       12 |      292 |   0.6096 |     0.3161 |          3 |       3 |      0 |    0.00%
+La Rioja -> Patquia                                          |       50 |      254 |   0.7756 |     0.1231 |         10 |      10 |      0 |    0.00%
+Las Armas -> Dolores                                         |      108 |      196 |   0.7449 |     0.1282 |         18 |      25 |      1 |    4.00%
+Las Armas -> Mar Del Plata                                   |       84 |      220 |   0.7682 |     0.1066 |         18 |      23 |      3 |   13.04%
+Las Lomitas -> Cap Juan Page                                 |       62 |      242 |   0.7355 |     0.1399 |         15 |      16 |      1 |    6.25%
+Las Lomitas -> Formosa                                       |       66 |      238 |   0.8319 |     0.1072 |         15 |      16 |      1 |    6.25%
+Las Toninas -> Abasto                                        |       80 |      224 |   0.8795 |     0.0785 |         18 |      21 |      1 |    4.76%
+Las Toninas -> Pinamar                                       |       72 |      232 |   0.7069 |     0.1557 |         16 |      20 |      3 |   15.00%
+Leones -> Cañada De Gomez                                    |       96 |      208 |   0.6971 |     0.1343 |         18 |      24 |      4 |   16.67%
+Leones -> San Marcos                                         |      104 |      200 |   0.8400 |     0.0764 |         20 |      23 |      2 |    8.70%
+Lib Gral San Martin -> Embarcacion                           |       52 |      252 |   0.7738 |     0.1298 |         13 |      13 |      1 |    7.69%
+Lib Gral San Martin -> San Pedro Jujuy                       |       62 |      242 |   0.8182 |     0.1210 |         15 |      15 |      1 |    6.67%
+Luis Piedrabuena -> Puerto San Julian                        |       46 |      258 |   0.7752 |     0.1530 |         10 |      14 |      3 |   21.43%
+Luis Piedrabuena -> Rio Gallegos                             |       50 |      254 |   0.7480 |     0.1617 |         10 |      13 |      1 |    7.69%
+Lujan -> Benavidez                                           |       76 |      228 |   0.8246 |     0.1179 |         14 |      15 |      0 |    0.00%
+Lujan -> Cañuelas                                            |       54 |      250 |   0.6680 |     0.1697 |         11 |      14 |      1 |    7.14%
+Lujan -> Chacabuco                                           |       58 |      246 |   0.8089 |     0.1292 |         14 |      14 |      0 |    0.00%
+Lujan -> Mercedes                                            |       62 |      242 |   0.8678 |     0.0779 |         15 |      17 |      2 |   11.76%
+Lujan -> Rufino                                              |       22 |      282 |   0.3936 |     0.4048 |          5 |       5 |      0 |    0.00%
+Malargue -> Buta Ranquil                                     |       38 |      266 |   0.6880 |     0.1816 |          7 |      10 |      2 |   20.00%
+Malargue -> San Rafael                                       |       58 |      246 |   0.5407 |     0.2500 |         13 |      18 |      4 |   22.22%
+Manfredi -> Cordoba                                          |       86 |      218 |   0.7064 |     0.1601 |         15 |      18 |      1 |    5.56%
+Manfredi -> Villa Maria                                      |       84 |      220 |   0.8409 |     0.1017 |         16 |      20 |      3 |   15.00%
+Mar Del Plata -> Las Armas                                   |      114 |      190 |   0.7368 |     0.1158 |         21 |      26 |      1 |    3.85%
+Mar Del Plata -> Pinamar                                     |       86 |      218 |   0.8486 |     0.0925 |         20 |      22 |      1 |    4.55%
+Mar Del Plata -> Tandil                                      |       72 |      232 |   0.8147 |     0.1040 |         16 |      19 |      1 |    5.26%
+Mar Del Plata -> Tres Arroyos                                |      110 |      194 |   0.8711 |     0.0723 |         22 |      31 |      6 |   19.35%
+Marcos Paz -> Abasto                                         |       34 |      270 |   0.7370 |     0.1968 |          7 |      10 |      3 |   30.00%
+Marcos Paz -> Benavidez                                      |       62 |      242 |   0.7686 |     0.1431 |         12 |      13 |      1 |    7.69%
+Mendoza -> Santa Rosa (Mza)                                  |       88 |      216 |   0.7917 |     0.0983 |         19 |      27 |      7 |   25.93%
+Mendoza -> Tunuyan                                           |      114 |      190 |   0.8526 |     0.0692 |         22 |      27 |      3 |   11.11%
+Mendoza -> Villa Tulumaya                                    |       78 |      226 |   0.8274 |     0.0979 |         16 |      18 |      0 |    0.00%
+Mercedes -> Chivilcoy                                        |       54 |      250 |   0.7680 |     0.1243 |         13 |      14 |      1 |    7.14%
+Mercedes -> Lujan                                            |       58 |      246 |   0.8211 |     0.1086 |         11 |      15 |      1 |    6.67%
+Neuquen -> Arroyito (Nqn)                                    |       60 |      244 |   0.7172 |     0.1815 |         13 |      13 |      1 |    7.69%
+Neuquen -> General Roca                                      |       44 |      260 |   0.6846 |     0.1666 |          9 |      10 |      1 |   10.00%
+Neuquen -> Sargento Vidal                                    |       36 |      268 |   0.7052 |     0.1738 |          8 |      12 |      3 |   25.00%
+Olavarria -> Azul                                            |       78 |      226 |   0.8584 |     0.0804 |         18 |      19 |      0 |    0.00%
+Olavarria -> Bolivar                                         |       96 |      208 |   0.8798 |     0.0702 |         20 |      24 |      1 |    4.17%
+Parana -> Concordia                                          |       40 |      264 |   0.7159 |     0.1681 |          8 |      13 |      4 |   30.77%
+Parana -> La Paz                                             |       94 |      210 |   0.8810 |     0.0735 |         20 |      21 |      0 |    0.00%
+Parana -> Santa Fe                                           |       96 |      208 |   0.8462 |     0.0909 |         17 |      22 |      1 |    4.55%
+Paso de Los Libres -> Concordia                              |       56 |      248 |   0.8024 |     0.1219 |         12 |      13 |      1 |    7.69%
+Paso de Los Libres -> San Jose                               |       44 |      260 |   0.6462 |     0.1849 |         10 |      11 |      1 |    9.09%
+Patquia -> Chilecito                                         |       50 |      254 |   0.7992 |     0.1269 |         12 |      13 |      1 |    7.69%
+Patquia -> Cordoba                                           |       16 |      288 |   0.4896 |     0.3862 |          3 |       3 |      0 |    0.00%
+Patquia -> La Rioja                                          |       34 |      270 |   0.5407 |     0.2629 |          8 |       8 |      0 |    0.00%
+Patquia -> San Jose de Jachal                                |       66 |      238 |   0.8109 |     0.1113 |         14 |      14 |      0 |    0.00%
+Patquia -> Serrezuela                                        |       26 |      278 |   0.5504 |     0.2732 |          6 |       6 |      0 |    0.00%
+Pehuajo -> 9 De Julio                                        |       64 |      240 |   0.8125 |     0.1236 |         13 |      16 |      1 |    6.25%
+Pehuajo -> Bolivar                                           |       84 |      220 |   0.8864 |     0.0788 |         20 |      20 |      0 |    0.00%
+Pehuajo -> Rufino                                            |       96 |      208 |   0.8462 |     0.0860 |         19 |      21 |      0 |    0.00%
+Pehuajo -> Trenque Lauquen                                   |       52 |      252 |   0.7937 |     0.1300 |         11 |      13 |      1 |    7.69%
+Pergamino -> Arrecifes                                       |      116 |      188 |   0.8351 |     0.0866 |         19 |      26 |      2 |    7.69%
+Pergamino -> Rosario                                         |      136 |      168 |   0.8631 |     0.0727 |         25 |      29 |      1 |    3.45%
+Perito Moreno -> Bajo Caracoles                              |       32 |      272 |   0.7500 |     0.1821 |          8 |      12 |      4 |   33.33%
+Perito Moreno -> Colonia Las Heras                           |       66 |      238 |   0.7899 |     0.1397 |         12 |      15 |      0 |    0.00%
+Perito Moreno -> Rio Mayo                                    |       70 |      234 |   0.7821 |     0.1190 |         14 |      19 |      3 |   15.79%
+Peru -> Rio Colorado                                         |       74 |      230 |   0.8652 |     0.0766 |         17 |      17 |      0 |    0.00%
+Peru -> Santa Rosa (LP)                                      |       92 |      212 |   0.8160 |     0.0922 |         17 |      20 |      0 |    0.00%
+Pico Truncado -> Caleta Olivia                               |       82 |      222 |   0.8063 |     0.1147 |         15 |      18 |      0 |    0.00%
+Pico Truncado -> Colonia Las Heras                           |       50 |      254 |   0.7520 |     0.1811 |         11 |      15 |      3 |   20.00%
+Picun Leufu -> Arroyito (Nqn)                                |       46 |      258 |   0.8256 |     0.1191 |         11 |      13 |      3 |   23.08%
+Picun Leufu -> Piedra del Aguila                             |       60 |      244 |   0.7131 |     0.1669 |         13 |      13 |      1 |    7.69%
+Piedra del Aguila -> Dina Huapi                              |       60 |      244 |   0.7828 |     0.1468 |         12 |      13 |      1 |    7.69%
+Piedra del Aguila -> Picun Leufu                             |       50 |      254 |   0.7244 |     0.1569 |         12 |      14 |      3 |   21.43%
+Pinamar -> Las Toninas                                       |       84 |      220 |   0.8182 |     0.1064 |         20 |      22 |      1 |    4.55%
+Pinamar -> Mar Del Plata                                     |       72 |      232 |   0.8060 |     0.1148 |         16 |      20 |      3 |   15.00%
+Posadas -> Ituzaingo                                         |       36 |      268 |   0.6828 |     0.2061 |          8 |      10 |      1 |   10.00%
+Posadas -> Jardin America                                    |       44 |      260 |   0.6615 |     0.2160 |         10 |      10 |      0 |    0.00%
+Posadas -> San Jose                                          |       70 |      234 |   0.7479 |     0.1343 |         14 |      16 |      1 |    6.25%
+Presidencia Roque Saenz Peña -> Resistencia                  |       58 |      246 |   0.7805 |     0.1168 |         12 |      14 |      1 |    7.14%
+Presidencia Roque Saenz Peña -> San Jose de Metan            |       46 |      258 |   0.7907 |     0.1417 |         10 |      12 |      2 |   16.67%
+Puerto Iguazu -> Aristobulo del Valle                        |       28 |      276 |   0.6993 |     0.2121 |          7 |       7 |      0 |    0.00%
+Puerto Iguazu -> Jardin America                              |       24 |      280 |   0.5250 |     0.3176 |          6 |       6 |      0 |    0.00%
+Puerto Madryn -> Sierra Grande                               |       90 |      214 |   0.8271 |     0.0972 |         17 |      22 |      2 |    9.09%
+Puerto Madryn -> Trelew                                      |       58 |      246 |   0.7724 |     0.1433 |         12 |      18 |      5 |   27.78%
+Puerto San Julian -> Jaramillo                               |       50 |      254 |   0.8268 |     0.1162 |         12 |      15 |      3 |   20.00%
+Puerto San Julian -> Luis Piedrabuena                        |       40 |      264 |   0.6932 |     0.1960 |          8 |      11 |      1 |    9.09%
+Rafaela -> San Francisco                                     |       50 |      254 |   0.7087 |     0.1604 |         11 |      14 |      3 |   21.43%
+Rafaela -> Santa Fe                                          |      120 |      184 |   0.8587 |     0.0886 |         23 |      32 |      4 |   12.50%
+Rafaela -> Sunchales                                         |       92 |      212 |   0.8255 |     0.0967 |         19 |      26 |      5 |   19.23%
+Rawson -> Comodoro Rivadavia                                 |       54 |      250 |   0.7600 |     0.1435 |         11 |      17 |      5 |   29.41%
+Rawson -> Trelew                                             |       98 |      206 |   0.8155 |     0.1096 |         16 |      23 |      2 |    8.70%
+Resistencia -> Corrientes                                    |      120 |      184 |   0.8696 |     0.0642 |         22 |      29 |      3 |   10.34%
+Resistencia -> Formosa                                       |       90 |      214 |   0.8458 |     0.0874 |         18 |      23 |      2 |    8.70%
+Resistencia -> Presidencia Roque Saenz Peña                  |       46 |      258 |   0.7907 |     0.1423 |         10 |      12 |      2 |   16.67%
+Resistencia -> Vera                                          |       54 |      250 |   0.7960 |     0.1194 |         12 |      13 |      1 |    7.69%
+Rio Colorado -> Algarrobo                                    |       74 |      230 |   0.7652 |     0.1344 |         15 |      19 |      1 |    5.26%
+Rio Colorado -> Choele Choel                                 |       26 |      278 |   0.5863 |     0.2819 |          6 |       6 |      0 |    0.00%
+Rio Colorado -> General Conesa                               |       54 |      250 |   0.8000 |     0.1318 |         11 |      16 |      4 |   25.00%
+Rio Colorado -> Peru                                         |       82 |      222 |   0.8649 |     0.0793 |         17 |      18 |      0 |    0.00%
+Rio Gallegos -> El Condor                                    |       24 |      280 |   0.5500 |     0.2845 |          5 |       7 |      1 |   14.29%
+Rio Gallegos -> Esperanza (StaCruz)                          |       46 |      258 |   0.5155 |     0.2748 |         10 |      12 |      1 |    8.33%
+Rio Gallegos -> Luis Piedrabuena                             |       46 |      258 |   0.8295 |     0.1131 |         11 |      12 |      1 |    8.33%
+Rio Grande -> San Sebastian                                  |        8 |      296 |   0.1655 |     0.7110 |          2 |       3 |      1 |   33.33%
+Rio Grande -> Tolhuin                                        |       16 |      288 |   0.5000 |     0.3490 |          3 |       4 |      0 |    0.00%
+Rio Mayo -> Alto Rio Senguer                                 |       88 |      216 |   0.6343 |     0.1800 |         17 |      23 |      3 |   13.04%
+Rio Mayo -> Perito Moreno                                    |       60 |      244 |   0.7131 |     0.1599 |         13 |      16 |      2 |   12.50%
+Rosario -> Cañada De Gomez                                   |      128 |      176 |   0.7784 |     0.0979 |         24 |      25 |      2 |    8.00%
+Rosario -> Concepcion del Uruguay                            |        6 |      298 |   0.1544 |     0.7389 |          1 |       1 |      0 |    0.00%
+Rosario -> Pergamino                                         |      116 |      188 |   0.8138 |     0.0867 |         21 |      26 |      2 |    7.69%
+Rosario -> San Fabian                                        |       88 |      216 |   0.8704 |     0.0866 |         17 |      19 |      0 |    0.00%
+Rosario -> San Nicolas de los Arroyos                        |       82 |      222 |   0.7973 |     0.1141 |         15 |      19 |      2 |   10.53%
+Rufino -> Lujan                                              |       42 |      262 |   0.5534 |     0.2860 |          6 |       8 |      0 |    0.00%
+Rufino -> Pehuajo                                            |       74 |      230 |   0.8565 |     0.0862 |         16 |      18 |      0 |    0.00%
+Rufino -> Vedia                                              |       58 |      246 |   0.8252 |     0.1092 |         14 |      14 |      0 |    0.00%
+Salta -> San Jose de Metan                                   |       54 |      250 |   0.7720 |     0.1466 |         11 |      13 |      1 |    7.69%
+Salta -> San Salvador de Jujuy                               |       40 |      264 |   0.6136 |     0.2137 |          7 |      12 |      3 |   25.00%
+Salvador Mazza -> Embarcacion                                |       32 |      272 |   0.7757 |     0.1508 |          7 |       7 |      0 |    0.00%
+San Antonio De Areco -> Arrecifes                            |       72 |      232 |   0.8190 |     0.1125 |         15 |      16 |      0 |    0.00%
+San Antonio De Areco -> Benavidez                            |       64 |      240 |   0.7833 |     0.1304 |         13 |      16 |      1 |    6.25%
+San Antonio Oeste -> Aguada Cecilio                          |       54 |      250 |   0.7840 |     0.1201 |         12 |      13 |      1 |    7.69%
+San Antonio Oeste -> General Conesa                          |       68 |      236 |   0.8051 |     0.1168 |         14 |      16 |      1 |    6.25%
+San Antonio Oeste -> Sierra Grande                           |       68 |      236 |   0.8136 |     0.1214 |         13 |      20 |      5 |   25.00%
+San Antonio Oeste -> Viedma                                  |      102 |      202 |   0.8168 |     0.1122 |         16 |      24 |      1 |    4.17%
+San Antonio de los Cobres -> La Quiaca                       |       40 |      264 |   0.7652 |     0.1394 |         10 |      11 |      1 |    9.09%
+San Antonio de los Cobres -> Santa Maria                     |       46 |      258 |   0.6279 |     0.2066 |         10 |      10 |      0 |    0.00%
+San Carlos de Bariloche -> Dina Huapi                        |       92 |      212 |   0.6415 |     0.1706 |         19 |      27 |      6 |   22.22%
+San Carlos de Bariloche -> El Foyel                          |       76 |      228 |   0.8377 |     0.0975 |         14 |      19 |      3 |   15.79%
+San Fabian -> Rosario                                        |       76 |      228 |   0.7939 |     0.1309 |         15 |      17 |      1 |    5.88%
+San Fabian -> Santa Fe                                       |       90 |      214 |   0.8598 |     0.0837 |         17 |      19 |      0 |    0.00%
+San Francisco -> Arroyito                                    |       56 |      248 |   0.6855 |     0.1618 |         12 |      15 |      3 |   20.00%
+San Francisco -> Rafaela                                     |       74 |      230 |   0.8391 |     0.1048 |         16 |      24 |      7 |   29.17%
+San Jose -> Aristobulo del Valle                             |       24 |      280 |   0.7000 |     0.1989 |          6 |       6 |      0 |    0.00%
+San Jose -> Paso de Los Libres                               |       60 |      244 |   0.6475 |     0.1778 |         12 |      14 |      1 |    7.14%
+San Jose -> Posadas                                          |       52 |      252 |   0.8175 |     0.1275 |         11 |      13 |      1 |    7.69%
+San Jose de Jachal -> Patquia                                |       46 |      258 |   0.7752 |     0.1276 |         11 |      11 |      0 |    0.00%
+San Jose de Jachal -> San Juan                               |       76 |      228 |   0.8026 |     0.1251 |         13 |      17 |      1 |    5.88%
+San Jose de Metan -> Choromoro                               |       50 |      254 |   0.7992 |     0.1163 |         11 |      12 |      1 |    8.33%
+San Jose de Metan -> Presidencia Roque Saenz Peña            |       60 |      244 |   0.8525 |     0.1064 |         11 |      14 |      1 |    7.14%
+San Jose de Metan -> Salta                                   |       56 |      248 |   0.7702 |     0.1449 |         11 |      16 |      3 |   18.75%
+San Juan -> San Jose de Jachal                               |       50 |      254 |   0.6260 |     0.2052 |         11 |      12 |      0 |    0.00%
+San Juan -> Serrezuela                                       |       40 |      264 |   0.7765 |     0.1339 |         10 |      12 |      2 |   16.67%
+San Juan -> Villa Media Agua                                 |      100 |      204 |   0.8480 |     0.0905 |         17 |      21 |      0 |    0.00%
+San Luis -> Santa Rosa (Mza)                                 |       76 |      228 |   0.7588 |     0.1450 |         14 |      18 |      2 |   11.11%
+San Luis -> V. Mercedes                                      |       84 |      220 |   0.7955 |     0.1018 |         18 |      27 |      8 |   29.63%
+San Marcos -> Leones                                         |       88 |      216 |   0.8148 |     0.0837 |         18 |      22 |      4 |   18.18%
+San Marcos -> Villa Maria                                    |       98 |      206 |   0.8252 |     0.0831 |         19 |      21 |      1 |    4.76%
+San Martin de los Andes -> Junin de los Andes                |       48 |      256 |   0.6992 |     0.1555 |         11 |      16 |      4 |   25.00%
+San Martin de los Andes -> Villa La Angostura                |       40 |      264 |   0.7727 |     0.1444 |          9 |      11 |      2 |   18.18%
+San Miguel de Tucuman -> Choromoro                           |       66 |      238 |   0.8445 |     0.0931 |         14 |      16 |      1 |    6.25%
+San Miguel de Tucuman -> Concepcion                          |       50 |      254 |   0.6732 |     0.1931 |          9 |      11 |      0 |    0.00%
+San Miguel de Tucuman -> Santa Maria                         |       60 |      244 |   0.7951 |     0.1291 |         14 |      16 |      1 |    6.25%
+San Miguel de Tucuman -> Santiago del Estero                 |       60 |      244 |   0.7295 |     0.1677 |         12 |      15 |      1 |    6.67%
+San Nicolas de los Arroyos -> Rosario                        |       88 |      216 |   0.7176 |     0.1370 |         16 |      19 |      1 |    5.26%
+San Nicolas de los Arroyos -> San Pedro BsAs                 |       82 |      222 |   0.8153 |     0.0995 |         17 |      19 |      2 |   10.53%
+San Pedro BsAs -> Baradero                                   |       78 |      226 |   0.8186 |     0.1032 |         16 |      18 |      2 |   11.11%
+San Pedro BsAs -> San Nicolas de los Arroyos                 |       78 |      226 |   0.8628 |     0.0852 |         16 |      17 |      1 |    5.88%
+San Pedro Jujuy -> Lib Gral San Martin                       |       52 |      252 |   0.7738 |     0.1435 |         13 |      15 |      3 |   20.00%
+San Pedro Jujuy -> San Salvador de Jujuy                     |       68 |      236 |   0.6992 |     0.1441 |         16 |      16 |      1 |    6.25%
+San Rafael -> General Alvear                                 |       58 |      246 |   0.6707 |     0.1730 |          9 |      12 |      1 |    8.33%
+San Rafael -> Gral. Alvear                                   |       60 |      244 |   0.7787 |     0.1118 |         14 |      14 |      0 |    0.00%
+San Rafael -> Malargue                                       |       38 |      266 |   0.6880 |     0.1935 |          8 |      10 |      2 |   20.00%
+San Rafael -> Tunuyan                                        |      100 |      204 |   0.8873 |     0.0598 |         23 |      31 |      7 |   22.58%
+San Salvador de Jujuy -> Humahuaca                           |       34 |      270 |   0.5926 |     0.2241 |          8 |       8 |      0 |    0.00%
+San Salvador de Jujuy -> Salta                               |       50 |      254 |   0.7008 |     0.1633 |         10 |      12 |      1 |    8.33%
+San Salvador de Jujuy -> San Pedro Jujuy                     |       52 |      252 |   0.6865 |     0.1601 |         12 |      16 |      4 |   25.00%
+San Sebastian -> Estacion Cullen                             |       12 |      292 |   0.5548 |     0.3575 |          3 |       5 |      2 |   40.00%
+San Sebastian -> Rio Grande                                  |       26 |      278 |   0.6871 |     0.2226 |          5 |       6 |      0 |    0.00%
+Santa Fe -> Parana                                           |      118 |      186 |   0.9032 |     0.0562 |         24 |      31 |      4 |   12.90%
+Santa Fe -> Rafaela                                          |      102 |      202 |   0.7525 |     0.1243 |         20 |      24 |      1 |    4.17%
+Santa Fe -> San Fabian                                       |       76 |      228 |   0.7281 |     0.1442 |         15 |      17 |      1 |    5.88%
+Santa Isabel -> Catriel                                      |       62 |      242 |   0.5826 |     0.2338 |         11 |      15 |      2 |   13.33%
+Santa Isabel -> General Alvear                               |       28 |      276 |   0.7319 |     0.1896 |          5 |       9 |      3 |   33.33%
+Santa Isabel -> Gral. Alvear                                 |       60 |      244 |   0.7295 |     0.1324 |         14 |      14 |      0 |    0.00%
+Santa Isabel -> Victorica                                    |       96 |      208 |   0.8221 |     0.0852 |         19 |      23 |      1 |    4.35%
+Santa Maria -> Belen                                         |       58 |      246 |   0.7439 |     0.1350 |         12 |      13 |      0 |    0.00%
+Santa Maria -> San Antonio de los Cobres                     |       46 |      258 |   0.6473 |     0.1880 |         10 |      12 |      1 |    8.33%
+Santa Maria -> San Miguel de Tucuman                         |       62 |      242 |   0.6983 |     0.1630 |         14 |      16 |      1 |    6.25%
+Santa Rosa (LP) -> Peru                                      |       78 |      226 |   0.8805 |     0.0734 |         17 |      18 |      0 |    0.00%
+Santa Rosa (LP) -> Trenque Lauquen                           |       82 |      222 |   0.8018 |     0.1159 |         12 |      18 |      1 |    5.56%
+Santa Rosa (LP) -> Winifreda                                 |       68 |      236 |   0.8475 |     0.0945 |         15 |      17 |      1 |    5.88%
+Santa Rosa (Mza) -> Mendoza                                  |       76 |      228 |   0.7719 |     0.1052 |         16 |      18 |      2 |   11.11%
+Santa Rosa (Mza) -> San Luis                                 |       84 |      220 |   0.7818 |     0.1243 |         17 |      27 |      8 |   29.63%
+Santiago del Estero -> Añatuya                               |       30 |      274 |   0.5693 |     0.2590 |          7 |       8 |      1 |   12.50%
+Santiago del Estero -> Frias                                 |       56 |      248 |   0.7742 |     0.1474 |         12 |      14 |      1 |    7.14%
+Santiago del Estero -> San Miguel de Tucuman                 |       52 |      252 |   0.7103 |     0.1938 |         10 |      14 |      1 |    7.14%
+Sargento Vidal -> Catriel                                    |       36 |      268 |   0.7425 |     0.1467 |          9 |      12 |      3 |   25.00%
+Sargento Vidal -> Neuquen                                    |       54 |      250 |   0.6000 |     0.2455 |         10 |      13 |      2 |   15.38%
+Serrezuela -> La Falda                                       |       60 |      244 |   0.8238 |     0.0940 |         15 |      15 |      1 |    6.67%
+Serrezuela -> Patquia                                        |       20 |      284 |   0.5599 |     0.2934 |          5 |       6 |      1 |   16.67%
+Serrezuela -> San Juan                                       |       42 |      262 |   0.7863 |     0.1318 |         10 |      10 |      0 |    0.00%
+Sierra Grande -> Puerto Madryn                               |       68 |      236 |   0.7669 |     0.1354 |         13 |      20 |      5 |   25.00%
+Sierra Grande -> San Antonio Oeste                           |       90 |      214 |   0.7570 |     0.1186 |         17 |      22 |      2 |    9.09%
+Sunchales -> Ceres                                           |       82 |      222 |   0.7342 |     0.1274 |         15 |      24 |      5 |   20.83%
+Sunchales -> Rafaela                                         |       86 |      218 |   0.7294 |     0.1308 |         16 |      24 |      4 |   16.67%
+Tandil -> Azul                                               |       90 |      214 |   0.8785 |     0.0728 |         21 |      23 |      1 |    4.35%
+Tandil -> Mar Del Plata                                      |       70 |      234 |   0.8333 |     0.1014 |         15 |      18 |      1 |    5.56%
+Tecka -> Esquel                                              |       88 |      216 |   0.8287 |     0.1065 |         17 |      23 |      3 |   13.04%
+Tecka -> J. de San Martin                                    |       72 |      232 |   0.8362 |     0.1019 |         16 |      18 |      2 |   11.11%
+Tolhuin -> Rio Grande                                        |        8 |      296 |   0.5135 |     0.3806 |          2 |       3 |      1 |   33.33%
+Tolhuin -> Usuahia                                           |       12 |      292 |   0.4178 |     0.4296 |          2 |       3 |      0 |    0.00%
+Tostado -> Añatuya                                           |       20 |      284 |   0.5070 |     0.3194 |          5 |       5 |      0 |    0.00%
+Tostado -> Ceres                                             |       84 |      220 |   0.8364 |     0.0978 |         16 |      22 |      3 |   13.64%
+Tostado -> Vera                                              |       62 |      242 |   0.7149 |     0.1501 |         12 |      19 |      5 |   26.32%
+Trelew -> Puerto Madryn                                      |       92 |      212 |   0.8019 |     0.1349 |         15 |      22 |      2 |    9.09%
+Trelew -> Rawson                                             |       58 |      246 |   0.8171 |     0.1065 |         12 |      18 |      5 |   27.78%
+Trenque Lauquen -> Pehuajo                                   |       82 |      222 |   0.7432 |     0.1185 |         15 |      18 |      1 |    5.56%
+Trenque Lauquen -> Santa Rosa (LP)                           |       48 |      256 |   0.7539 |     0.1356 |         10 |      12 |      1 |    8.33%
+Tres Arroyos -> Bahia Blanca                                 |      106 |      198 |   0.8788 |     0.0788 |         19 |      30 |      6 |   20.00%
+Tres Arroyos -> Mar Del Plata                                |      156 |      148 |   0.8378 |     0.0924 |         25 |      37 |      2 |    5.41%
+Tres lagos -> El Calafate                                    |       36 |      268 |   0.7239 |     0.1631 |          9 |      11 |      2 |   18.18%
+Tres lagos -> Gobernador Gregores                            |       48 |      256 |   0.7305 |     0.1777 |         11 |      13 |      2 |   15.38%
+Tunuyan -> Mendoza                                           |      104 |      200 |   0.9050 |     0.0612 |         24 |      32 |      7 |   21.88%
+Tunuyan -> San Rafael                                        |      114 |      190 |   0.8526 |     0.0717 |         21 |      27 |      3 |   11.11%
+Usuahia -> Tolhuin                                           |        4 |      300 |   0.1767 |     0.7091 |          1 |       2 |      1 |   50.00%
+V. Mercedes -> Chucul                                        |       88 |      216 |   0.7639 |     0.1190 |         19 |      27 |      8 |   29.63%
+V. Mercedes -> San Luis                                      |       88 |      216 |   0.8704 |     0.0815 |         18 |      20 |      2 |   10.00%
+Vedia -> Junin                                               |       58 |      246 |   0.7642 |     0.1363 |         14 |      14 |      0 |    0.00%
+Vedia -> Rufino                                              |       52 |      252 |   0.8294 |     0.1066 |         13 |      13 |      0 |    0.00%
+Vera -> Resistencia                                          |       52 |      252 |   0.7024 |     0.1942 |         12 |      17 |      5 |   29.41%
+Vera -> Tostado                                              |       54 |      250 |   0.8280 |     0.1059 |         12 |      13 |      1 |    7.69%
+Victorica -> Santa Isabel                                    |       88 |      216 |   0.8287 |     0.0845 |         18 |      21 |      1 |    4.76%
+Victorica -> Winifreda                                       |       96 |      208 |   0.8990 |     0.0670 |         19 |      23 |      1 |    4.35%
+Viedma -> Bahia Blanca                                       |      106 |      198 |   0.7424 |     0.1199 |         17 |      25 |      1 |    4.00%
+Viedma -> San Antonio Oeste                                  |       80 |      224 |   0.8571 |     0.0910 |         15 |      20 |      2 |   10.00%
+Villa La Angostura -> Dina Huapi                             |       40 |      264 |   0.7689 |     0.1594 |          9 |      11 |      2 |   18.18%
+Villa La Angostura -> San Martin de los Andes                |       44 |      260 |   0.7346 |     0.1599 |         11 |      15 |      4 |   26.67%
+Villa Maria -> Manfredi                                      |       98 |      206 |   0.8155 |     0.1023 |         19 |      21 |      1 |    4.76%
+Villa Maria -> San Marcos                                    |       84 |      220 |   0.8182 |     0.0839 |         17 |      20 |      3 |   15.00%
+Villa Media Agua -> San Juan                                 |       78 |      226 |   0.8274 |     0.1019 |         15 |      18 |      0 |    0.00%
+Villa Media Agua -> Villa Tulumaya                           |      100 |      204 |   0.7794 |     0.1017 |         18 |      21 |      0 |    0.00%
+Villa Tulumaya -> Mendoza                                    |      100 |      204 |   0.8382 |     0.0833 |         18 |      21 |      0 |    0.00%
+Villa Tulumaya -> Villa Media Agua                           |       78 |      226 |   0.8142 |     0.1002 |         16 |      18 |      0 |    0.00%
+Winifreda -> Santa Rosa (LP)                                 |       92 |      212 |   0.8538 |     0.0727 |         19 |      22 |      1 |    4.55%
+Winifreda -> Victorica                                       |       88 |      216 |   0.8843 |     0.0760 |         19 |      21 |      1 |    4.76%
+Zapala -> Chos Malal                                         |       56 |      248 |   0.7097 |     0.1661 |         12 |      18 |      4 |   22.22%
+Zapala -> Junin de los Andes                                 |       30 |      274 |   0.6971 |     0.1911 |          7 |       9 |      2 |   22.22%
+Zarate -> Baradero                                           |       88 |      216 |   0.7963 |     0.1049 |         17 |      19 |      1 |    5.26%
+Zarate -> Campana                                            |      148 |      156 |   0.8654 |     0.0627 |         26 |      37 |      6 |   16.22%
+Zarate -> Concepcion del Uruguay                             |       72 |      232 |   0.7241 |     0.1513 |         13 |      16 |      1 |    6.25%
+
+--- DETALLE POR DEMANDA REFEFO ---
+ Iter | Source                    | Destination               |  Gbps | Resultado                           | K_Path
+-------------------------------------------------------------------------------------------------------------------
+    1 | Gobernador Gregores       | Santa Rosa (LP)           |   100 | ASIGNADA                            |      2
+    2 | Cap Juan Page             | La Paz                    |   200 | ASIGNADA                            |      1
+    3 | San Pedro Jujuy           | Puerto Madryn             |   400 | ASIGNADA [no-fact]                  |      5
+    4 | Pehuajo                   | Bolivar                   |   400 | ASIGNADA                            |      1
+    5 | Frias                     | V. Mercedes               |   100 | ASIGNADA                            |      1
+    6 | Presidencia Roque Saenz Peña | Posadas                   |   100 | ASIGNADA                            |      1
+    7 | Jaramillo                 | San Antonio de los Cobres |   300 | ASIGNADA [no-fact]                  |      1
+    8 | Posadas                   | San Carlos de Bariloche   |   300 | ASIGNADA [no-fact]                  |      1
+    9 | Winifreda                 | J. de San Martin          |   400 | ASIGNADA [no-fact]                  |      5
+   10 | San Miguel de Tucuman     | Rio Colorado              |   300 | ASIGNADA [no-fact]                  |      2
+   11 | El Calafate               | Esperanza (StaCruz)       |   200 | ASIGNADA                            |      1
+   12 | Baradero                  | Catriel                   |   200 | ASIGNADA [no-fact]                  |      1
+   13 | Cap Juan Page             | Salta                     |   200 | ASIGNADA                            |      1
+   14 | Bahia Blanca              | La Plata                  |   200 | ASIGNADA [no-fact]                  |      4
+   15 | Rio Gallegos              | Las Toninas               |   200 | ASIGNADA [no-fact]                  |      5
+   16 | Manfredi                  | Chilecito                 |   100 | ASIGNADA                            |      4
+   17 | San Nicolas de los Arroyos | Vera                      |   100 | ASIGNADA                            |      1
+   18 | La Quiaca                 | General Roca              |   300 | ASIGNADA [no-fact]                  |      1
+   19 | Rio Mayo                  | Corralito                 |   200 | ASIGNADA [no-fact]                  |      1
+   20 | Winifreda                 | Serrezuela                |   200 | ASIGNADA [no-fact]                  |      1
+   21 | Bolivar                   | Rio Grande                |   200 | ASIGNADA [no-fact]                  |      2
+   22 | Leones                    | San Pedro BsAs            |   100 | ASIGNADA                            |      1
+   23 | Puerto Madryn             | Aristobulo del Valle      |   100 | ASIGNADA                            |      5
+   24 | Hernando                  | Buta Ranquil              |   400 | ASIGNADA [no-fact]                  |      1
+   25 | General Roca              | Goya                      |   200 | ASIGNADA [no-fact]                  |      2
+   26 | Rio Mayo                  | Campana                   |   300 | ASIGNADA [no-fact]                  |      2
+   27 | San Antonio Oeste         | San Jose de Metan         |   100 | ASIGNADA                            |      2
+   28 | Zapala                    | Ceres                     |   100 | ASIGNADA                            |      1
+   29 | Picun Leufu               | Rio Gallegos              |   200 | ASIGNADA [no-fact]                  |      1
+   30 | Tostado                   | Mercedes                  |   100 | ASIGNADA                            |      1
+   31 | Aristobulo del Valle      | Clorinda                  |   200 | ASIGNADA                            |      1
+   32 | Humahuaca                 | Puerto Iguazu             |   400 | ASIGNADA [no-fact]                  |      1
+   33 | Santa Maria               | Las Toninas               |   100 | ASIGNADA                            |      4
+   34 | Usuahia                   | San Pedro Jujuy           |   200 | BLOQUEADA (sin paths factibles)     |      -
+   35 | Perito Moreno             | Mercedes                  |   200 | ASIGNADA [no-fact]                  |      5
+   36 | La Rioja                  | San Luis                  |   400 | ASIGNADA [no-fact]                  |      4
+   37 | San Antonio de los Cobres | Choele Choel              |   400 | ASIGNADA [no-fact]                  |      1
+   38 | Dean Funes                | Corralito                 |   200 | ASIGNADA                            |      1
+   39 | Winifreda                 | San Jose de Jachal        |   100 | ASIGNADA                            |      1
+   40 | Epuyen                    | Chascomus                 |   200 | ASIGNADA [no-fact]                  |      1
+   41 | Vera                      | El Calafate               |   200 | BLOQUEADA (sin paths factibles)     |      -
+   42 | Rio Gallegos              | Vera                      |   200 | ASIGNADA [no-fact]                  |      5
+   43 | Cañuelas                  | Cordoba                   |   400 | ASIGNADA                            |      1
+   44 | Esquel                    | Zarate                    |   100 | ASIGNADA                            |      2
+   45 | San Jose de Metan         | Bahia Blanca              |   200 | ASIGNADA [no-fact]                  |      1
+   46 | Santa Isabel              | Salta                     |   100 | ASIGNADA                            |      4
+   47 | San Antonio De Areco      | Exaltacion de la Cruz     |   200 | ASIGNADA                            |      1
+   48 | Santiago del Estero       | Goya                      |   100 | ASIGNADA                            |      2
+   49 | Bajo Caracoles            | Jardin America            |   400 | ASIGNADA [no-fact]                  |      1
+   50 | San Rafael                | Bahia Blanca              |   300 | ASIGNADA [no-fact]                  |      5
+   51 | Chascomus                 | Victorica                 |   200 | ASIGNADA                            |      5
+   52 | Las Lomitas               | Cordoba                   |   400 | ASIGNADA [no-fact]                  |      1
+   53 | Leones                    | Usuahia                   |   200 | ASIGNADA [no-fact]                  |      5
+   54 | Posadas                   | San Salvador de Jujuy     |   100 | ASIGNADA                            |      1
+   55 | Concepcion del Uruguay    | Zarate                    |   200 | ASIGNADA                            |      1
+   56 | La Plata                  | San Carlos de Bariloche   |   100 | ASIGNADA                            |      1
+   57 | Tostado                   | Caleta Olivia             |   300 | BLOQUEADA (sin paths factibles)     |      -
+   58 | El Condor                 | Picun Leufu               |   100 | ASIGNADA                            |      1
+   59 | General Conesa            | Paso de Los Libres        |   400 | ASIGNADA [no-fact]                  |      1
+   60 | San Martin de los Andes   | Tostado                   |   200 | ASIGNADA [no-fact]                  |      5
+   61 | Chacabuco                 | Esquel                    |   200 | ASIGNADA [no-fact]                  |      2
+   62 | San Jose de Metan         | Paso de Los Libres        |   100 | ASIGNADA                            |      1
+   63 | Chacabuco                 | Sunchales                 |   400 | ASIGNADA [no-fact]                  |      1
+   64 | Caleta Olivia             | Exaltacion de la Cruz     |   400 | ASIGNADA [no-fact]                  |      2
+   65 | El Foyel                  | Lib Gral San Martin       |   400 | BLOQUEADA (sin paths factibles)     |      -
+   66 | Salvador Mazza            | Ceres                     |   400 | ASIGNADA [no-fact]                  |      1
+   67 | Bahia Blanca              | Epuyen                    |   300 | ASIGNADA [no-fact]                  |      1
+   68 | Corrientes                | Puerto Madryn             |   200 | ASIGNADA [no-fact]                  |      3
+   69 | Sunchales                 | Colonia Las Heras         |   100 | ASIGNADA                            |      5
+   70 | El Calafate               | Usuahia                   |   200 | ASIGNADA                            |      1
+   71 | San Jose de Jachal        | Jaramillo                 |   300 | ASIGNADA [no-fact]                  |      1
+   72 | Tres Arroyos              | Pinamar                   |   300 | ASIGNADA [no-fact]                  |      1
+   73 | Catamarca                 | La Plata                  |   200 | ASIGNADA                            |      4
+   74 | Resistencia               | Salvador Mazza            |   200 | ASIGNADA                            |      1
+   75 | Dina Huapi                | Clorinda                  |   400 | BLOQUEADA (sin paths factibles)     |      -
+   76 | La Rioja                  | Presidencia Roque Saenz Peña |   300 | ASIGNADA                            |      1
+   77 | Arroyito                  | San Salvador de Jujuy     |   300 | ASIGNADA                            |      4
+   78 | Chilecito                 | V. Mercedes               |   200 | ASIGNADA                            |      5
+   79 | Luis Piedrabuena          | Salvador Mazza            |   400 | BLOQUEADA (sin paths factibles)     |      -
+   80 | Epuyen                    | Lib Gral San Martin       |   300 | BLOQUEADA (sin espectro)            |      -
+   81 | Jardin America            | Chivilcoy                 |   100 | ASIGNADA                            |      1
+   82 | Santiago del Estero       | Vera                      |   300 | ASIGNADA                            |      3
+   83 | San Carlos de Bariloche   | Vera                      |   300 | BLOQUEADA (sin paths factibles)     |      -
+   84 | San Jose de Jachal        | Gobernador Gregores       |   300 | BLOQUEADA (sin espectro)            |      -
+   85 | Puerto San Julian         | San Nicolas de los Arroyos |   200 | ASIGNADA [no-fact]                  |      5
+   86 | Resistencia               | El Foyel                  |   300 | ASIGNADA [no-fact]                  |      3
+   87 | Perito Moreno             | Caleta Olivia             |   200 | ASIGNADA                            |      1
+   88 | Peru                      | Chivilcoy                 |   300 | ASIGNADA                            |      1
+   89 | Formosa                   | Patquia                   |   300 | ASIGNADA                            |      1
+   90 | Dean Funes                | Choromoro                 |   100 | ASIGNADA                            |      1
+   91 | Bolivar                   | Marcos Paz                |   200 | ASIGNADA                            |      3
+   92 | El Calafate               | Estacion Cullen           |   200 | ASIGNADA                            |      1
+   93 | Luis Piedrabuena          | San Marcos                |   300 | BLOQUEADA (sin paths factibles)     |      -
+   94 | Santa Maria               | CABA                      |   400 | ASIGNADA [no-fact]                  |      1
+   95 | Luis Piedrabuena          | Chacabuco                 |   300 | ASIGNADA [no-fact]                  |      2
+   96 | Chascomus                 | San Carlos de Bariloche   |   400 | ASIGNADA [no-fact]                  |      1
+   97 | Winifreda                 | Epuyen                    |   400 | ASIGNADA [no-fact]                  |      5
+   98 | Arroyito (Nqn)            | Paso de Los Libres        |   400 | ASIGNADA [no-fact]                  |      1
+   99 | Estacion Cullen           | Rio Grande                |   400 | ASIGNADA                            |      1
+  100 | Campana                   | San Fabian                |   200 | ASIGNADA                            |      3
+  101 | Salvador Mazza            | Catriel                   |   300 | ASIGNADA [no-fact]                  |      1
+  102 | Patquia                   | San Salvador de Jujuy     |   100 | ASIGNADA                            |      1
+  103 | Victorica                 | Perito Moreno             |   200 | ASIGNADA [no-fact]                  |      1
+  104 | Buta Ranquil              | Marcos Paz                |   400 | ASIGNADA [no-fact]                  |      1
+  105 | Zapala                    | Bajo Caracoles            |   100 | ASIGNADA                            |      1
+  106 | Perito Moreno             | Dolores                   |   100 | ASIGNADA                            |      1
+  107 | Viedma                    | Leones                    |   100 | ASIGNADA                            |      5
+  108 | Rio Mayo                  | Bolivar                   |   200 | ASIGNADA [no-fact]                  |      2
+  109 | Tunuyan                   | Santa Fe                  |   200 | ASIGNADA                            |      1
+  110 | San Martin de los Andes   | Peru                      |   100 | ASIGNADA                            |      2
+  111 | El Condor                 | Clorinda                  |   400 | ASIGNADA [no-fact]                  |      3
+  112 | Victorica                 | Baradero                  |   200 | ASIGNADA                            |      5
+  113 | Embarcacion               | Baradero                  |   100 | ASIGNADA                            |      1
+  114 | Cañada De Gomez           | Rawson                    |   200 | ASIGNADA [no-fact]                  |      1
+  115 | Patquia                   | San Salvador de Jujuy     |   300 | ASIGNADA                            |      1
+  116 | Azul                      | San Martin de los Andes   |   200 | ASIGNADA [no-fact]                  |      1
+  117 | Cap Juan Page             | Exaltacion de la Cruz     |   400 | ASIGNADA [no-fact]                  |      5
+  118 | Neuquen                   | Picun Leufu               |   200 | ASIGNADA                            |      1
+  119 | Azul                      | Tres lagos                |   400 | BLOQUEADA (sin paths factibles)     |      -
+  120 | Colonia Las Heras         | Gobernador Gregores       |   200 | ASIGNADA                            |      2
+  121 | Zarate                    | San Marcos                |   400 | ASIGNADA                            |      1
+  122 | San Jose de Metan         | General Roca              |   300 | BLOQUEADA (sin paths factibles)     |      -
+  123 | Pico Truncado             | Chacabuco                 |   400 | ASIGNADA [no-fact]                  |      1
+  124 | Chacabuco                 | Embarcacion               |   200 | ASIGNADA                            |      1
+  125 | La Quiaca                 | Concordia                 |   300 | ASIGNADA                            |      2
+  126 | Rufino                    | Sargento Vidal            |   100 | ASIGNADA                            |      1
+  127 | Rio Mayo                  | Buta Ranquil              |   100 | ASIGNADA                            |      1
+  128 | CABA                      | Tres Arroyos              |   100 | ASIGNADA                            |      1
+  129 | San Martin de los Andes   | Victorica                 |   100 | ASIGNADA                            |      1
+  130 | San Sebastian             | Chucul                    |   300 | BLOQUEADA (sin paths factibles)     |      -
+  131 | Junin de los Andes        | Comodoro Rivadavia        |   400 | ASIGNADA [no-fact]                  |      1
+  132 | Jesus Maria               | Jardin America            |   200 | ASIGNADA                            |      1
+  133 | Jardin America            | Chascomus                 |   400 | ASIGNADA [no-fact]                  |      1
+  134 | Leones                    | Santiago del Estero       |   400 | ASIGNADA                            |      1
+  135 | Benavidez                 | General Roca              |   300 | ASIGNADA [no-fact]                  |      4
+  136 | San Fabian                | San Luis                  |   300 | ASIGNADA                            |      1
+  137 | Tecka                     | Arrecifes                 |   400 | ASIGNADA [no-fact]                  |      2
+  138 | Añatuya                   | Leones                    |   200 | ASIGNADA                            |      1
+  139 | Vera                      | Chascomus                 |   200 | ASIGNADA                            |      1
+  140 | San Carlos de Bariloche   | Arrecifes                 |   100 | ASIGNADA                            |      2
+  141 | Olavarria                 | Chivilcoy                 |   300 | ASIGNADA                            |      1
+  142 | Rosario                   | Formosa                   |   100 | ASIGNADA                            |      1
+  143 | Abasto                    | Chivilcoy                 |   400 | ASIGNADA                            |      1
+  144 | Tecka                     | Rio Gallegos              |   200 | ASIGNADA                            |      3
+  145 | Aguada Cecilio            | Ceres                     |   200 | ASIGNADA [no-fact]                  |      1
+  146 | Tres Arroyos              | Las Armas                 |   300 | ASIGNADA [no-fact]                  |      1
+  147 | Hernando                  | Humahuaca                 |   200 | ASIGNADA                            |      4
+  148 | Chucul                    | Caleta Olivia             |   400 | ASIGNADA [no-fact]                  |      1
+  149 | Lib Gral San Martin       | Mercedes                  |   300 | BLOQUEADA (sin paths factibles)     |      -
+  150 | Concepcion                | San Jose                  |   400 | ASIGNADA [no-fact]                  |      1
+  151 | Choele Choel              | Las Lomitas               |   400 | ASIGNADA [no-fact]                  |      3
+  152 | Gobernador Gregores       | Bolivar                   |   200 | ASIGNADA [no-fact]                  |      2
+  153 | Jesus Maria               | 9 De Julio                |   100 | ASIGNADA                            |      1
+  154 | Parana                    | Corralito                 |   300 | ASIGNADA                            |      1
+  155 | El Foyel                  | Salta                     |   200 | ASIGNADA [no-fact]                  |      1
+  156 | Cordoba                   | Posadas                   |   400 | ASIGNADA [no-fact]                  |      2
+  157 | San Nicolas de los Arroyos | Las Lomitas               |   100 | ASIGNADA                            |      1
+  158 | San Juan                  | Jaramillo                 |   100 | BLOQUEADA (sin espectro)            |      -
+  159 | Santa Isabel              | Rosario                   |   200 | BLOQUEADA (sin espectro)            |      -
+  160 | Tandil                    | Gral. Alvear              |   400 | ASIGNADA [no-fact]                  |      1
+  161 | Peru                      | Belen                     |   200 | ASIGNADA [no-fact]                  |      5
+  162 | San Nicolas de los Arroyos | Leones                    |   400 | ASIGNADA                            |      1
+  163 | Chacabuco                 | Marcos Paz                |   300 | ASIGNADA                            |      1
+  164 | Catamarca                 | Buta Ranquil              |   300 | ASIGNADA [no-fact]                  |      5
+  165 | Santa Rosa (Mza)          | Parana                    |   300 | BLOQUEADA (sin espectro)            |      -
+  166 | Patquia                   | San Francisco             |   100 | ASIGNADA                            |      4
+  167 | Arrecifes                 | Corralito                 |   100 | ASIGNADA                            |      1
+  168 | General Roca              | Puerto Madryn             |   300 | ASIGNADA [no-fact]                  |      2
+  169 | San Jose de Jachal        | San Antonio Oeste         |   200 | ASIGNADA [no-fact]                  |      1
+  170 | Pico Truncado             | Winifreda                 |   200 | ASIGNADA [no-fact]                  |      2
+  171 | Luis Piedrabuena          | Trenque Lauquen           |   100 | ASIGNADA                            |      2
+  172 | Esquel                    | General Roca              |   300 | ASIGNADA                            |      1
+  173 | Catriel                   | Rio Mayo                  |   300 | ASIGNADA                            |      1
+  174 | Corrientes                | Santa Fe                  |   300 | ASIGNADA                            |      2
+  175 | Tres lagos                | Ituzaingo                 |   300 | BLOQUEADA (sin paths factibles)     |      -
+  176 | Junin de los Andes        | Lib Gral San Martin       |   100 | ASIGNADA                            |      5
+  177 | La Falda                  | La Paz                    |   200 | ASIGNADA                            |      1
+  178 | Arrecifes                 | Sunchales                 |   200 | ASIGNADA                            |      1
+  179 | Exaltacion de la Cruz     | Bolivar                   |   200 | ASIGNADA                            |      3
+  180 | San Francisco             | V. Mercedes               |   300 | ASIGNADA                            |      1
+  181 | Santa Fe                  | Bolivar                   |   200 | BLOQUEADA (sin espectro)            |      -
+  182 | San Marcos                | San Carlos de Bariloche   |   400 | BLOQUEADA (sin paths factibles)     |      -
+  183 | San Sebastian             | CABA                      |   200 | ASIGNADA [no-fact]                  |      5
+  184 | Mercedes                  | San Pedro BsAs            |   300 | ASIGNADA                            |      1
+  185 | Colonia Las Heras         | Santa Rosa (Mza)          |   100 | ASIGNADA                            |      1
+  186 | Pinamar                   | 9 De Julio                |   100 | ASIGNADA                            |      2
+  187 | Tostado                   | Parana                    |   100 | ASIGNADA                            |      1
+  188 | Arrecifes                 | San Juan                  |   400 | ASIGNADA [no-fact]                  |      1
+  189 | La Falda                  | Embarcacion               |   200 | ASIGNADA [no-fact]                  |      3
+  190 | Colonia Las Heras         | Trelew                    |   400 | ASIGNADA [no-fact]                  |      1
+  191 | Ceres                     | Epuyen                    |   100 | BLOQUEADA (sin espectro)            |      -
+  192 | Bragado                   | Lib Gral San Martin       |   400 | ASIGNADA [no-fact]                  |      2
+  193 | Resistencia               | Campana                   |   400 | ASIGNADA [no-fact]                  |      1
+  194 | Esperanza (StaCruz)       | Epuyen                    |   300 | ASIGNADA                            |      1
+  195 | Puerto San Julian         | San Rafael                |   100 | ASIGNADA                            |      2
+  196 | San Marcos                | La Plata                  |   200 | ASIGNADA                            |      1
+  197 | Mendoza                   | Rio Gallegos              |   400 | BLOQUEADA (sin paths factibles)     |      -
+  198 | Santiago del Estero       | El Condor                 |   300 | BLOQUEADA (sin paths factibles)     |      -
+  199 | Ceres                     | V. Mercedes               |   100 | ASIGNADA                            |      1
+  200 | Jaramillo                 | Tres lagos                |   200 | ASIGNADA                            |      2

@@ -245,9 +245,11 @@ def main():
         # Calcular optimización de regeneración
         reg_count, reg_nodes, reg_gsnrs, reg_ok = optimize_regeneration(full_path, target_osnr, all_elements, all_connections)
         
+        reg_factible = reg_ok and (reg_count <= 4)
+        
         df.at[idx, "Necesito_Regeneracion"] = "SI"
-        df.at[idx, "Reg_Factible"] = "SI" if reg_ok else "NO"
-        df.at[idx, "Reg_Count"] = max(0, reg_count)
+        df.at[idx, "Reg_Factible"] = "SI" if reg_factible else "NO"
+        df.at[idx, "Reg_Count"] = max(0, reg_count) if reg_factible else 0
         
         # Obtener todos los ROADMs en la ruta completa
         roadms_in_path = [
@@ -257,7 +259,7 @@ def main():
         
         # Mapear cada ROADM intermedio o de destino a su GSNR correspondiente
         gsnr_map = {}
-        if reg_ok:
+        if reg_factible:
             current_source = reg_nodes[0]
             for node in roadms_in_path:
                 if node == reg_nodes[0]:
@@ -282,17 +284,17 @@ def main():
                 
             if i > 0:
                 prev_node = roadms_in_path[i-1]
-                is_prev_reg = (prev_node in reg_nodes[1:-1])
+                is_prev_reg = (prev_node in reg_nodes[1:-1]) if reg_factible else False
                 sep = " [REG]-> " if is_prev_reg else " -> "
                 ruta_partes.append(sep + node_display)
             else:
                 ruta_partes.append(node_display)
-        df.at[idx, "Ruta_Regenerada"] = "".join(ruta_partes)
-        if reg_ok and len(reg_nodes) > 2:
+        df.at[idx, "Ruta_Regenerada"] = "".join(ruta_partes) if reg_factible else ""
+        if reg_factible and len(reg_nodes) > 2:
             df.at[idx, "Nodos_Regeneradores"] = " - ".join(reg_nodes[1:-1])
         
     print(f"[4/4] Guardando resultados en {OUTPUT_CSV}...")
-    df.to_csv(OUTPUT_CSV, index=False)
+    df.to_csv(OUTPUT_CSV, sep='\t', index=False)
     print("¡Proceso completado con éxito!")
 
 if __name__ == "__main__":
