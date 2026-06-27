@@ -113,7 +113,7 @@
 
  "Transceiver": [
   {
-    "type_variety": "TQD017-TUNC-SO",
+    "type_variety": "DP04QSDD-HK9",
     "frequency": {
       "min": 191.3e12,
       "max": 196.1e12
