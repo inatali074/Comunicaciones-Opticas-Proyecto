@@ -99,6 +99,14 @@ Con el propósito de lograr la factibilidad completa de la red y eliminar la pro
 
 Desde una perspectiva geográfica, el comportamiento físico de la red exhibe marcadas variaciones regionales. La Región Sur presenta una viabilidad directa de $94.78\%$, caracterizándose por tramos de fibra relativamente cortos con una distancia promedio de 183 km, pero condicionada por un severo cuello de botella óptico en su área central debido a la escasez de nodos activos. Por otra parte, la Región Norte muestra una tasa de factibilidad directa de $89.72\%$ gracias a una topología mallada altamente interconectada con una distancia promedio de 311 km, capaz de soportar la migración de canales a altas velocidades de transmisión. En contraposición, la Región Centro manifiesta el menor rendimiento relativo con una factibilidad directa de apenas $72.68\%$, producto de trayectos interprovinciales que promedian los 341 km de longitud. Finalmente, la decisión estratégica de limitar a un máximo de cuatro los regeneradores permitidos posibilitó un ahorro en hardware de alrededor del $13.0\%$, reduciendo el número total de tarjetas regeneradoras necesarias de 115 a 100. Esto valida la conveniencia económica de combinar reducciones puntuales de velocidad de portadora en lugar de sobredimensionar la red con equipamiento de regeneración activo de alto costo.
 
+### Resumen Comparativo de Factibilidad Final (512 Demandas)
+
+| Fase / Escenario de Red | Enlaces Viables | Porcentaje Viable | Enlaces No Factibles | Porcentaje No Factible | Factor Limitante / Causa de Inviabilidad |
+| :--- | :---: | :---: | :---: | :---: | :--- |
+| **Fase 1: Conectividad Directa Transparente** | 434 | $84.77\%$ | 78 | $15.23\%$ | Acumulación de ruido ASE y efectos no lineales (NLI) en trayectos largos. |
+| **Fase 2: Regeneración 3R Intermedia (Máx. 4)** | 502 | $98.05\%$ | 10 | $1.95\%$ | Falta de ROADMs intermedios en tramos patagónicos, exceso de regeneradores requeridos y desajustes ortográficos de nodos. |
+| **Fase 3: Regeneración 3R + Reducción de Velocidad (Step-down)** | 512 | $100.00\%$ | 0 | $0.00\%$ | Ninguno (Factibilidad completa con $0.00\%$ de bloqueo espectral). |
+
 ---
 
 ## 4. Etapa 2: Análisis Detallado de Enlaces Críticos
