@@ -104,7 +104,7 @@ Desde una perspectiva geográfica, el comportamiento físico de la red exhibe ma
 | Fase / Escenario de Red | Enlaces Viables | Porcentaje Viable | Enlaces No Factibles | Porcentaje No Factible | Factor Limitante / Causa de Inviabilidad |
 | :--- | :---: | :---: | :---: | :---: | :--- |
 | **Fase 1: Conectividad Directa Transparente** | 434 | $84.77\%$ | 78 | $15.23\%$ | Acumulación de ruido ASE y efectos no lineales (NLI) en trayectos largos. |
-| **Fase 2: Regeneración 3R Intermedia (Máx. 4)** | 502 | $98.05\%$ | 10 | $1.95\%$ | Falta de ROADMs intermedios en tramos patagónicos, exceso de regeneradores requeridos y desajustes ortográficos de nodos. |
+| **Fase 2: Regeneración 3R Intermedia (Máx. 4)** | 508 | $99.22\%$ | 4 | $0.78\%$ | Falta de ROADMs intermedios en tramos patagónicos y exceso de regeneradores requeridos (bajo ortografía corregida). |
 | **Fase 3: Regeneración 3R + Reducción de Velocidad (Step-down)** | 512 | $100.00\%$ | 0 | $0.00\%$ | Ninguno (Factibilidad completa con $0.00\%$ de bloqueo espectral). |
 
 ---
@@ -325,7 +325,7 @@ A partir del procesamiento de los CSVs de factibilidad física de las 512 demand
 *   **Distancia Promedio de las Demandas**: $293.63 \text{ km}$
 *   **Relación Señal-Ruido Generalizada (GSNR) Promedio**: $24.41 \text{ dB}$
 *   **Tasa de Viabilidad Directa Transparente (Fase 1)**: $84.77\%$ (434 demandas factibles, 78 bloqueadas).
-*   **Tasa de Viabilidad con Regeneración 3R (Fase 2)**: $98.05\%$ (502 demandas factibles, 10 bloqueadas).
+*   **Tasa de Viabilidad con Regeneración 3R (Fase 2)**: $99.22\%$ (508 demandas factibles, 4 bloqueadas con ortografía corregida).
 *   **Tasa de Viabilidad con Regeneración + Step-down (Fase 3)**: $100.00\%$ (512 demandas factibles, 0 bloqueadas).
 *   **Tarjetas Regeneradoras 3R Totales Insertadas en Fase 2**: 100 tarjetas (repartidas en un promedio de $0.183$ regeneradores por canal sobre la red global, con un máximo de 4 por canal).
 *   **Cantidad de Canales con Step-down de Velocidad en Fase 3**: 4 demandas reajustadas a 100 Gbps (DP-QPSK) para eludir las restricciones físicas de la Patagonia y tramos interregionales ultra largos.
