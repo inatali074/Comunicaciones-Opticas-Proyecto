@@ -38,15 +38,15 @@ Para el medio físico de transmisión, se ha seleccionado la fibra monomodo de b
 En lo concerniente a la capa de transcepción y modulación óptica, se seleccionan módulos transceptores del modelo **Cisco DP04QSDD-HK9** con soporte OTN y alta potencia de transmisión, cuyas especificaciones completas se encuentran descritas en su hoja de datos [CISCO-400g-qsfp-dd-high-power-optical-module-ds.pdf](file:///home/maximo/opticas/TpOpticas/Equipos/CISCO-400g-qsfp-dd-high-power-optical-module-ds.pdf). Si bien este equipamiento opera bajo la especificación OpenZR+, se garantiza su interoperabilidad con el estándar abierto OpenROADM. Dicha compatibilidad ha sido corroborada por demostraciones públicas de interoperabilidad de portadoras de 400G ZR+ desarrolladas por Acacia (empresa subsidiaria de Cisco). Por otra parte, debido a que ciertas características internas del módulo de Cisco no se encuentran publicadas en su totalidad, se adopta como referencia de especificación técnica el transceptor compatible **FS QDD-ZRPH-400G**, el cual emplea internamente la misma tecnología provista por Cisco y se detalla en su hoja de datos [FS-qdd-zrph-400g-data-sheet.pdf](file:///home/maximo/opticas/TpOpticas/Equipos/FS-qdd-zrph-400g-data-sheet.pdf). Las características más relevantes para cada modo de operación de estos transceptores ópticos coherentes se detallan en la siguiente tabla:
 
 ### Tabla de Especificaciones de Transceptores Coherentes (Cisco DP04QSDD-HK9 / FS QDD-ZRPH-400G)
-| Parámetro Operativo | Modo 6 (400G) | Modo 2 (200G) | Modo 1 (100G) | Unidad / Observaciones |
-| :--- | :---: | :---: | :---: | :--- |
-| **Formato de Modulación** | DP-16QAM | DP-16QAM | DP-QPSK | Formato coherente |
-| **Tasa de Símbolos** | $60.1$ | $30.1$ | $30.1$ | $\text{GBaud}$ (o $31.6$ para tramas OTN) |
-| **Potencia de Transmisión (Tx)**| $+1$ a $-9$ | $+1$ a $-9$ | $+1$ a $-9$ | $\text{dBm}$ (ajustable en grilla elástica) |
-| **Sensibilidad Mínima del Receptor**| $-14.0$ | $-16.0$ | $-20.0$ | $\text{dBm}$ (de acuerdo con el plan de enlace) |
-| **Potencia Operativa Objetivo (Rx)**| $-7.80$ | $-7.80$ | $-7.80$ | $\text{dBm}$ (punto de operación de diseño) |
-| **Umbral GSNR de Aceptación** | $23.5$ | $20.5$ | $11.8$ | $\text{dB}$ (umbral físico del transceptor) |
-| **Compensación de CD (DSP)** | $\pm 12,000$ | $\pm 30,000$ | $\pm 77,000$ | $\text{ps/nm}$ (tolerancia máxima de dispersión) |
+| Parámetro Operativo | Modo 6 (400G) | Modo 5 (300G) | Modo 2 (200G) | Modo 1 (100G) | Unidad / Observaciones |
+| :--- | :---: | :---: | :---: | :---: | :--- |
+| **Formato de Modulación** | DP-16QAM | DP-8QAM | DP-16QAM | DP-QPSK | Formato coherente |
+| **Tasa de Símbolos** | $60.1$ | $60.1$ | $30.1$ | $30.1$ | $\text{GBaud}$ (o $31.6$ para tramas OTN) |
+| **Potencia de Transmisión (Tx)**| $+1$ a $-9$ | $+1$ a $-9$ | $+1$ a $-9$ | $+1$ a $-9$ | $\text{dBm}$ (ajustable en grilla elástica) |
+| **Sensibilidad Mínima del Receptor**| $-14.0$ | $-16.0$ | $-16.0$ | $-20.0$ | $\text{dBm}$ (de acuerdo con el plan de enlace) |
+| **Potencia Operativa Objetivo (Rx)**| $-7.80$ | $-7.80$ | $-7.80$ | $-7.80$ | $\text{dBm}$ (punto de operación de diseño) |
+| **Umbral GSNR de Aceptación** | $23.5$ | $20.5$ | $20.5$ | $11.8$ | $\text{dB}$ (umbral físico del transceptor) |
+| **Compensación de CD (DSP)** | $\pm 12,000$ | $\pm 48,000$ | $\pm 30,000$ | $\pm 77,000$ | $\text{ps/nm}$ (tolerancia máxima de dispersión) |
 
 Por último, la infraestructura de conmutación y amplificación se sustenta sobre nodos de enrutamiento óptico reconfigurable (ROADM) del modelo **Smartoptics DCP-R-9D** (especificaciones detalladas en [SO-SB-DCP-R-Family-R1.0.pdf](file:///home/maximo/opticas/TpOpticas/Equipos/SO-SB-DCP-R-Family-R1.0.pdf)) y amplificadores en línea intermedios (ILA) del modelo **Smartoptics D7000 OLA2525** (especificaciones detalladas en [D7000 -usamos OLA2525.pdf](file:///home/maximo/opticas/TpOpticas/Equipos/D7000%20-usamos%20OLA2525.pdf)), integrando además atenuadores ópticos variables para el balanceo dinámico de canales (especificaciones descritas en [voa50-sm-thorlabs.pdf](file:///home/maximo/opticas/TpOpticas/Equipos/voa50-sm-thorlabs.pdf)). Los parámetros de diseño de estos equipos se consolidan en la siguiente tabla:
 
