@@ -25,7 +25,7 @@ Para el medio físico de transmisión, se ha seleccionado la fibra monomodo de b
 | Parámetro Físico | Símbolo / Estándar | Valor Nominal (a 1550 nm) | Unidad / Observaciones |
 | :--- | :---: | :---: | :--- |
 | **Estándar de Compatibilidad** | G.652.D / G.657.A1 | Totalmente compatible | Retrocompatible con base instalada |
-| **Coeficiente de Atenuación Máximo** | $\alpha$ | $\le 0.18$ (típico $0.185$) | $\text{dB/km}$ (incluye empalmes en diseño) |
+| **Coeficiente de Atenuación Máximo** | $\alpha$ | $\le 0.18$ (típico $0.2$) | $\text{dB/km}$ (incluye empalmes en diseño) |
 | **Parámetro de Dispersión Cromática**| $D$ | $\le 18$ | $\text{ps/(nm}\cdot\text{km)}$ |
 | **Pendiente de Dispersión en Cero** | $S_0$ | $\le 0.092$ | $\text{ps/(nm}^2\cdot\text{km)}$ |
 | **Longitud de Onda de Dispersión Cero**| $\lambda_0$ | $1304 \le \lambda_0 \le 1324$| $\text{nm}$ |
