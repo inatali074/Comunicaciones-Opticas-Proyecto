@@ -263,3 +263,75 @@ Finalmente, para asegurar una recuperación de datos libre de errores (BER de sa
 A partir de los análisis físicos, simulaciones espectrales y optimizaciones algorítmicas realizadas, se concluye que el diseño propuesto para la actualización tecnológica de la red interurbana de ARSAT cumple satisfactoriamente con los requerimientos establecidos, validándose la viabilidad de la grilla elástica Flexi-Grid de 304 slots y la integración de transceptores coherentes compatibles con Open-ROADM v5. Por otra parte, las simulaciones físicas a nivel de capa lineal y no lineal evidencian que las transmisiones directas y transparentes de alta velocidad a 200 Gbps y 400 Gbps se encuentran limitadas por fenómenos físicos acumulativos de dispersión cromática y ruido óptico generalizado en trayectos de gran longitud. Por lo tanto, se demuestra que la asignación selectiva de regeneradores 3R en nodos ROADM intermedios, combinada con la reducción dinámica de velocidad de transmisión (*step-down*) en demandas de larga distancia, constituye una estrategia de ingeniería robusta y económicamente viable que elimina el bloqueo de tráfico en la red física.
 
 En lo concerniente a la asignación de recursos espectrales en configuración bidireccional en espejo, el algoritmo First-Fit ratifica su superioridad práctica frente a los métodos alternativos evaluados. Este enfoque resolvió las demandas base e incrementales del escenario REFEFO de manera instantánea, registrando un bloqueo nulo ($0.00\%$) y un slot máximo de ocupación de $S_{\text{max}} = 212$ gracias a una contención eficaz de la fragmentación espectral. En consecuencia, superó las limitaciones de bloqueo inducidas por la dispersión del algoritmo aleatorio, así como los elevados tiempos de procesamiento que restringen la aplicabilidad en tiempo real del modelo de optimización lineal entera mixta. Finalmente, se identifica el trayecto patagónico Dina Huapi - Aguada Cecilio como un cuello de botella estructural de la red dada la ausencia de nodos ROADMs que posibiliten la inserción de regeneradores 3R intermedios. Por consiguiente, se recomienda la instalación futura de un amplificador EDFA en línea (ILA) adicional o un nodo de conmutación en dicho trayecto para incrementar la potencia óptica recibida y habilitar portadoras directas de 200 Gbps, optimizando de este modo la conectividad de la Región Sur.
+
+---
+
+## 8. Anexo: Detalle de Archivos de Datos (CSVs) y Métricas Consolidadas
+
+Este anexo consolida la estructura de los archivos de salida generados en las simulaciones físicas y espectrales, así como los indicadores numéricos clave que describen el desempeño de la red de ARSAT bajo la actualización de 2026.
+
+### 8.1. Directorio de Archivos de Datos (CSVs) de la Red
+
+Los archivos resultantes de las simulaciones se dividen en dos grupos principales según la capa de análisis:
+
+#### A. Archivos de Factibilidad Física y Regeneración (Capa 1)
+*   **Resultados de Factibilidad Directa (Sin Regenerar)**:
+    *   *Ruta*: [resultados_gsnr_demandas_base.csv](file:///home/maximo/opticas/TpOpticas/resultados_gsnr_demandas_base.csv)
+    *   *Formato*: Delimitado por tabulaciones (`\t`), codificación `latin1`, 512 filas de demandas base.
+    *   *Variables principales*: `Region`, `Origen`, `Destino`, `Velocidad [Gbps]`, `Ruta`, `Distancia_km`, `GSNR_Total_dB`, `Potencia_Recibida_dBm`, `Umbral_OSNR_dB`, `Factible`.
+*   **Resultados con Algoritmo de Regeneración 3R (Límite Máximo 4)**:
+    *   *Ruta*: [resultados_gsnr_demandas_base_regenerado.csv](file:///home/maximo/opticas/TpOpticas/Regeneracion/resultados_gsnr_demandas_base_regenerado.csv)
+    *   *Formato*: Delimitado por tabulaciones (`\t`), codificación `latin1`, 512 filas.
+    *   *Variables adicionales*: `Necesito_Regeneracion`, `Reg_Factible`, `Reg_Count`, `Ruta_Regenerada`, `Nodos_Regeneradores`.
+*   **Resultados con Regeneración + Step-down de Velocidad**:
+    *   *Ruta*: [resultados_gsnr_demandas_base_regenerado_bajda_velocidad.csv](file:///home/maximo/opticas/TpOpticas/Regeneracion/resultados_gsnr_demandas_base_regenerado_bajda_velocidad.csv)
+    *   *Formato*: Delimitado por punto y coma (`;`), codificación `latin1`, 512 filas.
+    *   *Variables adicionales*: `Necesito Bajada`, `Factible con bajada`, `Velocidad_Ajustada [Gbps]`, `GSNR_Total_dB.1`, `Umbral_OSNR_dB.1`.
+
+#### B. Archivos de Ocupación Espectral y RSA (Capa 2)
+*   **Matriz de Ocupación Espectral en Enlaces (First-Fit V2)**:
+    *   *Ruta*: [ocupacion_base_firstfit_V2.csv](file:///home/maximo/opticas/TpOpticas/RSA/base/first_fit/ocupacion_base_firstfit_V2.csv)
+    *   *Formato*: Delimitado por comas (`,`), codificación `utf-8`. Registra por fila la ocupación binaria (0 o ID de demanda) para cada uno de los 304 slots elementales de cada enlace físico de la topología.
+*   **Matriz de Ocupación Espectral en Enlaces (Aleatorio V2)**:
+    *   *Ruta*: [ocupacion_base_random_V2.csv](file:///home/maximo/opticas/TpOpticas/RSA/base/aleatorio/ocupacion_base_random_V2.csv)
+*   **Matriz de Ocupación Espectral en Enlaces (MILP / PuLP V2)**:
+    *   *Ruta*: [ocupacion_base_milp_V2.csv](file:///home/maximo/opticas/TpOpticas/RSA/base/pulp/ocupacion_base_milp_V2.csv)
+
+---
+
+### 8.2. Métricas Consolidadas de Factibilidad Física (Capa 1)
+
+A partir del procesamiento de los CSVs de factibilidad física de las 512 demandas base, se extraen las siguientes métricas estadísticas de la red:
+
+*   **Distancia Promedio de las Demandas**: $293.63 \text{ km}$
+*   **Relación Señal-Ruido Generalizada (GSNR) Promedio**: $24.41 \text{ dB}$
+*   **Tasa de Viabilidad Directa Transparente (Fase 1)**: $84.77\%$ (434 demandas factibles, 78 bloqueadas).
+*   **Tasa de Viabilidad con Regeneración 3R (Fase 2)**: $98.05\%$ (502 demandas factibles, 10 bloqueadas).
+*   **Tasa de Viabilidad con Regeneración + Step-down (Fase 3)**: $100.00\%$ (512 demandas factibles, 0 bloqueadas).
+*   **Tarjetas Regeneradoras 3R Totales Insertadas en Fase 2**: 100 tarjetas (repartidas en un promedio de $0.183$ regeneradores por canal sobre la red global, con un máximo de 4 por canal).
+*   **Cantidad de Canales con Step-down de Velocidad en Fase 3**: 4 demandas reajustadas a 100 Gbps (DP-QPSK) para eludir las restricciones físicas de la Patagonia y tramos interregionales ultra largos.
+
+---
+
+### 8.3. Métricas Comparativas de Planificación Espectral RSA (Capa 2)
+
+A continuación se consolida la tabla completa de métricas de calidad de red obtenidas para los planificadores espectrales First-Fit y Aleatorio, comparados tanto para el escenario de Tráfico Base (1077 lightpaths) como para el escenario acumulativo incremental de Tráfico REFEFO (1277 lightpaths):
+
+| Métrica / Indicador Espectral de Red | First-Fit (Base) | Aleatorio (Base) | First-Fit (REFEFO Acum.) | Aleatorio (REFEFO Acum.) |
+| :--- | :---: | :---: | :---: | :---: |
+| **Lightpaths procesados** | 1077 | 1077 | 1277 (1077 + 200) | 1277 (1077 + 200) |
+| **Lightpaths asignados exitosamente** | 1077 | 1075 | 1277 | 1252 |
+| **Lightpaths bloqueados (Rechazados)** | 0 ($0.00\%$) | 2 ($0.19\%$) | 0 ($0.00\%$) | 25 ($1.96\%$, $11.50\%$ en REFEFO) |
+| **Tiempo de cómputo promedio por canal**| $0.64 \text{ ms}$ | $1.25 \text{ ms}$ | $13.00 \text{ ms}$ | $13.44 \text{ ms}$ |
+| **Tiempo de ejecución global de simulación**| $0.13 \text{ s}$ | $0.15 \text{ s}$ | $1.37 \text{ s}$ | $3.77 \text{ s}$ |
+| **Ocupación promedio de slots por fibra** | $37.08$ slots ($12.20\%$) | $36.08$ slots ($11.87\%$) | $76.96$ slots ($25.31\%$) | $63.77$ slots ($20.98\%$) |
+| **Carga máxima de espectro en enlace crítico**| $96$ slots | $88$ slots | $202$ slots | $156$ slots |
+| **Slot máximo utilizado en la grilla ($S_{\text{max}}$)**| **58** | 304 | **212** | 304 |
+| **Índice de Fragmentación Promedio de Red ($F$)**| **0.0211** | 0.6561 | **0.3973** | 0.7482 |
+| **Índice de Contigüidad Promedio de Red ($C$)**| **0.9614** | 0.2323 | **0.4472** | 0.1541 |
+| **Tamaño promedio del bloque libre máximo** | $261.47$ slots | $94.11$ slots | $137.12$ slots | $62.53$ slots |
+| **Transiciones Ocupado $\rightarrow$ Libre (Promedio)**| **1.44** (rango 1 - 5) | 8.31 (rango 1 - 19) | **6.52** (rango 1 - 14) | 13.06 (rango 0 - 27) |
+| **Probabilidad de bloqueo promedio en enlace**| $0.00\%$ | $1.11\%$ | $0.00\%$ | $10.26\%$ |
+
+*Nota: Los valores de transiciones indican la alternancia de estado en la grilla. Un valor bajo (e.g. 1.44 en First-Fit) demuestra que los canales ocupados se agrupan ordenadamente al inicio de la banda espectral, preservando grandes bloques continuos para futuras demandas. Un valor alto (e.g. 13.06 en Aleatorio) demuestra una fragmentación severa en forma de serrucho que impide la asignación de portadoras de alta velocidad.*
+
