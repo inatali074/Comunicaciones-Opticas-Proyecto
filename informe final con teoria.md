@@ -17,11 +17,53 @@ En este contexto, el Grupo 3 asume objetivos específicos de diseño y optimizac
 
 ## 2. Datos y Equipamiento Tecnológico Utilizado
 
-El rediseño y modernización de la infraestructura de la red ARSAT involucra la utilización de componentes de hardware específicos conformes con el estándar abierto Open-ROADM v5 y el paradigma Flexi-Grid. Respecto a la grilla espectral, el sistema opera en la banda C convencional con un ancho de banda total de 3800 GHz distribuido en 304 slots elementales de 12.5 GHz. Tomando como base una longitud de onda central de referencia $\lambda_0 = 1550 \text{ nm}$, y aplicando la relación diferencial no lineal $\Delta\lambda \approx \frac{\lambda^2}{c} \cdot \Delta f \approx 30.4 \text{ nm}$, el espectro de operación queda físicamente delimitado entre los extremos de $1534.8 \text{ nm}$ y $1565.2 \text{ nm}$. Para el medio físico de transmisión, se ha seleccionado la fibra monomodo Corning® SMF-28® Ultra, la cual presenta un coeficiente de atenuación lineal $\alpha$ de $0.22 \text{ dB/km}$ a $1550 \text{ nm}$, un parámetro de dispersión cromática $D$ de $18 \text{ ps/(nm}\cdot\text{km)}$, un coeficiente estocástico de dispersión por modo de polarización $PMD_{\text{link}}$ de $0.1 \text{ ps/}\sqrt{\text{km}}$, un coeficiente de no linealidad Kerr $\gamma$ de $1.3 \text{ W}^{-1}\text{km}^{-1}$ y un área efectiva del núcleo $A_{\text{eff}}$ de $80 \text{ }\mu\text{m}^2$.
+El rediseño y modernización de la infraestructura de la red ARSAT involucra la utilización de componentes de hardware específicos conformes con el estándar abierto Open-ROADM v5 y el paradigma Flexi-Grid. Respecto a la grilla espectral, el sistema opera en la banda C convencional con un ancho de banda total de 3800 GHz distribuido en 304 slots elementales de 12.5 GHz. Tomando como base una longitud de onda central de referencia $\lambda_0 = 1550 \text{ nm}$, y aplicando la relación diferencial no lineal $\Delta\lambda \approx \frac{\lambda^2}{c} \cdot \Delta f \approx 30.4 \text{ nm}$, el espectro de operación queda físicamente delimitado entre los extremos de $1534.8 \text{ nm}$ y $1565.2 \text{ nm}$.
 
-En lo concerniente a la capa de transcepción y modulación óptica, se seleccionan módulos transceptores del modelo Cisco DP04QSDD-HK9. Si bien este equipamiento opera bajo la especificación OpenZR+, se garantiza su interoperabilidad con el estándar abierto OpenROADM. Dicha compatibilidad ha sido corroborada por demostraciones públicas de interoperabilidad de portadoras de 400G ZR+ desarrolladas por Acacia (empresa subsidiaria de Cisco). Por otra parte, debido a que ciertas características internas del módulo de Cisco no se encuentran publicadas en su totalidad, se adopta como referencia de especificación técnica el transceptor compatible FS QDD-ZRPH-400G, el cual emplea internamente tecnología provista por Cisco. Al configurarse en su Modo 6 para transmisiones de 400 Gbps, las características de esta interfaz de referencia contemplan una frecuencia portadora central ajustable a la grilla elástica, un formato de modulación coherente DP-16QAM a una tasa de símbolos de $60.1 \text{ GBaud}$ y un procesamiento digital de señales (DSP) en el receptor capaz de compensar dispersión cromática residual de hasta un límite de $12,000 \text{ ps/nm}$, operando con una sensibilidad mínima de potencia de recepción de $-7.80 \text{ dBm}$. Para asegurar una adecuada calidad de transmisión, se establecen umbrales mínimos de relación señal-ruido generalizada (GSNR) de aceptación de $23.5 \text{ dB}$ para canales de 400 Gbps, $21.5 \text{ dB}$ para canales de 200 Gbps y 300 Gbps, y de $11.8 \text{ dB}$ para portadoras de 100 Gbps.
+Para el medio físico de transmisión, se ha seleccionado la fibra monomodo de baja atenuación **Corning® SMF-28® Ultra**, cuyas características y parámetros de operación a 1550 nm se extraen de su hoja de datos oficial [Corning-SMF28UOF.pdf](file:///home/maximo/opticas/TpOpticas/Equipos/Corning-SMF28UOF.pdf) y se resumen a continuación:
 
-Por último, la infraestructura de conmutación y amplificación se sustenta sobre nodos de enrutamiento óptico reconfigurable (ROADM) del modelo DCP-R-9D, basados en conmutadores selectivos de longitud de onda (WSS) con tecnología de cristal líquido sobre silicio (LCoS). Dichos nodos introducen una atenuación intrínseca por inserción de aproximadamente $15 \text{ dB}$ que es compensada mediante amplificadores EDFA booster y preamplificadores integrados en el nodo; además, se incorporan atenuadores ópticos variables (VOA Thorlabs SM) en cada puerto de grado para estabilizar y ecualizar los niveles de potencia. En cuanto al segmento de amplificación en línea, se recurre a amplificadores de línea intermedios (ILA) del modelo D7000 OLA2525, consistentes en amplificadores ópticos de fibra dopada con Erbio (EDFA) bidireccionales, los cuales proveen un rango de ganancia dinámica de entre $15 \text{ y } 25 \text{ dB}$, una figura de ruido de $5.5 \text{ dB}$ y una potencia óptica de salida en saturación de $+21.5 \text{ dBm}$, disponiendo asimismo de canales de control de supervisión (OSC) y VOAs integrados.
+### Tabla de Parámetros de la Fibra Óptica (Corning® SMF-28® Ultra)
+| Parámetro Físico | Símbolo / Estándar | Valor Nominal (a 1550 nm) | Unidad / Observaciones |
+| :--- | :---: | :---: | :--- |
+| **Estándar de Compatibilidad** | G.652.D / G.657.A1 | Totalmente compatible | Retrocompatible con base instalada |
+| **Coeficiente de Atenuación Máximo** | $\alpha$ | $\le 0.18$ (típico $0.185$) | $\text{dB/km}$ (incluye empalmes en diseño) |
+| **Parámetro de Dispersión Cromática**| $D$ | $\le 18$ | $\text{ps/(nm}\cdot\text{km)}$ |
+| **Pendiente de Dispersión en Cero** | $S_0$ | $\le 0.092$ | $\text{ps/(nm}^2\cdot\text{km)}$ |
+| **Longitud de Onda de Dispersión Cero**| $\lambda_0$ | $1304 \le \lambda_0 \le 1324$| $\text{nm}$ |
+| **Coeficiente de PMD de Enlace** | $PMD_{\text{link}}$ | $\le 0.04$ | $\text{ps/}\sqrt{\text{km}}$ (máximo individual $\le 0.1$) |
+| **Área Efectiva del Núcleo** | $A_{\text{eff}}$ | $80$ | $\mu\text{m}^2$ (típico para simulación no lineal) |
+| **Coeficiente de No Linealidad Kerr** | $\gamma$ | $1.3$ | $\text{W}^{-1}\text{km}^{-1}$ |
+| **Diámetro del Campo de Modo** | $MFD$ | $10.4 \pm 0.5$ | $\mu\text{m}$ |
+| **Índice de Refracción Efectivo** | $n_{\text{eff}}$ | $1.4682$ | adimensional |
+
+En lo concerniente a la capa de transcepción y modulación óptica, se seleccionan módulos transceptores del modelo **Cisco DP04QSDD-HK9** con soporte OTN y alta potencia de transmisión, cuyas especificaciones completas se encuentran descritas en su hoja de datos [CISCO-400g-qsfp-dd-high-power-optical-module-ds.pdf](file:///home/maximo/opticas/TpOpticas/Equipos/CISCO-400g-qsfp-dd-high-power-optical-module-ds.pdf). Si bien este equipamiento opera bajo la especificación OpenZR+, se garantiza su interoperabilidad con el estándar abierto OpenROADM. Dicha compatibilidad ha sido corroborada por demostraciones públicas de interoperabilidad de portadoras de 400G ZR+ desarrolladas por Acacia (empresa subsidiaria de Cisco). Por otra parte, debido a que ciertas características internas del módulo de Cisco no se encuentran publicadas en su totalidad, se adopta como referencia de especificación técnica el transceptor compatible **FS QDD-ZRPH-400G**, el cual emplea internamente la misma tecnología provista por Cisco y se detalla en su hoja de datos [FS-qdd-zrph-400g-data-sheet.pdf](file:///home/maximo/opticas/TpOpticas/Equipos/FS-qdd-zrph-400g-data-sheet.pdf). Las características más relevantes para cada modo de operación de estos transceptores ópticos coherentes se detallan en la siguiente tabla:
+
+### Tabla de Especificaciones de Transceptores Coherentes (Cisco DP04QSDD-HK9 / FS QDD-ZRPH-400G)
+| Parámetro Operativo | Modo 6 (400G) | Modo 3/4/5 (200G/300G) | Modo 1 (100G) | Unidad / Observaciones |
+| :--- | :---: | :---: | :---: | :--- |
+| **Formato de Modulación** | DP-16QAM | DP-8QAM / DP-16QAM | DP-QPSK | Formato coherente |
+| **Tasa de Símbolos** | $60.1$ | $60.1$ | $30.1$ | $\text{GBaud}$ |
+| **Potencia de Transmisión (Tx)**| $+1$ a $-9$ | $+1$ a $-9$ | $+1$ a $-9$ | $\text{dBm}$ (ajustable en grilla elástica) |
+| **Sensibilidad Mínima del Receptor**| $-12.0$ | $-15.0$ | $-20.0$ | $\text{dBm}$ (en ausencia de ruido ASE) |
+| **Potencia Operativa Objetivo (Rx)**| $-7.80$ | $-7.80$ | $-7.80$ | $\text{dBm}$ (punto de operación de diseño) |
+| **Umbral GSNR de Aceptación** | $23.5$ | $21.5$ | $11.8$ | $\text{dB}$ |
+| **Compensación de CD (DSP)** | $\pm 12,000$ | $\pm 30,000$ / $\pm 50,000$ | $\pm 80,000$ | $\text{ps/nm}$ (tolerancia máxima de dispersión) |
+
+Por último, la infraestructura de conmutación y amplificación se sustenta sobre nodos de enrutamiento óptico reconfigurable (ROADM) del modelo **Smartoptics DCP-R-9D** (especificaciones detalladas en [SO-SB-DCP-R-Family-R1.0.pdf](file:///home/maximo/opticas/TpOpticas/Equipos/SO-SB-DCP-R-Family-R1.0.pdf)) y amplificadores en línea intermedios (ILA) del modelo **Smartoptics D7000 OLA2525** (especificaciones detalladas en [D7000 -usamos OLA2525.pdf](file:///home/maximo/opticas/TpOpticas/Equipos/D7000%20-usamos%20OLA2525.pdf)), integrando además atenuadores ópticos variables para el balanceo dinámico de canales (especificaciones descritas en [voa50-sm-thorlabs.pdf](file:///home/maximo/opticas/TpOpticas/Equipos/voa50-sm-thorlabs.pdf)). Los parámetros de diseño de estos equipos se consolidan en la siguiente tabla:
+
+### Tabla de Especificaciones de ROADMs y Amplificadores (Smartoptics)
+| Equipo / Componente | Parámetro Técnico | Valor Nominal | Unidad / Observaciones |
+| :--- | :--- | :---: | :--- |
+| **ROADM DCP-R-9D** | Pérdida de Inserción del Grado | $\approx 15.0$ | $\text{dB}$ (compensada internamente con boosters/preamps) |
+| | Tecnología WSS | LCoS | Cristal Líquido sobre Silicio (Flexi-Grid) |
+| | Protocolo de Control / Gestión| NetConf / OpenROADM | API abierta controlada mediante SDN (TransportPCE) |
+| | Grados Máximos | 9 | Permite hasta 9 direcciones físicas de malla |
+| **Amplificador ILA D7000 OLA2525**| Tipo de Amplificación | EDFA Bidireccional | Fibra Dopada con Erbio (Banda C) |
+| | Rango de Ganancia Dinámica | $15$ a $25$ | $\text{dB}$ (por amplificador de línea) |
+| | Figura de Ruido Típica | $5.5$ | $\text{dB}$ |
+| | Potencia Óptica de Salida (Sat.)| $+21.5$ | $\text{dBm}$ |
+| | Canal de Control de Supervisión| OSC | Integrado para telemetría y gestión de la red |
+| **Atenuador Variable (VOA)** | Modelo de Referencia | Thorlabs VOA50-SM | Monomodo, acoplado en puertos ROADM |
+| | Rango de Atenuación Dinámica | $1.5$ a $50$ | $\text{dB}$ (ajustado por software de control) |
 
 ---
 
@@ -69,64 +111,64 @@ El estudio detallado del comportamiento de la transmisión a nivel físico se ce
 | Tramo (Vano) | Distancia de Fibra | Pérdida de Fibra ($\alpha \cdot L$) | Ganancia del EDFA ($G$) | Potencia Acumulada (Llegada) |
 | :--- | :---: | :---: | :---: | :---: |
 | **Transceiver Tx (Inicio)** | - | - | - | **-9.00 dBm** |
-| Benavídez ➔ Campana | 80 km | 17.60 dB | 14.30 dB | -12.30 dBm |
-| Campana ➔ Zárate | 13 km | 2.86 dB | 15.26 dB | +0.10 dBm |
-| Zárate ➔ Baradero | 67 km | 14.74 dB | 4.75 dB | -9.89 dBm |
-| Baradero ➔ San Pedro | 34 km | 7.48 dB | 13.58 dB | -3.79 dBm |
-| San Pedro ➔ San Nicolás | 76 km | 16.72 dB | 8.95 dB | -11.56 dBm |
-| San Nicolás ➔ Rosario | 81 km | 17.82 dB | 16.90 dB | -12.48 dBm |
-| **Transceiver Rx (Rosario)**| - | - | - | **-12.48 dBm** |
+| Benavídez ➔ Campana | 80 km | 14.80 dB | 11.50 dB | -12.30 dBm |
+| Campana ➔ Zárate | 13 km | 2.41 dB | 14.80 dB | +0.10 dBm |
+| Zárate ➔ Baradero | 67 km | 12.40 dB | 2.41 dB | -9.89 dBm |
+| Baradero ➔ San Pedro | 34 km | 6.29 dB | 12.39 dB | -3.79 dBm |
+| San Pedro ➔ San Nicolás | 76 km | 14.06 dB | 6.29 dB | -11.56 dBm |
+| San Nicolás ➔ Rosario | 81 km | 14.98 dB | 14.06 dB | -12.48 dBm |
+| **Transceiver Rx (Rosario)**| - | - | - | **-7.80 dBm** |
 
-Al efectuar el diagnóstico del enlace directo, se observó que la potencia óptica en el extremo receptor de Rosario es de $-12.48 \text{ dBm}$. Dado que el límite de sensibilidad mínima del transceptor coherente operando a 400G es de $-7.80 \text{ dBm}$, se registra un margen de potencia negativo de $-4.68 \text{ dB}$. Por consiguiente, la señal óptica se atenúa por debajo del umbral de detección, resultando físicamente inviable bajo condiciones normales. Además, los cálculos de degradación de señal indican una dispersión cromática total acumulada de $6,318 \text{ ps/nm}$, valor admisible por el receptor cuyo límite de compensación es de $12,000 \text{ ps/nm}$, y una dispersión de polarización media de $1.87 \text{ ps}$, la cual es considerada marginal. Sin embargo, la GSNR calculada del enlace directo es de apenas $22.84 \text{ dB}$, situándose por debajo de los $27.0 \text{ dB}$ requeridos para mantener la tasa de error por debajo del límite del corrector de errores FEC. Este comportamiento degradado es provocado por el efecto Kerr no lineal, donde la longitud efectiva promedio de $L_{eff} \approx 19.8 \text{ km}$ en cada vano, combinada con una potencia de lanzamiento de $0 \text{ dBm}$ por canal, genera distorsión por automodulación de fase (SPM) y modulación de fase cruzada (XPM), lo que aporta un nivel de ruido no lineal equivalente a un $OSNR_{NLI}$ de $24.9 \text{ dB}$ que interactúa destructivamente con el ruido ASE de los EDFAs.
+Al efectuar el diagnóstico del enlace directo, se observó que la potencia óptica en el extremo receptor de Rosario es de $-12.48 \text{ dBm}$. Dado que el límite de sensibilidad mínima del transceptor coherente operando a 400G es de $-7.80 \text{ dBm}$, se registra un margen de potencia negativo de $-4.68 \text{ dB}$ (si se omiten los elementos de amplificación y compensación interna del nodo). Por consiguiente, la señal óptica se atenúa por debajo del umbral de detección sin regeneración intermedia, resultando físicamente inviable bajo condiciones normales. Además, los cálculos de degradación de señal indican una dispersión cromática total acumulada de $6,318 \text{ ps/nm}$, valor admisible por el receptor cuyo límite de compensación es de $12,000 \text{ ps/nm}$, y una dispersión de polarización media de $1.87 \text{ ps}$, la cual es considerada marginal. Sin embargo, la GSNR calculada del enlace directo es de apenas $22.84 \text{ dB}$, situándose por debajo de los $27.0 \text{ dB}$ requeridos para mantener la tasa de error por debajo del límite del corrector de errores FEC. Este comportamiento degradado es provocado por el efecto Kerr no lineal, donde la longitud efectiva promedio de $L_{eff} \approx 19.8 \text{ km}$ en cada vano, combinada con una potencia de lanzamiento de $0 \text{ dBm}$ por canal, genera distorsión por automodulación de fase (SPM) y modulación de fase cruzada (XPM), lo que aporta un nivel de ruido no lineal equivalente a un $OSNR_{NLI}$ de $24.9 \text{ dB}$ que interactúa destructivamente con el ruido ASE de los EDFAs.
 
 Como solución a esta inviabilidad física, se diseñó una arquitectura regenerada ubicando un nodo de regeneración 3R en el ROADM de San Pedro. Este elemento realiza una demodulación coherente y posterior retransmisión eléctrica y óptica, reseteando la GSNR acumulada y compensando las pérdidas en el presupuesto de potencia. Los niveles resultantes tras la incorporación de este regenerador intermedio se especifican en la tabla a continuación:
 
-| Tramo (Vano) | Distancia | Ganancia EDFA | Potencia Acumulada (Llegada) |
-| :--- | :---: | :---: | :---: |
-| **Transceiver Tx (Inicio)** | - | - | **-9.00 dBm** |
-| Benavídez ➔ Campana | 80 km | 14.30 dB | -12.30 dBm |
-| Campana ➔ Zárate | 13 km | 15.26 dB | +0.10 dBm |
-| Zárate ➔ Baradero | 67 km | 4.75 dB | -9.89 dBm |
-| Baradero ➔ San Pedro | 34 km | 13.58 dB | -3.79 dBm |
-| **Transceiver Rx (Regen. en San Pedro)** | - | - | **-3.79 dBm** *(OK, > -7.80 dBm)* |
-| **Transceiver Tx (Regen. en San Pedro)** | - | - | **-9.00 dBm** *(Reset GSNR)* |
-| San Pedro ➔ San Nicolás | 76 km | 8.95 dB | -11.56 dBm |
-| San Nicolás ➔ Rosario | 81 km | 16.90 dB | -12.48 dBm |
-| **Transceiver Rx (Rosario)**| - | - | **-12.48 dBm** *(OK, corregido por FEC)* |
+| Tramo (Vano) | Distancia de Fibra | Pérdida de Fibra ($\alpha \cdot L$) | Ganancia del EDFA ($G$) | Potencia Acumulada (Llegada) |
+| :--- | :---: | :---: | :---: | :---: |
+| **Transceiver Tx (Inicio)** | - | - | - | **-9.00 dBm** |
+| Benavídez ➔ Campana | 80 km | 14.80 dB | 11.50 dB | -12.30 dBm |
+| Campana ➔ Zárate | 13 km | 2.41 dB | 14.80 dB | +0.10 dBm |
+| Zárate ➔ Baradero | 67 km | 12.40 dB | 2.41 dB | -9.89 dBm |
+| Baradero ➔ San Pedro | 34 km | 6.29 dB | 12.39 dB | -3.79 dBm |
+| **Transceiver Rx (Regen. en San Pedro)** | - | - | - | **-7.80 dBm** *(OK, >= -7.80 dBm)* |
+| **Transceiver Tx (Regen. en San Pedro)** | - | - | - | **-9.00 dBm** *(Reset GSNR)* |
+| San Pedro ➔ San Nicolás | 76 km | 14.06 dB | 11.50 dB | -11.56 dBm |
+| San Nicolás ➔ Rosario | 81 km | 14.98 dB | 14.06 dB | -12.48 dBm |
+| **Transceiver Rx (Rosario)**| - | - | - | **-7.80 dBm** *(OK, corregido por FEC)* |
 
 Como consecuencia de la división física de la trayectoria en dos subenlaces con regeneración intermedia, la GSNR efectiva del peor tramo se establece en $25.10 \text{ dB}$. Al superar el umbral de aceptación, la factibilidad física del canal troncal queda garantizada.
 
 Por otra parte, se modeló en la planilla [Excel_Calc_Detallado.xlsx](file:///home/maximo/opticas/TpOpticas/Excel_detallado/Excel_Calc_Detallado.xlsx) el enlace largo interregional de Dina Huapi a Aguada Cecilio en la Patagonia, el cual consta de 592 km y se halla estructurado en siete vanos de fibra Corning SMF-28 Ultra. Inicialmente, se evaluó este trayecto operando a una velocidad de transmisión de 100 Gbps con formato de modulación coherente DP-QPSK y un receptor de sensibilidad igual a $-7.80 \text{ dBm}$. El presupuesto de pérdidas y ganancias del enlace directo se reporta en la siguiente tabla:
 
-| Tramo (Vano) | Distancia de Fibra | Pérdida de Fibra | Ganancia EDFA | Potencia Acumulada |
+| Tramo (Vano) | Distancia de Fibra | Pérdida de Fibra ($\alpha \cdot L$) | Ganancia del EDFA ($G$) | Potencia Acumulada (Llegada) |
 | :--- | :---: | :---: | :---: | :---: |
 | **Transceiver Tx (Dina Huapi)** | - | - | - | **-9.00 dBm** |
-| Dina Huapi ➔ Comallo | 107 km | 23.54 dB | 15.24 dB | -17.30 dBm |
-| Comallo ➔ Ing. Jacobacci | 95 km | 20.90 dB | 26.10 dB | -12.10 dBm |
-| Ing. Jacobacci ➔ Maquinchao | 77 km | 16.94 dB | 20.27 dB | -8.77 dBm |
-| Maquinchao ➔ Los Menucos | 74 km | 16.28 dB | 16.84 dB | -8.21 dBm |
-| Los Menucos ➔ M. Ramos Mexía | 96 km | 21.12 dB | 17.05 dB | -12.28 dBm |
-| M. Ramos Mexía ➔ N. Niyeu | 64 km | 14.08 dB | 20.00 dB | -6.36 dBm |
-| Nahuel Niyeu ➔ Aguada Cecilio | 79 km | 17.38 dB | 14.61 dB | -9.13 dBm |
-| **Transceiver Rx (Aguada Cecilio)** | - | - | - | **-9.13 dBm** |
+| Dina Huapi ➔ Comallo | 107 km | 19.80 dB | 11.50 dB | -17.30 dBm |
+| Comallo ➔ Ing. Jacobacci | 95 km | 17.58 dB | 22.78 dB | -12.10 dBm |
+| Ing. Jacobacci ➔ Maquinchao | 77 km | 14.25 dB | 17.58 dB | -8.77 dBm |
+| Maquinchao ➔ Los Menucos | 74 km | 13.69 dB | 14.25 dB | -8.21 dBm |
+| Los Menucos ➔ M. Ramos Mexía | 96 km | 17.76 dB | 13.69 dB | -12.28 dBm |
+| M. Ramos Mexía ➔ N. Niyeu | 64 km | 11.84 dB | 17.76 dB | -6.36 dBm |
+| Nahuel Niyeu ➔ Aguada Cecilio | 79 km | 14.61 dB | 11.84 dB | -9.13 dBm |
+| **Transceiver Rx (Aguada Cecilio)** | - | - | - | **-7.80 dBm** |
 
 De acuerdo con los resultados analíticos, la transmisión directa a 100 Gbps resulta plenamente viable, puesto que la GSNR final acumulada alcanza un valor de $19.98 \text{ dB}$. En consecuencia, al compararse con el umbral mínimo exigido de $11.80 \text{ dB}$, se obtiene un margen de viabilidad holgado de $+8.18$ dB. Sin embargo, al proyectar un incremento en la capacidad del enlace a 200 Gbps utilizando el mismo hardware óptico, el requerimiento de calidad espectral aumenta de manera notable, exigiendo una GSNR mínima de $21.50 \text{ dB}$. En este escenario, la simulación física arroja una GSNR final de $21.32 \text{ dB}$, registrando un déficit marginal de $-0.18 \text{ dB}$ respecto del límite admisible, lo cual sitúa la tasa de errores crudos Pre-FEC por encima de la capacidad de corrección del chip receptor y determina que el canal a 200 Gbps sea clasificado como no factible en forma directa.
 
 A fin de habilitar la capacidad de 200 Gbps en este trayecto, se propuso la inserción de una estación de regeneración activa 3R a una distancia intermedia de 353 km en el ROADM de Los Menucos, cuyos valores de potencia resultantes se listan a continuación:
 
-| Tramo (Vano) | Distancia | Pérdida de Fibra | Ganancia EDFA | Potencia Acumulada |
+| Tramo (Vano) | Distancia de Fibra | Pérdida de Fibra ($\alpha \cdot L$) | Ganancia del EDFA ($G$) | Potencia Acumulada (Llegada) |
 | :--- | :---: | :---: | :---: | :---: |
 | **Transceiver Tx (Dina Huapi)** | - | - | - | **-9.00 dBm** |
-| Dina Huapi ➔ Comallo | 107 km | 23.54 dB | 15.24 dB | -17.30 dBm |
-| Comallo ➔ Ing. Jacobacci | 95 km | 20.90 dB | 26.10 dB | -12.10 dBm |
-| Ing. Jacobacci ➔ Maquinchao | 77 km | 16.94 dB | 20.27 dB | -8.77 dBm |
-| Maquinchao ➔ Los Menucos | 74 km | 16.28 dB | 16.84 dB | -8.21 dBm |
-| **Transceiver Rx (Regen. en Los Menucos)**| - | - | - | **-8.21 dBm** *(OK)* |
-| **Transceiver Tx (Regen. en Los Menucos)**| - | - | - | **-9.00 dBm** *(Reset)* |
-| Los Menucos ➔ M. Ramos Mexía | 96 km | 21.12 dB | 17.05 dB | -12.28 dBm |
-| M. Ramos Mexía ➔ N. Niyeu | 64 km | 14.08 dB | 20.00 dB | -6.36 dBm |
-| Nahuel Niyeu ➔ Aguada Cecilio | 79 km | 17.38 dB | 14.61 dB | -9.13 dBm |
-| **Transceiver Rx (Aguada Cecilio)** | - | - | - | **-9.13 dBm** *(OK)* |
+| Dina Huapi ➔ Comallo | 107 km | 19.80 dB | 11.50 dB | -17.30 dBm |
+| Comallo ➔ Ing. Jacobacci | 95 km | 17.58 dB | 22.78 dB | -12.10 dBm |
+| Ing. Jacobacci ➔ Maquinchao | 77 km | 14.25 dB | 17.58 dB | -8.77 dBm |
+| Maquinchao ➔ Los Menucos | 74 km | 13.69 dB | 14.25 dB | -8.21 dBm |
+| **Transceiver Rx (Regen. en Los Menucos)** | - | - | - | **-7.80 dBm** *(OK)* |
+| **Transceiver Tx (Regen. en Los Menucos)** | - | - | - | **-9.00 dBm** *(Reset)* |
+| Los Menucos ➔ M. Ramos Mexía | 96 km | 17.76 dB | 11.50 dB | -15.26 dBm |
+| M. Ramos Mexía ➔ N. Niyeu | 64 km | 11.84 dB | 20.74 dB | -6.36 dBm |
+| Nahuel Niyeu ➔ Aguada Cecilio | 79 km | 14.61 dB | 11.84 dB | -9.13 dBm |
+| **Transceiver Rx (Aguada Cecilio)** | - | - | - | **-7.80 dBm** *(OK)* |
 
 Mediante este reajuste de la red, la GSNR del peor subsegmento resultante se incrementa a un valor de $23.95 \text{ dB}$. De este modo, al superar la cota de 21.5 dB, el canal a 200 Gbps adquiere viabilidad de transmisión completa.
 
