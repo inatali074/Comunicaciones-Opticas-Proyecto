@@ -297,6 +297,25 @@ Los archivos resultantes de las simulaciones se dividen en dos grupos principale
 *   **Matriz de Ocupación Espectral en Enlaces (MILP / PuLP V2)**:
     *   *Ruta*: [ocupacion_base_milp_V2.csv](file:///home/maximo/opticas/TpOpticas/RSA/base/pulp/ocupacion_base_milp_V2.csv)
 
+#### C. Archivos de Hojas de Cálculo (Excels)
+*   **Planilla de Cálculo de Ingeniería de Enlace**:
+    *   *Ruta*: [Excel_Calc_Detallado.xlsx](file:///home/maximo/opticas/TpOpticas/Excel_detallado/Excel_Calc_Detallado.xlsx)
+    *   *Tamaño*: $1.42 \text{ MB}$.
+    *   *Contenido*: Memoria de cálculo detallado tramo a tramo (balance de potencia, GSNR ASE + NLI, CD, PMD, longitud efectiva y longitud no lineal) para la validación física analítica del Enlace Comprometido (Benavídez-Rosario) y el Enlace Largo (Dina Huapi-Aguada Cecilio).
+*   **Matriz de Ocupación Espectral Visual - Tráfico Base (First-Fit)**:
+    *   *Ruta*: [ocupacion_visual_firstfit.xlsx](file:///home/maximo/opticas/TpOpticas/RSA/base/first_fit/ocupacion_visual_firstfit.xlsx)
+    *   *Tamaño*: $377.38 \text{ KB}$.
+    *   *Contenido*: Mapeo y coloreado condicional de la grilla de slots para todos los enlaces en el escenario base.
+*   **Análisis Nodal de Transiciones y Grados - Tráfico Base (First-Fit)**:
+    *   *Ruta*: [analisis_nodal_visual_firstfit.xlsx](file:///home/maximo/opticas/TpOpticas/RSA/base/first_fit/analisis_nodal_visual_firstfit.xlsx)
+    *   *Tamaño*: $67.12 \text{ KB}$.
+*   **Matriz de Ocupación Espectral Visual - Tráfico REFEFO (First-Fit)**:
+    *   *Ruta*: [ocupacion_visual_refefo.xlsx](file:///home/maximo/opticas/TpOpticas/RSA/refefo/first_fit/ocupacion_visual_refefo.xlsx)
+    *   *Tamaño*: $425.81 \text{ KB}$.
+*   **Análisis Nodal de Transiciones y Grados - Tráfico REFEFO (First-Fit)**:
+    *   *Ruta*: [analisis_nodal_visual_refefo.xlsx](file:///home/maximo/opticas/TpOpticas/RSA/refefo/first_fit/analisis_nodal_visual_refefo.xlsx)
+    *   *Tamaño*: $82.50 \text{ KB}$.
+
 ---
 
 ### 8.2. Métricas Consolidadas de Factibilidad Física (Capa 1)
